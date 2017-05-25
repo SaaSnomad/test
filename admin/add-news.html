@@ -1,0 +1,311 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>SaaSNomad Admin</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="img/logo.png"/>
+
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="css/admin-style.css">
+    <link rel="stylesheet" href="css/admin-custom.css">
+
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/dataTables.material.min.css">
+    <link rel="stylesheet" href="css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <style>
+    .mdl-layout__header-row {
+      height:30px;
+    }
+    .mdl-button--raised.mdl-button--colored {
+      background: #00BCD4;
+    }
+    .mdl-button {
+      color: rgba(0,0,0,.54);
+    }
+    .mdl-button--raised mdl-button--colored {
+      color:#fff;
+    }
+    #preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        background: #fff url('img/preloader.gif') no-repeat center center;
+    }
+    .mdl-textfield { 
+      width: 100%;
+    }
+    .mdl-dialog {
+      width: 40%;
+    }
+    #add-news-button {
+      width: 20%;
+    }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" weight="30px" height="30px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+            <g>
+               <g id="Ellipse_4_copy_5">
+                <g>
+                  <path d="M319.305,505.565c14.688,0,26.608-11.921,26.608-26.609c0-14.701-11.907-26.608-26.608-26.608     c-14.702,0-26.609,11.907-26.609,26.608C292.696,493.645,304.603,505.565,319.305,505.565z M518.869,106.435     c-14.701,0-26.608,11.908-26.608,26.609c0,14.688,11.907,26.609,26.608,26.609c14.688,0,26.609-11.921,26.609-26.609     C545.479,118.342,533.571,106.435,518.869,106.435z M518.869,39.913c-46.911,0-85.6,34.711-92.065,79.826H185.196     c-6.466-45.115-45.168-79.826-92.066-79.826C41.696,39.913,0,81.609,0,133.043s41.696,93.13,93.13,93.13     c12.786,0,24.919-2.647,36.001-7.317L252.078,414.63c-16.019,16.71-25.904,39.341-25.904,64.326     c0,51.436,41.696,93.131,93.131,93.131c51.435,0,93.13-41.695,93.13-93.131c0-51.435-41.695-93.13-93.13-93.13     c-16.817,0-32.543,4.523-46.167,12.319L151.909,205.113c17.628-14.436,29.908-35.137,33.287-58.766h241.607     c6.466,45.115,45.168,79.826,92.065,79.826c51.436,0,93.131-41.696,93.131-93.13S570.305,39.913,518.869,39.913z      M319.305,412.435c36.733,0,66.521,29.789,66.521,66.521c0,36.733-29.788,66.522-66.521,66.522s-66.522-29.789-66.522-66.522     C252.783,442.21,282.571,412.435,319.305,412.435z M93.13,199.565c-36.733,0-66.521-29.789-66.521-66.522     c0-36.747,29.788-66.522,66.521-66.522s66.522,29.775,66.522,66.522C159.652,169.777,129.864,199.565,93.13,199.565z      M518.869,199.565c-36.732,0-66.521-29.789-66.521-66.522c0-36.747,29.789-66.522,66.521-66.522     c36.733,0,66.522,29.775,66.522,66.522C585.392,169.777,555.603,199.565,518.869,199.565z M93.13,106.435     c-14.701,0-26.608,11.908-26.608,26.609c0,14.688,11.907,26.609,26.608,26.609c14.688,0,26.609-11.921,26.609-26.609     C119.739,118.342,107.832,106.435,93.13,106.435z" fill="#1de9b6"/>
+                </g>
+              </g>
+            </g>
+          </svg> 
+          <h3 style="padding-left:5px;">SaaSNomad Admin</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="calculator-results.html" class="mdl-layout__tab">Calculator Results</a>
+          <a href="sellers.html" class="mdl-layout__tab">Sellers</a>
+          <a href="buyers.html" class="mdl-layout__tab">Buyers</a>
+          <a href="contact-requests.html" class="mdl-layout__tab">Contact Requests</a>
+          <a href="new-features-subscribers.html" class="mdl-layout__tab">New Feature Subscribers</a>
+          <a href="news-subscribers.html" class="mdl-layout__tab">News Subscribers</a>
+          <a href="add-news.html" class="mdl-layout__tab is-active">Add News</a> 
+        </div>
+      </header>
+
+
+
+
+
+      <main class="mdl-layout__content" style="width: 100%;">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+        <div id="preloader"></div>
+          <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4 style="display:inline-block;">NEWS SUBSCRIBERS</h4>  
+                <button id="add-news" type="button" class="mdl-button mdl-button--raised mdl-button--colored" aria-controls="example" data-dt-idx="1" tabindex="0" style="float:right;">Add News</button>
+
+ 
+
+<dialog class="mdl-dialog" id="add-news-modal">
+    <button type="button" class="mdl-button" style="background-color:transparent;float:right;">&times;</button>
+    <div class="mdl-dialog__content">
+         <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Title</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Source</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Date Posted</label>
+          </div>
+        </form>
+    </div>
+    <div class="mdl-dialog__actions mdl-dialog__actions--full-width">
+        <button type="button" id="add-news-button" class="mdl-button mdl-button--raised mdl-button--colored">Add News</button>
+    </div>
+</dialog>
+
+
+        
+                <table id="example" class="display nowrap" cellspacing="0" width="100%">
+                  <thead>
+                      <tr>
+                          <th>Title</th>
+                          <th>Source</th>
+                          <th>Date posted</th>                        
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>System Architect</td>
+                          <td>Edinburgh</td>
+                          <td>2011/04/25</td>
+                      </tr>
+                      <tr>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>2011/07/25</td>
+                      </tr>
+                      <tr>
+                          <td>Junior Technical Author</td>
+                          <td>San Francisco</td>
+                          <td>2009/01/12</td>
+                      </tr>
+                      <tr>
+                          <td>Senior Javascript Developer</td>
+                          <td>Edinburgh</td>
+                          <td>2012/03/29</td>
+                      </tr>
+                      <tr>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>2008/11/28</td>
+                      </tr>
+                      <tr>
+                          <td>Integration Specialist</td>
+                          <td>New York</td>
+                          <td>2012/12/02</td>
+                      </tr>
+                      <tr>
+                          <td>Sales Assistant</td>
+                          <td>San Francisco</td>
+                          <td>2012/08/06</td>
+                      </tr>
+                      <tr>
+                          <td>Integration Specialist</td>
+                          <td>Tokyo</td>
+                          <td>2010/10/14</td>
+                      </tr>
+                      <tr>
+                          <td>Javascript Developer</td>
+                          <td>San Francisco</td>
+                          <td>2009/09/15</td>
+                      </tr>
+                      <tr>
+                          <td>Software Engineer</td>
+                          <td>Edinburgh</td>
+                          <td>2008/12/13</td>
+                      </tr>
+                      <tr>
+                          <td>Office Manager</td>
+                          <td>London</td>
+                          <td>2008/12/19</td>
+                      </tr>
+                      <tr>
+                          <td>Support Lead</td>
+                          <td>Edinburgh</td>
+                          <td>2013/03/03</td>
+                      </tr>
+                      <tr>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>2008/10/16</td>
+                      </tr>
+                      <tr>
+                          <td>Senior Marketing Designer</td>
+                          <td>London</td>
+                          <td>2012/12/18</td>
+                      </tr>
+                      <tr>
+                          <td>Regional Director</td>
+                          <td>London</td>
+                          <td>2010/03/17</td>
+                      </tr>
+                      <tr>
+                          <td>Marketing Designer</td>
+                          <td>London</td>
+                          <td>2012/11/27</td>
+                      </tr>
+                  </tbody>
+              </table>
+
+
+
+
+
+
+              </div>
+               
+            </div>
+             
+          </section> 
+      </main>
+    </div>
+  
+
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- jQuery 2.1.3 -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/jsdataTables.material.min.js"></script>
+    <script src="js/dataTables.buttons.min.js"></script>
+    <script src="js/buttons.flash.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+    <script src="js/pdfmake.min.js"></script>
+    <script src="js/vfs_fonts.js"></script>
+    <script src="js/buttons.html5.min.js"></script>
+    <script src="js/buttons.print.min.js"></script>
+    
+
+
+    <!-- Table Exportable -->
+      <script>
+      $(document).ready(function() {
+        $('#example').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        } );
+    } );
+    </script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(window).load(function () {
+            setTimeout(function(){
+                $('#preloader').fadeOut('slow', function () {
+                });
+            },1000);
+          });  
+      });
+    </script>
+    <script src="js/modal.js"></script>
+
+ 
+  </body>
+</html>

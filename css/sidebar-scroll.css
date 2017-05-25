@@ -1,0 +1,12 @@
+#faq {
+	margin-top:50px;
+ }
+#sidebar {width:100%;float:left;}
+#title {width: 900px;height: 60px;float: right;}
+.clear:after {visibility: hidden;display: block;content: "";clear: both;height: 0;}
+nav.stickydiv {position: fixed;top: 0;z-index: 10000;margin-top: 100px;width:23%;}
+nav ul {list-style-type:none;margin:0;padding:0;}
+nav li {padding:5px 0;}
+nav li a {font-weight:700;line-height: 25px;}
+a{text-decoration:none;}
+.active {background-color: #f3f3f3;text-decoration: none;padding-left:5px;display:block;border-radius:2px;} 

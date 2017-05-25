@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */ 
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+body {
+  font-family: 'San Francisco', sans-serif; 
+  }
+  .container-fluid{
+    padding-left:100px;
+    padding-right:100px;
+  }
+  /* Extra small devices (phones, less than 768px) */
+  /* No media query since this is the default in Bootstrap */
+
+  /* Small devices (tablets, 768px and up) */
+  @media only screen and (max-width: 768px) { 
+    .container-fluid{
+      padding-left:0;
+      padding-right:0;
+      }
+
+  }   
+
+
+
+
+
+
+
+
+  /*  CUSTOM CSS  */ 
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    
+    .mdl-button--raised.mdl-button--colored {
+      background: #00BCD4;
+    }
+    .mdl-button {
+      color: rgba(0,0,0,.54);
+    }
+    .mdl-button--raised mdl-button--colored {
+      color:#fff;
+    }
+    .mdl-demo main > .mdl-layout__tab-panel {
+      padding: 100px;
+    }
+    .input-sm {
+      border: none;
+      border-bottom: 1px solid rgba(0,0,0,.12);
+      font-size: 16px;
+      margin: 0;
+      padding: 4px 0;
+      width: 50%;
+      background: 0 0;
+      text-align: left;
+      color: inherit;
+    }
+    .input-sm:focus {border-top:none;
+      border:none;
+      border-right:none;
+      border-left:none;
+      outline: none;
+      border-bottom: 2px solid #3F51B5;
+    }
+    #example_length {
+      width: 50%;
+    }  
+ 
+
+ #example tr th {
+      font-weight:600;
+      background-color: #eee;
+      height: 30px;
+      text-align: initial;
+    }
+    .dt-buttons, #example_filter, .dataTables_info, .dataTables_paginate {
+      display: inline-block;
+      width: 50%; 
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .dataTables_info {
+      color:rgba(0,0,0,.5)
+    }
+    .dt-buttons a.dt-button {
+      background-color: #607D8B;
+      color: #fff;
+      padding: 7px 12px;
+      margin-right: 5px;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px;
+      border: none;
+      font-size: 13px;
+      outline: none;
+    } 
+
+
+
+    #preloader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        background: #fff url('img/preloader.gif') no-repeat center center;
+    }

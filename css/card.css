@@ -1,0 +1,143 @@
+.card-container1, .card-container2, .card-container3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  perspective: 200vmin;
+}
+
+.card-widget {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: auto;
+  color: white;
+  outline: 1px solid transparent;
+  background: #37474f; 
+  backface-visibility: hidden;
+  transition: transform 800ms cubic-bezier(0.63, -0.32, 0.4, 1.39);
+}
+.card-widget:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.5vmin;
+  left: 2vmin;
+  right: 2vmin;
+  height: 1vmin;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  -webkit-filter: blur(0.5vmin);
+  filter: blur(0.5vmin);
+  z-index: -1;
+}
+.card--front1, .card--front2, .card--front3{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.card--back1, .card--back2, .card--back3{
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.card-widget .btn-link {
+  margin: 0;
+  padding: 5px;
+  float: right;
+}
+.card--front1, .card--front2, .card--front3{
+  transform: rotateY(0deg);
+}
+.card--front--flip {
+  transform: rotateY(-180deg);
+}
+.card--back1, .card--back2, .card--back3 {
+  transform: rotateY(180deg);
+  background-position: 10vmin 10vmin;
+}
+.card--back--flip {
+  transform: rotateY(0);
+}
+.card__content {
+  height: auto;
+  width: 100%;
+  text-align: left;
+}
+
+
+.text {
+  flex: 0 1 auto;
+  align-self: center;  
+  width: 100%;
+  padding: 4vmin 6.5vmin;
+} 
+.head {
+  text-align: right;
+} 
+
+.contact > li {
+  list-style: none;
+}
+.contact > li > a {
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  color: white;
+  line-height: 10vmin;
+  padding-left: 5vmin;
+  padding-right: 2.5vmin;
+  cursor: pointer;
+  transition: padding 300ms;
+}
+.contact > li > a:hover, .contact > li > a:focus {
+  padding-right: 4vmin;
+  padding-left: 7vmin;
+}
+.contact > li:first-child > a {
+  background: #27ae60;
+  border-radius: 1vmin 0 0;
+}
+.contact > li:nth-child(2) > a {
+  background: #f1c40f;
+}
+.contact > li:nth-child(3) > a {
+  background: #3498db;
+}
+.contact > li:nth-child(4) > a {
+  background: #9b59b6;
+  border-radius: 0 0 0 1vmin;
+}
+.widget-img-1, .widget-img-2 {
+    height: 100%;
+    position: absolute !important;
+    border-radius: 0;
+}
+.widget-img-1{
+  right: 0;
+}
+.note {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  animation: fadeInOut 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  25%, 75% {
+    top: 10%;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    top: 20%;
+    opacity: 0;
+  }
+}

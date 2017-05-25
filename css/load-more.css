@@ -1,0 +1,15 @@
+#wrapper .news-item {
+        display:none;
+        padding: 15px 0; 
+        border-bottom: 1px solid #eee;
+     }
+#wrapper .totop {
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+    }
+#wrapper .totop a {
+        display: none;
+    }
+
+
