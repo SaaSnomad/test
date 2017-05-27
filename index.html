@@ -131,6 +131,9 @@
                     .chosen-search-input {
                         width:100% !important;
                     } 
+                    #calculator .chosen-default {
+                        color: rgba(255, 255, 255, 0.8);
+                    }
 
                     .checkbox-label {
                         color: #757575;
@@ -140,7 +143,12 @@
                         text-align: -moz-center;
                         text-align: -webkit-center;
                         text-align: center;
+                    } 
+                    #subscribe-for-news .md-form input {  
+                      color: rgba(255, 255, 255, 1);
                     }
+
+                    
     </style> 
     <script src='https://www.google.com/recaptcha/api.js'></script>      
                     
@@ -192,10 +200,8 @@
                     <a id="seller" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" style="margin: 1.5rem 0;font-size: 22px;">
                         apply</br>for free
                     </a>
- 
-
-                    <h3 class="text-center text-muted" style="margin-top: 0.5rem;">There currently are</br>
-                    <span class="counter">1,234</span> Sellers</h3>
+                    <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter">1,234</span></h3>
+                    <h3 class="text-center text-muted">companies applied</h3>
                 </div>
             </div> 
                                    
@@ -205,10 +211,10 @@
                     <div class="row form-wrapper">
                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" style="padding: 0 2rem 1rem;">
                             <!-- Nav tabs -->
-                            <form id="calculator" data-toggle="validator" role="form" method="POST" onsubmit="return checkForm(this);">
+                            <form id="calculator" data-toggle="validator" role="form" method="POST" data-focus="false" onsubmit="return checkForm(this);">
                                 <!-- Calculator Industry-->
                                 <div class="md-form form-group" style="width: 100%;margin-top: 0.8rem;margin-bottom: -13px;"> 
-                                    <select id="calculatorIndustry" name="calculatorIndustry" class="chosen-select validate" tabindex="2" required>
+                                    <select data-placeholder="Choose an Industry" id="calculatorIndustry" name="calculatorIndustry" class="chosen-select validate" tabindex="2" required>
                                         <option value=''></option>
                                         <option value='1' data-othervalue='2'>AdTech</option>
                                         <option value='2' data-othervalue='3'>AI</option>
@@ -216,15 +222,25 @@
                                         <option value='4' data-othervalue='5'>HR Tech</option>
                                     </select>
                                 </div>   
+                                <!-- Calculator Region-->
+                                <div class="md-form form-group" style="width: 100%;margin-top: 0.8rem;margin-bottom: -13px;"> 
+                                    <select data-placeholder="Choose a Region" id="calculatorRegion" name="calculatorRegion" class="chosen-select validate" tabindex="2" required>
+                                        <option value=''></option>
+                                        <option value='1'>Europe</option>
+                                        <option value='2'>North America</option>
+                                        <option value='3'>Asia</option>
+                                        <option value='4'>Africa</option>
+                                    </select>
+                                </div> 
                                 <!-- Calculator MRR $ -->
                                 <div class="md-form form-group">
                                     <span class="input-group-addon" style="position: absolute;bottom:0;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">$</span>
-                                    <input type="text" name="calculatorMrr" id="calculatorMrr" placeholder=", Last month MRR" class="form-control validate change" maxlength="15" aria-label="Amount (to the nearest dollar)" style="padding-left: 5%;width: 95%;" required>
+                                    <input type="text" name="calculatorMrr" id="calculatorMrr" placeholder=", Last Month MRR" class="form-control validate change" maxlength="7" aria-label="Amount (to the nearest dollar)" style="padding-left: 5%;width: 95%;" required pattern="^[1-9]\d*$">
                                 </div>
                                 <!-- Calculator MRR Growth % -->
                                 <div class="md-form form-group">
                                     <span class="input-group-addon" style="position: absolute;bottom:0;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                    <input type="text" name="calculatorMrrGrowth" id="calculatorMrrGrowth" placeholder=", MRR Monthly Growth" class="form-control validate change" maxlength="4" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required>
+                                    <input type="text" name="calculatorMrrGrowth" id="calculatorMrrGrowth" placeholder=", MRR Monthly Growth" class="form-control validate change" maxlength="5" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required>
                                 </div>
                                 <!-- Calculator Number of Employees -->
                                 <div class="md-form form-group"> 
@@ -232,7 +248,7 @@
                                 </div>  
                                 <!-- Calculator Email -->
                                 <div class="md-form form-group">
-                                    <input type="email" name="calculatorEmail" id="calculatorEmail" placeholder="Type your Email" class="form-control validate change" maxlength="50" required>
+                                    <input type="email" name="calculatorEmail" id="calculatorEmail" placeholder="Type Your Email" class="form-control validate change" maxlength="50" required>
                                     <div class="help-block with-errors" style="color:yellow;"></div> 
                                 </div>
                                 <!-- Calculator Range From -->
@@ -254,14 +270,14 @@
                             <h4 style="margin-bottom:0;margin-top:3rem;">From:</h4>
 
                             <div class="md-form form-group">
-                                <span class="input-group-addon-from" style="border-bottom: none !important;padding-left: 0;padding-right: 0;">$</span>                                        <input type="text" placeholder="0" class="range-from form-control change" disabled maxlength="15" aria-label="Amount (to the nearest dollar)" style="padding-left: 8%;width: 92%; font-weight: 200;">
+                                <span class="input-group-addon-from" style="border-bottom: none !important;padding-left: 0;padding-right: 0;">$</span> <input type="text" placeholder="0" class="range-from form-control change" disabled maxlength="15" aria-label="Amount (to the nearest dollar)" style="padding-left: 8%;width: 92%; font-weight: 200;height:100%;">
                             </div> 
 
                             <h4 class="calculator" style='margin-top: 3rem;'>To:</h4>
 
                             <div class="md-form form-group">
                                 <span class="input-group-addon-to" style="border-bottom: none !important;padding-left: 0;padding-right: 0;">$</span>
-                                <input type="text" placeholder="0" class="range-to form-control change" disabled maxlength="15" aria-label="Amount (to the nearest dollar)" style="padding-left: 8%;width: 92%; font-weight: 200;">
+                                <input type="text" placeholder="0" class="range-to form-control change" disabled maxlength="15" aria-label="Amount (to the nearest dollar)" style="padding-left: 8%;width: 92%; font-weight: 200;height: 100%;">
                             </div>  
 
                             </br>
@@ -277,141 +293,8 @@
 
  
         <!--Section: Overlap -->
-        <div class="row overlap"></div>
-        <!--/Section: Overlap -->
-
-
-        <!--Section: Featured Companies -->
-        
-        <section id="counters"> 
-            
-            <div class="row" style="padding-bottom:0;padding-top:0;">
-                
-            </div> 
-         
-                <section class="featured-companies">
-                    <h2 class="mx-auto">Featured Companies</h2>    
-                    <div class="slider">
-                        <div>
-                            <article> 
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <!--Card 1-->
-                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.3;"> 
-                                        <!--Card content-->
-                                        <div class="card-block">
-                                            <!--Title-->
-                                            <h4 class="card-title">Cloud Computing</h4>
-                                            <!--Text-->
-                                            <p class="card-text">&#36;35-37K MRR<br>Cash positive<br>Negative churn rate<br>&#36;2.4M valuation<br>United States</p>
-                                            <a href="requests/id29-contacts.html" style="color: white !important;text-decoration: underline;" class="btn btn-primary-default btn-link text-right" target="_blank">Request Contact</a>
-                                        </div>
-                                        <!--/.Card content-->
-                                    </div>
-                                <!--/.Card -->
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article> 
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <!--Card 2-->
-                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.3;"> 
-                                        <!--Card content-->
-                                        <div class="card-block">
-                                            <!--Title-->
-                                            <h4 class="card-title">FinTech</h4>
-                                            <!--Text-->
-                                            <p class="card-text">&#36;150K ARR<br>30% m-o-m growth<br>LTV:CAC 7x<br>&#36;5M valuation<br>Canada</p>
-                                            <a href="requests/id145-contacts.html" style="color: white !important;text-decoration: underline;" class="btn btn-primary-default btn-link text-right" target="_blank">Request Contact</a>
-                                        </div>
-                                        <!--/.Card content-->
-                                    </div>
-                                <!--/.Card --> 
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article> 
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <!--Card 3-->
-                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.3;"> 
-                                        <!--Card content-->
-                                        <div class="card-block">
-                                            <!--Title-->
-                                            <h4 class="card-title">Marketplace</h4>
-                                            <!--Text-->
-                                            <p class="card-text">&#163;60K Revenue in 1Q’17<br>90% of all transactions - one-offs</br>LTV:CAC 8x</br>&#36;2M valuation<br>United Kingdom</p>
-                                            <a href="requests/id267-contacts.html" style="color: white !important;text-decoration: underline;" class="btn btn-primary-default btn-link text-right" target="_blank">Request Contact</a>
-                                        </div>
-                                        <!--/.Card content-->
-                                    </div>
-                                <!--/.Card --> 
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article> 
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <!--Card 3-->
-                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.3;"> 
-                                        <!--Card content-->
-                                        <div class="card-block">
-                                            <!--Title-->
-                                            <h4 class="card-title">HR Tech</h4>
-                                            <!--Text-->
-                                            <p class="card-text">&#36;200K ARR<br>Break even already<br>Churn >10%<br>&#36;5M valuation<br>Estonia</p>
-                                            <a href="requests/id567-contacts.html" style="color: white !important;text-decoration: underline;" class="btn btn-primary-default btn-link text-right" target="_blank">Request Contact</a>
-                                        </div>
-                                        <!--/.Card content-->
-                                    </div>
-                                <!--/.Card --> 
-                                </div>
-                            </article>
-                        </div>
-                        <div>
-                            <article> 
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <!--Card 3-->
-                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.3;"> 
-                                        <!--Card content-->
-                                        <div class="card-block">
-                                            <!--Title-->
-                                            <h4 class="card-title">IoT</h4>
-                                            <!--Text-->
-                                            <p class="card-text">&#36;6.5K MRR</br>500К MAU<br>&#36;3.5M valuation<br>Uber among clients<br>Germany</p>
-                                            <a href="requests/id987-contacts.html" style="color: white !important;text-decoration: underline;" class="btn btn-primary-default btn-link text-right" target="_blank">Request Contact</a>
-                                        </div>
-                                        <!--/.Card content-->
-                                    </div>
-                                <!--/.Card -->  
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section> 
-        </section>
-        <!--/Section: Featured Companies-->
-
-
-        <!--Section: Buyers-->
-        <section id="buyers" style="height:auto;background-color:#37474f;">
-            <div class="row">
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center">
-                    <h1 class="display-4 white-text">For Buyers</h1>                     
-                    <p class="white-text" style="font-size: 24px;line-height: 32px; font-weight:200;">
-                        SaaSNomad is the place where you can find the SaaS</br>to buy according to your industrial and geographic focus.
-                    </p>
-                    <a id="buyer" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" style="background-color:#64ffda; color: #37474f !important;">Get notified</a>
-                    <a id="" href="coming-soon.html" class="btn btn-outline-success mdl-button--raised mdl-js-button dialog-button">Find SaaS</a> 
-                </div>
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            </div>
-        </section>
-        <!--Section: Buyers-->
-         
-        
-        <!--Section: About-->
+        <div class="row overlap" style="padding-bottom: 0px;">
+            <!--Section: About-->
         <section id="about">
             <div class="row" style="padding-bottom:0; display: -webkit-flex; -webkit-align-items: center;">
                 <h2 class="mx-auto">How it Works</h2>
@@ -444,6 +327,145 @@
 
         </section>
         <!--/Section: About--> 
+
+        </div>
+        <!--/Section: Overlap -->
+
+
+
+
+        <!--Section: Featured Companies -->
+        
+        <section id="counters"> 
+            
+            <div class="row" style="padding-bottom:0;padding-top:0;">
+                
+            </div> 
+         
+                <section class="featured-companies">
+                    <h2 class="mx-auto">Featured Companies</h2>    
+                    <div class="slider">
+                        <div>
+                            <article> 
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <!--Card 1-->
+                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;"> 
+                                        <!--Card content-->
+                                        <div class="card-block">
+                                            <!--Title-->
+                                            <h4 class="card-title">Cloud Computing</h4>
+                                            <!--Text-->
+                                            <p class="card-text">&#36;150,000 MRR<br>50 Employees<br>United States</p> 
+                                            <a href="requests/id29-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> 
+                            
+                                        </div>
+                                        <!--/.Card content-->
+                                    </div>
+                                <!--/.Card -->
+                                </div>
+                            </article>
+                        </div>
+                        <div>
+                            <article> 
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <!--Card 2-->
+                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;"> 
+                                        <!--Card content-->
+                                        <div class="card-block">
+                                            <!--Title-->
+                                            <h4 class="card-title">FinTech</h4>
+                                            <!--Text-->
+                                            <p class="card-text">&#36;150,000 ARR<br>5 Employees<br>Canada</p>
+                                            <a href="requests/id145-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a>
+                                        </div>
+                                        <!--/.Card content-->
+                                    </div>
+                                <!--/.Card --> 
+                                </div>
+                            </article>
+                        </div>
+                        <div>
+                            <article> 
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <!--Card 3-->
+                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;"> 
+                                        <!--Card content-->
+                                        <div class="card-block">
+                                            <!--Title-->
+                                            <h4 class="card-title">Marketplace</h4>
+                                            <!--Text-->
+                                            <p class="card-text">&#163;60,000 MRR<br>6 Employees<br>United Kingdom</p>
+                                            <a href="requests/id267-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a>
+                                        </div>
+                                        <!--/.Card content-->
+                                    </div>
+                                <!--/.Card --> 
+                                </div>
+                            </article>
+                        </div>
+                        <div>
+                            <article> 
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <!--Card 3-->
+                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;"> 
+                                        <!--Card content-->
+                                        <div class="card-block">
+                                            <!--Title-->
+                                            <h4 class="card-title">HR Tech</h4>
+                                            <!--Text-->
+                                            <p class="card-text">&#36;200,000 ARR<br>15 Employees<br>Estonia</p>
+                                            <a href="requests/id567-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a>
+                                        </div>
+                                        <!--/.Card content-->
+                                    </div>
+                                <!--/.Card --> 
+                                </div>
+                            </article>
+                        </div>
+                        <div>
+                            <article> 
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <!--Card 3-->
+                                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;"> 
+                                        <!--Card content-->
+                                        <div class="card-block">
+                                            <!--Title-->
+                                            <h4 class="card-title">IoT</h4>
+                                            <!--Text-->
+                                            <p class="card-text">&#36;6,500 MRR</br>2 Employees<br>Germany</p>
+                                            <a href="requests/id987-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a>
+                                        </div>
+                                        <!--/.Card content-->
+                                    </div>
+                                <!--/.Card -->  
+                                </div>
+                            </article>
+                        </div>
+                    </div>                
+                </section> 
+        </section>
+        <!--/Section: Featured Companies-->
+
+
+        <!--Section: Buyers-->
+        <section id="buyers" style="height:auto;background-color:#37474f;">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+                <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center">
+                    <h1 class="display-4 white-text">For Buyers</h1>                     
+                    <p class="white-text" style="font-size: 24px;line-height: 32px; font-weight:200;">
+                        SaaSNomad is the place where you can find the SaaS</br>to buy according to your industrial and geographic focus.
+                    </p>
+                    <a id="buyer" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" style="background-color:#64ffda; color: #37474f !important;">Get notified</a>
+                    <a id="" href="coming-soon.html" class="btn btn-outline-success mdl-button--raised mdl-js-button dialog-button">Find SaaS</a> 
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            </div>
+        </section>
+        <!--Section: Buyers-->
+         
+        
+        
         <!--Section: News-->
         <section id="news" class="text-center">
 
@@ -575,17 +597,19 @@
                                                             <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 white-text" style="padding:60px;background: #37474f;opacity:0.8;display: flex;align-items: center;border-top-right-radius: 6px;border-bottom-right-radius: 6px;">
                                                                 <div>
                                                                     <p style="margin-bottom: 15px;">Subscribe here and we will keep you in the loop on the latest SaaS M&A news.</p>
-                                                                    <form id="subscribe" data-toggle="validator" role="form">
-                                                                        <div class="md-form input-group" style="margin: 20px 0;width: 100%;">
-                                                                            <input type="email" id="news-subscription" class="form-control validate change" placeholder="example@myemaildomain.com" style="color:#fff;">
-                                                                            <label for="news-subscription">Email</label>
-                                                                        </div>
+                                                                    <form id="subscribe-for-news" action="" method="POST" role="form" data-toggle="validator" data-focus="false">
+                                                                        <!--Email-->
+                                                                        <div class="md-form form-group">
+                                                                            <input placeholder="example@myemaildomain.com" type="email" name="seller_email" id="buyer_email" class="form-control validate change" maxlength="50" required>
+                                                                            <label for="buyer_email">Email *</label>
+                                                                            <div class="help-block with-errors"></div> 
+                                                                        </div>   
                                                                         <!--Country-->
                                                                         <div class="md-form form-group" style="margin-top: 44px;display:none;">
                                                                             <input type="text" name="news_country" class="geotext[country]" id="news_country" class="form-control"> 
                                                                         </div>
                                                                         <div class="md-form input-group" style="margin: 20px 0;width: 100%;">
-                                                                            <button class="btn btn-primary btn-lg" type="button" style="width: 100%;margin-left:0;margin-right:0">Subscribe</button>
+                                                                            <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0">Subscribe</button>
                                                                         </div>
                                                                     </form>
                                                                 </div>
@@ -650,7 +674,7 @@
             </button>
             <div class="modal-body">
                 <h2 class="text-center">Seller Application</h2>
-                                                <form id="sellers" action="add-seller.php" method="POST" id="msform" role="form" data-toggle="validator">
+                                                <form id="sellers" action="add-seller.php" method="POST" role="form" data-toggle="validator" data-focus="false">
 
                                                     <!--Name--> 
                                                     <div class="md-form form-group">
@@ -758,7 +782,7 @@
                 <h2 class="text-center">Get notified about new Featured Companies</h2>
                           <small style="display:block;margin: 1rem 0;" class="text-center">Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
                               
-                                    <form id="buyers" action="add-buyer.php" method="post" id="msform" role="form" data-toggle="validator">
+                                    <form id="buyers" action="add-buyer.php" method="post" role="form" data-toggle="validator" data-focus="false">
 
                                         <!--Name--> 
                                         <div class="md-form form-group">
@@ -832,7 +856,7 @@
         }
 
         function resetForm(form) {// Reset button clicked
-            form.myButton.disabled = false;
+            form.myButton.disabled = true;
             form.myButton.value = "Submit";
             $("#calculatorMrr")[0].value = '';
             $("#calculatorMrrGrowth")[0].value = '';
