@@ -4,7 +4,7 @@
 */   
 
 $(function () {
-    $("#wrapper div").slice(0, 4).show();
+    $("#wrapper div").slice(0, 3).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
         $("#wrapper div:hidden").slice(0, 2).slideDown();

@@ -113,10 +113,23 @@ footer a {
             #about {
                 text-align: center !important;
             }
+            .news-wrapper .first-block{
+                        border-top-left-radius: 6px !important;
+                        border-bottom-left-radius: 0px !important;
+                        border-top-right-radius: 6px !important;
+                    }
+            .news-wrapper .second-block{
+                        border-bottom-left-radius: 6px !important;
+                        border-bottom-right-radius: 6px !important;
+                        border-top-right-radius: 0px !important;
+                    }
+
             ::-webkit-scrollbar {
                 display:none;
             } 
         }
+
+
         .top-nav-collapse {
             background-color: #f94b71;
             cursor: pointer !important;
