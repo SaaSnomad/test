@@ -1,4 +1,4 @@
-// magic.js
+
 $(document).ready(function() {
 	var form = $('#sellers');
 	// process the form
@@ -11,8 +11,8 @@ $(document).ready(function() {
 		var formData = {
 			'seller_name' 		: $('input[name=seller_name]').val(),
 			'seller_email'	    : $('input[name=seller_email]').val(),
-			'seller_country'     : $('input[name=seller_country]').val(),
-			//'sellerIndustry' 	: $('select#sellerIndustry option:selected').text(),
+			'seller_country'    : $('input[name=seller_country]').val(),
+			'seller_industry' 	: $('select#seller_industry option:selected').text(),
 			'seller_mrr' 	    : $('input[name=seller_mrr]').val() 
 		};
 		// process the form
@@ -26,15 +26,15 @@ $(document).ready(function() {
 	           $(form).html("Your application has been successfully sent for review. We will get back to you within 24 hours. "); 
 	        }, 
 	        error: function (msg) {
-	        	$(form).fadeOut();
-	        	$("#preloader").fadeIn();
+	        	$(form).hide();
+	        	$("#seller-header").html('');
+	        	$("#preloader1").css('display','block');
 	        	setTimeout(function () {
-	        		$("#preloader").css('display','none');
-	        		$(form).show();
-                    $(form).html("Your application has been successfully sent for review. We will get back to you within 24 hours."); 
-                }, 4000); 
-
-	           
+	        		$("#preloader1").css('display','none');
+	        		$("#seller-header").html("<blockquote class='blockquote bq-success text-center' style='border-left: none;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote>");
+	        		$(form).fadeIn();
+                    $(form).html("<div class='text-center' style='margin-top:20px;'><p>Your application has been successfully sent for review. We will get back to you within 24 hours.</p></div>"); 
+                }, 2000); 
 	        }
 		}) 
 

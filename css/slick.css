@@ -1,9 +1,9 @@
 button {
   z-index: 102;
 }
-.featured-companies {
+#featured-companies {
   position: relative;
-  padding-bottom:50px;
+  padding-bottom: 60px;
 }
 .slick-slide {
   -webkit-transform: scale(1);
@@ -35,7 +35,7 @@ button {
 .slider:before {
   background: transparent; 
 }
-.featured-companies article {
+#featured-companies article {
   margin: 50px 15px;
 }
 .slick-prev, .slick-next {
