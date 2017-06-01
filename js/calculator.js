@@ -96,11 +96,20 @@ function checkForm(form) { // Submit button clicked
     res_eq_val_mult_high = res_eq_val_high / int_var_arr_running;                 //Implied ARR multiple - high
     
     if (res_eq_val_high > 1000000000) {
-      $( "#valuation-range").html("<img id='unicorn' src='img/unicorn.png'><h3><b>Congrats, you crazy Unicorn!</b></h3><h4>The valuation of your SaaS is +&#36;1B</h4>");
-      $( "#valuation-range").addClass("text-center");
+        $("#valuation-range").hide();
+        $("#preloader-calculator").css('display','block');
+
+        setTimeout(function () {
+            $("#preloader-calculator").css('display','none');
+            $("#valuation-range").fadeIn();
+            $("#valuation-range").html("<img id='unicorn' src='img/unicorn.png'><h3><b>Congrats, you crazy Unicorn!</b></h3><h4>The valuation of your SaaS is +&#36;1B</h4>");
+            $("#valuation-range").addClass("text-center");
+            $("#calculate-btn").addClass("disabled btn");
+        }, 2000); 
+        
     }else {
-      $(".range-from").val(Math.round(res_eq_val_low));
-      $(".range-to").val(Math.round(res_eq_val_high));
+        $(".range-from").val(Math.round(res_eq_val_low));
+        $(".range-to").val(Math.round(res_eq_val_high));
     }
 
     

@@ -5917,8 +5917,11 @@ label {
     -o-transition: 0.2s ease-out;
     -ms-transition: 0.2s ease-out;
     transition: 0.2s ease-out; }
-    
-          
+  #subscribers-for-news .md-form label {
+    color: #fff; 
+  } 
+  #subscribers-for-news .md-form .prefix.active {
+      color: #4285F4; }
   .md-form label.active {
     font-size: 0.8rem;
     -webkit-transform: translateY(-140%);
