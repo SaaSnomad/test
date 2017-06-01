@@ -24,8 +24,15 @@ $(document).ready(function() {
 	        }, 
 	        error: function (msg) {	        	
 	        	$("#subscribe-msg").hide();
-	            $(form).html("<blockquote class='blockquote bq-success' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote><p>You have successfully subscribed for the latest articles on SaaS M&A. We will send it to you weekly. Enjoy!</p></blockquote>"); 
-                
+	        	$(form).hide();
+	        	$("#preloader").css('display','block');
+				setTimeout(function () {	        	
+					$("#preloader").css('display','none');
+					$(form).fadeIn();
+	            	$(form).html("<blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote><p>You have successfully subscribed for the latest articles on SaaS M&A. We will send it to you weekly. Enjoy!</p></blockquote>"); 
+                }, 2000);
+ 
+
 	        }
 		}) 
 

@@ -31,7 +31,7 @@ $(document).ready(function() {
 	        	$("#preloader1").css('display','block');
 	        	setTimeout(function () {
 	        		$("#preloader1").css('display','none');
-	        		$("#seller-header").html("<blockquote class='blockquote bq-success text-center' style='border-left: none;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote>");
+	        		$("#seller-header").html("<blockquote class='blockquote bq-primary text-center' style='border-right: none;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote>");
 	        		$(form).fadeIn();
                     $(form).html("<div class='text-center' style='margin-top:20px;'><p>Your application has been successfully sent for review. We will get back to you within 24 hours.</p></div>"); 
                 }, 2000); 

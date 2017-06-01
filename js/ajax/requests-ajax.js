@@ -31,7 +31,7 @@ $(document).ready(function() {
 	        	setTimeout(function () {
 	        		$("#preloader").css('display','none');
 	        		$(form).fadeIn();
-                    $(form).html("<blockquote class='blockquote bq-success' style='border-left: none;'><p class='bq-title'>Congrats!</p><p>You have successfully requested Seller's contact. We will get back to you within 24 hours with an answer.</br></br></br><a href='../index.html' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a></p></blockquote>"); 
+                    $(form).html("<blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;'><p class='bq-title'>Congrats!</p><p>You have successfully requested Seller's contact. We will get back to you within 24 hours with an answer.</br></br></br><a href='../index.html' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a></p></blockquote>"); 
                 }, 2000); 
                 
 	        }

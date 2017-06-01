@@ -30,7 +30,7 @@ $(document).ready(function() {
 	        	$("#preloader2").css('display','block');
 	        	setTimeout(function () {
 	        		$("#preloader2").css('display','none');
-	        		$("#buyer-header").html("<blockquote class='blockquote bq-success text-center' style='border-left: none;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote>");
+	        		$("#buyer-header").html("<blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote>");
 	        		$(form).fadeIn();
                     $(form).html("<div class='text-center' style='margin-top:20px;'><p>You have successfully subscribed to get notified about latest featured SaaS offers. We will get back to you within 24 hours.</p></div>"); 
                 }, 2000); 

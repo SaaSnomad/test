@@ -419,7 +419,10 @@ footer ul li {
 #news-section .first-block #wrapper {
     max-height:550px;height:auto;overflow-y:scroll;
 } 
-#news-section .second-block .news-subscribtion button {
+#news-section .second-block .news-subscription {
+    width: 100%;
+}
+#news-section .second-block .news-subscription button {
     width: 100%;margin-left:0;margin-right:0;
 }
 

@@ -19,19 +19,18 @@ $(document).ready(function() {
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
 			encode 		: true,
-			success: function (msg) {  
-	           $(form).html("You have successfully subscribed to get notified. We will get back to you within 24 hours."); 
-	        }, 
-	        error: function (msg) {
-	        	$(form).hide();
+			success: function (msg) {$(form).hide();
 	        	$(".sorry-msg").hide();
 	        	$("#preloader").css('display','block');
 	        	setTimeout(function () {
 	        		$("#preloader").css('display','none');
 	        		$(form).fadeIn();
-                    $(form).html("<blockquote class='blockquote bq-success' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote><p>You have successfully subscribed to get notified about new feature. We will get back to you as soon as it is done.</p></blockquote>"); 
-                }, 2000); 
-                
+                    $(form).html("<blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote><p>You have successfully subscribed to get notified about new feature. We will get back to you as soon as it is done.</p></blockquote>"); 
+                }, 2000);
+	        }, 
+	        error: function (msg) {
+	        	$(".sorry-msg").hide();
+                $(form).html("<blockquote class='blockquote bq-warning' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Sorry!</p></blockquote><p>Could not process your request. Please try again later.</p></blockquote>"); 
 	        }
 		}) 
 

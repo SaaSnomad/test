@@ -16,6 +16,6 @@ $db->bind(':buyer_country', $_POST['buyer_country']);
 if($db->execute()){
     echo "You are subscribed";
 } else {
-    echo "Could not process your info";
+    echo "Could not process your request";
 }
 ?>
