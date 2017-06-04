@@ -319,6 +319,7 @@
                                             </div>
                                         </form>
                                         <div id="preloader" style="display:none;margin-top:50px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                                        <div id="displayDiv">1234</div>
                                     </div>
                                 </div>
                             </div>
@@ -517,6 +518,25 @@
     <script type="text/javascript" src="js/waypoints.min.js"></script>
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
     <script type="text/javascript" src="js/counter.js"></script>
+
+
+    <script type="text/javascript">
+        var number = 1234;
+        setInterval("increment()", 60 * 60 * 24 * 1000);
+
+        function increment()
+        {
+            number ++;
+            document.getElementById("displayDiv").innerHTML = number;
+        }
+
+    </script>
+
+
+
+
+<div id="displayDiv"></div>
+
     <!-- Go top button animation -->
     <script type="text/javascript" src="js/go-top.js"></script> 
     <!-- Bootstrap core JavaScript -->
