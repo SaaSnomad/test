@@ -43,9 +43,16 @@ var {
     font-style: normal!important
 }
 
+
+
 #sellerModal .close, #buyerModal .close {
     position: absolute; right: 10px; top: 10px;
 }
+#seller_industry_chosen .default {
+    color: #636c72 !important;
+    opacity: .8;
+}
+
  
 .form-wrapper,
 header .row {
@@ -221,30 +228,33 @@ footer ul li {
 
 #calculator .chosen-container-single .chosen-search input[type=text] {
     border: none;
-    width: 90%!important;
-    color: #464a4c!important
+    width: 90% !important;
+    color: #464a4c !important
 }
 
 #calculator #calculatorIndustry .default_single_text,
 #calculator .chosen-default {
-    color: rgba(255, 255, 255, .8)
+    color: rgba(255, 255, 255, .8) !important;
 }
-
 #calculator-wrapper input.change::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, .8)
-}
+            color: #fff; 
+            opacity:.8;
+        }
 
-#calculator-wrapper input.change::-moz-placeholder {
-    color: rgba(255, 255, 255, .8)
-}
+        #calculator-wrapper input.change::-moz-placeholder {
+            color: #fff; 
+            opacity:.8;
+        }
 
-#calculator-wrapper input.change:-ms-input-placeholder {
-    color: rgba(255, 255, 255, .8)
-}
+        #calculator-wrapper input.change:-ms-input-placeholder {
+            color: #fff; 
+            opacity:.8;
+        }
 
-#calculator-wrapper input.change:-moz-placeholder {
-    color: rgba(255, 255, 255, .8)
-}
+        #calculator-wrapper input.change:-moz-placeholder {
+            color: #fff; 
+            opacity:.8;
+        }
 
 #calculator-wrapper .mdl-selectfield__box {
     border-bottom: 1px solid #ccc!important
