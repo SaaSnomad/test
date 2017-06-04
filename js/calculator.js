@@ -102,7 +102,7 @@ function checkForm(form) { // Submit button clicked
         setTimeout(function () {
             $("#preloader-calculator").css('display','none');
             $("#valuation-range").fadeIn();
-            $("#valuation-range").html("<img id='unicorn' src='img/unicorn.png'><h3><b>Congrats, you crazy Unicorn!</b></h3><h4>The valuation of your SaaS is +&#36;1B</h4>");
+            $("#valuation-range").html("<img id='unicorn' src='img/unicorn.png'><h3><b>Congrats, you got a Unicorn!</b></h3>");
             $("#valuation-range").addClass("text-center");
             $("#calculate-btn").addClass("disabled btn");
         }, 2000); 

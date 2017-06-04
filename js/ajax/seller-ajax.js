@@ -22,11 +22,8 @@ $(document).ready(function() {
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
 			encode 		: true, 
-			success: function (msg) {  
-	           $(form).html("Your application has been successfully sent for review. We will get back to you within 24 hours. "); 
-	        }, 
-	        error: function (msg) {
-	        	$(form).hide();
+			success: function (msg) { 
+				$(form).hide();
 	        	$("#seller-header").html('');
 	        	$("#preloader1").css('display','block');
 	        	setTimeout(function () {
@@ -35,14 +32,20 @@ $(document).ready(function() {
 	        		$(form).fadeIn();
                     $(form).html("<div class='text-center' style='margin-top:20px;'><p>Your application has been successfully sent for review. We will get back to you within 24 hours.</p></div>"); 
                 }, 2000); 
-	        }
-		}) 
-
+            }, 
+	        error: function (msg) {
+	        	$("#seller-header").hide();
+	        	$(form).hide();
+	        	$("#preloader1").css('display','block');
+	        	setTimeout(function () {
+	        		$("#preloader1").css('display','none');
+	        		$(form).fadeIn();
+	        		$(form).html("<blockquote class='blockquote bq-warning text-center' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Sorry!</p></blockquote><p>Could not process your request. Please try again later.</p></blockquote>"); 
+	        	}, 2000); 
+	    	}
+	    });
 		// stop the form from submitting the normal way and refreshing the page
 		event.preventDefault();
 	});
 
 });
-
-//
-//			

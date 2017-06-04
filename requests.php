@@ -5,7 +5,7 @@
 $db = new Database;
 
 // Run Query
-$db->query("INSERT INTO buyers (request_name, request_email, request_country, request_id) VALUES (:request_name, :request_email, :request_country, :request_id)");
+$db->query("INSERT INTO requests (request_name, request_email, request_country, request_id) VALUES (:request_name, :request_email, :request_country, :request_id)");
 
 // Bind Values
 
@@ -16,8 +16,8 @@ $db->bind(':request_id', $_POST['request_id']);
 
 
 if($db->execute()){
-    echo "You are subscribed";
+    echo "Congrats! You have successfully requested Seller's contact. We will get back to you within 24 hours.";
 } else {
-    echo "Could not process your info";
+    echo "Sorry! Could not process your request. Please try again later.";
 }
 ?>

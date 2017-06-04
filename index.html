@@ -93,7 +93,7 @@
                             
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR Monthly Growth *" class="form-control change" maxlength="5" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR Monthly Growth *" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
                             </div>
                             
                             <div class="md-form form-group"> 
@@ -461,14 +461,14 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
             <div class="modal-body">
                 <h2 class="text-center" id="buyer-header">Get notified about new Featured Companies</h2> 
-                <small style="display:block;margin: 1rem 0;" class="text-center privacy">Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
+                <small id="buyer-subheader" style="display:block;margin: 1rem 0;" class="text-center">Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
                 <form id="buyers" action="#" method="post">
                     <div class="md-form form-group">
                         <input name="buyer_name" id="buyer_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
                         <label for="buyer_name">Name *</label>
                     </div>
                     <div class="md-form form-group">
-                        <input name="buyer_email" id="buyer_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50">
+                        <input name="buyer_email" id="buyer_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
                         <label for="buyer_email">Email *</label>
                     </div>
                     <div class="md-form form-group" style="margin-top: 44px;display:none;">

@@ -13,8 +13,8 @@ $db->bind(':news_email', $_POST['news_email']);
 $db->bind(':news_country', $_POST['news_country']);
 
 if($db->execute()){
-    echo "You are subscribed";
+    echo "Congrats! You have successfully subscribed for the latest articles on SaaS M&A. We will send it to you weekly. Enjoy!";
 } else {
-    echo "Could not process your info";
+    echo "Sorry! Could not process your request. Please try again later.";
 }
 ?>

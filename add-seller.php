@@ -16,8 +16,8 @@ $db->bind(':seller_industry', $_POST['seller_industry']);
 $db->bind(':seller_mrr', $_POST['seller_mrr']); 
 
 if($db->execute()){
-    echo "Your application has been successfully sent for review. We will get back to you within 24 hours. ";
+    echo "Congrats! Your application has been successfully sent for review. We will get back to you within 24 hours.";
 } else {
-    echo "Could not add your offer";
+    echo "Sorry! Could not process your request. Please try again later.";
 }
 ?>
