@@ -9,7 +9,7 @@ $db->query("INSERT INTO requests (request_name, request_email, request_country, 
 
 // Bind Values
 
-$db->bind(':request_name', $_POST['buyer_name']);
+$db->bind(':request_name', $_POST['request_name']);
 $db->bind(':request_email', $_POST['request_email']); 
 $db->bind(':request_country', $_POST['request_country']);
 $db->bind(':request_id', $_POST['request_id']);

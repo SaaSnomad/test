@@ -18,7 +18,8 @@ $(document).ready(function() {
 			url 		: 'news-subscribers.php', // the url where we want to POST
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
-			encode 		: true,
+			encode 		: true
+			/*,
 			success: function (msg) {  
 	        	$("#subscribe-msg").hide();
 	        	$(form).hide();
@@ -39,8 +40,8 @@ $(document).ready(function() {
                 	$(form).html("<blockquote class='blockquote bq-warning' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Sorry!</p></blockquote><p>Could not process your request. Please try again later.</p></blockquote>"); 
                 }, 2000);
  
-	        }
-		}) 
+	        }*/
+		});
 
 		// stop the form from submitting the normal way and refreshing the page
 		event.preventDefault();

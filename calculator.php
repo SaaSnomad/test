@@ -19,4 +19,10 @@ $db->bind(':range_from', $_POST['range_from']);
 $db->bind(':range_to', $_POST['range_to']);  
 $db->bind(':calculator_location', $_POST['calculator_location']);  
 
+if($db->execute()){
+    echo "Congrats!";
+} else {
+    echo "Sorry!";
+}
+
 ?>

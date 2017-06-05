@@ -20,7 +20,8 @@ $(document).ready(function() {
 			url 		: 'requests.php', // the url where we want to POST
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
-			encode 		: true,
+			encode 		: true
+			/*,
 			success: function (msg) { 
 				$(form).hide();
 	        	$("#preloader").css('display','block');
@@ -40,8 +41,8 @@ $(document).ready(function() {
 	        		$(form).css('padding-top', '100px');
                 	$(form).html("<blockquote class='blockquote bq-warning' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Sorry!</p></blockquote><p style='margin-bottom:2rem;'>Could not process your request. Please try again later.</p></blockquote><a href='index.html' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>"); 
                 }, 2000); 
-	        }
-		}) 
+	        }*/
+		});
 
 		// stop the form from submitting the normal way and refreshing the page
 		event.preventDefault();

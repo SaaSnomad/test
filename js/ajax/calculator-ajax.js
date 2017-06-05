@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 	var form = $('#calculator');
 	// process the form
