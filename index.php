@@ -39,11 +39,14 @@
                
 </head>
 <body>
-<?php include 'config/config.php'; ?>
+<?php include 'core/init.php'; ?>
 <?php  
     // Create  DB Object
     $db = new Database();
-
+    // Run Query 
+    $db->query("SELECT * FROM cards");
+    // Assign Result Set
+    $cards = $db->resultset();
 ?>
 <!-- Header -->
 <?php include 'includes/header.php'; ?>
@@ -165,62 +168,24 @@
     <section id="featured-companies">
         <div class="text-center title-wrapper">
             <h2>Featured Companies</h2> </div>
+        
         <div class="slider">
+            <?php foreach($cards as $card) : ?>
             <article>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;">
                         <div class="card-block">
-                            <h4 class="card-title">Cloud Computing</h4>
-                            <p class="card-text">&#36;150,000 MRR
-                                <br>50 Employees
-                                <br>United States</p><a href="id29-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
+                            <h4 class="card-title"><?php echo $card->industry; ?></h4>
+                            <p class="card-text">
+                                <?php echo $card->traction; ?>
+                                <br><?php echo $card->employees; ?> Employees
+                                <br><?php echo $card->country; ?></p><a href="id29-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
                     </div>
                 </div>
             </article>
-            <article>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;">
-                        <div class="card-block">
-                            <h4 class="card-title">FinTech</h4>
-                            <p class="card-text">&#36;150,000 ARR
-                                <br>5 Employees
-                                <br>Canada</p><a href="id145-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;">
-                        <div class="card-block">
-                            <h4 class="card-title">Marketplace</h4>
-                            <p class="card-text">&#163;60,000 MRR
-                                <br>6 Employees
-                                <br>United Kingdom</p><a href="id267-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;">
-                        <div class="card-block">
-                            <h4 class="card-title">HR Tech</h4>
-                            <p class="card-text">&#36;200,000 ARR
-                                <br>15 Employees
-                                <br>Estonia</p><a href="id567-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;">
-                        <div class="card-block">
-                            <h4 class="card-title">IoT</h4>
-                            <p class="card-text">&#36;6,500 MRR</br>2 Employees
-                                <br>Germany</p><a href="id987-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
-                    </div>
-                </div>
-            </article>
+            <?php endforeach; ?>
         </div>
+    
     </section> 
     <!--/Section: Featured Companies-->
 
