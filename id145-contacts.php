@@ -9,43 +9,30 @@
 
     <title>SaaSNomad: Request Contact</title>
     <!-- Favicon -->
-    <link rel="icon" href="../img/logo.png" type="image/png" sizes="16x16"> 
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Google Font: Roboto-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <!-- Custom Style -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
-    <link href="../css/mdb.css" rel="stylesheet">
+    <link href="css/mdb.css" rel="stylesheet">
     <!-- Checkbox -->
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet" href="../css/checkbox.css"> 
+    <link rel="stylesheet" href="css/checkbox.css"> 
     <!-- Template styles -->
     
 </head>
 
 <body>
 <div id="top" class="content">
-    <!--/.Navbar-->
-    
-    <!--Navbar-->
-    <!--Navbar-->
-    <header class="navbar fixed-top">
-        <div class="row">
-            <div class="col-6">
-                <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="../index.html">
-                        <img src="../img/logo.svg" alt="logo">
-                    <b>SaaS</b>Nomad</a>
-                </h4>
-            </div>
-            <div class="col-6"></div>
-        </div>
-    </header>  
+    <!-- Header -->
+    <?php include 'includes/header.php'; ?>
+    <!--/.Header-->
 
  
     <!-- Main container-->
@@ -64,9 +51,9 @@
                                         <!--Card content-->
                                         <div class="card-block">
                                             <!--Title-->
-                                            <h4 class="card-title">Marketplace</h4>
+                                            <h4 class="card-title">FinTech</h4>
                                             <!--Text-->
-                                            <p class="card-text">&#163;60,000 MRR<br>6 Employees<br>United Kingdom</p>
+                                            <p class="card-text">&#36;150,000 ARR<br>5 Employees<br>Canada</p>
                                         </div>
                                         <!--/.Card content-->
 
@@ -97,7 +84,7 @@
                                         </div>
                                         <!--Request ID-->
                                         <div class="md-form form-group" style="margin-top: 44px;display:none;">
-                                            <input value="Marketplace (id267)" type="text" name="request_id" id="request_id" class="form-control"> 
+                                            <input value="FinTech (id145)" type="text" name="request_id" id="request_id" class="form-control"> 
                                         </div>  
                                         <!-- Checkbox -->
                                                     <div class="md-form form-group">
@@ -107,8 +94,8 @@
                                                               <span class="checkbox"></span>
                                                             </label>
                                                             <small for="checkbox-1" class="checkbox-label">I agree to the 
-                                                            <a href="../privacy.html" target="_blank">Privacy Policy</a> and 
-                                                            <a href="../terms.html" target="_blank">Terms of Use</a>
+                                                            <a href="../privacy.php" target="_blank">Privacy Policy</a> and 
+                                                            <a href="../terms.php" target="_blank">Terms of Use</a>
                                                             </small>
                                                         </div>
                                                     </div> 
@@ -116,7 +103,7 @@
                                             <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0">Request Contact</button>
                                         </div>          
                                     </form>
-                                    <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="../img/preloader.gif" style="width:20%;"></div>
+                                    <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>
                             </div>
                         </section> 
@@ -127,63 +114,37 @@
     <!--/ Main container-->
                                      
     <!--Footer-->
-    
-        <footer style="background-color:#37474f;">
-            <div class="row" style="padding:0">
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
-
-                    <a href="../index.html" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
-                    <ul style="display:inline-block;">
-                        <li>
-                          <a href="../faq.html" target="_blank" class="text-uppercase">
-                            <b>FAQ</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="../privacy.html" target="_blank" class="text-uppercase">
-                            <b>Privacy</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="../terms.html" target="_blank" class="text-uppercase">
-                            <b>Terms</b>
-                          </a>
-                        </li> 
-                      </ul> 
-                </div> 
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            </div>   
-        </footer>
+    <?php include 'includes/footer.php'; ?>
     <!--/.Footer-->
 
 
 
     <!-- SCRIPTS -->
 
-    <!-- Load jquery via CDN -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+    <!-- jQuery v2.0.3  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>  
   
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="../js/mdb.js"></script>
+    <script type="text/javascript" src="js/mdb.js"></script>
     
     <!-- Checkbox -->
-    <script type="text/javascript" src="../js/checkbox.js"></script> 
+    <script type="text/javascript" src="js/checkbox.js"></script> 
 
     <!-- Geolocation API -->
     <script src="//maps.google.com/maps/api/js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQJ71Xgt3HCqIGW7YXoPtt9U-Jp-bXk9M&callback=initMap"
     type="text/javascript"></script>
-    <script type="text/javascript" src="../js/geotext-1.0.min.js"></script>
+    <script type="text/javascript" src="js/geotext-1.0.min.js"></script>
     <script>
         jQuery(function() { 
             new GeoText();  
         });
     </script>
-    <script type="text/javascript" src="../js/ajax/requests-ajax.js"></script>
+    <script type="text/javascript" src="js/ajax/requests-ajax.js"></script>
 
      
 

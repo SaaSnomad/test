@@ -24,53 +24,13 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> 
 
-    <!-- Template styles -->
-    <style>
-        /* TEMPLATE STYLES */
-                    ::-webkit-scrollbar {
-                        width: 7px;
-                    }
-                     
-                    ::-webkit-scrollbar-track {
-                        border-radius: 0px;
-                    }
-                     
-                    ::-webkit-scrollbar-thumb {
-                        border-radius: 3px;
-                        background: rgba(0,0,0, 0.1);
-                    }
-                    ::-webkit-scrollbar-thumb:active {
-                        background: rgba(0,0,0, 0.5);
-                    }
-        
-    </style>
 </head>
 
 <body>
 <div id="top" class="content">
-    <!--/.Navbar-->
-    
-    <!--Navbar-->
-    <!--Navbar-->
-    <header class="navbar fixed-top">
-        <div class="row">
-            <div class="col-12">
-                <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" height="20px" width="20px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;vertical-align: text-middle;" xml:space="preserve">
-                        <g>
-                            <g id="Ellipse_4_copy_5">
-                                <g>
-                                    <path d="M319.305,505.565c14.688,0,26.608-11.921,26.608-26.609c0-14.701-11.907-26.608-26.608-26.608     c-14.702,0-26.609,11.907-26.609,26.608C292.696,493.645,304.603,505.565,319.305,505.565z M518.869,106.435     c-14.701,0-26.608,11.908-26.608,26.609c0,14.688,11.907,26.609,26.608,26.609c14.688,0,26.609-11.921,26.609-26.609     C545.479,118.342,533.571,106.435,518.869,106.435z M518.869,39.913c-46.911,0-85.6,34.711-92.065,79.826H185.196     c-6.466-45.115-45.168-79.826-92.066-79.826C41.696,39.913,0,81.609,0,133.043s41.696,93.13,93.13,93.13     c12.786,0,24.919-2.647,36.001-7.317L252.078,414.63c-16.019,16.71-25.904,39.341-25.904,64.326     c0,51.436,41.696,93.131,93.131,93.131c51.435,0,93.13-41.695,93.13-93.131c0-51.435-41.695-93.13-93.13-93.13     c-16.817,0-32.543,4.523-46.167,12.319L151.909,205.113c17.628-14.436,29.908-35.137,33.287-58.766h241.607     c6.466,45.115,45.168,79.826,92.065,79.826c51.436,0,93.131-41.696,93.131-93.13S570.305,39.913,518.869,39.913z      M319.305,412.435c36.733,0,66.521,29.789,66.521,66.521c0,36.733-29.788,66.522-66.521,66.522s-66.522-29.789-66.522-66.522     C252.783,442.21,282.571,412.435,319.305,412.435z M93.13,199.565c-36.733,0-66.521-29.789-66.521-66.522     c0-36.747,29.788-66.522,66.521-66.522s66.522,29.775,66.522,66.522C159.652,169.777,129.864,199.565,93.13,199.565z      M518.869,199.565c-36.732,0-66.521-29.789-66.521-66.522c0-36.747,29.789-66.522,66.521-66.522     c36.733,0,66.522,29.775,66.522,66.522C585.392,169.777,555.603,199.565,518.869,199.565z M93.13,106.435     c-14.701,0-26.608,11.908-26.608,26.609c0,14.688,11.907,26.609,26.608,26.609c14.688,0,26.609-11.921,26.609-26.609     C119.739,118.342,107.832,106.435,93.13,106.435z" fill="#1de9b6"></path>
-                                </g>
-                            </g>
-                        </g>
-                        </svg>
-                    <b>SaaS</b>Nomad</a>
-                </h4>
-            </div> 
-        </div>
-    </header> 
+    <!-- Header -->
+    <?php include 'includes/header.php'; ?>
+    <!--/.Header-->
 
  
     <!-- Main container-->
@@ -82,7 +42,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">  
                     <div id="content">
                         <section id="home">
-                        <a href="index.html" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
+                        <a href="index.php" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
                         <h1 style="margin: 30px 0;">FAQ</h1>
                             <h3>Home</h3>
                             <p>
@@ -242,37 +202,7 @@
     <!--/ Main container-->
 
     <!--Footer-->
-    
-        <footer style="background-color:#37474f;">
-            <div class="row" style="padding:0">
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
-
-                    <a href="index.html" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
-                    <ul style="display:inline-block;">
-                        <li>
-                          <a href="faq.html" target="_blank" class="text-uppercase">
-                            <b>FAQ</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="privacy.html" target="_blank" class="text-uppercase">
-                            <b>Privacy</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="terms.html" target="_blank" class="text-uppercase">
-                            <b>Terms</b>
-                          </a>
-                        </li> 
-                      </ul>
-                      <!--Back to top-->
-                      <a id="go-back" class="mdl-typography--font-light btn btn-info btn-rounded"><i class="fa fa-arrow-up" aria-hidden="true" style="margin-top: 2px;"></i></a>
-                      <!--/.Back to top-->
-                </div> 
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            </div>   
-        </footer>
+    <?php include 'includes/footer.php'; ?>
     <!--/.Footer-->
 
 

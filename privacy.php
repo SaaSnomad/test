@@ -39,21 +39,10 @@
 
 <body>
 <div id="top" class="content">
-    <!--/.Navbar-->
-    
-    <!--Navbar-->
-    <!--Navbar-->
-    <header class="navbar fixed-top">
-        <div class="row">
-            <div class="col-12">
-                <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="index.html">
-                        <img src="img/logo.svg" alt="logo">
-                    <b>SaaS</b>Nomad</a>
-                </h4>
-            </div> 
-        </div>
-    </header>  
+
+    <!-- Header -->
+    <?php include 'includes/header.php'; ?>
+    <!--/.Header--> 
 
  
     <!-- Main container-->
@@ -65,11 +54,11 @@
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">  
                     <div id="content">
                         <section id="personal">
-                        <a href="index.html" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
+                        <a href="index.php" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
                         <h1 style="margin: 30px 0;">Privacy Policy</h1>
                             <h3>Personal Information</h3>
                             <p>
-                                We collect personal information for various business purposes when you interact with us, such as providing you with a subscription, processing your order, responding to requests for service or assistance, creating and improving our products and services, suggesting additional or different products or services, and protecting our rights and property. We collect information about you in two basic ways: First, we receive information directly from you. Second, through use of cookies and other technologies, we keep track of your interactions.
+                                We collect personal information for various business purposes when you interact with us, such as providing you with a subscription, processing your order, responding to requests for service or assistance, creating and improving our products and services, suggesting additional or different products or services, and protecting our rights and property. We collect information about you in two basic ways: First, we receive information directly from you. Second, through use of Google technologies, we keep track of your interactions.
                             </p>
                         </section>
                         <section id="uses">
@@ -83,8 +72,8 @@
                             <ul style="list-style-type: disc;">
                                 <li>You can stop receiving promotional emails from us by following the instructions in the email you receive.</li>
                                 <li>You may cancel your registration or deactivate your account, or update your preferences at any time.</li>
-                                <li>You can manage cookies using your browser controls.</li>
-                                <li>You can opt out of the use of certain cookies.</li>
+                                <!--<li>You can manage cookies using your browser controls.</li>-->
+                                <!--<li>You can opt out of the use of certain cookies.</li>-->
                                 <li>Individual products or services may offer additional controls or preferences.</li>
                             </p>
                         </section>
@@ -105,37 +94,7 @@
     <!--/ Main container-->
 
     <!--Footer-->
-    
-        <footer style="background-color:#37474f;">
-            <div class="row" style="padding:0">
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
-
-                    <a href="index.html" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
-                    <ul style="display:inline-block;">
-                        <li>
-                          <a href="faq.html" target="_blank" class="text-uppercase">
-                            <b>FAQ</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="privacy.html" target="_blank" class="text-uppercase">
-                            <b>Privacy</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="terms.html" target="_blank" class="text-uppercase">
-                            <b>Terms</b>
-                          </a>
-                        </li> 
-                      </ul>
-                      <!--Back to top-->
-                      <a id="go-back" class="mdl-typography--font-light btn btn-info btn-rounded"><i class="fa fa-arrow-up" aria-hidden="true" style="margin-top: 2px;"></i></a>
-                      <!--/.Back to top-->
-                </div> 
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            </div>   
-        </footer>
+    <?php include 'includes/footer.php'; ?>
     <!--/.Footer-->
 
 

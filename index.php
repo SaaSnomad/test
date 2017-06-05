@@ -39,26 +39,18 @@
                
 </head>
 <body>
-    <!--/.Navbar-->
-    
-    <!--Navbar-->
-<header id="top" class="navbar fixed-top">
-        <div class="row">
-            <div class="col-6">
-                <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="index.html">
-                        <img src="img/logo.svg" alt="logo">
-                    <b>SaaS</b>Nomad</a>
-                </h4>
-            </div>
-            <div class="col-6">
-                <a class="btn scrolling-navbar text-center flex-center" data-toggle="modal" data-target="#sellerModal"  id="apply-navbar">Apply for free</a> 
-            </div>
-        </div>
-</header>  
+<?php include 'config/config.php'; ?>
+<?php  
+    // Create  DB Object
+    $db = new Database();
+
+?>
+<!-- Header -->
+<?php include 'includes/header.php'; ?>
+<!--/.Header-->
 
 
-    <!-- Main container-->
+<!-- Main container-->
 <div class="container-fluid" id="main">
 
     <!-- Landing -->
@@ -127,7 +119,7 @@
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon-to">&#36;</span>
                                 <input type="text" placeholder="0" class="range-to form-control change" disabled maxlength="11" aria-label="Amount (to the nearest dollar)"> </div>
-                            </br> <small>The model above is intended more for educational purposes than for performing serious valuations. Please read this <a href="disclaimer.html" target="_blank" id="disclaimer">Important Disclaimer.</a></small> <small>We respect your privacy and will not spam you.</small> 
+                            </br> <small>The model above is intended more for educational purposes than for performing serious valuations. Please read this <a href="disclaimer.php" target="_blank" id="disclaimer">Important Disclaimer.</a></small> <small>We respect your privacy and will not spam you.</small> 
                         </div>
                     </div>
                 </div>
@@ -181,7 +173,7 @@
                             <h4 class="card-title">Cloud Computing</h4>
                             <p class="card-text">&#36;150,000 MRR
                                 <br>50 Employees
-                                <br>United States</p><a href="requests/id29-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
+                                <br>United States</p><a href="id29-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
                     </div>
                 </div>
             </article>
@@ -192,7 +184,7 @@
                             <h4 class="card-title">FinTech</h4>
                             <p class="card-text">&#36;150,000 ARR
                                 <br>5 Employees
-                                <br>Canada</p><a href="requests/id145-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
+                                <br>Canada</p><a href="id145-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
                     </div>
                 </div>
             </article>
@@ -203,7 +195,7 @@
                             <h4 class="card-title">Marketplace</h4>
                             <p class="card-text">&#163;60,000 MRR
                                 <br>6 Employees
-                                <br>United Kingdom</p><a href="requests/id267-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
+                                <br>United Kingdom</p><a href="id267-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
                     </div>
                 </div>
             </article>
@@ -214,7 +206,7 @@
                             <h4 class="card-title">HR Tech</h4>
                             <p class="card-text">&#36;200,000 ARR
                                 <br>15 Employees
-                                <br>Estonia</p><a href="requests/id567-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
+                                <br>Estonia</p><a href="id567-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
                     </div>
                 </div>
             </article>
@@ -224,7 +216,7 @@
                         <div class="card-block">
                             <h4 class="card-title">IoT</h4>
                             <p class="card-text">&#36;6,500 MRR</br>2 Employees
-                                <br>Germany</p><a href="requests/id987-contacts.html" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
+                                <br>Germany</p><a href="id987-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
                     </div>
                 </div>
             </article>
@@ -240,7 +232,7 @@
                 <h1 class="display-4 white-text">For Buyers</h1>
                 <p class="white-text"> SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias </p>
                 <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal">Get notified</a> 
-                <a id="buyer-find" href="coming-soon.html" class="btn btn-outline-success">Find SaaS</a> 
+                <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success">Find SaaS</a> 
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
@@ -333,37 +325,7 @@
     <!--/ Main container-->
 
     <!--Footer-->
-    
-        <footer style="background-color:#37474f;">
-            <div class="row" style="padding:0">
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
-
-                    <a href="index.html" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
-                    <ul style="display:inline-block;">
-                        <li>
-                          <a href="faq.html" target="_blank" class="text-uppercase">
-                            <b>FAQ</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="privacy.html" target="_blank" class="text-uppercase">
-                            <b>Privacy</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="terms.html" target="_blank" class="text-uppercase">
-                            <b>Terms</b>
-                          </a>
-                        </li> 
-                      </ul>
-                      <!--Back to top-->
-                      <a id="go-back" class="mdl-typography--font-light btn btn-info btn-rounded"><i class="fa fa-arrow-up" aria-hidden="true" style="margin-top: 2px;"></i></a>
-                      <!--/.Back to top-->
-                </div> 
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            </div>   
-        </footer>
+    <?php include 'includes/footer.php'; ?>
     <!--/.Footer-->
 
 <!-- MODALS -->
@@ -443,7 +405,7 @@
                                 <input type="checkbox" id="checkbox-1" required> 
                                 <span class="checkbox"></span> 
                             </label> 
-                            <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and <a href="terms.html" target="_blank">Terms of Use</a> </small> </div>
+                            <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> </div>
                     </div>
                     <div class="md-form input-group" style="margin: .1rem 0;width: 100%;">
                         <button class="btn btn-primary" type="submit" style="width: 100%;margin:0">Apply</button>
@@ -481,7 +443,7 @@
                                 <input type="checkbox" id="checkbox-1" required> 
                                 <span class="checkbox"></span> 
                             </label> 
-                            <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.html" target="_blank">Privacy Policy</a> and <a href="terms.html" target="_blank">Terms of Use</a> </small> 
+                            <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> 
                         </div>
                     </div>
                     <div class="md-form input-group" style="margin: .1rem 0;width: 100%;">
@@ -531,11 +493,6 @@
         }
 
     </script>
-
-
-
-
-<div id="displayDiv"></div>
 
     <!-- Go top button animation -->
     <script type="text/javascript" src="js/go-top.js"></script> 

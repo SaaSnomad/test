@@ -30,22 +30,9 @@
 
 <body>
 <div id="top" class="content">
-    <!--/.Navbar-->
-    
-    <!--Navbar-->
-    <!--Navbar-->
-    <header class="navbar fixed-top">
-        <div class="row">
-            <div class="col-6">
-                <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="index.html">
-                        <img src="img/logo.svg" alt="logo">
-                    <b>SaaS</b>Nomad</a>
-                </h4>
-            </div>
-            <div class="col-6"></div>
-        </div>
-    </header>  
+    <!-- Header -->
+    <?php include 'includes/header.php'; ?>
+    <!--/.Header-->
 
  
     <!-- Main container-->
@@ -64,9 +51,9 @@
                                         <!--Card content-->
                                         <div class="card-block">
                                             <!--Title-->
-                                            <h4 class="card-title">Cloud Computing</h4>
+                                            <h4 class="card-title">HR Tech</h4>
                                             <!--Text-->
-                                            <p class="card-text">&#36;150,000 MRR<br>50 Employees<br>United States</p>
+                                            <p class="card-text">&#36;200,000 ARR<br>15 Employees<br>Estonia</p>
                                         </div>
                                         <!--/.Card content-->
 
@@ -79,7 +66,7 @@
                                     <!--/.Card-->
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <form id="requests" action="requests.php" method="POST" role="form" style="padding-top: 10px;">
+                                    <form id="requests" style="padding-top: 10px;">
 
                                         <!--Name--> 
                                         <div class="md-form form-group">
@@ -97,7 +84,7 @@
                                         </div>
                                         <!--Request ID-->
                                         <div class="md-form form-group" style="margin-top: 44px;display:none;">
-                                            <input value="Cloud Computing (id29)" type="text" name="request_id" id="request_id" class="form-control"> 
+                                            <input value="HR Tech (id567)" type="text" name="request_id" id="request_id" class="form-control"> 
                                         </div>  
                                         <!-- Checkbox -->
                                                     <div class="md-form form-group">
@@ -116,7 +103,7 @@
                                             <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0">Request Contact</button>
                                         </div>          
                                     </form>
-                                    <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="../img/preloader.gif" style="width:20%;"></div>
+                                    <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>
                             </div>
                         </section> 
@@ -127,42 +114,16 @@
     <!--/ Main container-->
                                      
     <!--Footer-->
-    
-        <footer style="background-color:#37474f;">
-            <div class="row" style="padding:0">
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
-
-                    <a href="../index.html" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
-                    <ul style="display:inline-block;">
-                        <li>
-                          <a href="../faq.html" target="_blank" class="text-uppercase">
-                            <b>FAQ</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="../privacy.html" target="_blank" class="text-uppercase">
-                            <b>Privacy</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="../terms.html" target="_blank" class="text-uppercase">
-                            <b>Terms</b>
-                          </a>
-                        </li> 
-                      </ul> 
-                </div> 
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            </div>   
-        </footer>
+    <?php include 'includes/footer.php'; ?>
     <!--/.Footer-->
 
 
 
     <!-- SCRIPTS -->
 
-    <!-- Load jquery via CDN -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+    <!-- jQuery v2.0.3  -->
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>  
   
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -183,7 +144,7 @@
             new GeoText();  
         });
     </script>
-    <!--<script type="text/javascript" src="js/ajax/requests-ajax.js"></script>-->
+    <script type="text/javascript" src="js/ajax/requests-ajax.js"></script>
 
      
 

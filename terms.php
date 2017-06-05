@@ -39,21 +39,10 @@
 
 <body>
 <div id="top" class="content">
-    <!--/.Navbar-->
-    
-    <!--Navbar-->
-    <!--Navbar-->
-    <header class="navbar fixed-top">
-        <div class="row">
-            <div class="col-12">
-                <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="index.html">
-                        <img src="img/logo.svg" alt="logo">
-                    <b>SaaS</b>Nomad</a>
-                </h4>
-            </div> 
-        </div>
-    </header> 
+
+    <!-- Header -->
+    <?php include 'includes/header.php'; ?>
+    <!--/.Header-->
 
  
     <!-- Main container-->
@@ -65,7 +54,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">  
                     <div id="content">
                         <section id="home">
-                        <a href="index.html" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
+                        <a href="index.php" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
                         <h1 style="margin: 30px 0;">Terms of Use</h1>
                             <p>
                                 <b>These Terms of Use govern your use of this website which has been designed so that businesses with SaaS business model can be advertised for sale via this website. By using this website, you accept these Terms of Use in full. If you disagree with these Terms of Use or any part of these Terms of Use, you must not use this website. By using this website, and by agreeing to these Terms of Use, you warrant and represent that you are at least 18 years of age. Furthermore, if you wish to buy or sell businesses via this website, you will have to agree to be bound by the additional Seller's Terms and/or Buyer's Terms (set out below).</b>
@@ -107,7 +96,7 @@
                                 When you advertise your Business for sale you must specify all details requested by SaaSNomad.com. You warrant that the content of the advertisement you place on the website will be true and accurate and hereby agree to indemnify SaaSNomad against all claims as a result of your use of this website, including, but not limited to, arising out of your obligations under any regulation or legislation relevant to the country in which your listing is added. SaaSNomad does not carry out any investigations or due diligence into your offer. It is your responsibility to present clean and accurate information. We advise that you keep application appropriate. 
                             </p>
                             <p>
-                                SaaSNomad reserves the right to refuse to upload any business listing if we, in our reasonable opinion, consider such listing to be improper, fraudulent or otherwise not bona fide. SaaSNomad reserves the right to edit any business listing if we, in our reasonable opinion, believe such editing will improve the quality of the website. The decision where to place a listing within the index of business categories shall be at the sole discretion of SaaSNomad. SaaSNomad also retains the right to use data collected from sellers in order to provide its advertising service to buyers. All processing of personal information is done in accordance with our <a href="privacy.html">Privacy Policy</a>.
+                                SaaSNomad reserves the right to refuse to upload any business listing if we, in our reasonable opinion, consider such listing to be improper, fraudulent or otherwise not bona fide. SaaSNomad reserves the right to edit any business listing if we, in our reasonable opinion, believe such editing will improve the quality of the website. The decision where to place a listing within the index of business categories shall be at the sole discretion of SaaSNomad. SaaSNomad also retains the right to use data collected from sellers in order to provide its advertising service to buyers. All processing of personal information is done in accordance with our <a href="privacy.php">Privacy Policy</a>.
                             </p> 
                             <p>
                                 If you are selling a business in the capacity of a broker, agent or any other form of intermediary so that you are not selling in your personal capacity you must register as an intermediary on the website. You warrant that you have the full authority and permission to advertise the business on the website FROM THE DIRECT OWNER.
@@ -209,7 +198,7 @@
                         <section id="agreement">
                             <h3>Entire Agreement</h3>
                             <p>
-                                These Terms of Use, together with the <a href="privacy.html">Privacy Policy</a> set forth within the website, constitute the entire agreement between you and SaaSNomad.com in relation to your use of this website, and supersede all previous agreements in respect of your use of this website.
+                                These Terms of Use, together with the <a href="privacy.php">Privacy Policy</a> set forth within the website, constitute the entire agreement between you and SaaSNomad.com in relation to your use of this website, and supersede all previous agreements in respect of your use of this website.
                             </p>
                             <p>
                                 You agree that you do not have the power to bind SaaSNomad in relation to any obligation owing to a third party. You agree that by using the Services (either as Seller or Buyer) that SaaSNomad, in providing the Services and your access to SaaSNomad.com, is providing a platform for you to be introduced to other Sellers or Buyers (as the case may be). SaaSNomad is not a party to any transaction or agreement between any Seller or Buyer and is not responsible for any act or omission of any Seller or Buyer.
@@ -229,37 +218,7 @@
     <!--/ Main container-->
 
     <!--Footer-->
-    
-        <footer style="background-color:#37474f;">
-            <div class="row" style="padding:0">
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
-
-                    <a href="index.html" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
-                    <ul style="display:inline-block;">
-                        <li>
-                          <a href="faq.html" target="_blank" class="text-uppercase">
-                            <b>FAQ</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="privacy.html" target="_blank" class="text-uppercase">
-                            <b>Privacy</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="terms.html" target="_blank" class="text-uppercase">
-                            <b>Terms</b>
-                          </a>
-                        </li> 
-                      </ul>
-                      <!--Back to top-->
-                      <a id="go-back" class="mdl-typography--font-light btn btn-info btn-rounded"><i class="fa fa-arrow-up" aria-hidden="true" style="margin-top: 2px;"></i></a>
-                      <!--/.Back to top-->
-                </div> 
-                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            </div>   
-        </footer>
+    <?php include 'includes/footer.php'; ?>
     <!--/.Footer-->
 
 

@@ -22,47 +22,13 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.css" rel="stylesheet">
 
-    <!-- Template styles -->
-    <style>
-        /* TEMPLATE STYLES */
-                    ::-webkit-scrollbar {
-                        width: 7px;
-                    }
-                     
-                    ::-webkit-scrollbar-track {
-                        border-radius: 0px;
-                    }
-                     
-                    ::-webkit-scrollbar-thumb {
-                        border-radius: 3px;
-                        background: rgba(0,0,0, 0.1);
-                    }
-                    ::-webkit-scrollbar-thumb:active {
-                        background: rgba(0,0,0, 0.5);
-                    }
-    </style>
 </head>
 
 <body>
 <div id="top" class="content" style="background-color: #f3f3f3;">
-    <!--/.Navbar-->
-    
-    <!--Navbar-->
-    <!--Navbar-->
-    <header class="navbar fixed-top">
-        <div class="row">
-            <div class="col-6">
-                <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="index.html">
-                        <img src="img/logo.svg" alt="logo">
-                    <b>SaaS</b>Nomad</a>
-                </h4>
-            </div>
-            <div class="col-6">
-                <a class="btn scrolling-navbar text-center flex-center mdl-button--raised mdl-js-button dialog-button" id="apply-navbar" style="height:100%;font-size: 22px;">Apply for free</a> 
-            </div>
-        </div>
-    </header>  
+    <!-- Header -->
+    <?php include 'includes/header.php'; ?>
+    <!--/.Header--> 
 
  
     <!-- Main container-->
@@ -115,20 +81,20 @@
                 <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
 
-                    <a href="../index.html" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
+                    <a href="../index.php" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
                     <ul style="display:inline-block;">
                         <li>
-                          <a href="faq.html" target="_blank" class="text-uppercase">
+                          <a href="faq.php" target="_blank" class="text-uppercase">
                             <b>FAQ</b>
                           </a>
                         </li>
                         <li>
-                          <a href="privacy.html" target="_blank" class="text-uppercase">
+                          <a href="privacy.php" target="_blank" class="text-uppercase">
                             <b>Privacy</b>
                           </a>
                         </li>
                         <li>
-                          <a href="terms.html" target="_blank" class="text-uppercase">
+                          <a href="terms.php" target="_blank" class="text-uppercase">
                             <b>Terms</b>
                           </a>
                         </li> 
