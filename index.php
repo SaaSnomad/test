@@ -40,6 +40,7 @@
 </head>
 <body>
 <?php include 'core/init.php'; ?>
+<?php include 'helpers/db_helper.php'; ?>
 
 <!-- Fetch all cards in Featured Companies Section from DB -->
 <?php  
@@ -60,6 +61,16 @@
     // Assign Result Set
     $news = $db->resultset();
 ?>
+
+<!-- Fetch all Applications from DB -->
+<?php  
+    // Create  DB Object
+    $db = new Database();
+    // Run Query 
+    $db->query("SELECT * FROM sellers");
+    // Assign Result Set
+    $sellers = $db->resultset();
+?>
 <!-- Header -->
 <?php include 'includes/header.php'; ?>
 <!--/.Header-->
@@ -73,7 +84,7 @@
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
             <div class="main-text">
                 <h1 class="display-4">Anonymously</br>place your SaaS</br>for sale</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal"> apply</br>for free </a>
-                <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter">1,234</span></h3>
+                <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
                 <h3 class="text-center text-muted">companies applied</h3> 
             </div>
         </div>
@@ -142,8 +153,7 @@
         </div>
     </div>
         <!--/Section: Landing--> 
-
-
+ 
 
     <!--Section: About-->
     <section id="about-section">
@@ -268,6 +278,7 @@
                 </div>
     </section>
     <!--/Section: News--> 
+
     </div>
     <!--/ Main container-->
 
@@ -428,19 +439,6 @@
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
     <script type="text/javascript" src="js/counter.js"></script>
 
-
-    <script type="text/javascript">
-        var number = 1234;
-        setInterval("increment()", 60 * 60 * 24 * 1000);
-
-        function increment()
-        {
-            number ++;
-            document.getElementById("displayDiv").innerHTML = number;
-        }
-
-    </script>
-
     <!-- Go top button animation -->
     <script type="text/javascript" src="js/go-top.js"></script> 
     <!-- Bootstrap core JavaScript -->
@@ -472,8 +470,21 @@
     <script type="text/javascript" src="js/ajax/seller-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/buyer-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/news-subscribers.js"></script>
-    
-
+    <?php
+        $OldDate = new DateTime('2013-12-12');
+        $now = new DateTime(Date('Y-m-d'));
+    ?>
+    <div style="display:none;" id="oldDate"><?php echo $OldDate->diff($now)->format("%a"); ?></div>
+    <?php foreach($sellers as $seller) : ?>
+        <div style="display:none;" class="rowsCount"><?php echo applicationsCount($seller->id); ?></div>
+    <?php endforeach; ?>
+    <script>
+        var oldDate = $('#oldDate').html();
+        var numItems = $('.rowsCount').length;
+        var result = parseInt(oldDate) + parseInt(numItems);
+        $('#getTotalApplications').html(result);
+        $('#getTotalApplications').number( true ); 
+    </script>
 </body>
 
 </html>

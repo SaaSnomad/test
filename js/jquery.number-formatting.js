@@ -6,7 +6,5 @@ $(function(){
                 $('.range-from').number( true );  
                 $('.range-to').number( true ); 
                 // Seller Application  
-                $('#seller_mrr').number( true ); 
-
-                
+                $('#seller_mrr').number( true );                 
             });

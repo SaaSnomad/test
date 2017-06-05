@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$.post("add_news_to_db.php", $(this).serialize())
 			.done(function(data){
 				console.log(data);
-				$('#add-news-modal').removeAttr( "open");
+				$('#add-news-modal').removeAttr("open");
 				$('#add-news-modal').attr("closed");
 				showNews();
 			});

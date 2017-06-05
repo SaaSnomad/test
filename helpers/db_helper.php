@@ -4,7 +4,7 @@
 
 function applicationsCount($id){
 	$db = new Database;
-	$db->query('SELECT * FROM sellers WHERE id = :id');
+	$db->query('SELECT COUNT(*) FROM sellers WHERE id = :id');
 	$db->bind(':id', $id);
 	$rows = $db->resultset();
 	// Fet Count
