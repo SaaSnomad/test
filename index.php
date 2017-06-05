@@ -229,7 +229,7 @@
                             <div class="row news text-left" style="display: flex;align-items:stretch;">
                                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 first-block">
                                     <div id="wrapper">
-                                    <?php foreach($news as $news_item) : ?>
+                                        <?php foreach($news as $news_item) : ?>
                                         <div class="news-item">
                                             <a href="<?php echo $news_item->news_link; ?>" class="article" target="_blank">
                                                 <h4><?php echo $news_item->news_title; ?></h4>
@@ -239,46 +239,7 @@
                                                 <b><?php echo $news_item->news_source; ?></b>
                                             </span>         
                                         </div>
-                                    <?php endforeach; ?>
-                                    <!--
-                                        <div class="news-item">
-                                            <a href="https://techcrunch.com/2016/11/21/what-does-trump-mean-for-tech-ma/" class="article" target="_blank">
-                                                <h4>What does Trump mean for tech M&#38;A?</h4>
-                                                <p class="text-muted">There are concerns that there will be fewer H-1B visas for engineers, making it harder to hire the world’s best talent...</p>
-                                                <span class="text-muted">Nov 21, 2016 <b >Techcrunch</b></span> 
-                                            </a>
-                                        </div>
-                                        <div class="news-item">
-                                            <a href="https://techcrunch.com/2016/07/03/what-this-years-ma-activity-tells-us-about-media-and-entertainment/" class="article" target="_blank">
-                                                <h4>What this year’s M&#38;A activity tells us about media</h4>
-                                                <p class="text-muted">Content is still king. With Dalian Wanda Group’s $3.5 billion acquisition of Legendary Entertainment in January...</p>
-                                                <span class="text-muted">Jul 3, 2016 <b>Techcrunch</b></span> 
-                                            </a>
-                                        </div>
-                                        <div class="news-item">
-                                            <a href="https://techcrunch.com/gallery/the-11-biggest-tech-acquisitions-of-2016/" class="article" target="_blank">
-                                                <h4>The 11 biggest tech acquisitions of 2016</h4>
-                                                <p class="text-muted">Unlike IPOs, 2016 was pretty active for tech M&#38;A. The year resulted in $612.9 billion in global tech deals, according to Dealogic...</p><span class="text-muted">Jan 3, 2017 <b>Techcrunch</b></span> </a>
-                                        </div>
-                                        <div class="news-item">
-                                            <a href="https://techcrunch.com/gallery/the-11-biggest-tech-acquisitions-of-2016/" class="article" target="_blank">
-                                                <h4>The 11 biggest tech acquisitions of 2016</h4>
-                                                <p class="text-muted">Unlike IPOs, 2016 was pretty active for tech M&#38;A. The year resulted in $612.9 billion in global tech deals, according to Dealogic...</p><span class="text-muted">Jan 3, 2017 <b>Techcrunch</b></span> 
-                                            </a>
-                                        </div>
-                                        <div class="news-item">
-                                            <a href="https://techcrunch.com/gallery/the-11-biggest-tech-acquisitions-of-2016/" class="article" target="_blank">
-                                                <h4>The 11 biggest tech acquisitions of 2016</h4>
-                                                <p class="text-muted">Unlike IPOs, 2016 was pretty active for tech M&#38;A. The year resulted in $612.9 billion in global tech deals, according to Dealogic...</p><span class="text-muted">Jan 3, 2017 <b>Techcrunch</b></span> 
-                                            </a>
-                                        </div>
-                                        <div class="news-item">
-                                            <a href="https://techcrunch.com/gallery/the-11-biggest-tech-acquisitions-of-2016/" class="article" target="_blank">
-                                                <h4>The 11 biggest tech acquisitions of 2016</h4>
-                                                <p class="text-muted">Unlike IPOs, 2016 was pretty active for tech M&#38;A. The year resulted in $612.9 billion in global tech deals, according to Dealogic...</p><span class="text-muted">Jan 3, 2017 <b>Techcrunch</b></span> 
-                                            </a>
-                                        </div>
-                                    -->
+                                        <?php endforeach; ?>
                                         <div class="text-center" style="margin-top:40px;"> <a href="#" id="loadMore" class="custom-link">Load More</a> </div>
                                     </div>
                                 </div>
