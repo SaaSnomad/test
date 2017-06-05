@@ -35,7 +35,8 @@
           });  
       });
     </script>
-
+    <script src="js/modal.js"></script>
+    <script src="js/news-ajax.js"></script>
  
   </body>
 </html>

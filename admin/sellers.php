@@ -21,8 +21,7 @@
           <a href="contact-requests.php" class="mdl-layout__tab">Contact Requests</a>
           <a href="new-features-subscribers.php" class="mdl-layout__tab">New Feature Subscribers</a>
           <a href="news-subscribers.php" class="mdl-layout__tab">News Subscribers</a>
-          <a href="news.php" class="mdl-layout__tab">News</a>
-          <a href="add-news.php" class="mdl-layout__tab">Add News</a>
+          <a href="add-news.php" class="mdl-layout__tab">News</a>
         </div>
       </header>
 

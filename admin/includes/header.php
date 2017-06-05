@@ -81,6 +81,16 @@
         overflow: visible;
         background: #fff url('img/preloader.gif') no-repeat center center;
     }
+    .news-tab a {
+      color: #3f51b5 !important;
+    }
+    .mdl-dialog {
+      width: 40%;
+    }
+    .mdl-dialog__content {
+        padding: 20px 80px 24px;
+    } 
+
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
