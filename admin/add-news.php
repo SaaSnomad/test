@@ -5,12 +5,12 @@
   <!--/.Header-->
 
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="calculator-results.html" class="mdl-layout__tab">Calculator Results</a>
-          <a href="sellers.html" class="mdl-layout__tab">Sellers</a>
-          <a href="buyers.html" class="mdl-layout__tab">Buyers</a>
-          <a href="contact-requests.html" class="mdl-layout__tab">Contact Requests</a>
-          <a href="new-features-subscribers.html" class="mdl-layout__tab">New Feature Subscribers</a>
-          <a href="news-subscribers.html" class="mdl-layout__tab">News Subscribers</a>
+          <a href="calculator-results.php" class="mdl-layout__tab">Calculator Results</a>
+          <a href="sellers.php" class="mdl-layout__tab">Sellers</a>
+          <a href="buyers.php" class="mdl-layout__tab">Buyers</a>
+          <a href="contact-requests.php" class="mdl-layout__tab">Contact Requests</a>
+          <a href="new-features-subscribers.php" class="mdl-layout__tab">New Feature Subscribers</a>
+          <a href="news-subscribers.php" class="mdl-layout__tab">News Subscribers</a>
           <a href="add-news.php" class="mdl-layout__tab is-active">News</a> 
         </div>
       </header> 
@@ -21,7 +21,7 @@
           <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4 style="display:inline-block;">NEWS SUBSCRIBERS</h4>  
+                <h4 style="display:inline-block;">NEWS</h4>  
                 <button id="add-news" type="button" class="mdl-button mdl-button--raised mdl-button--colored" aria-controls="example" data-dt-idx="1" tabindex="0" style="float:right;">Add News</button>
 
                 <dialog class="mdl-dialog" id="add-news-modal">

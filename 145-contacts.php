@@ -51,9 +51,9 @@
                                         <!--Card content-->
                                         <div class="card-block">
                                             <!--Title-->
-                                            <h4 class="card-title">HR Tech</h4>
+                                            <h4 class="card-title">FinTech</h4>
                                             <!--Text-->
-                                            <p class="card-text">&#36;200,000 ARR<br>15 Employees<br>Estonia</p>
+                                            <p class="card-text">&#36;150,000 ARR<br>5 Employees<br>Canada</p>
                                         </div>
                                         <!--/.Card content-->
 
@@ -84,7 +84,7 @@
                                         </div>
                                         <!--Request ID-->
                                         <div class="md-form form-group" style="margin-top: 44px;display:none;">
-                                            <input value="HR Tech (id567)" type="text" name="request_id" id="request_id" class="form-control"> 
+                                            <input value="145" type="text" name="request_id" id="request_id" class="form-control"> 
                                         </div>  
                                         <!-- Checkbox -->
                                                     <div class="md-form form-group">
@@ -94,8 +94,8 @@
                                                               <span class="checkbox"></span>
                                                             </label>
                                                             <small for="checkbox-1" class="checkbox-label">I agree to the 
-                                                            <a href="../privacy.html" target="_blank">Privacy Policy</a> and 
-                                                            <a href="../terms.html" target="_blank">Terms of Use</a>
+                                                            <a href="privacy.php" target="_blank">Privacy Policy</a> and 
+                                                            <a href="terms.php" target="_blank">Terms of Use</a>
                                                             </small>
                                                         </div>
                                                     </div> 

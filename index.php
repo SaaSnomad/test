@@ -201,7 +201,7 @@
                             <p class="card-text">
                                 <?php echo $card->traction; ?>
                                 <br><?php echo $card->employees; ?> Employees
-                                <br><?php echo $card->country; ?></p><a href="id29-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
+                                <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
                     </div>
                 </div>
             </article>
@@ -471,16 +471,16 @@
     <script type="text/javascript" src="js/ajax/buyer-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/news-subscribers.js"></script>
     <?php
-        $OldDate = new DateTime('2013-12-12');
+        $OldDate = new DateTime('2014-01-29');
         $now = new DateTime(Date('Y-m-d'));
     ?>
     <div style="display:none;" id="oldDate"><?php echo $OldDate->diff($now)->format("%a"); ?></div>
-    <?php foreach($sellers as $seller) : ?>
-        <div style="display:none;" class="rowsCount"><?php echo applicationsCount($seller->id); ?></div>
-    <?php endforeach; ?>
+    <div style="display:none;"><?php foreach($sellers as $seller) : ?><span class="rowsCount"><?php echo applicationsCount($seller->id); ?></span><?php endforeach; ?></div>
+    
     <script>
         var oldDate = $('#oldDate').html();
         var numItems = $('.rowsCount').length;
+        console.log(numItems);
         var result = parseInt(oldDate) + parseInt(numItems);
         $('#getTotalApplications').html(result);
         $('#getTotalApplications').number( true ); 

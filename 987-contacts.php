@@ -84,7 +84,7 @@
                                         </div>
                                         <!--Request ID-->
                                         <div class="md-form form-group" style="margin-top: 44px;display:none;">
-                                            <input value="IoT (id987)" type="text" name="request_id" id="request_id" class="form-control"> 
+                                            <input value="987" type="text" name="request_id" id="request_id" class="form-control"> 
                                         </div>  
                                         <!-- Checkbox -->
                                                     <div class="md-form form-group">
@@ -94,8 +94,8 @@
                                                               <span class="checkbox"></span>
                                                             </label>
                                                             <small for="checkbox-1" class="checkbox-label">I agree to the 
-                                                            <a href="../privacy.html" target="_blank">Privacy Policy</a> and 
-                                                            <a href="../terms.html" target="_blank">Terms of Use</a>
+                                                            <a href="privacy.html" target="_blank">Privacy Policy</a> and 
+                                                            <a href="terms.html" target="_blank">Terms of Use</a>
                                                             </small>
                                                         </div>
                                                     </div> 
