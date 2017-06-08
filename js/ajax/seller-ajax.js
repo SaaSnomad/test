@@ -21,7 +21,29 @@ $(document).ready(function() {
 			url 		: 'add-seller.php', // the url where we want to POST
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
-			encode 		: true
+			encode 		: true,
+			success: function (msg) { 
+	        	$("#seller-header").hide();
+	        	$(form).hide();
+	        	$("#preloader1").css('display','block');
+	        	setTimeout(function () {
+	        		$("#preloader1").css('display','none');
+	        		$("#seller-success").css('display','block');
+	        		$("#seller-success-title").html(msg['title']);
+                    $("#seller-success-message").html(msg['message']); 
+                }, 2000);
+	        }, 
+	        error: function (msg) {
+	        	$("#seller-header").hide();
+	        	$(form).hide();
+	        	$("#preloader1").css('display','block'); 
+	        	setTimeout(function () {
+	        		$("#preloader1").css('display','none');
+	        		$("#seller-error").css('display','block');
+	        		$("#seller-error-title").html(msg['title']);
+                    $("#seller-error-message").html(msg['message']); 
+	        	}, 2000);         
+	        }
 	    });
 		// stop the form from submitting the normal way and refreshing the page
 		event.preventDefault();

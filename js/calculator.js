@@ -75,9 +75,9 @@ function checkForm(form) { // Submit button clicked
     } 
 
     // Internal variables 
-    int_var_mrr_growth_base = (Math.pow((1 + int_ass_arr_growth),1/12)) - 1;      //not used but may need it
+    int_var_mrr_growth_base = (Math.pow((1 + int_ass_arr_growth),(1/12)) - 1;      //not used but may need it
     int_var_arr_running = user_mrr * 12;
-    int_var_arr_back = Math.pow(user_mrr, 1/12) *12;
+    int_var_arr_back = Math.pow(user_mrr, (1/12)) *12;
     int_var_arr_growth = int_var_arr_running / int_var_arr_back - 1;
     int_var_growth_coef = user_mrr_growth / int_var_mrr_growth_base;
     int_var_profit = int_var_arr_running * user_margin;

@@ -16,8 +16,8 @@ $db->bind(':request_id', $_POST['request_id']);
 
 
 if($db->execute()){
-    echo "Congrats! You have successfully requested Seller's contact. We will get back to you within 24 hours.";
+    echo json_encode(["title"=>"Congrats!", "message"=>"You have successfully requested Seller's contact. We will get back to you within 24 hours."]);
 } else {
-    echo "Sorry! Could not process your request. Please try again later.";
+    echo json_encode(["title"=>"Sorry!", "message"=>"Could not process your request. Please try again later."]);
 }
 ?>

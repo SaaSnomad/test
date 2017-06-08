@@ -20,16 +20,16 @@ $(document).ready(function() {
 			url 		: 'requests.php', // the url where we want to POST
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
-			encode 		: true
-			/*,
+			encode 		: true,
 			success: function (msg) { 
 				$(form).hide();
 	        	$("#preloader").css('display','block');
 	        	setTimeout(function () { 
 	        		$("#preloader").css('display','none');
-	        		$(form).fadeIn();
-	        		$(form).css('padding-top', '100px');
-                    $(form).html("<blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;'><p class='bq-title'>Congrats!</p><p>You have successfully requested Seller's contact. We will get back to you within 24 hours.</br></br></br><a href='../index.html' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a></p></blockquote>"); 
+	        		$("#request-success").css('display','block');
+	        		$("#request-success").css('padding-top', '82px');
+	        		$("#request-success-title").html(msg['title']);
+                    $("#request-success-message").html(msg['message']); 
 	            	}, 2000);
 	        }, 
 	        error: function (msg) {
@@ -37,11 +37,11 @@ $(document).ready(function() {
 	        	$("#preloader").css('display','block');
 	        	setTimeout(function () {
 	        		$("#preloader").css('display','none');
-	        		$(form).fadeIn();
-	        		$(form).css('padding-top', '100px');
-                	$(form).html("<blockquote class='blockquote bq-warning' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Sorry!</p></blockquote><p style='margin-bottom:2rem;'>Could not process your request. Please try again later.</p></blockquote><a href='index.html' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>"); 
+	        		$("#request-error").css('padding-top', '82px');
+	        		$("#request-error-title").html(msg['title']);
+                    $("#request-error-message").html(msg['message']);
                 }, 2000); 
-	        }*/
+	        }
 		});
 
 		// stop the form from submitting the normal way and refreshing the page

@@ -13,8 +13,7 @@ $db->bind(':coming_soon_email', $_POST['coming_soon_email']);
 $db->bind(':coming_soon_country', $_POST['coming_soon_country']); 
 
 if($db->execute()){
-    echo "Congrats! You have successfully subscribed to get notified about new feature. We will get back to you as soon as it is done.";
+    echo json_encode(['title'=>'Congrats!', 'message'=>'You have successfully subscribed to get notified about new SaaSNomad feature. We will get back to you as soon as it is done.']);
 } else {
-    echo "Sorry! Could not process your request. Please try again later.";
-}
+	echo json_encode(['title'=>'Sorry!', 'message'=>'Could not process your request. Please try again later.']);}
 ?>

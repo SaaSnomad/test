@@ -103,6 +103,24 @@
                                             <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0">Request Contact</button>
                                         </div>          
                                     </form>
+                                    <div id="request-success" style="display:none;">
+                                        <blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding:0;'>
+                                            <p id="request-success-title" class='bq-title' style='padding-left: 0;'></p>
+                                        </blockquote>
+                                        <div>
+                                            <p id="request-success-message" style='margin-bottom:2.5rem;'></p>
+                                        </div>
+                                        <a href='../index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                    </div>
+                                    <div id="request-error" style="display:none;">
+                                        <blockquote class='blockquote bq-warning' style='border-left: none;padding:0;'>
+                                            <p id="request-error-title" class='bq-title' style='padding-left: 0;margin-bottom:2.5rem;'></p>
+                                        </blockquote>
+                                        <div>
+                                            <p id="request-error-message"></p>
+                                        </div>
+                                        <a href='../index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                    </div>
                                     <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>
                             </div>

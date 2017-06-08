@@ -16,8 +16,8 @@ $db->bind(':seller_industry', $_POST['seller_industry']);
 $db->bind(':seller_mrr', $_POST['seller_mrr']); 
 
 if($db->execute()){
-    echo "Congrats! Your application has been successfully sent for review. We will get back to you within 24 hours.";
+    echo json_encode(['title'=>'Congrats!', 'message'=>'Your application has been successfully sent for review. We will get back to you within 24 hours.']);
 } else {
-    echo "Sorry! Could not process your request. Please try again later.";
+    echo json_encode(['title'=>'Sorry!', 'message'=>'Could not process your request. Please try again later.']);
 }
 ?>

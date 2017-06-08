@@ -19,19 +19,18 @@ $(document).ready(function() {
 			url 		: 'add-buyer.php', // the url where we want to POST
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
-			encode 		: true
-			/*,
-			success: function (msg) {  
-	            $(form).hide();
-	        	$("#buyer-header").html('');
+			encode 		: true,
+			success: function (msg) { 
+	        	$("#buyer-header").hide();
 	        	$("#buyer-subheader").hide();
+	        	$(form).hide();
 	        	$("#preloader2").css('display','block');
 	        	setTimeout(function () {
 	        		$("#preloader2").css('display','none');
-	        		$("#buyer-header").html("<blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote>");
-	        		$(form).fadeIn();
-                    $(form).html("<div class='text-center' style='margin-top:20px;'><p>You have successfully subscribed to get notified about latest featured SaaS offers.</p></div>"); 
-                }, 2000); 
+	        		$("#buyer-success").css('display','block');
+	        		$("#buyer-success-title").html(msg['title']);
+                    $("#buyer-success-message").html(msg['message']); 
+                }, 2000);
 	        }, 
 	        error: function (msg) {
 	        	$("#buyer-header").hide();
@@ -40,10 +39,11 @@ $(document).ready(function() {
 	        	$("#preloader2").css('display','block'); 
 	        	setTimeout(function () {
 	        		$("#preloader2").css('display','none');
-	        		$(form).fadeIn();
-	        		$(form).html("<blockquote class='blockquote bq-warning text-center' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Sorry!</p></blockquote><p>Could not process your request. Please try again later.</p></blockquote>"); 
-	        	}, 2000);            
-	        }*/
+	        		$("#buyer-error").css('display','block');
+	        		$("#buyer-error-title").html(msg['title']);
+                    $("#buyer-error-message").html(msg['message']); 
+	        	}, 2000);         
+	        }
 		}); 
 
 		// stop the form from submitting the normal way and refreshing the page

@@ -60,12 +60,29 @@
                                             <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0">Get notified</button>
                                         </div>
                                     </form>
+                                    <div id="coming-soon-success" style="display:none;">
+                                        <blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding:0;'>
+                                            <p id="coming-soon-success-title" class='bq-title' style='padding-left: 0;'></p>
+                                        </blockquote>
+                                        <div>
+                                            <p id="coming-soon-success-message" style='margin-bottom:2.5rem;'></p>
+                                        </div>
+                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                    </div>
+                                    <div id="coming-soon-error" style="display:none;">
+                                        <blockquote class='blockquote bq-warning' style='border-left: none;padding:0;'>
+                                            <p id="coming-soon-error-title" class='bq-title' style='padding-left: 0;margin-bottom:2.5rem;'></p>
+                                        </blockquote>
+                                        <div>
+                                            <p id="coming-soon-error-message"></p>
+                                        </div>
+                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                    </div>
                                     <div id="preloader" style="display:none;margin-top:50px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>
                                 <div class="col-lg-7 col-md-7 hidden-sm">
                                     <img src="img/coming-soon.png" style="width: 90%;margin: 0 5%;">
                                 </div>
-
                             </div>
                         </section> 
                 <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"></div>

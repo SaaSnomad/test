@@ -14,8 +14,8 @@ $db->bind(':buyer_email', $_POST['buyer_email']);
 $db->bind(':buyer_country', $_POST['buyer_country']);
 
 if($db->execute()){
-    echo "Congrats! You have successfully subscribed to get notified about latest featured SaaS offers.";
+    echo json_encode(['title'=>'Congrats!', 'message'=>'You have successfully subscribed to get notified about latest featured SaaS offers.']);
 } else {
-    echo "Sorry! Could not process your request. Please try again later.";
+    echo json_encode(['title'=>'Sorry!', 'message'=>'Could not process your request. Please try again later.']);
 }
 ?>

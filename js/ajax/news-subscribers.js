@@ -18,16 +18,16 @@ $(document).ready(function() {
 			url 		: 'news-subscribers.php', // the url where we want to POST
 			data 		: formData, // our data object
 			dataType 	: 'json', // what type of data do we expect back from the server
-			encode 		: true
-			/*,
+			encode 		: true,
 			success: function (msg) {  
 	        	$("#subscribe-msg").hide();
 	        	$(form).hide();
 	        	$("#preloader").css('display','block');
 				setTimeout(function () {	        	
 					$("#preloader").css('display','none');
-					$(form).fadeIn();
-	            	$(form).html("<blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Congrats!</p></blockquote><p>You have successfully subscribed for the latest articles on SaaS M&A. We will send it to you weekly. Enjoy!</p></blockquote>"); 
+					$("#news-success").css('display','block');
+	        		$("#news-success-title").html(msg['title']);
+                    $("#news-success-message").html(msg['message']); 
                 }, 2000);
 	        }, 
 	        error: function (msg) {	 
@@ -36,11 +36,12 @@ $(document).ready(function() {
 	        	$("#preloader").css('display','block');
 				setTimeout(function () {	        	
 					$("#preloader").css('display','none');
-					$(form).fadeIn();
-                	$(form).html("<blockquote class='blockquote bq-warning' style='border-left: none;padding: 0;'><p class='bq-title' style='padding-left: 0;'>Sorry!</p></blockquote><p>Could not process your request. Please try again later.</p></blockquote>"); 
-                }, 2000);
+					$("#news-error").css('display','block');
+	        		$("#news-error-title").html(msg['title']);
+                    $("#news-error-message").html(msg['message']); 
+	                }, 2000);
  
-	        }*/
+	        }
 		});
 
 		// stop the form from submitting the normal way and refreshing the page

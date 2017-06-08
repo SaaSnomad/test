@@ -267,8 +267,23 @@
                                                 <button class="btn btn-primary btn-lg" type="submit">Subscribe</button>
                                             </div>
                                         </form>
+                                        <div id="news-success" style="display:none;">
+                                            <blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding:0;'>
+                                                <p id="news-success-title" class='bq-title' style='padding-left: 0;'></p>
+                                            </blockquote>
+                                            <div>
+                                                <p id="news-success-message"></p>
+                                            </div>
+                                        </div>
+                                        <div id="news-error" style="display:none;">
+                                            <blockquote class='blockquote bq-warning' style='border-left: none;padding:0;'>
+                                                <p id="news-error-title" class='bq-title' style='padding-left: 0;'></p>
+                                            </blockquote>
+                                            <div>
+                                                <p id="news-error-message"></p>
+                                            </div>
+                                        </div>
                                         <div id="preloader" style="display:none;margin-top:50px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -290,7 +305,7 @@
 
 
 <!-- Seller Modal -->
-<div class="modal fade" id="sellerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="sellerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
@@ -365,18 +380,35 @@
                             </label> 
                             <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> </div>
                     </div>
-                    <div class="md-form input-group" style="margin: .1rem 0;width: 100%;">
+                    <div class="md-form input-group" style="margin: 1rem 0;width: 100%;">
                         <button class="btn btn-primary" type="submit" style="width: 100%;margin:0">Apply</button>
                     </div>
                 </form>
+                <div id="seller-success" style="display:none;">
+                    <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
+                        <p id="seller-success-title" class='bq-title' style='padding-left: 0;'></p>
+                    </blockquote>
+                    <div class='text-center'>
+                        <p id="seller-success-message"></p>
+                    </div>
+                </div>
+                <div id="seller-error" style="display:none;">
+                    <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
+                        <p id="seller-error-title" class='bq-title' style='padding-left: 0;'></p>
+                    </blockquote>
+                    <div class='text-center'>
+                        <p id="seller-error-message"></p>
+                    </div>
+                </div>
                 <div id="preloader1" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
             </div>
         </div>
     </div>
-</div>
+</div>  
+
 <!-- Seller Modal -->
 <!-- Buyer Modal -->
-<div class="modal fade" id="buyerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="buyerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
@@ -404,10 +436,26 @@
                             <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> 
                         </div>
                     </div>
-                    <div class="md-form input-group" style="margin: .1rem 0;width: 100%;">
+                    <div class="md-form input-group" style="margin: 1rem 0;width: 100%;">
                         <button class="btn btn-primary" type="submit" style="width: 100%;margin:0">Get notified</button>
                     </div>
                 </form>
+                <div id="buyer-success" style="display:none;">
+                    <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
+                        <p id="buyer-success-title" class='bq-title' style='padding-left: 0;'></p>
+                    </blockquote>
+                    <div class='text-center'>
+                        <p id="buyer-success-message"></p>
+                    </div>
+                </div>
+                <div id="buyer-error" style="display:none;">
+                    <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
+                        <p id="buyer-error-title" class='bq-title' style='padding-left: 0;'></p>
+                    </blockquote>
+                    <div class='text-center'>
+                        <p id="buyer-error-message"></p>
+                    </div>
+                </div>
                 <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
             </div>
         </div>
