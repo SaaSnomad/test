@@ -125,8 +125,8 @@
                             <div class="md-form form-group">
                                 <input type="email" name="calculator_email" id="calculatorEmail" placeholder="Type Your Email *" class="form-control change" maxlength="50" required> 
                             </div>
-                            <input class="range-from" type="text" name="range_from" style="display:none;" />
-                            <input class="range-to" type="text" name="range_to" style="display:none;" />
+                            <input class="range-from" type="text" name="range_from" style="" />
+                            <input class="range-to" type="text" name="range_to" style="" />
                             <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
                             <div class="md-form form-group" style="margin:2rem 0 0;">
                                 <button type="submit" class="btn" name="calculate-bt" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
@@ -146,6 +146,9 @@
                                 <span class="input-group-addon-to">&#36;</span>
                                 <input type="text" placeholder="0" class="range-to form-control change" disabled maxlength="11" aria-label="Amount (to the nearest dollar)"> </div>
                             </br> <small>The model above is intended more for educational purposes than for performing serious valuations. Please read this <a href="disclaimer.php" target="_blank" id="disclaimer">Important Disclaimer.</a></small> <small>We respect your privacy and will not spam you.</small> 
+                        </div>
+                        <div id="unicorn-wrapper" class="text-center" style="display:none;">
+                            <img id="unicorn" src="img/unicorn.png"><h3><b>Congrats, you got a Unicorn!</b></h3>
                         </div>
                     </div>
                 </div>
@@ -458,6 +461,7 @@
                         <p id="buyer-error-message"></p>
                     </div>
                 </div>
+                
                 <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
             </div>
         </div>
@@ -530,11 +534,10 @@
     <script>
         var oldDate = $('#oldDate').html();
         var numItems = $('.rowsCount').length;
-        console.log(numItems);
         var result = parseInt(oldDate) + parseInt(numItems);
         $('#getTotalApplications').html(result);
         $('#getTotalApplications').number( true ); 
-    </script>
+    </script>  
 </body>
 
 </html>

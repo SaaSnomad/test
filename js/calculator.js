@@ -103,19 +103,21 @@ function checkForm(form) { // Submit button clicked
 
         setTimeout(function () {
             $("#preloader-calculator").css('display','none');
-            $("#valuation-range").fadeIn();
-            $("#valuation-range").html("<img id='unicorn' src='img/unicorn.png'><h3><b>Congrats, you got a Unicorn!</b></h3>");
-            $("#valuation-range").addClass("text-center");
-            $("#calculate-btn").addClass("disabled btn");
+            $("#valuation-range").hide();
+            $("#unicorn-wrapper").css('display','block');
         }, 2000); 
-        
+
     }else {
         $(".range-from").val(Math.round(res_eq_val_low));
         $(".range-to").val(Math.round(res_eq_val_high));
     }
 
-    
-
     return
     
-} 
+}  
+
+
+
+
+
+

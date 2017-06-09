@@ -8,7 +8,7 @@ $(document).ready(function() {
 		// there are many ways to get this data using jQuery (you can use the class or id also)
 		var formData = {
 			'calculator_region' 	: $('select#calculator_region option:selected').text(),
-			'calculator_mrr	' 		: $('input[name=calculator_mrr	]').val(),
+			'calculator_mrr' 		: $('input[name=calculator_mrr]').val(),
 			'calculator_mrr_growth'	: $('input[name=calculator_mrr_growth]').val(),
 			'calculator_margin'     : $('input[name=calculator_margin]').val(),
 			'calculator_burn' 	    : $('input[name=calculator_burn]').val(),
@@ -22,7 +22,7 @@ $(document).ready(function() {
 			type 		: 'POST', // define the type of HTTP verb we want to use (POST for our form)
 			url 		: 'calculator.php', // the url where we want to POST
 			data 		: formData, // our data object
-			dataType 	: 'json', // what type of data do we expect back from the server
+			dataType 	: 'text', // what type of data do we expect back from the server
 			encode 		: true
 		})  
 

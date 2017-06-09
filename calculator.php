@@ -3,12 +3,9 @@
 <?php
 // Create DB Object
 $db = new Database;
-
 // Run Query
 $db->query("INSERT INTO calculator (calculator_region, calculator_mrr, calculator_mrr_growth, calculator_margin, calculator_burn, calculator_email, range_from, range_to, calculator_location) VALUES (:calculator_region, :calculator_mrr, :calculator_mrr_growth, :calculator_margin, :calculator_burn, :calculator_email, :range_from, :range_to, :calculator_location)");
-
 // Bind Values
-
 $db->bind(':calculator_region', $_POST['calculator_region']);
 $db->bind(':calculator_mrr', $_POST['calculator_mrr']); 
 $db->bind(':calculator_mrr_growth', $_POST['calculator_mrr_growth']); 
@@ -24,5 +21,4 @@ if($db->execute()){
 } else {
     echo "Sorry!";
 }
-
 ?>
