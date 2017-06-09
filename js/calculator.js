@@ -22,7 +22,6 @@ function checkForm(form) { // Submit button clicked
 
     // Internal variables 
     var int_var_region_coef;                // Region coefficient
-    var int_var_mrr_growth_base;            // Baseline MRR growth. Not used but may need it
     var int_var_arr_running;                // Baseline MRR growth
     var int_var_arr_back;                   // ARR 12m back
     var int_var_arr_growth;                 // ARR growth
@@ -75,11 +74,10 @@ function checkForm(form) { // Submit button clicked
     } 
 
     // Internal variables 
-    int_var_mrr_growth_base = (Math.pow((1 + int_ass_arr_growth),(1/12)) - 1;      //not used but may need it
     int_var_arr_running = user_mrr * 12;
-    int_var_arr_back = Math.pow(user_mrr, (1/12)) *12;
+    int_var_arr_back = user_mrr / Math.pow((1 + user_mrr_growth), 12) *12;
     int_var_arr_growth = int_var_arr_running / int_var_arr_back - 1;
-    int_var_growth_coef = user_mrr_growth / int_var_mrr_growth_base;
+    int_var_growth_coef = (1 + int_var_arr_growth) / (1 + int_ass_arr_growth); 
     int_var_profit = int_var_arr_running * user_margin;
     int_var_margin_coef = user_margin / int_ass_margin;
     int_var_profit_mult = int_ass_arr_mult / int_ass_margin;
@@ -88,10 +86,14 @@ function checkForm(form) { // Submit button clicked
     res_eq_val_base = int_var_arr_running * int_ass_arr_mult;                     //Baseline equity value
     // var valuation_base_check = profit * profit_mult / margin_coef;             //Baseline equity value (check)
     res_eq_val_adj_coef = int_var_region_coef * int_var_growth_coef * int_var_margin_coef * int_var_burn_coef;     //Valuation adjustment coeficient
+    // RESULT (END FORMULA)
     res_eq_val = res_eq_val_base * res_eq_val_adj_coef;                           //Adjusted equity value
     res_eq_val_mult = res_eq_val / int_var_arr_running;                           //Implied ARR multiple
+    
+    // Valuation Range 
     res_eq_val_low = res_eq_val * (1 - int_ass_error);                            //Valuation range - low
     res_eq_val_high = res_eq_val * (1 + int_ass_error);                           //Valuation range - high
+
     res_eq_val_mult_low = res_eq_val_low / int_var_arr_running;                   //Implied ARR multiple - low
     res_eq_val_mult_high = res_eq_val_high / int_var_arr_running;                 //Implied ARR multiple - high
     

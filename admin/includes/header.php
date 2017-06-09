@@ -47,11 +47,11 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-light_blue.min.css">
     <link rel="stylesheet" href="css/admin-style.css">
     <link rel="stylesheet" href="css/admin-custom.css">
 
-    <link rel="stylesheet" href="css/material.min.css">
+    <!--<link rel="stylesheet" href="css/material.min.css">-->
     <link rel="stylesheet" href="css/dataTables.material.min.css">
     <link rel="stylesheet" href="css/buttons.dataTables.min.css">
 

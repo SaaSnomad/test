@@ -322,10 +322,11 @@
                     </div>
                     <div class="md-form form-group" style="display:none;">
                         <input name="seller_country" placeholder="Country" type="text" class="geotext[country]"> 
-                    </div>
+                    </div> 
+
                     <div class="md-form form-group" id="multiselect" style="width: 100%;top: -7px;">
-                        <label for "seller_industry" style="font-size: 0.8rem;position: relative;z-index: 1000;top:4px;">Industry</label>
-                        <select name="seller_industry" id="seller_industry" data-placeholder="Industry" class="chosen-select form-control" multiple tabindex="4">
+                        <label for "seller_industry" style="font-size: 0.8rem;position: relative;z-index: 1000;top:8px;">Industry</label>
+                        <select name="seller_industry" id="seller_industry" data-placeholder="Industry" class="chosen-select form-control" tabindex="2">
                             <option value=""></option>
                             <option value="AdTech">AdTEch</option>
                             <option value="AI">AI</option>
@@ -365,6 +366,7 @@
                             <option value="Telecommunications">Telecommunications</option>
                             <option value="Transportation">Transportation</option>
                             <option value="Travel">Travel</option>
+                            <option value="Travel">Other</option>
                         </select>
                     </div>
                     <div class="md-form form-group"> 
