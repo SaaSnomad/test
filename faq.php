@@ -23,7 +23,25 @@
     <link href="css/mdb.css" rel="stylesheet"> 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> 
-
+    <style>
+        h3 {
+            margin: 2rem 0 1rem;
+        }
+        #content ul li {
+            margin-bottom: 10px;
+            margin-left: 0;
+        }
+        #content ul li:before {
+            content: "";
+            line-height: .5em;
+            width: .3em;
+            height: .3em;
+            background-color: #0275d8;
+            float: left;
+            margin: .55em 1.25em .55em 0;
+            border-radius: 50%;
+        } 
+    </style>
 </head>
 
 <body>
@@ -41,154 +59,58 @@
                 <div class="col-lg-3 col-md-3 col-sm-1 hidden-xs"> </div>
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">  
                     <div id="content">
-                        <section id="home">
                         <a href="index.php" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
                         <h1 style="margin: 30px 0;">FAQ</h1>
-                            <h3>Home</h3>
+                        <ul>
+                            <li><a class="anchor" href="#about">What is SaaSNomad?</a></li>
+                            <li><a class="anchor" href="#seller">Do I have to pay to register as a Seller?</a></li>
+                            <li><a class="anchor" href="#anonymity">How does SaaSNomad preserve the anonymity of my offer?</a></li>
+                            <li><a class="anchor" href="#buyer">Do I have to pay to apply as a Buyer?</a></li>
+                            <li><a class="anchor" href="#more">How do I find out more about a featured company?</a></li>
+                        </ul>
+                        <section id="about">                            
+                            <h3>What is SaaSNomad?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
+                                SaaSNomad.com is just a place where you can meet a potential Buyer.
+                            </p> 
                         </section>
-                        <section id="webdesign">
-                            <h3>Web Design</h3>
+                        <section id="seller">
+                            <h3>Do I have to pay to register as a Seller?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
+                                It’s free to apply your SaaS for sale via SaaSNomad.com. 
+                                Fees are paid when you decide to answer the Buyer's contact request.
+                            </p> 
                         </section>
-                        <section id="css">
-                            <h3>CSS</h3>
+                        <section id="anonymity">
+                            <h3>How does SaaSNomad preserve the anonymity of my offer?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
+                                SaaSNomad provides the opportunity to sale your SaaS absolutely anonymously. 
+                                That's why SaaSNomad does not allow the display of your contact details within a business card.
+                                Buyer request will be delivered to you via the website. 
+                                Then you decide to whom to reveal your contact. 
+                            </p> 
                         </section>
-                        <section id="tools">
-                            <h3>Tools</h3>
+                        <section id="buyer">
+                            <h3>Do I have to pay to apply as a Buyer?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
+                                SaaSNomad is absolutely free for you as a Buyer as well as all 
+                                benefits which include the ability to get notified about all newly featured companies.
+                            </p> 
                         </section>
-                        <section id="tutorials">
-                            <h3>Tutorials</h3>
+                        <section id="more">
+                            <h3>How do I find out more about a featured company?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
-                            </p>
-                        
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
+                                You can contact the Seller directly via the SaaSNomad site if you want further information about a featured company. 
+                                Just fill out the request form following the link at the foot of the featured company card, 
+                                and we will get back to you within 24 hours with response from the Seller.
+                                In case of positive response from the Seller you will get his/her contact absolutely for free.
+                                Then to find out more about a SaaS you just contact the seller directly.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-                                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                                zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
-                                tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
-                                quod mazim placerat facer possim assum.
+                                Please note: we may request more information from you before disclosing the Seller's contact.
+                                They may also ask you to sign a confidentiality agreement. Also called a non-disclosure agreement, 
+                                this protects the seller against the risk of confidential information, such as financial records, 
+                                falling into the wrong hands – i.e. the press or competitors.
                             </p>
                         </section>
                     </div>
@@ -219,6 +141,13 @@
             scrollTop: 0
         }, 600);
         return false;
+    });
+    $(document).on('click', '.anchor', function(event){
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 600);
     });
     </script> 
 
