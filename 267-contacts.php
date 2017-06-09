@@ -110,7 +110,7 @@
                                         <div>
                                             <p id="request-success-message" style='margin-bottom:2.5rem;'></p>
                                         </div>
-                                        <a href='../index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
                                     </div>
                                     <div id="request-error" style="display:none;">
                                         <blockquote class='blockquote bq-warning' style='border-left: none;padding:0;'>
@@ -119,7 +119,7 @@
                                         <div>
                                             <p id="request-error-message"></p>
                                         </div>
-                                        <a href='../index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
                                     </div>
                                     <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>

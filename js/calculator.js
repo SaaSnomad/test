@@ -98,19 +98,31 @@ function checkForm(form) { // Submit button clicked
     res_eq_val_mult_high = res_eq_val_high / int_var_arr_running;                 //Implied ARR multiple - high
     
     if (res_eq_val_high > 1000000000) {
-        $("#valuation-range").hide();
-        $("#preloader-calculator").css('display','block');
+        $("#valuation-range").addClass('hide');
+        $("#preloader-calculator").removeClass('hide');
+        $("#preloader-calculator").addClass('show');
 
+        $(".range-from").val(Math.round(res_eq_val_low));
+        $(".range-to").val(Math.round(res_eq_val_high));
         setTimeout(function () {
-            $("#preloader-calculator").css('display','none');
-            $("#valuation-range").hide();
-            $("#unicorn-wrapper").css('display','block');
+            $("#preloader-calculator").removeClass('show');
+            $("#preloader-calculator").addClass('hide');
+            $("#unicorn-wrapper").addClass('show');
+            $("#unicorn-wrapper").removeClass('hide');
+
+            //$("#refresh-block").css('display','block');
+            //$("#calculate-block").css('display','none');
         }, 2000); 
 
     }else {
+        $("#valuation-range").removeClass('hide');
+        $("#valuation-range").addClass('show');
+        $("#unicorn-wrapper").removeClass('show');
+        $("#unicorn-wrapper").addClass('hide');
         $(".range-from").val(Math.round(res_eq_val_low));
         $(".range-to").val(Math.round(res_eq_val_high));
     }
+    
 
     return
     

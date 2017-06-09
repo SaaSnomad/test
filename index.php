@@ -34,8 +34,16 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- Load More -->
     <link rel="stylesheet" href="css/load-more.css"> 
-    <!-- Recaptcha 
-    <script src='https://www.google.com/recaptcha/api.js'></script>  -->    
+    <!-- Recaptcha   -->   
+    <script src='https://www.google.com/recaptcha/api.js'></script> 
+    <style>
+        .show {
+            display:block;
+        }
+        .hide {
+            display:none;
+        }
+    </style>
                
 </head>
 <body>
@@ -125,17 +133,20 @@
                             <div class="md-form form-group">
                                 <input type="email" name="calculator_email" id="calculatorEmail" placeholder="Type Your Email *" class="form-control change" maxlength="50" required> 
                             </div>
-                            <input class="range-from" type="text" name="range_from" style="" />
-                            <input class="range-to" type="text" name="range_to" style="" />
+                            <input class="range-from" type="text" name="range_from" style="display:none;" />
+                            <input class="range-to" type="text" name="range_to" style="display:none;" />
                             <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
-                            <div class="md-form form-group" style="margin:2rem 0 0;">
-                                <button type="submit" class="btn" name="calculate-bt" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
+                            <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
+                                <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
+                            </div>
+                            <div class="md-form form-group" id="refresh-block" style="margin:2rem 0 0;display:none;">
+                                <a class="btn" href="index.php" id="refresh-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Please Refresh <i class="fa fa-refresh" aria-hidden="true" style="color:white;"></i></a>
                             </div>
                         </form>
 
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                        <div id="preloader-calculator" style="display:none;margin-top:180px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                        <div id="preloader-calculator" style="margin-top:180px;" class="text-center hide"><img src="img/preloader.gif" style="width:20%;"></div>
                         <div id="valuation-range">
                             <h4 style="margin-bottom:0;margin-top:5rem;">From:</h4>
                             <div class="md-form form-group"> 
@@ -147,7 +158,7 @@
                                 <input type="text" placeholder="0" class="range-to form-control change" disabled maxlength="11" aria-label="Amount (to the nearest dollar)"> </div>
                             </br> <small>The model above is intended more for educational purposes than for performing serious valuations. Please read this <a href="disclaimer.php" target="_blank" id="disclaimer">Important Disclaimer.</a></small> <small>We respect your privacy and will not spam you.</small> 
                         </div>
-                        <div id="unicorn-wrapper" class="text-center" style="display:none;">
+                        <div id="unicorn-wrapper" class="text-center hide">
                             <img id="unicorn" src="img/unicorn.png"><h3><b>Congrats, you got a Unicorn!</b></h3>
                         </div>
                     </div>
@@ -538,6 +549,6 @@
         $('#getTotalApplications').html(result);
         $('#getTotalApplications').number( true ); 
     </script>  
+ 
 </body>
-
 </html>
