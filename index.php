@@ -183,48 +183,45 @@
             </div>
         </div>
     </div>
-    <!--/Section: Landing--> 
-
+    <!--/Section: Landing-->  
     <!--Section: Why Us-->
     <section id="why-us-section">
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <div class="col-lg-5 col-md-11 col-sm-11 col-xs-12">
+                
                 <div id="dots">
                     <div class="dot">
-                        <div class="centraldot1"></div>
+                        <div class="centraldot1" id="tt1"></div>
+                        <div class="mdl-tooltip tooltip1 is-active" for="tt1">
+                            We're considering buying<br>a Unicorn to build on our<br>organic growth strategy
+                        <div class="arrow-down1"></div>
+                        </div>
                         <div class="wave1"></div>
                         <div class="wave1.2"></div>
-                    </div>
+                    </div> 
                     <div class="dot">
-                        <div class="centraldot2"></div>
+                        <div class="centraldot2" id="tt2"></div>
+                        <div class="mdl-tooltip tooltip2 is-active" for="tt2">
+                            We look for AdTech<br>SaaS to boost our<br>integration capabilities
+                            <div class="arrow-down2"></div>
+                        </div>
                         <div class="wave2"></div>
                         <div class="wave2.2"></div>
                     </div>
                     <div class="dot">
-                        <div class="centraldot3"></div>
+                        <div class="centraldot3" id="tt3"></div>
+                        <div class="mdl-tooltip tooltip3 is-active" for="tt3">
+                            I want to buy a small<br>SaaS with clients<br>in United States
+                            <div class="arrow-up3"></div>
+                        </div>
                         <div class="wave3"></div>
                         <div class="wave3.2"></div>
                     </div>
-                    <div class="dot">
-                        <div class="centraldot4"></div>
-                        <div class="wave4"></div>
-                        <div class="wave4.2"></div>
-                    </div>
-                    <div class="dot">
-                        <div class="centraldot5"></div>
-                        <div class="wave5"></div>
-                        <div class="wave5.2"></div>
-                    </div>
-                    <div class="dot">
-                        <div class="centraldot6"></div>
-                        <div class="wave6"></div>
-                        <div class="wave6.2"></div>
-                    </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 values">
-                <h2 class="display-4" style="margin-top: 50px;">HIGH VALUES</h2><h4>Our success is not only due to the quality of our work; it’s down to attitude, our approach and the way we treat our clients.</h4>
+            <div class="col-lg-5 col-md-11 col-sm-11 col-xs-12 values">
+                <h2 class="display-4" style="margin-top: 40px;">HIGH VALUES</h2><h4>Our success is not only due to the quality of our work; it’s down to attitude, our approach and the way we treat our partners.</h4>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
@@ -237,16 +234,11 @@
             <h2>How it Works</h2> 
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title" style="margin-right: 57px;"><span class="steps">1</span>Apply for Free</p>
-                </blockquote>
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title"><span class="steps">2</span>Buyers Get Notified</p>
-                </blockquote>
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title" style="margin-right: 50px;"><span class="steps">3</span>Receive Offers</p>
-                </blockquote>
+            <div class="col-lg-3 col-md-2 col-sm-1 hidden-xs-down"></div>
+            <div class="col-lg-3 col-md-4 col-sm-5 hidden-xs-down">
+                <h4 style="margin: 20px 0;"><span class="steps">1</span>Apply for Free</h4>
+                <h4 style="margin: 80px 0;"><span class="steps">2</span>Buyers Get Notified</h4>
+                <h4 style="margin: 20px 0;"><span class="steps">3</span>Receive Offers</h4>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side" style="padding-left: 0;">
                 <h3 style="display:none;">Apply SaaS for Review</h3>
@@ -290,7 +282,7 @@
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
                 <h2 class="display-4 white-text">For Buyers</h2>
-                <p class="white-text"> SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias </p>
+                <p class="white-text"> SaaSNomad is the place where you can find a SaaS</br>to buy according to your criterias for free</p>
                 <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal">Get notified</a> 
                 <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success">Find SaaS</a> 
             </div>
@@ -608,7 +600,6 @@
         var result = parseInt(oldDate) + parseInt(numItems);
         $('#getTotalApplications').html(result);
         $('#getTotalApplications').number( true ); 
-    </script>  
- 
+    </script>   
 </body>
 </html>
