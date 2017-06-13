@@ -343,6 +343,9 @@ footer ul li {
     padding-top: 50px;
     padding-bottom:50px;
 } 
+#why-us-section .values {
+    padding-left: 0;
+}
 #why-us-section .row{
     padding-bottom: 0px;
 }  
@@ -549,6 +552,12 @@ footer ul li {
         border-bottom-left-radius: 6px!important;
         border-bottom-right-radius: 6px!important;
         border-top-right-radius: 0!important
+    }
+    #why-us-section .values {
+        padding-left: 15px;
+    }
+    #why-us-section #dots {
+        margin-right: -13px;
     }
     ::-webkit-scrollbar {
         display: none

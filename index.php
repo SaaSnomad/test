@@ -57,6 +57,9 @@
         #about-section .blockquote {
             padding: 1.3rem 3rem !important;
         }
+        #about-section .bq-primary {
+            border-right: 0;
+        }
     </style>
                
 </head>
@@ -154,7 +157,7 @@
                                 <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
                             </div>
                             <div class="md-form form-group" id="refresh-block" style="margin:2rem 0 0;display:none;">
-                                <a class="btn" href="index.php" id="refresh-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Please Refresh <i class="fa fa-refresh" aria-hidden="true" style="color:white;"></i></a>
+                                <a class="btn" href="https://saasnomad.com" id="refresh-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Please Refresh <i class="fa fa-refresh" aria-hidden="true" style="color:white;"></i></a>
                             </div>
                         </form>
 
@@ -220,7 +223,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 align-middle" style="padding-left: 0;">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 values">
                 <h2 class="display-4" style="margin-top: 50px;">HIGH VALUES</h2><h4>Our success is not only due to the quality of our work; it’s down to attitude, our approach and the way we treat our clients.</h4>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
@@ -245,7 +248,7 @@
                     <p class="bq-title" style="margin-right: 50px;"><span class="steps">3</span>Receive Offers</p>
                 </blockquote>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side" style="padding-left: 0;">
                 <h3 style="display:none;">Apply SaaS for Review</h3>
                 <p>Describe the state of your business</br>so that the potential buyer will be</br>able to assess your proposal</p>
                 <h3 style="display:none;">Buyers Get Notified</h3>
