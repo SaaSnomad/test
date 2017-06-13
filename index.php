@@ -33,15 +33,27 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
     <link rel="stylesheet" href="css/slick.css">
     <!-- Load More -->
-    <link rel="stylesheet" href="css/load-more.css"> 
-    <!-- Recaptcha   -->   
-    <script src='https://www.google.com/recaptcha/api.js'></script> 
+    <link rel="stylesheet" href="css/load-more.css">
+    <!-- Dots -->
+    <link rel="stylesheet" href="css/dots.css"> 
+    <!-- Recaptcha  
+    <script src='https://www.google.com/recaptcha/api.js'></script>  -->   
     <style>
         .show {
             display:block;
         }
         .hide {
             display:none;
+        }
+        #about-section .steps {
+            border: 1px solid #292b2c;
+            border-radius: 50%;
+            padding: 2px 10px;
+            margin-right: 10px;
+            color: #292b2c;
+        }
+        #about-section .blockquote {
+            padding: 1.3rem 3rem !important;
         }
     </style>
                
@@ -166,26 +178,69 @@
             </div>
         </div>
     </div>
-        <!--/Section: Landing--> 
- 
+    <!--/Section: Landing--> 
+
+    <!--Section: Why Us-->
+    <section id="why-us-section">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <div id="dots">
+                    <div class="dot">
+                        <div class="centraldot1"></div>
+                        <div class="wave1"></div>
+                        <div class="wave1.2"></div>
+                    </div>
+                    <div class="dot">
+                        <div class="centraldot2"></div>
+                        <div class="wave2"></div>
+                        <div class="wave2.2"></div>
+                    </div>
+                    <div class="dot">
+                        <div class="centraldot3"></div>
+                        <div class="wave3"></div>
+                        <div class="wave3.2"></div>
+                    </div>
+                    <div class="dot">
+                        <div class="centraldot4"></div>
+                        <div class="wave4"></div>
+                        <div class="wave4.2"></div>
+                    </div>
+                    <div class="dot">
+                        <div class="centraldot5"></div>
+                        <div class="wave5"></div>
+                        <div class="wave5.2"></div>
+                    </div>
+                    <div class="dot">
+                        <div class="centraldot6"></div>
+                        <div class="wave6"></div>
+                        <div class="wave6.2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 align-middle" style="padding-left: 0;">
+                <h2 class="display-4" style="margin-top: 50px;">HIGH VALUES</h2><h4>Our success is not only due to the quality of our work; it’s down to attitude, our approach and the way we treat our clients.</h4>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+        </div>
+    </section>
+    <!--/Section: Why Us --> 
 
     <!--Section: About-->
     <section id="about-section">
-        <div class="text-center title-wrapper">
-            <h2>How it Works</h2> </div>
+        <div class="text-center text-muted">
+            <h2>How it Works</h2> 
+        </div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
-                    <p class="bq-title text-muted">Step 1</p>
-                    <h4>Apply for Free</h4> 
+                    <p class="bq-title"><span class="steps">1</span>Apply for Free</p>
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
-                    <p class="bq-title text-muted">Step 2</p>
-                    <h4>Buyers Get Notified</h4> 
+                    <p class="bq-title"><span class="steps">2</span>Buyers Get Notified</p>
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
-                    <p class="bq-title text-muted">Step 3</p>
-                    <h4>Receive Offers</h4> 
+                    <p class="bq-title"><span class="steps">3</span>Receive Offers</p>
                 </blockquote>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side">
@@ -202,9 +257,9 @@
 
     <!--Section: Featured Companies -->        
     <section id="featured-companies">
-        <div class="text-center title-wrapper">
-            <h2>Featured Companies</h2> </div>
-        
+        <div class="text-center title-wrapper text-muted">
+            <h2>Featured Companies</h2> 
+        </div>
         <div class="slider">
             <?php foreach($cards as $card) : ?>
             <article>
@@ -221,7 +276,6 @@
             </article>
             <?php endforeach; ?>
         </div>
-    
     </section> 
     <!--/Section: Featured Companies-->
 
@@ -242,8 +296,9 @@
         
     <!--Section: News-->
     <section id="news-section">
-        <div class="text-center title-wrapper">
-            <h2>Latest articles on SaaS M&A</h2> </div>
+        <div class="text-center title-wrapper text-muted">
+            <h2>Latest articles on SaaS M&A</h2> 
+        </div>
         <div class="row" style="padding-top:0;">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">

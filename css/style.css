@@ -44,7 +44,6 @@ var {
 }
 
 
-
 #sellerModal .close, #buyerModal .close {
     position: absolute; right: 10px; top: 10px;
 }
@@ -332,29 +331,36 @@ footer ul li {
 
 /* Sections */ 
 
+#why-us-section,
 #about-section,
-#featured-companies, 
-#news-section {
-    height:auto;
-    background-color: #f3f3f3
+#news-section, 
+#featured-companies {
+    height:auto;   
+    background-color: #f3f3f3;
 }
-#about-section {
+#why-us-section {
     margin-top: -100px;
+    padding-top: 50px;
+    padding-bottom:50px;
+} 
+#why-us-section .row{
+    padding-bottom: 0px;
+}  
+#about-section .row{
+    padding-bottom: 0px;
+}
+.title-wrapper {
+    padding-top: 50px;
 } 
 #featured-companies {
-    background-image: url(../img/map.png);
-    background-size: auto;
-    height: auto;
-    text-align: center
+    text-align: center;
 }
 #buyers-section  {
     background-color:#37474f;
     height:auto;
 }
-#about-section .title-wrapper {
-    padding-top: 100px;
-} 
 #featured-companies .title-wrapper {
+    padding-top: 50px;
     padding-bottom:30px;
 }
 #news-section .title-wrapper {
