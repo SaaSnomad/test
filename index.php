@@ -46,11 +46,13 @@
             display:none;
         }
         #about-section .steps {
-            border: 1px solid #292b2c;
+            border: 0;
             border-radius: 50%;
             padding: 2px 10px;
             margin-right: 10px;
-            color: #292b2c;
+            color: #fff;
+            background-color: #4285F4;
+            opacity: 0.7;
         }
         #about-section .blockquote {
             padding: 1.3rem 3rem !important;
@@ -234,13 +236,13 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
-                    <p class="bq-title"><span class="steps">1</span>Apply for Free</p>
+                    <p class="bq-title" style="margin-right: 57px;"><span class="steps">1</span>Apply for Free</p>
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
                     <p class="bq-title"><span class="steps">2</span>Buyers Get Notified</p>
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
-                    <p class="bq-title"><span class="steps">3</span>Receive Offers</p>
+                    <p class="bq-title" style="margin-right: 50px;"><span class="steps">3</span>Receive Offers</p>
                 </blockquote>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side">
@@ -284,7 +286,7 @@
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
-                <h1 class="display-4 white-text">For Buyers</h1>
+                <h2 class="display-4 white-text">For Buyers</h2>
                 <p class="white-text"> SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias </p>
                 <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal">Get notified</a> 
                 <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success">Find SaaS</a> 
