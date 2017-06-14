@@ -67,7 +67,7 @@
                                         <div>
                                             <p id="coming-soon-success-message" style='margin-bottom:2.5rem;'></p>
                                         </div>
-                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                        <a href='https://saasnomad.com' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
                                     </div>
                                     <div id="coming-soon-error" style="display:none;">
                                         <blockquote class='blockquote bq-warning' style='border-left: none;padding:0;'>
@@ -76,7 +76,7 @@
                                         <div>
                                             <p id="coming-soon-error-message"></p>
                                         </div>
-                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                        <a href='https://saasnomad.com' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
                                     </div>
                                     <div id="preloader" style="display:none;margin-top:50px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>
@@ -98,7 +98,7 @@
                 <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
 
-                    <a href="../index.php" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
+                    <a href="../https://saasnomad.com" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>
                     <ul style="display:inline-block;">
                         <li>
                           <a href="faq.php" target="_blank" class="text-uppercase">

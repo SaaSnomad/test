@@ -5132,7 +5132,7 @@ blockquote p {
   border-width: 3px; }
 
 .blockquote .bq-title {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.5rem;
   margin-bottom: 0; }
 
@@ -5143,7 +5143,7 @@ blockquote p {
   border-right: 3px solid #4285F4;
   text-align: right; }
   .bq-primary .bq-title {
-    color: #4285F4; }
+    color: #292b2c; }
 
 .bq-warning {
   border-left: 3px solid #ffbb33; }

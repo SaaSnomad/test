@@ -33,15 +33,32 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
     <link rel="stylesheet" href="css/slick.css">
     <!-- Load More -->
-    <link rel="stylesheet" href="css/load-more.css"> 
-    <!-- Recaptcha   -->   
-    <script src='https://www.google.com/recaptcha/api.js'></script> 
+    <link rel="stylesheet" href="css/load-more.css">
+    <!-- Dots -->
+    <link rel="stylesheet" href="css/dots.css"> 
+    <!-- Recaptcha  
+    <script src='https://www.google.com/recaptcha/api.js'></script>  -->   
     <style>
         .show {
             display:block;
         }
         .hide {
             display:none;
+        }
+        #about-section .steps {
+            border: 0;
+            border-radius: 50%;
+            padding: 2px 10px;
+            margin-right: 10px;
+            color: #fff;
+            background-color: #4285F4;
+            opacity: 0.7;
+        }
+        #about-section .blockquote {
+            padding: 1.3rem 3rem !important;
+        }
+        #about-section .bq-primary {
+            border-right: 0;
         }
     </style>
                
@@ -140,7 +157,7 @@
                                 <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
                             </div>
                             <div class="md-form form-group" id="refresh-block" style="margin:2rem 0 0;display:none;">
-                                <a class="btn" href="index.php" id="refresh-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Please Refresh <i class="fa fa-refresh" aria-hidden="true" style="color:white;"></i></a>
+                                <a class="btn" href="https://saasnomad.com" id="refresh-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Please Refresh <i class="fa fa-refresh" aria-hidden="true" style="color:white;"></i></a>
                             </div>
                         </form>
 
@@ -166,29 +183,64 @@
             </div>
         </div>
     </div>
-        <!--/Section: Landing--> 
- 
+    <!--/Section: Landing-->  
+    <!--Section: Why Us-->
+    <section id="why-us-section">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-5 col-md-11 col-sm-11 col-xs-12">
+                
+                <div id="dots">
+                    <div class="dot">
+                        <div class="centraldot1" id="tt1"></div>
+                        <div class="mdl-tooltip tooltip1 is-active" for="tt1">
+                            We're considering buying<br>a Unicorn to build on our<br>organic growth strategy
+                        <div class="arrow-down1"></div>
+                        </div>
+                        <div class="wave1"></div>
+                        <div class="wave1.2"></div>
+                    </div> 
+                    <div class="dot">
+                        <div class="centraldot2" id="tt2"></div>
+                        <div class="mdl-tooltip tooltip2 is-active" for="tt2">
+                            We look for AdTech<br>SaaS to boost our<br>integration capabilities
+                            <div class="arrow-down2"></div>
+                        </div>
+                        <div class="wave2"></div>
+                        <div class="wave2.2"></div>
+                    </div>
+                    <div class="dot">
+                        <div class="centraldot3" id="tt3"></div>
+                        <div class="mdl-tooltip tooltip3 is-active" for="tt3">
+                            I want to buy a small<br>SaaS with clients<br>in United States
+                            <div class="arrow-up3"></div>
+                        </div>
+                        <div class="wave3"></div>
+                        <div class="wave3.2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-11 col-sm-11 col-xs-12 values">
+                <h2 class="display-4" style="margin-top: 40px;">HIGH VALUES</h2><h4>Our success is not only due to the quality of our work; it’s down to attitude, our approach and the way we treat our partners.</h4>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+        </div>
+    </section>
+    <!--/Section: Why Us --> 
 
     <!--Section: About-->
     <section id="about-section">
-        <div class="text-center title-wrapper">
-            <h2>How it Works</h2> </div>
+        <div class="text-center text-muted">
+            <h2>How it Works</h2> 
+        </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title text-muted">Step 1</p>
-                    <h4>Apply for Free</h4> 
-                </blockquote>
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title text-muted">Step 2</p>
-                    <h4>Buyers Get Notified</h4> 
-                </blockquote>
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title text-muted">Step 3</p>
-                    <h4>Receive Offers</h4> 
-                </blockquote>
+            <div class="col-lg-3 col-md-2 col-sm-1 hidden-xs-down"></div>
+            <div class="col-lg-3 col-md-4 col-sm-5 hidden-xs-down">
+                <h4 style="margin: 20px 0;"><span class="steps">1</span>Apply for Free</h4>
+                <h4 style="margin: 80px 0;"><span class="steps">2</span>Buyers Get Notified</h4>
+                <h4 style="margin: 20px 0;"><span class="steps">3</span>Receive Offers</h4>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side" style="padding-left: 0;">
                 <h3 style="display:none;">Apply SaaS for Review</h3>
                 <p>Describe the state of your business</br>so that the potential buyer will be</br>able to assess your proposal</p>
                 <h3 style="display:none;">Buyers Get Notified</h3>
@@ -202,9 +254,9 @@
 
     <!--Section: Featured Companies -->        
     <section id="featured-companies">
-        <div class="text-center title-wrapper">
-            <h2>Featured Companies</h2> </div>
-        
+        <div class="text-center title-wrapper text-muted">
+            <h2>Featured Companies</h2> 
+        </div>
         <div class="slider">
             <?php foreach($cards as $card) : ?>
             <article>
@@ -221,7 +273,6 @@
             </article>
             <?php endforeach; ?>
         </div>
-    
     </section> 
     <!--/Section: Featured Companies-->
 
@@ -230,8 +281,8 @@
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
-                <h1 class="display-4 white-text">For Buyers</h1>
-                <p class="white-text"> SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias </p>
+                <h2 class="display-4 white-text">For Buyers</h2>
+                <p class="white-text"> SaaSNomad is the place where you can find a SaaS</br>to buy according to your criterias for free</p>
                 <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal">Get notified</a> 
                 <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success">Find SaaS</a> 
             </div>
@@ -242,8 +293,9 @@
         
     <!--Section: News-->
     <section id="news-section">
-        <div class="text-center title-wrapper">
-            <h2>Latest articles on SaaS M&A</h2> </div>
+        <div class="text-center title-wrapper text-muted">
+            <h2>Latest articles on SaaS M&A</h2> 
+        </div>
         <div class="row" style="padding-top:0;">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -548,7 +600,6 @@
         var result = parseInt(oldDate) + parseInt(numItems);
         $('#getTotalApplications').html(result);
         $('#getTotalApplications').number( true ); 
-    </script>  
- 
+    </script>   
 </body>
 </html>
