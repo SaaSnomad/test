@@ -9,7 +9,7 @@
    define('SITE_TITLE', 'SaaSnomad');
 
 // Paths
-// define ('BASE_URI', 'http://test.saasnomad.com‘);
+// define ('BASE_URI', 'https://test.saasnomad.com‘);
 
 
 // Define the webserver and path parameters
