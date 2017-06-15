@@ -2,14 +2,14 @@
 
 // DB Params
    define('DB_HOST','localhost');
-   define('DB_USER','root');
-   define('DB_PASS','');
+   define('DB_USER','sndb28');
+   define('DB_PASS','Saasnomad28');
    define('DB_NAME','saasnomad');
 
    define('SITE_TITLE', 'SaaSnomad');
 
 // Paths
-// define ('BASE_URI', 'http://test.saasnomad.com‘);
+// define ('BASE_URI', 'https://test.saasnomad.com‘);
 
 
 // Define the webserver and path parameters
