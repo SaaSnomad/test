@@ -155,7 +155,14 @@
                             <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
                             <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
                                 <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
+<<<<<<< HEAD
                             </div> 
+=======
+                            </div>
+                            <div class="md-form form-group" id="refresh-block" style="margin:2rem 0 0;display:none;">
+                                <a class="btn" href="https://test.saasnomad.com" id="refresh-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Please Refresh <i class="fa fa-refresh" aria-hidden="true" style="color:white;"></i></a>
+                            </div>
+>>>>>>> 055207477118f80d67eaabc79a84470d7540d635
                         </form>
 
                     </div>

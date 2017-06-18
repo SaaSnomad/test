@@ -1,7 +1,7 @@
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
     <!-- jQuery 2.1.3 -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/jsdataTables.material.min.js"></script>
     <script src="js/dataTables.buttons.min.js"></script>
