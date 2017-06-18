@@ -150,21 +150,13 @@
                             <div class="md-form form-group">
                                 <input type="email" name="calculator_email" id="calculatorEmail" placeholder="Type Your Email *" class="form-control change" maxlength="50" required> 
                             </div>
-                            <input class="range-from" type="text" name="range_from" style="display:none;" />
-                            <input class="range-to" type="text" name="range_to" style="display:none;" />
-                            <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
+                                <input class="range-from" type="text" name="range_from" style="display:none;" />
+                                <input class="range-to" type="text" name="range_to" style="display:none;" />
+                                <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
                             <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
                                 <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
-<<<<<<< HEAD
                             </div> 
-=======
-                            </div>
-                            <div class="md-form form-group" id="refresh-block" style="margin:2rem 0 0;display:none;">
-                                <a class="btn" href="https://test.saasnomad.com" id="refresh-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Please Refresh <i class="fa fa-refresh" aria-hidden="true" style="color:white;"></i></a>
-                            </div>
->>>>>>> 055207477118f80d67eaabc79a84470d7540d635
                         </form>
-
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                         <div id="preloader-calculator" style="margin-top:180px;" class="text-center hide"><img src="img/preloader.gif" style="width:20%;"></div>
