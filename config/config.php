@@ -8,4 +8,4 @@ define('DB_NAME','saasnomad');
 define('SITE_TITLE', 'SaasNomad!');
 
 // Paths
-//define ('BASE_URI', 'http://'.$_SERVER['SERVER_NAME'].'/saasnomad/test/‘);
+//define ('BASE_URI', 'https://'.$_SERVER['SERVER_NAME'].'/saasnomad/');
