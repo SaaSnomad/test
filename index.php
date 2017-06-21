@@ -96,9 +96,14 @@
     // Assign Result Set
     $sellers = $db->resultset();
 ?>
+
 <!-- Header -->
 <?php include 'includes/header.php'; ?>
 <!--/.Header-->
+
+<!-- GA tracking -->
+<?php include_once 'includes/analyticstracking.php'; ?>
+<!--/.GA tracking-->
 
 
 <!-- Main container-->

@@ -65,7 +65,6 @@
 </head>
 <body>
 <?php include 'core/init.php'; ?>
-<?php include_once("analyticstracking.php") ?>
 <?php include 'helpers/db_helper.php'; ?>
 
 <!-- Fetch all cards in Featured Companies Section from DB -->
