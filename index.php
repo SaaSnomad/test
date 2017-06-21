@@ -67,6 +67,10 @@
 <?php include 'core/init.php'; ?>
 <?php include 'helpers/db_helper.php'; ?>
 
+<!-- GA tracking -->
+<?php include_once 'includes/analyticstracking.php'; ?>
+<!--/.GA tracking-->
+
 <!-- Fetch all cards in Featured Companies Section from DB -->
 <?php  
     // Create  DB Object
@@ -101,9 +105,6 @@
 <?php include 'includes/header.php'; ?>
 <!--/.Header-->
 
-<!-- GA tracking -->
-<?php include_once 'includes/analyticstracking.php'; ?>
-<!--/.GA tracking-->
 
 
 <!-- Main container-->
