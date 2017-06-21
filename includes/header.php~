@@ -1,5 +1,4 @@
 <header id="top" class="navbar fixed-top">
-<?php include_once("analyticstracking.php") ?>
         <div class="row">
             <div class="col-6">
                 <h4 class="text-muted" id="logo" >
