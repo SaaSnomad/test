@@ -33,11 +33,9 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
     <link rel="stylesheet" href="css/slick.css">
     <!-- Load More -->
-    <link rel="stylesheet" href="css/load-more.css">
-    <!-- Dots -->
-    <link rel="stylesheet" href="css/dots.css"> 
-    <!-- Recaptcha  
-    <script src='https://www.google.com/recaptcha/api.js'></script>  -->   
+    <link rel="stylesheet" href="css/load-more.css"> 
+    <!-- Recaptcha   -->   
+    <script src='https://www.google.com/recaptcha/api.js'></script> 
     <style>
         .show {
             display:block;
@@ -45,25 +43,15 @@
         .hide {
             display:none;
         }
-        #about-section .steps {
-            border: 0;
-            border-radius: 50%;
-            padding: 2px 10px;
-            margin-right: 10px;
-            color: #fff;
-            background-color: #4285F4;
-            opacity: 0.7;
-        }
-        #about-section .blockquote {
-            padding: 1.3rem 3rem !important;
-        }
-        #about-section .bq-primary {
-            border-right: 0;
-        }
+
     </style>
                
 </head>
 <body>
+<!-- Google Analytics -->
+<?php include 'includes/analyticstracking.php'; ?>
+
+
 <?php include 'core/init.php'; ?>
 <?php include 'helpers/db_helper.php'; ?>
 
@@ -82,7 +70,7 @@
     // Create  DB Object
     $db = new Database();
     // Run Query 
-    $db->query("SELECT * FROM news");
+    $db->query("SELECT * FROM news ORDER BY news.id DESC");
     // Assign Result Set
     $news = $db->resultset();
 ?>
@@ -96,14 +84,9 @@
     // Assign Result Set
     $sellers = $db->resultset();
 ?>
-
 <!-- Header -->
 <?php include 'includes/header.php'; ?>
 <!--/.Header-->
-
-<!-- GA tracking -->
-<?php include_once 'includes/analyticstracking.php'; ?>
-
 
 
 <!-- Main container-->
@@ -125,7 +108,7 @@
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
                         <form id="calculator" action="#" role="form" method="POST" onsubmit="return checkForm(this);">
                             <div class="md-form form-group" style="width: 100%;margin-top: 0.8rem;margin-bottom: -13px;">
-                                <select id="calculator_region" name="calculator_region" data-placeholder="Choose a Region *" class="chosen-select" tabindex="2" required>
+                                <select id="calculator_region" name="calculator_region" data-placeholder="Choose a Region" class="chosen-select" tabindex="2" required>
                                     <option value=''></option>
                                     <option value='North America'>North America</option>
                                     <option value='Europe'>Europe</option>
@@ -136,32 +119,35 @@
 
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
-                                <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last Month MRR *" class="form-control change" maxlength="7" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last Month MRR" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
                             </div>
                             
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR Monthly Growth *" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required> 
+                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR Monthly Growth" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required> 
                             </div>
                             
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross Margin *" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required></div>
+                                <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross Margin" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required></div>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
-                                <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly Cash Burn *" class="form-control change" maxlength="7" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly Cash Burn" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
                             </div>
                             <!-- Calculator Number of Employees <div class="md-form form-group"> <input type="text" name="calculatorEmployees" id="calculatorEmployees" placeholder="Number of Employees *" class="form-control change" maxlength="4" aria-label="Amount (to the nearest dollar)" required> </div>-->
                             <div class="md-form form-group">
-                                <input type="email" name="calculator_email" id="calculatorEmail" placeholder="Type Your Email *" class="form-control change" maxlength="50" required> 
+                                <input type="email" name="calculator_email" id="calculatorEmail" placeholder="Type Your Email" class="form-control change" maxlength="50" required> 
                             </div>
-                                <input class="range-from" type="text" name="range_from" style="display:none;" />
-                                <input class="range-to" type="text" name="range_to" style="display:none;" />
-                                <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
+                            <input class="range-from" type="text" name="range_from" style="display:none;" />
+                            <input class="range-to" type="text" name="range_to" style="display:none;" />
+                            <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
+                            <small>* All fields are required. We respect your privacy and will not spam you.</small> 
                             <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
                                 <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
                             </div> 
+                            
                         </form>
+
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                         <div id="preloader-calculator" style="margin-top:180px;" class="text-center hide"><img src="img/preloader.gif" style="width:20%;"></div>
@@ -170,12 +156,15 @@
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon-from">&#36;</span>
                                 <input type="text" placeholder="0" class="range-from form-control change" disabled maxlength="11" aria-label="Amount (to the nearest dollar)"> </div>
-                            <h4 class="calculator" style='margin-top: 3rem;'>To:</h4>
+                            <h4 class="calculator" style='margin-top: 5rem;'>To:</h4>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon-to">&#36;</span>
                                 <input type="text" placeholder="0" class="range-to form-control change" disabled maxlength="11" aria-label="Amount (to the nearest dollar)"> </div>
-                            </br> <small>The model above is intended more for educational purposes than for performing serious valuations. Please read this <a href="disclaimer.php" target="_blank" id="disclaimer">Important Disclaimer.</a></small> <small>We respect your privacy and will not spam you.</small> 
                         </div>
+                        </br> 
+                            <div style="position:absolute;bottom:3.5rem;">
+                                <small>This model is intended more for educational purposes than for performing serious valuations. Please read this <a href="disclaimer.php" target="_blank" id="disclaimer">Important Disclaimer.</a></small>
+                            </div>
                         <div id="unicorn-wrapper" class="text-center hide">
                             <img id="unicorn" src="img/unicorn.png"><h3><b>Congrats, you got a Unicorn!</b></h3>
                         </div>
@@ -184,64 +173,85 @@
             </div>
         </div>
     </div>
-    <!--/Section: Landing-->  
+    <!--/Section: Landing--> 
+ 
+<div id="anchor"></div>
+
     <!--Section: Why Us-->
     <section id="why-us-section">
-        <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            <div class="col-lg-5 col-md-11 col-sm-11 col-xs-12">
+        <div class="text-center title-wrapper">
+            <h2>3 Reasons Why SaaSNomad</h2> 
+        <div class="row" style="padding-top: 40px;">
+            
+            <div id="anonymous" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+                <img src="img/anonymous.png" style="padding-top: 60px;opacity: 0.2;padding-right: 35px;">
+
+            </div>
+            <div id="why-us-reasons" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
+                <div style="padding: 20px 0;">
+                    <h4 class="text-uppercase">Anonymity</h4>
+                    <p>Buyers apply to you,</br>not the other way around</p>
+                </div>
+                <div style="padding: 20px 0;">
+                    <h4 class="text-uppercase">Reach</h4>
+                    <p>Get pitched to hundreds</br>of M&#38;A professionals</p>
+                </div>
                 
-                <div id="dots">
-                    <div class="dot">
-                        <div class="centraldot1" id="tt1"></div>
-                        <div class="mdl-tooltip tooltip1 is-active" for="tt1">
-                            We're considering buying<br>a Unicorn to build on our<br>organic growth strategy
-                        <div class="arrow-down1"></div>
-                        </div>
-                        <div class="wave1"></div>
-                        <div class="wave1.2"></div>
-                    </div> 
-                    <div class="dot">
-                        <div class="centraldot2" id="tt2"></div>
-                        <div class="mdl-tooltip tooltip2 is-active" for="tt2">
-                            We look for AdTech<br>SaaS to boost our<br>integration capabilities
-                            <div class="arrow-down2"></div>
-                        </div>
-                        <div class="wave2"></div>
-                        <div class="wave2.2"></div>
-                    </div>
-                    <div class="dot">
-                        <div class="centraldot3" id="tt3"></div>
-                        <div class="mdl-tooltip tooltip3 is-active" for="tt3">
-                            I want to buy a small<br>SaaS with clients<br>in United States
-                            <div class="arrow-up3"></div>
-                        </div>
-                        <div class="wave3"></div>
-                        <div class="wave3.2"></div>
-                    </div>
+                <div style="padding: 20px 0;">
+                    <h4 class="text-uppercase">Success Fee</h4>
+                    <p>You pay only when there are</br>Buyers interested in your SaaS</p>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-11 col-sm-11 col-xs-12 values">
-                <h2 class="display-4" style="margin-top: 40px;">HIGH VALUES</h2><h4>Our success is not only due to the quality of our work; it’s down to attitude, our approach and the way we treat our partners.</h4>
+
+
+            <!--
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right" style="">
+                <img src="img/anonymous.png" style="padding-top: 40px;">
+
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="border-right:1px solid #4285F4;">
+                <div class="text-center" style="padding: 20px 0;">
+                    <h4 class="text-uppercase">Anonymity</h4>
+                    <p>Buyers apply to you,</br>not the other way around</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="border-right:1px solid #4285F4;">
+                <div class="text-center" style="padding: 20px 0;">
+                    <h4 class="text-uppercase">Reach</h4>
+                    <p>Get pitched to hundreds</br>of M&#38;A professionals</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="text-center" style="padding: 20px 0;">
+                    <h4 class="text-uppercase">Success Fee</h4>
+                    <p>You pay only when there are</br>Buyers interested in your SaaS</p>
+                </div>
+            </div>-->
         </div>
     </section>
-    <!--/Section: Why Us --> 
+    <!--/Section: Why Us--> 
 
     <!--Section: About-->
     <section id="about-section">
-        <div class="text-center text-muted">
-            <h2>How it Works</h2> 
-        </div>
+        <div class="text-center">
+            <h2>How it Works</h2> </div>
         <div class="row">
-            <div class="col-lg-3 col-md-2 col-sm-1 hidden-xs-down"></div>
-            <div class="col-lg-3 col-md-4 col-sm-5 hidden-xs-down">
-                <h4 style="margin: 20px 0;"><span class="steps">1</span>Apply for Free</h4>
-                <h4 style="margin: 80px 0;"><span class="steps">2</span>Buyers Get Notified</h4>
-                <h4 style="margin: 20px 0;"><span class="steps">3</span>Receive Offers</h4>
+            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
+                <blockquote class="blockquote bq-primary">
+                    <p class="bq-title" style="padding:0">Step 1</p>
+                    <h4>Apply for Free</h4> 
+                </blockquote>
+                <blockquote class="blockquote bq-primary">
+                    <p class="bq-title" style="padding:0">Step 2</p>
+                    <h4>Buyers Get Notified</h4> 
+                </blockquote>
+                <blockquote class="blockquote bq-primary">
+                    <p class="bq-title" style="padding:0">Step 3</p>
+                    <h4>Receive Offers</h4> 
+                </blockquote>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side" style="padding-left: 0;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side">
                 <h3 style="display:none;">Apply SaaS for Review</h3>
                 <p>Describe the state of your business</br>so that the potential buyer will be</br>able to assess your proposal</p>
                 <h3 style="display:none;">Buyers Get Notified</h3>
@@ -255,9 +265,9 @@
 
     <!--Section: Featured Companies -->        
     <section id="featured-companies">
-        <div class="text-center title-wrapper text-muted">
-            <h2>Featured Companies</h2> 
-        </div>
+        <div class="text-center title-wrapper">
+            <h2>Featured Companies</h2> </div>
+        
         <div class="slider">
             <?php foreach($cards as $card) : ?>
             <article>
@@ -274,6 +284,7 @@
             </article>
             <?php endforeach; ?>
         </div>
+    
     </section> 
     <!--/Section: Featured Companies-->
 
@@ -282,8 +293,8 @@
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
-                <h2 class="display-4 white-text">For Buyers</h2>
-                <p class="white-text"> SaaSNomad is the place where you can find a SaaS</br>to buy according to your criterias for free</p>
+                <h1 class="display-4 white-text">For Buyers</h1>
+                <p class="white-text"> SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias </p>
                 <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal">Get notified</a> 
                 <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success">Find SaaS</a> 
             </div>
@@ -294,9 +305,8 @@
         
     <!--Section: News-->
     <section id="news-section">
-        <div class="text-center title-wrapper text-muted">
-            <h2>Latest articles on SaaS M&A</h2> 
-        </div>
+        <div class="text-center title-wrapper">
+            <h2>Latest articles on SaaS M&A</h2> </div>
         <div class="row" style="padding-top:0;">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -441,16 +451,19 @@
                         <input name="seller_mrr" id="seller_mrr" placeholder="Last Month MRR" type="text" class="form-control" maxlength="8" aria-label="Amount (to the nearest dollar)" aria-describedby="basic-addon2" style="padding-left: 3%;padding-right:3%;z-index:1000;width: 94%; margin-top: 2rem;">
                         <label for="seller_mrr">Last Month MRR</label>
                     </div>
-                    <div class="md-form form-group" style="margin-bottom: 2.5rem;">
+                    <!--<div class="md-form form-group" style="margin-bottom: 2.5rem;">
                         <div class="rkmd-checkbox checkbox-ripple">
                             <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
                                 <input type="checkbox" id="checkbox-1" required> 
                                 <span class="checkbox"></span> 
                             </label> 
                             <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> </div>
-                    </div>
-                    <div class="md-form input-group" style="margin: 1rem 0;width: 100%;">
+                    </div>-->
+                    <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
                         <button class="btn btn-primary" type="submit" style="width: 100%;margin:0">Apply</button>
+                    </div>
+                    <div class="text-center">
+                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small>
                     </div>
                 </form>
                 <div id="seller-success" style="display:none;">
@@ -496,7 +509,7 @@
                     <div class="md-form form-group" style="margin-top: 44px;display:none;">
                         <input name="buyer_country" placeholder="Country" type="text" class="geotext[country]">
                     </div>
-                    <div class="md-form form-group" style="margin-bottom: 2.5rem;">
+                    <!--<div class="md-form form-group" style="margin-bottom: 2.5rem;">
                         <div class="rkmd-checkbox checkbox-ripple">
                             <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
                                 <input type="checkbox" id="checkbox-1" required> 
@@ -504,9 +517,12 @@
                             </label> 
                             <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> 
                         </div>
-                    </div>
-                    <div class="md-form input-group" style="margin: 1rem 0;width: 100%;">
+                    </div>-->
+                    <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
                         <button class="btn btn-primary" type="submit" style="width: 100%;margin:0">Get notified</button>
+                    </div>
+                    <div class="text-center">
+                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small>
                     </div>
                 </form>
                 <div id="buyer-success" style="display:none;">
@@ -594,13 +610,7 @@
     ?>
     <div style="display:none;" id="oldDate"><?php echo $OldDate->diff($now)->format("%a"); ?></div>
     <div style="display:none;"><?php foreach($sellers as $seller) : ?><span class="rowsCount"><?php echo applicationsCount($seller->id); ?></span><?php endforeach; ?></div>
-    
-    <script>
-        var oldDate = $('#oldDate').html();
-        var numItems = $('.rowsCount').length;
-        var result = parseInt(oldDate) + parseInt(numItems);
-        $('#getTotalApplications').html(result);
-        $('#getTotalApplications').number( true ); 
-    </script>   
+    <script type="text/javascript" src="js/script.js"></script> 
+     
 </body>
 </html>

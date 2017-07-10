@@ -54,7 +54,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">  
                     <div id="content">
                         <section id="home">
-                        <a href="https://saasnomad.com" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
+                        <a href="index.php" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
                         <h1 style="margin: 30px 0;">Terms of Use</h1>
                             <p>
                                 <b>These Terms of Use govern your use of this website which has been designed so that businesses with SaaS business model can be advertised for sale via this website. By using this website, you accept these Terms of Use in full. If you disagree with these Terms of Use or any part of these Terms of Use, you must not use this website. By using this website, and by agreeing to these Terms of Use, you warrant and represent that you are at least 18 years of age. Furthermore, if you wish to buy or sell businesses via this website, you will have to agree to be bound by the additional Seller's Terms and/or Buyer's Terms (set out below).</b>

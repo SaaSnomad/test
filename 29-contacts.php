@@ -33,8 +33,18 @@
     <!-- Header -->
     <?php include 'includes/header.php'; ?>
     <!--/.Header-->
+    <?php include 'core/init.php'; ?>
+    <?php include 'helpers/db_helper.php'; ?>
 
- 
+    <!-- Fetch all cards in Featured Companies Section from DB -->
+    <?php  
+        // Create  DB Object
+        $db = new Database();
+        // Run Query 
+        $db->query('SELECT * FROM cards WHERE id = 29');
+        // Assign Result Set
+        $card = $db->single();
+    ?>
     <!-- Main container-->
     <div class="container-fluid" id="main" style="background-color: #f3f3f3;">
         
@@ -51,9 +61,9 @@
                                         <!--Card content-->
                                         <div class="card-block">
                                             <!--Title-->
-                                            <h4 class="card-title">Cloud Computing</h4>
+                                            <h4 class="card-title"><?php echo $card->industry; ?></h4>
                                             <!--Text-->
-                                            <p class="card-text">&#36;150,000 MRR<br>50 Employees<br>United States</p>
+                                            <p class="card-text"><?php echo $card->traction; ?><br><?php echo $card->employees; ?> Employees<br><?php echo $card->country; ?></p>
                                         </div>
                                         <!--/.Card content-->
 
@@ -66,7 +76,7 @@
                                     <!--/.Card-->
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <form id="requests" action="requests.php" method="POST" role="form" style="padding-top: 10px;">
+                                    <form id="requests" action="requests.php" method="POST" role="form" style="padding-top: 14px;">
 
                                         <!--Name--> 
                                         <div class="md-form form-group">
@@ -86,7 +96,7 @@
                                         <div class="md-form form-group" style="margin-top: 44px;display:none;">
                                             <input value="29" type="text" name="request_id" id="request_id" class="form-control"> 
                                         </div>  
-                                        <!-- Checkbox -->
+                                        <!-- Checkbox
                                                     <div class="md-form form-group">
                                                         <div class="rkmd-checkbox checkbox-ripple">
                                                             <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
@@ -98,10 +108,11 @@
                                                             <a href="terms.php" target="_blank">Terms of Use</a>
                                                             </small>
                                                         </div>
-                                                    </div> 
+                                                    </div>  -->
                                         <div class="md-form input-group" style="margin:0;width: 100%;">
                                             <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0">Request Contact</button>
-                                        </div>          
+                                        </div>      
+                                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small>   
                                     </form>
                                     <div id="request-success" style="display:none;">
                                         <blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding:0;'>
@@ -110,7 +121,7 @@
                                         <div>
                                             <p id="request-success-message" style='margin-bottom:2.5rem;'></p>
                                         </div>
-                                        <a href='https://saasnomad.com' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
                                     </div>
                                     <div id="request-error" style="display:none;">
                                         <blockquote class='blockquote bq-warning' style='border-left: none;padding:0;'>
@@ -119,7 +130,7 @@
                                         <div>
                                             <p id="request-error-message"></p>
                                         </div>
-                                        <a href='https://saasnomad.com' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
                                     </div>
                                     <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>

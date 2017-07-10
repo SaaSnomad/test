@@ -32,6 +32,7 @@ $(document).ready(function() {
 	        		$("#seller-success-title").html(msg['title']);
                     $("#seller-success-message").html(msg['message']); 
                 }, 2000);
+                
 	        }, 
 	        error: function (msg) {
 	        	$("#seller-header").hide();
@@ -45,6 +46,8 @@ $(document).ready(function() {
 	        	}, 2000);         
 	        }
 	    });
+
+		
 		// stop the form from submitting the normal way and refreshing the page
 		event.preventDefault();
 	});

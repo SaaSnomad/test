@@ -8,3 +8,4 @@ $(function(){
                 // Seller Application  
                 $('#seller_mrr').number( true );                 
             });
+

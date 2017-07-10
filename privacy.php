@@ -54,7 +54,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">  
                     <div id="content">
                         <section id="personal">
-                        <a href="https://saasnomad.com" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
+                        <a href="index.php" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
                         <h1 style="margin: 30px 0;">Privacy Policy</h1>
                             <h3>Personal Information</h3>
                             <p>
