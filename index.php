@@ -454,7 +454,7 @@
                             <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> </div>
                     </div>-->
                     <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
-                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0">Apply</button>
+                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onclick="ga('send', 'event', 'apply_button_header', 'click', 'buyer_application');">Apply</button>
                     </div>
                     <div class="text-center">
                         <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small>
