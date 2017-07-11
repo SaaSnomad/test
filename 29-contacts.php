@@ -66,12 +66,8 @@
                                             <p class="card-text"><?php echo $card->traction; ?><br><?php echo $card->employees; ?> Employees<br><?php echo $card->country; ?></p>
                                         </div>
                                         <!--/.Card content-->
-
                                         <h4 class="card-title"></h4>
                                             <!--Text-->
-                                            
-
-
                                     </div>
                                     <!--/.Card-->
                                 </div>
@@ -110,9 +106,9 @@
                                                         </div>
                                                     </div>  -->
                                         <div class="md-form input-group" style="margin:0;width: 100%;">
-                                            <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0">Request Contact</button>
+                                            <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'reques contact', 'submit', 'buyers');">Request Contact</button>
                                         </div>      
-                                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small>   
+                                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>   
                                     </form>
                                     <div id="request-success" style="display:none;">
                                         <blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding:0;'>

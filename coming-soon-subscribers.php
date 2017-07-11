@@ -57,7 +57,7 @@
                                         </div>
 
                                         <div class="md-form input-group" style="margin: 20px 0 0;width: 100%;">
-                                            <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0">Get notified</button>
+                                            <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'find saas', 'submit', 'buyers');">Get notified</button>
                                         </div>
                                         <small class="checkbox-label">We respect your privacy and will not spam you.</small>
                                     </form>

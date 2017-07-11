@@ -9,7 +9,7 @@
     <meta name="description" content="SaaS for sale">
     <meta name="keywords" content="Small Businesses For Sale, ">    
 
-    <title>Welcome to SaaSNomad</title>
+    <title>Sell or buy SaaS business</title>
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -90,7 +90,7 @@
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
             <div class="main-text">
-                <h1 class="display-4">Anonymously</br>place your SaaS</br>for sale</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal"> apply</br>for free </a>
+                <h1 class="display-4">Anonymously</br>place your SaaS</br>for sale</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply</br>for free </a>
                 <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
                 <h3 class="text-center text-muted">companies applied</h3> 
             </div>
@@ -137,7 +137,7 @@
                             <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
                             <small>* All fields are required. We respect your privacy and will not spam you.</small> 
                             <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
-                                <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;">Calculate</button>
+                                <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;" onClick="ga('send', 'event', 'valuation', 'submit', 'sellers');">Calculate</button>
                             </div> 
                             
                         </form>
@@ -157,7 +157,7 @@
                         </div>
                         </br> 
                             <div style="position:absolute;bottom:3.5rem;">
-                                <small>This model is intended more for educational purposes than for performing serious valuations. Please read this <a href="disclaimer.php" target="_blank" id="disclaimer">Important Disclaimer.</a></small>
+                                <small>This valuation is indicative and the results may differ from those obtained using fundamental valuation techniques. Please read this <a href="disclaimer.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'disclaimer', 'click', 'info');">Important Disclaimer</a>. <a href="contact.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'contact us valuation', 'click', 'info');">Contact us</a> directly for a bespoke valuation service.</small>
                             </div>
                         <div id="unicorn-wrapper" class="text-center hide">
                             <img id="unicorn" src="img/unicorn.png"><h3><b>Congrats, you got a Unicorn!</b></h3>
@@ -174,7 +174,7 @@
     <!--Section: Why Us-->
     <section id="why-us-section">
         <div class="text-center title-wrapper">
-            <h2>3 Reasons Why SaaSNomad</h2> 
+            <h2>Three reasons why to use SaaSnomad</h2> 
         <div class="row" style="padding-top: 40px;">
             
             <div id="anonymous" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
@@ -183,16 +183,15 @@
             </div>
             <div id="why-us-reasons" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
                 <div style="padding: 20px 0;">
-                    <h4 class="text-uppercase">Anonymity</h4>
+                    <h4>Anonymity</h4>
                     <p>Buyers apply to you,</br>not the other way around</p>
                 </div>
                 <div style="padding: 20px 0;">
-                    <h4 class="text-uppercase">Reach</h4>
+                    <h4>Reach</h4>
                     <p>Get pitched to hundreds</br>of M&#38;A professionals</p>
-                </div>
-                
+                </div>             
                 <div style="padding: 20px 0;">
-                    <h4 class="text-uppercase">Success Fee</h4>
+                    <h4>Pay per Lead</h4>
                     <p>You pay only when there are</br>Buyers interested in your SaaS</p>
                 </div>
             </div>
@@ -272,7 +271,7 @@
                             <p class="card-text">
                                 <?php echo $card->traction; ?>
                                 <br><?php echo $card->employees; ?> Employees
-                                <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank">Request Contact</a> </div>
+                                <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request Contact</a> </div>
                     </div>
                 </div>
             </article>
@@ -287,10 +286,10 @@
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
-                <h1 class="display-4 white-text">For Buyers</h1>
-                <p class="white-text"> SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias </p>
-                <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal">Get notified</a> 
-                <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success">Find SaaS</a> 
+                <h1 class="display-4 white-text">Looking for acquisition targets?</h1>
+                <p class="white-text">SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias </p>
+                <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified about potential targets</a> 
+                <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a> 
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
@@ -312,7 +311,7 @@
                                     <div id="wrapper">
                                         <?php foreach($news as $news_item) : ?>
                                         <div class="news-item">
-                                            <a href="<?php echo $news_item->news_link; ?>" class="article" target="_blank">
+                                            <a href="<?php echo $news_item->news_link; ?>" class="article" target="_blank" onClick="ga('send', 'event', 'read news', 'click', 'news');">
                                                 <h4><?php echo $news_item->news_title; ?></h4>
                                                 <p class="text-muted"><?php echo $news_item->news_summary; ?></p>
                                             </a>    
@@ -321,7 +320,7 @@
                                             </span>         
                                         </div>
                                         <?php endforeach; ?>
-                                        <div class="text-center" style="margin-top:40px;"> <a href="#" id="loadMore" class="custom-link">Load More</a> </div>
+                                        <div class="text-center" style="margin-top:40px;"> <a href="#" id="loadMore" class="custom-link" onClick="ga('send', 'event', 'more news', 'click', 'news');">Load More</a> </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 white-text second-block">
@@ -335,7 +334,7 @@
                                             <div class="md-form form-group" style="margin-top: 44px;display:none;">
                                                 <input type="text" name="news_country" class="geotext[country]" id="news_country"> </div>
                                             <div class="md-form input-group" style="margin: 20px 0;width: 100%;">
-                                                <button class="btn btn-primary btn-lg" type="submit">Subscribe</button>
+                                                <button class="btn btn-primary btn-lg" type="submit" onClick="ga('send', 'event', 'subscribe news', 'submit', 'news');">Subscribe</button>
                                             </div>
                                         </form>
                                         <div id="news-success" style="display:none;">
@@ -454,10 +453,10 @@
                             <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> </div>
                     </div>-->
                     <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
-                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onclick="ga('send', 'event', 'apply_button_header', 'click', 'buyer_application');">Apply</button>
+                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'application form', 'submit', 'sellers');">Apply</button>
                     </div>
                     <div class="text-center">
-                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small>
+                        <small class="checkbox-label">By clicking "Apply", you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'sellers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'sellers');">Terms of Use</a> </small>
                     </div>
                 </form>
                 <div id="seller-success" style="display:none;">
@@ -481,9 +480,9 @@
         </div>
     </div>
 </div>  
+<!-- end of Seller modal -->
 
-<!-- Seller Modal -->
-<!-- Buyer Modal -->
+<!-- Buyer modal -->
 <div class="modal fade" id="buyerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -513,10 +512,10 @@
                         </div>
                     </div>-->
                     <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
-                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0">Get notified</button>
+                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Get notified</button>
                     </div>
                     <div class="text-center">
-                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small>
+                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
                     </div>
                 </form>
                 <div id="buyer-success" style="display:none;">
@@ -535,13 +534,12 @@
                         <p id="buyer-error-message"></p>
                     </div>
                 </div>
-                
                 <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
             </div>
         </div>
     </div>
 </div>
-<!-- Buyer Modal -->
+<!-- end of Buyer modal -->
 
     
 
