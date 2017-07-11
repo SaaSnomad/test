@@ -27,4 +27,4 @@
                 </div> 
                 <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             </div>   
-        </footer>
+</footer>
