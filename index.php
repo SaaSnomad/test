@@ -9,7 +9,7 @@
     <meta name="description" content="SaaS for sale">
     <meta name="keywords" content="Small Businesses For Sale, ">    
 
-    <title>Sell or buy SaaS business</title>
+    <title>SaaSnomad | Proactive M&A for SaaS businesses</title>
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -90,16 +90,18 @@
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
             <div class="main-text">
-                <h1 class="display-4">Anonymously</br>place your SaaS</br>for sale</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply</br>for free </a>
+                <h1 class="display-4">Anonymously</br>reach out to hundreds of corporate acquirers</br>for sale</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply</br>for free </a>
                 <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
-                <h3 class="text-center text-muted">companies applied</h3> 
+                <h3 class="text-center text-muted">companies already did</h3> 
             </div>
         </div>
         <div id="right-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight z-depth-1" data-wow-delay="0.2s">
             <div id="calculator-wrapper" class="white-text">
-                <h3 class="text-uppercase mb-1" style="margin: 2rem 2rem 1rem;"><b>Get your valuation range</b></h3>
+                <h3 class="text-uppercase mb-1" style="margin: 2rem 2rem 1rem;"><b>Estimate your company valuation</b></h3>
                 <div class="row form-wrapper">
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+
+                        <!-- Calculator form -->
                         <form id="calculator" action="#" role="form" method="POST" onsubmit="return checkForm(this);">
                             <div class="md-form form-group" style="width: 100%;margin-top: 0.8rem;margin-bottom: -13px;">
                                 <select id="calculator_region" name="calculator_region" data-placeholder="Choose a Region" class="chosen-select" tabindex="2" required>
@@ -113,34 +115,34 @@
 
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
-                                <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last Month MRR" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last month's MRR" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
                             </div>
                             
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR Monthly Growth" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required> 
+                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR monthly growth" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required> 
                             </div>
                             
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross Margin" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required></div>
+                                <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross margin" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required></div>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
-                                <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly Cash Burn" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly burn" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
                             </div>
                             <!-- Calculator Number of Employees <div class="md-form form-group"> <input type="text" name="calculatorEmployees" id="calculatorEmployees" placeholder="Number of Employees *" class="form-control change" maxlength="4" aria-label="Amount (to the nearest dollar)" required> </div>-->
                             <div class="md-form form-group">
-                                <input type="email" name="calculator_email" id="calculatorEmail" placeholder="Type Your Email" class="form-control change" maxlength="50" required> 
+                                <input type="email" name="calculator_email" id="calculatorEmail" placeholder="Your email" class="form-control change" maxlength="50" required> 
                             </div>
                             <input class="range-from" type="text" name="range_from" style="display:none;" />
                             <input class="range-to" type="text" name="range_to" style="display:none;" />
                             <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
-                            <small>* All fields are required. We respect your privacy and will not spam you.</small> 
+                            <small>* All fields are required</small> 
                             <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
                                 <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;" onClick="ga('send', 'event', 'valuation', 'submit', 'sellers');">Calculate</button>
-                            </div> 
-                            
+                            </div>                             
                         </form>
+                        <!-- end of Calculator form -->
 
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
@@ -184,18 +186,17 @@
             <div id="why-us-reasons" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
                 <div style="padding: 20px 0;">
                     <h4>Anonymity</h4>
-                    <p>Buyers apply to you,</br>not the other way around</p>
+                    <p>We don't disclose any names when approaching potential acquirers. </br>We do it only at your permission and only when we receive preliminary interest from buyers.</p>
                 </div>
                 <div style="padding: 20px 0;">
                     <h4>Reach</h4>
-                    <p>Get pitched to hundreds</br>of M&#38;A professionals</p>
+                    <p>New M&#38;A opportunities are sent to hundreds</br>of corporate M&#38;A people</p>
                 </div>             
                 <div style="padding: 20px 0;">
-                    <h4>Pay per Lead</h4>
-                    <p>You pay only when there are</br>Buyers interested in your SaaS</p>
+                    <h4>Pay per intro</h4>
+                    <p>You pay only for the intro to </br>interested acquirers</p>
                 </div>
             </div>
-
 
             <!--
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right" style="">
@@ -228,12 +229,12 @@
     <!--Section: About-->
     <section id="about-section">
         <div class="text-center">
-            <h2>How it Works</h2> </div>
+            <h2>How it works</h2> </div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
                     <p class="bq-title" style="padding:0">Step 1</p>
-                    <h4>Apply for Free</h4> 
+                    <h4>Apply for free</h4> 
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
                     <p class="bq-title" style="padding:0">Step 2</p>
@@ -245,22 +246,36 @@
                 </blockquote>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side">
-                <h3 style="display:none;">Apply SaaS for Review</h3>
-                <p>Describe the state of your business</br>so that the potential buyer will be</br>able to assess your proposal</p>
-                <h3 style="display:none;">Buyers Get Notified</h3>
-                <p>Following the review of your application</br>our specialist will send it to the buyers </br>in our Database with relevant criterias</p>
-                <h3 style="display:none;">Receive Offers</h3>
+                <h3 style="display:none;">Apply and pass our review</h3>
+                <p>Fill in an extremely short form </br>and get reviewed by our M&#38;A professionals</p>
+                <h3 style="display:none;">Buyers get notified</h3>
+                <p>Following the review of your application </br>our specialist will send it to the most relevant buyers</p>
+                <h3 style="display:none;">Get introduced to the buyers of your choice</h3>
                 <p>Buyers that have shown interest</br>will request more details. Then you</br>decide to whom to reveal your contact</p>
             </div>
         </div>
     </section>
-    <!--/Section: About--> 
+    <!-- end of section: About--> 
 
-    <!--Section: Featured Companies -->        
+    <!--Section: For buyers-->
+    <section id="buyers-section">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
+                <h1 class="display-4 white-text">Looking for acquisition targets?</h1>
+                <!-- <p class="white-text">SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias</p> -->
+                <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified about potential targets</a> 
+                <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a> 
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+        </div>
+    </section>
+    <!--end of section: For buyers-->        
+        
+    <!--Section: Featured companies -->        
     <section id="featured-companies">
         <div class="text-center title-wrapper">
-            <h2>Featured Companies</h2> </div>
-        
+            <h2>Featured Companies</h2></div>       
         <div class="slider">
             <?php foreach($cards as $card) : ?>
             <article>
@@ -279,24 +294,9 @@
         </div>
     
     </section> 
-    <!--/Section: Featured Companies-->
+    <!--end of section: Featured companies-->
 
-    <!--Section: For Buyers-->
-    <section id="buyers-section">
-        <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
-                <h1 class="display-4 white-text">Looking for acquisition targets?</h1>
-                <p class="white-text">SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias </p>
-                <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified about potential targets</a> 
-                <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a> 
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-        </div>
-    </section>
-    <!--Section: For Buyers-->        
-        
-    <!--Section: News-->
+    <!--section: News-->
     <section id="news-section">
         <div class="text-center title-wrapper">
             <h2>Latest articles on SaaS M&A</h2> </div>
@@ -362,7 +362,7 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
                 </div>
     </section>
-    <!--/Section: News--> 
+    <!--end of section: News--> 
 
     </div>
     <!--/ Main container-->
@@ -374,13 +374,13 @@
 <!-- MODALS -->
 
 
-<!-- Seller Modal -->
+<!-- Seller modal -->
 <div class="modal fade" id="sellerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
             <div class="modal-body">
-                <h2 class="text-center" id="seller-header">Seller Application</h2>
+                <h2 class="text-center" id="seller-header">Seller application</h2>
                 <form id="sellers" action="#" method="post">
                     <div class="md-form form-group">
                         <input name="seller_name" id="seller_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
@@ -441,8 +441,8 @@
                     </div>
                     <div class="md-form form-group"> 
                         <span class="input-group-addon" style="position: absolute;bottom:0;width:2%;border-bottom: none !important;padding: 0rem; margin-bottom: 7px;">&#36;</span>
-                        <input name="seller_mrr" id="seller_mrr" placeholder="Last Month MRR" type="text" class="form-control" maxlength="8" aria-label="Amount (to the nearest dollar)" aria-describedby="basic-addon2" style="padding-left: 3%;padding-right:3%;z-index:1000;width: 94%; margin-top: 2rem;">
-                        <label for="seller_mrr">Last Month MRR</label>
+                        <input name="seller_mrr" id="seller_mrr" placeholder="Last month's MRR" type="text" class="form-control" maxlength="8" aria-label="Amount (to the nearest dollar)" aria-describedby="basic-addon2" style="padding-left: 3%;padding-right:3%;z-index:1000;width: 94%; margin-top: 2rem;">
+                        <label for="seller_mrr">Last month's MRR</label>
                     </div>
                     <!--<div class="md-form form-group" style="margin-bottom: 2.5rem;">
                         <div class="rkmd-checkbox checkbox-ripple">
