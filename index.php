@@ -90,7 +90,7 @@
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
             <div class="main-text">
-                <h1 class="display-4">Anonymously</br>reach out to hundreds of corporate acquirers</br>for sale</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply</br>for free </a>
+                <h1 class="display-4">Anonymously</br>reach out to hundreds of corporate acquirers</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply</br>for free </a>
                 <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
                 <h3 class="text-center text-muted">companies already did</h3> 
             </div>
@@ -173,7 +173,7 @@
  
 <div id="anchor"></div>
 
-    <!--Section: Why Us-->
+    <!--Section: Why us-->
     <section id="why-us-section">
         <div class="text-center title-wrapper">
             <h2>Three reasons why to use SaaSnomad</h2> 
@@ -222,14 +222,15 @@
                     <p>You pay only when there are</br>Buyers interested in your SaaS</p>
                 </div>
             </div>-->
+            
         </div>
     </section>
-    <!--/Section: Why Us--> 
+    <!--end of section: Why us--> 
 
-    <!--Section: About-->
+    <!--section: About-->
     <section id="about-section">
         <div class="text-center">
-            <h2>How it works</h2> </div>
+            <h2>How it works</h2></div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
@@ -238,7 +239,7 @@
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
                     <p class="bq-title" style="padding:0">Step 2</p>
-                    <h4>Buyers Get Notified</h4> 
+                    <h4>Buyers get notified</h4> 
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
                     <p class="bq-title" style="padding:0">Step 3</p>
@@ -250,8 +251,8 @@
                 <p>Fill in an extremely short form </br>and get reviewed by our M&#38;A professionals</p>
                 <h3 style="display:none;">Buyers get notified</h3>
                 <p>Following the review of your application </br>our specialist will send it to the most relevant buyers</p>
-                <h3 style="display:none;">Get introduced to the buyers of your choice</h3>
-                <p>Buyers that have shown interest</br>will request more details. Then you</br>decide to whom to reveal your contact</p>
+                <h3 style="display:none;">Get introduced</h3>
+                <p>After potential acquirers expressed their interest,</br>we do introductions to those of your choice</p>
             </div>
         </div>
     </section>
@@ -259,23 +260,26 @@
 
     <!--Section: For buyers-->
     <section id="buyers-section">
-        <div class="row">
+        <div class="text-center">
+            <h1>Looking for acquisition targets?</h1>
+            <h2>Featured SaaS companies</h2>
+        </div>       
+        <!--<div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
                 <h1 class="display-4 white-text">Looking for acquisition targets?</h1>
-                <!-- <p class="white-text">SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias</p> -->
-                <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified about potential targets</a> 
-                <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a> 
+                <!-- <p class="white-text">SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias</p>
+                <p class="white-text">Featured SaaS companies</p>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-        </div>
+        </div>-->       
     </section>
     <!--end of section: For buyers-->        
         
     <!--Section: Featured companies -->        
     <section id="featured-companies">
-        <div class="text-center title-wrapper">
-            <h2>Featured Companies</h2></div>       
+        <!--<div class="text-center title-wrapper">
+            <h2>Featured SaaS companies</h2></div> -->      
         <div class="slider">
             <?php foreach($cards as $card) : ?>
             <article>
@@ -285,14 +289,17 @@
                             <h4 class="card-title"><?php echo $card->industry; ?></h4>
                             <p class="card-text">
                                 <?php echo $card->traction; ?>
-                                <br><?php echo $card->employees; ?> Employees
-                                <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request Contact</a> </div>
+                                <br><?php echo $card->employees; ?> employees
+                                <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</a> </div>
                     </div>
                 </div>
             </article>
             <?php endforeach; ?>
         </div>
-    
+        <div>
+            <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified about potential targets</a> 
+            <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a>                 
+        </div>
     </section> 
     <!--end of section: Featured companies-->
 

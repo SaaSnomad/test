@@ -1,3 +1,4 @@
 .git/
 .well-known/
 .DS_Store
+*~

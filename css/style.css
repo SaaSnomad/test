@@ -338,6 +338,7 @@ footer ul li {
 
 #why-us-section,
 #about-section,
+#buyers-section,
 #featured-companies, 
 #news-section {
     height:auto;
@@ -360,7 +361,7 @@ footer ul li {
     text-align: center
 }
 #buyers-section  {
-    background-color:#37474f;
+    /* background-color:#37474f; */
     height:auto;
 }
 #featured-companies .title-wrapper {
