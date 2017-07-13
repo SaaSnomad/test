@@ -89,7 +89,7 @@
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
             <div class="main-text">
-                <h1 class="display-4">Anonymously</br>reach out to hundreds of corporate acquirers</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply</br>for free </a>
+                <h1 class="display-4">Anonymously</br>reach out to hundreds</br>of corporate acquirers</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply</br>for free </a>
                 <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
                 <h3 class="text-center text-muted">companies already did</h3> 
             </div>
@@ -301,13 +301,13 @@
             <?php foreach($cards as $card) : ?>
             <article>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card" style="background-color:#37474f;color:#fff;opacity:0.8;">
+                    <div class="card" style="background-color:#fff;color:#37474f;opacity:0.8;">
                         <div class="card-block">
                             <h4 class="card-title"><?php echo $card->industry; ?></h4>
-                            <p class="card-text">
+                            <p class="card-text" style="padding-bottom: 10px;">
                                 <?php echo $card->traction; ?>
                                 <br><?php echo $card->employees; ?> employees
-                                <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="btn btn-primary-default btn-link text-right mdl-button mdl-button--raised mdl-js-button" target="_blank" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</a> </div>
+                                <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="" target="_blank" style="text-transform:uppercase;" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</a> </div>
                     </div>
                 </div>
             </article>

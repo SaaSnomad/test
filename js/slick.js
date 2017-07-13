@@ -5,8 +5,8 @@ $('.slider').slick({
 	centerMode: true,
 	centerPadding: '12%',
 	slidesToShow: 3,
-	speed: 500,
-responsive: [{
+	speed: 300,
+	responsive: [{
 
       breakpoint: 992,
       settings: {

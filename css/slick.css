@@ -10,12 +10,24 @@ button {
           transform: scale(1);
   -webkit-transition: 0.3s ease-in-out all;
   transition: 0.3s ease-in-out all;
+  opacity:0;
+  pointer-events: none;
+}
+.slick-slide.slick-active {
+  opacity: 1;
+}
+.slick-slide.slick-active .card-block{
+  opacity: 0.5;
 }
 .slick-slide.slick-center {
   opacity: 1;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
+.slick-slide.slick-center .card-block{
+  opacity: 1;
+  pointer-events: all;
+} 
 .switch {
   background: #000;
 }
@@ -38,39 +50,33 @@ button {
 #featured-companies article {
   margin: 50px 15px;
 }
-.slick-prev, .slick-next {
-  position: absolute;
-  bottom: 0;
-  border:none; 
-  background-color: transparent; 
-} 
-.slick-prev {
-  right: 50%;
-  margin-right:5px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-right: 20px solid #9e9e9e;
-  opacity:0.5;
-  border-bottom: 10px solid transparent;
-  background-color: none;
-}
-.slick-next {
-  left: 50%;
-  margin-left:5px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-left: 20px solid #9e9e9e;
-  opacity:0.5;
-  border-bottom: 10px solid transparent;
-  background-color: none;
-}
-
-.slick-next:hover, .slick-prev:hover {
-    opacity:1;
-}
  
+ .slick-next  {
+    top: 50%;
+    z-index: 4;
+    width: 20px;
+    height: 38px;
+    margin-top: -19px;
+    outline: 0;
+    border:0;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -22px 0;
+    position: absolute;
+    right: 10%;
+}
+ .slick-prev  {
+    top: 50%;
+    z-index: 4;
+    width: 20px;
+    height: 38px;
+    margin-top: -19px;
+    outline: 0;
+    border:0;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -66px 0;
+    position: absolute;
+    left:10%;
+}
 
 
 
