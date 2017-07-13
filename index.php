@@ -157,7 +157,7 @@
                                 <input type="text" placeholder="0" class="range-to form-control change" disabled maxlength="11" aria-label="Amount (to the nearest dollar)"> </div>
                         </div>
                         </br> 
-                            <div style="position:absolute;bottom:3.5rem;">
+                            <div>
                                 <small>This valuation is indicative and the results may differ from those obtained using fundamental valuation techniques. Please read this <a href="disclaimer.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'disclaimer', 'click', 'info');">Important Disclaimer</a>. <a href="contact.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'contact us valuation', 'click', 'info');">Contact us</a> directly for a bespoke valuation service.</small>
                             </div>
                         <div id="unicorn-wrapper" class="text-center hide">
