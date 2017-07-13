@@ -8,10 +8,10 @@ $('.slider').slick({
 	speed: 300,
 	responsive: [{
 
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1
-      }
+	    breakpoint: 992,
+	    settings: {
+	      slidesToShow: 1
+        } 
 
     }]
 });
