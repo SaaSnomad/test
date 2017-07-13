@@ -314,8 +314,8 @@
             <?php endforeach; ?>
         </div>
         <div class="text-center" style="margin-top: 20px;">
-            <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified</br>about potential</br>targets</a> 
-            <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a>                 
+            <a id="buyer-ajax" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified about potential targets</a> 
+            <a id="buyer-find" class="btn btn-primary btn-lg" href="coming-soon-subscribers.php" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a>                 
         </div>
     </section> 
     <!--/Section: Featured companies-->
