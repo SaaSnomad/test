@@ -5,6 +5,9 @@ button {
   position: relative;
   padding-bottom: 60px;
 }
+.card-block { 
+  padding: 4rem 1.25rem;
+}
 .slick-slide {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -48,7 +51,7 @@ button {
   background: transparent; 
 }
 #featured-companies article {
-  margin: 50px 15px;
+  margin: 15px;
 }
  
  .slick-next  {

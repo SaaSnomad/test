@@ -292,37 +292,45 @@
     <!--/Section: About--> 
  
     <!--Section: Featured companies -->        
-    <section id="featured-companies">
+    <section id="featured-companies"> 
         <div class="text-center title-wrapper">
-            <h1>Looking for acquisition targets?</h1>
-            <h2>Featured SaaS companies</h2>
-        </div>
-        <div class="slider">
-            <?php foreach($cards as $card) : ?>
-            <article>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card" style="background-color:#fff;color:#37474f;opacity:0.8;">
-                        <div class="card-block">
-                            <h4 class="card-title"><?php echo $card->industry; ?></h4>
-                            <p class="card-text" style="padding-bottom: 10px;">
-                                <?php echo $card->traction; ?>
-                                <br><?php echo $card->employees; ?> employees
-                                <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="" target="_blank" style="text-transform:uppercase;" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</a> </div>
-                    </div>
+            <h1 class="display-4">Looking for acquisition targets?</h1>
+        </div> 
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                <div class="slider">
+                    <?php foreach($cards as $card) : ?>
+                    <article>
+                        <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
+                            <div class="card" style="background-color:#fff;color:#37474f;opacity:0.8;">
+                                <div class="card-block">
+                                    <h4 class="card-title"><?php echo $card->industry; ?></h4>
+                                    <p class="card-text" style="padding-bottom: 10px;">
+                                        <?php echo $card->traction; ?>
+                                        <br><?php echo $card->employees; ?> employees
+                                        <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="" target="_blank" style="text-transform:uppercase;" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</a> </div>
+                            </div>
+                        <!--</div>-->
+                    </article>
+                    <?php endforeach; ?>
                 </div>
-            </article>
-            <?php endforeach; ?>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 text-left" style="padding-top:5%;">
+                <!--<h2>Featured SaaS companies</h2>-->
+                <h4>Get notified about</br>new featured companies</h4>
+                <div style="margin-top: 20px;">
+                    <a id="buyer-ajax" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">subscribe for free</a> 
+                    <!--<a id="buyer-find" class="btn btn-primary btn-lg" href="coming-soon-subscribers.php" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a>-->
+                </div>
+            </div>
         </div>
-        <div class="text-center" style="margin-top: 20px;">
-            <a id="buyer-ajax" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified about potential targets</a> 
-            <a id="buyer-find" class="btn btn-primary btn-lg" href="coming-soon-subscribers.php" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a>                 
-        </div>
+        
     </section> 
     <!--/Section: Featured companies-->
 
     <!--section: News-->
     <section id="news-section">
-        <div class="text-center title-wrapper">
+        <div class="text-center">
             <h2>Latest articles on SaaS M&A</h2> </div>
         <div class="row" style="padding-top:0;">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
@@ -536,7 +544,7 @@
                         </div>
                     </div>-->
                     <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
-                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Get notified</button>
+                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Subscribe</button>
                     </div>
                     <div class="text-center">
                         <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
