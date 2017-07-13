@@ -104,7 +104,6 @@ footer a:hover {
 
 footer ul {
     margin-top: 1.5rem;
-    margin-left: 2rem
 }
 
 footer ul li {
@@ -355,10 +354,13 @@ footer ul li {
     border-right: 1px solid #4285F4;
 }
 #featured-companies {
-    background-image: url(../img/map.png);
+    /*background-image: url(../img/map.png);*/
     background-size: auto;
     height: auto;
     text-align: center
+}
+#featured-companies  #buyer-ajax {
+    background-color:#64ffda; color: #37474f !important;
 }
 #buyers-section  {
     /* background-color:#37474f; */
@@ -378,9 +380,11 @@ footer ul li {
 }
 #landing #left-side .main-text {
     height: 100%;padding: 70px 0;
+    align-items: center;
 }
 #landing #left-side #apply-main{
     margin: 1.5rem 0;font-size: 22px;
+    width:50%;
 }
 #landing #right-side {
     height:100%;padding:0;border-top-left-radius:6px;border-bottom-left-radius:6px;
@@ -420,9 +424,6 @@ footer ul li {
 }
 #buyers-section .buyers-section p {
     font-size: 24px;line-height: 32px; font-weight:200;
-}
-#buyers-section .buyers-section #buyer-ajax {
-    background-color:#64ffda; color: #37474f !important;
 }
 
 /* Section: News */

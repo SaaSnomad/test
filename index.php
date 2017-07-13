@@ -48,7 +48,6 @@
 </head>
 
 <body>
-
 <?php include 'includes/header.php'; ?>
 <?php include 'core/init.php'; ?>
 <?php include 'helpers/db_helper.php'; ?>
@@ -86,7 +85,7 @@
 <!-- Main container-->
 <div class="container-fluid" id="main">
 
-    <!-- Landing -->
+    <!-- Section: Landing -->
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
             <div class="main-text">
@@ -177,23 +176,21 @@
     <section id="why-us-section">
         <div class="text-center title-wrapper">
             <h2>Three reasons why to use SaaSnomad</h2> 
-        <div class="row" style="padding-top: 40px;">
-            
+        <div class="row" style="padding-top: 40px;">            
             <div id="anonymous" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
-                <img src="img/anonymous.png" style="padding-top: 60px;opacity: 0.2;padding-right: 35px;">
-
+                <img src="img/anonymous.png" style="padding-top: 50px;opacity: 0.2;padding-right: 35px;">
             </div>
             <div id="why-us-reasons" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
                 <div style="padding: 20px 0;">
                     <h4>Anonymity</h4>
-                    <p>We don't disclose any names when approaching potential acquirers. </br>We do it only at your permission and only when we receive preliminary interest from buyers.</p>
+                    <p>We don't disclose any names when approaching potential acquirers. </br>We do it only at your permission and only when we receive<br>preliminary interest from buyers.</p>
                 </div>
-                <div style="padding: 20px 0;">
+                <div>
                     <h4>Reach</h4>
                     <p>New M&#38;A opportunities are sent to hundreds</br>of corporate M&#38;A people</p>
                 </div>             
                 <div style="padding: 20px 0;">
-                    <h4>Pay per intro</h4>
+                    <h4>Pay per Intro</h4>
                     <p>You pay only for the intro to </br>interested acquirers</p>
                 </div>
             </div>
@@ -225,17 +222,51 @@
             
         </div>
     </section>
-    <!--end of section: Why us--> 
+    <!--/Section: Why us--> 
 
-    <!--section: About-->
+    <!--Section: About-->
     <section id="about-section">
         <div class="text-center">
             <h2>How it works</h2></div>
-        <div class="row">
+        <div class="row" style="padding-bottom: 0;align-items: baseline;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
+                <blockquote class="blockquote bq-primary">
+                    <p class="bq-title" style="padding:0">Step 1</p>
+                    <h4>Apply and pass our review</h4> 
+                </blockquote>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
+                <p>Fill in an extremely short form </br>and get reviewed by our M&#38;A professionals</p>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 0;padding-bottom: 0;align-items: baseline;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
+                <blockquote class="blockquote bq-primary">
+                    <p class="bq-title" style="padding:0">Step 2</p>
+                    <h4>Buyers get notified</h4> 
+                </blockquote>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
+                <p>Following the review of your application </br>our specialist will send it to the most relevant buyers</p>
+            </div> 
+        </div>
+        <div class="row" style="padding-top: 0;align-items: baseline;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
+                <blockquote class="blockquote bq-primary">
+                    <p class="bq-title" style="padding:0">Step 3</p>
+                    <h4>Get introduced</h4> 
+                </blockquote>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
+                <p>After potential acquirers expressed their interest,</br>we do introductions to those of your choice</p>
+            </div>
+        </div>
+
+        <!--
             <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
                     <p class="bq-title" style="padding:0">Step 1</p>
-                    <h4>Apply for free</h4> 
+                    <h4>Apply and pass our review</h4> 
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
                     <p class="bq-title" style="padding:0">Step 2</p>
@@ -243,7 +274,7 @@
                 </blockquote>
                 <blockquote class="blockquote bq-primary">
                     <p class="bq-title" style="padding:0">Step 3</p>
-                    <h4>Receive Offers</h4> 
+                    <h4>Get introduced</h4> 
                 </blockquote>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side">
@@ -254,32 +285,18 @@
                 <h3 style="display:none;">Get introduced</h3>
                 <p>After potential acquirers expressed their interest,</br>we do introductions to those of your choice</p>
             </div>
+        -->
+
         </div>
     </section>
-    <!-- end of section: About--> 
-
-    <!--Section: For buyers-->
-    <section id="buyers-section">
-        <div class="text-center">
-            <h1>Looking for acquisition targets?</h1>
-            <h2>Featured SaaS companies</h2>
-        </div>       
-        <!--<div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            <div class="col-lg-10 col-md-10 col-sm-112 col-xs-12 text-center buyers-section">
-                <h1 class="display-4 white-text">Looking for acquisition targets?</h1>
-                <!-- <p class="white-text">SaaSNomad is the place where you can find the SaaS</br>to buy according to your criterias</p>
-                <p class="white-text">Featured SaaS companies</p>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-        </div>-->       
-    </section>
-    <!--end of section: For buyers-->        
-        
+    <!--/Section: About--> 
+ 
     <!--Section: Featured companies -->        
     <section id="featured-companies">
-        <!--<div class="text-center title-wrapper">
-            <h2>Featured SaaS companies</h2></div> -->      
+        <div class="text-center title-wrapper">
+            <h1>Looking for acquisition targets?</h1>
+            <h2>Featured SaaS companies</h2>
+        </div>
         <div class="slider">
             <?php foreach($cards as $card) : ?>
             <article>
@@ -296,12 +313,12 @@
             </article>
             <?php endforeach; ?>
         </div>
-        <div>
-            <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified about potential targets</a> 
+        <div class="text-center" style="margin-top: 20px;">
+            <a id="buyer-ajax" class="btn btn-outline-success" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">Get notified</br>about potential</br>targets</a> 
             <a id="buyer-find" href="coming-soon-subscribers.php" class="btn btn-outline-success" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a>                 
         </div>
     </section> 
-    <!--end of section: Featured companies-->
+    <!--/Section: Featured companies-->
 
     <!--section: News-->
     <section id="news-section">
@@ -369,7 +386,7 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
                 </div>
     </section>
-    <!--end of section: News--> 
+    <!--/Section: News--> 
 
     </div>
     <!--/ Main container-->
