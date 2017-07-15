@@ -2,7 +2,7 @@
             <div class="row" style="padding:0">
                 <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
-                    <!--<a href="index.php" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>-->
+                    <!--<a href="https://saasnomad.com/" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>-->
                     <ul style="display:inline-block;">
                         <li>
                           <a href="faq.php" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'faq footer', 'click', 'info');">

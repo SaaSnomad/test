@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-6">
                 <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="index.php">
+                    <a class="text-muted" href="https://saasnomad.com/">
                         <img src="img/logo.svg" alt="logo" onClick="ga('send', 'event', 'logo', 'click', 'uxui');">
                     <b>SaaS</b>Nomad</a>
                 </h4>
