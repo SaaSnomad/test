@@ -95,9 +95,11 @@ header #apply-navbar {
 
 /* Footer */
 
-footer a,
-footer a:hover {
+footer a{
     color: rgba(255, 255, 255, .5)
+}
+footer a:hover, footer a:focus {
+    color: rgba(255, 255, 255, .8)
 }
 
 footer ul {
