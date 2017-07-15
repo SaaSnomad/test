@@ -341,8 +341,8 @@
                                         <p style="margin-bottom: 15px;" id="subscribe-msg">Subscribe here and we will keep you in the loop on the latest SaaS M&#38;A news</p>
                                         <form id="subscribers-for-news" action="#" method="POST" role="form">
                                             <div class="md-form form-group">
-                                                <input placeholder="example@myemaildomain.com" type="email" name="news_email" id="news_email" class="form-control change" maxlength="50" required>
-                                                <label for="news_email">Email *</label>
+                                                <input placeholder="Enter your email..." type="email" name="news_email" id="news_email" class="form-control change" maxlength="50" required>
+                                                <!--<label for="news_email">Email *</label>-->
                                             </div>
                                             <div class="md-form form-group" style="margin-top: 44px;display:none;">
                                                 <input type="text" name="news_country" class="geotext[country]" id="news_country"> </div>
