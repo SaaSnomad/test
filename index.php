@@ -42,7 +42,7 @@
         }
         .hide {
             display:none;
-        }
+        } 
     </style>
                
 </head>
@@ -262,7 +262,9 @@
                                     <p class="card-text" style="padding-bottom: 10px;">
                                         <?php echo $card->traction; ?>
                                         <br><?php echo $card->employees; ?> employees
-                                        <br><?php echo $card->country; ?></p><a href="<?php echo $card->id; ?>-contacts.php" class="" target="_blank" style="text-transform:uppercase;" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</a> </div>
+                                        <br><?php echo $card->country; ?></p>
+                                    <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" type="submit" style="margin:0" data-toggle="modal" data-target="#requestContactModal" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</button>
+                                </div>
                             </div>
                         <!--</div>-->
                     </article>
@@ -277,7 +279,6 @@
     <section id="buyer-get-notified"> 
         <div class="text-center">
             <h4>Get notified about new featured companies:</h4>
-            <small>Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
         </div>
         <div class="row" style="padding-top:20px;">
             <div class="col-lg-4 col-md-4 col-sm-3 hidden-xs"></div>
@@ -291,6 +292,7 @@
                         </span>
                     </div> 
                     <div class="text-center" style="width: 100%;">
+                    <small>Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
                     <!--<small class="checkbox-label">By clicking the button, you agree that you have read and accepted</br>the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>-->
                 </div>
                 </form>
@@ -492,6 +494,147 @@
     </div>
 </div>  
 <!-- end of Seller modal -->
+
+
+
+<!-- Request Contact -->
+<div class="modal fade" id="requestContactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" id="request-modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            <div class="modal-body">
+                <h2 class="text-center" id="buyer-header">Request Seller's Contact</h2> 
+                <div class="row" style="padding-top: 20px;padding-bottom: 20px;">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:2.3rem;padding-right: 45px;"> 
+                                    <p style="margin-bottom: 1.5rem;">You are going to request seller's contact</br>which SaaS is described on the card below</p>
+                                    <!--Card-->
+                                    <div class="card"> 
+                                        <!--Card content-->
+                                        <div class="card-block">
+                                            <!--Title-->
+                                            <h4 class="card-title"><?php echo $card->industry; ?></h4>
+                                            <!--Text-->
+                                            <p class="card-text"><?php echo $card->traction; ?><br><?php echo $card->employees; ?> Employees<br><?php echo $card->country; ?></p>
+                                        </div>
+                                        <!--/.Card content-->
+                                        <h4 class="card-title"></h4>
+                                            <!--Text-->
+                                    </div>
+                                    <!--/.Card-->
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <form id="requests" action="requests.php" method="POST" role="form" style="padding-top: 14px;">
+
+                                        <!--Name--> 
+                                        <div class="md-form form-group">
+                                            <input placeholder="John Doe" type="text" name="request_name" id="request_name" class="form-control" maxlength="50" required>
+                                            <label for="request_name">Name *</label>
+                                        </div> 
+                                        <!--Email-->
+                                        <div class="md-form form-group">
+                                            <input placeholder="example@myemaildomain.com" type="email" name="request_email" id="request_email" class="form-control" maxlength="50" required>
+                                            <label for="request_email">Email *</label>
+                                        </div> 
+                                        <!--Country-->
+                                        <div class="md-form form-group" style="margin-top: 44px;display:none;">
+                                            <input type="text" name="request_country" class="geotext[country]" id="request_country" class="form-control"> 
+                                        </div>
+                                        <!--Request ID-->
+                                        <div class="md-form form-group" style="margin-top: 44px;display:none;">
+                                            <input value="29" type="text" name="request_id" id="request_id" class="form-control"> 
+                                        </div>  
+                                        <!-- Checkbox
+                                                    <div class="md-form form-group">
+                                                        <div class="rkmd-checkbox checkbox-ripple">
+                                                            <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
+                                                              <input type="checkbox" id="checkbox-1" required>
+                                                              <span class="checkbox"></span>
+                                                            </label>
+                                                            <small for="checkbox-1" class="checkbox-label">I agree to the 
+                                                            <a href="privacy.php" target="_blank">Privacy Policy</a> and 
+                                                            <a href="terms.php" target="_blank">Terms of Use</a>
+                                                            </small>
+                                                        </div>
+                                                    </div>  -->
+                                        <div class="md-form input-group" style="margin:0;width: 100%;">
+                                            <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'reques contact', 'submit', 'buyers');">Request Contact</button>
+                                        </div>      
+                                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>   
+                                    </form>
+                                    <div id="request-success" style="display:none;">
+                                        <blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding:0;'>
+                                            <p id="request-success-title" class='bq-title' style='padding-left: 0;'></p>
+                                        </blockquote>
+                                        <div>
+                                            <p id="request-success-message" style='margin-bottom:2.5rem;'></p>
+                                        </div>
+                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                    </div>
+                                    <div id="request-error" style="display:none;">
+                                        <blockquote class='blockquote bq-warning' style='border-left: none;padding:0;'>
+                                            <p id="request-error-title" class='bq-title' style='padding-left: 0;margin-bottom:2.5rem;'></p>
+                                        </blockquote>
+                                        <div>
+                                            <p id="request-error-message"></p>
+                                        </div>
+                                        <a href='index.php' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                    </div>
+                                    <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                                </div>
+                </div>
+                <!--<small id="buyer-subheader" style="display:block;margin: 1rem 0;" class="text-center">Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
+                    <form id="buyers" action="#" method="post">
+                        <div class="md-form form-group">
+                            <input name="buyer_name" id="buyer_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
+                            <label for="buyer_name">Name *</label>
+                        </div>
+                        <div class="md-form form-group">
+                            <input name="buyer_email" id="buyer_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
+                            <label for="buyer_email">Email *</label>
+                        </div>
+                        <div class="md-form form-group" style="margin-top: 44px;display:none;">
+                            <input name="buyer_country" placeholder="Country" type="text" class="geotext[country]">
+                        </div>
+                        <!--<div class="md-form form-group" style="margin-bottom: 2.5rem;">
+                            <div class="rkmd-checkbox checkbox-ripple">
+                                <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
+                                    <input type="checkbox" id="checkbox-1" required> 
+                                    <span class="checkbox"></span> 
+                                </label> 
+                                <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> 
+                            </div>
+                        </div>-->
+                        <!--<div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
+                            <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Subscribe</button>
+                        </div>
+                        <div class="text-center">
+                            <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
+                        </div>
+                    </form>-->
+                <div id="buyer-success" style="display:none;">
+                    <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
+                        <p id="buyer-success-title" class='bq-title' style='padding-left: 0;'></p>
+                    </blockquote>
+                    <div class='text-center'>
+                        <p id="buyer-success-message"></p>
+                    </div>
+                </div>
+                <div id="buyer-error" style="display:none;">
+                    <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
+                        <p id="buyer-error-title" class='bq-title' style='padding-left: 0;'></p>
+                    </blockquote>
+                    <div class='text-center'>
+                        <p id="buyer-error-message"></p>
+                    </div>
+                </div>
+                <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of Request contact -->
+
+
 
 <!-- Buyer modal -->
 <div class="modal fade" id="buyerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">

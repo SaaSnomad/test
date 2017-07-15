@@ -47,7 +47,7 @@ var {
     flex-direction: initial !important;
 }
 
-#sellerModal .close, #buyerModal .close {
+#sellerModal .close, #buyerModal .close, #requestContactModal .close{
     position: absolute; right: 10px; top: 10px;
 }
 #seller_industry_chosen .default {
@@ -376,6 +376,12 @@ footer ul li {
     background-size: auto;
     height: auto;
     text-align: center
+}
+#request-modal-dialog {
+    max-width: 1000px;
+} 
+#request-modal-dialog  .card-block {
+    padding: 3rem 1.25rem;
 }
 #featured-companies #buyer-ajax {
     /*background-color:#64ffda; color: #37474f !important;*/
