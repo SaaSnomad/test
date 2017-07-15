@@ -176,7 +176,8 @@
     <section id="why-us-section">
         <div class="text-center title-wrapper">
             <h2>Three reasons why to use SaaSnomad</h2> 
-        <div class="row" style=""> 
+        </div>
+        <div class="row"> 
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="reason-1 text-center">
                     <img src="img/icon-anonymous.png">
@@ -191,7 +192,6 @@
                     <p>New M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</p>
                 </div>
             </div>
-            
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="reason-3 text-center">
                     <img src="img/icon-pay.png">
@@ -205,7 +205,7 @@
 
     <!--Section: About-->
     <section id="about-section">
-        <div class="text-center">
+        <div class="text-center title-wrapper">
             <h2>How it works</h2></div>
         <div class="row" style="padding-bottom: 0;align-items: baseline;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
@@ -239,33 +239,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
                 <p>After potential acquirers expressed their interest,</br>we do introductions to those of your choice</p>
             </div>
-        </div>
-
-        <!--
-            <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs-down left-side" style="padding-right: 0;">
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title" style="padding:0">Step 1</p>
-                    <h4>Apply and pass our review</h4> 
-                </blockquote>
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title" style="padding:0">Step 2</p>
-                    <h4>Buyers get notified</h4> 
-                </blockquote>
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title" style="padding:0">Step 3</p>
-                    <h4>Get introduced</h4> 
-                </blockquote>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 right-side">
-                <h3 style="display:none;">Apply and pass our review</h3>
-                <p>Fill in an extremely short form </br>and get reviewed by our M&#38;A professionals</p>
-                <h3 style="display:none;">Buyers get notified</h3>
-                <p>Following the review of your application </br>our specialist will send it to the most relevant buyers</p>
-                <h3 style="display:none;">Get introduced</h3>
-                <p>After potential acquirers expressed their interest,</br>we do introductions to those of your choice</p>
-            </div>
-        -->
-
+        </div> 
         </div>
     </section>
     <!--/Section: About--> 
@@ -317,7 +291,7 @@
                         </span>
                     </div> 
                     <div class="text-center" style="width: 100%;">
-                    <small class="checkbox-label">By clicking the button, you agree that you have read and accepted</br>the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
+                    <!--<small class="checkbox-label">By clicking the button, you agree that you have read and accepted</br>the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>-->
                 </div>
                 </form>
                 
@@ -334,7 +308,7 @@
 
     <!--section: News-->
     <section id="news-section">
-        <div class="text-center">
+        <div class="text-center title-wrapper">
             <h2>Latest articles on SaaS M&#38;A</h2> 
         </div>
         <div class="row" style="padding-top:0;">

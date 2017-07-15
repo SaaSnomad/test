@@ -26,9 +26,7 @@ html {
 
 .row {
     margin-left: 0!important;
-    margin-right: 0!important;
-    padding-top: 60px;
-    padding-bottom: 60px
+    margin-right: 0!important; 
 }
 
 small {
@@ -341,17 +339,18 @@ footer ul li {
 #featured-companies,
 #buyer-get-notified, 
 #news-section {
+    padding-bottom: 120px;
     height:auto;
     background-color: #f3f3f3
 }
+.title-wrapper {
+    padding-bottom: 50px;
+}
 #why-us-section {
     margin-top: -100px;
-}
-#why-us-section .row{
-    padding-top: 40px;
-}
+} 
 #why-us-section .title-wrapper {
-    padding-top: 140px;
+    padding-top: 220px;
 }  
 #why-us-section img {
     width:50%;
@@ -383,14 +382,7 @@ footer ul li {
 #buyers-section  {
     /* background-color:#37474f; */
     height:auto;
-}
-#featured-companies .title-wrapper {
-    padding-bottom:30px;
-}
-#news-section .title-wrapper {
-    padding-top: 60px;
-}
-
+} 
 
 /* Section: Landing */
 #landing {
