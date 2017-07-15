@@ -346,9 +346,25 @@ footer ul li {
 #why-us-section {
     margin-top: -100px;
 }
+#why-us-section .row{
+    padding-top: 40px;
+}
 #why-us-section .title-wrapper {
     padding-top: 100px;
 }  
+#why-us-section img {
+    width:50%;
+    padding-bottom:20px;
+}  
+#why-us-section .reason-1 {
+   margin: 1rem 3rem 1rem 7rem; 
+} 
+#why-us-section .reason-2 {
+   margin: 1rem 5rem; 
+} 
+#why-us-section .reason-3 {
+   margin: 1rem 7rem 1rem 3rem;
+} 
 #about-section .blockquote {
     /*padding: 1.6rem 3rem; */
     border-right: 1px solid #4285F4;
@@ -554,6 +570,10 @@ footer ul li {
     #why-us-section #why-us-reasons{
         text-align: center!important;
     }
+    #why-us-section .reason-1, #why-us-section .reason-3  { 
+       margin: 1rem 5rem; 
+    }  
+
     #about-section h3 {
         display: block!important;
     }
