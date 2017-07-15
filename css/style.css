@@ -556,9 +556,9 @@ footer ul li {
        margin: 1rem 2rem; 
     } 
 }
-@media only screen and (min-device-width: 768px) {
-    #why-us-section img  { 
-       width:30%; 
+@media only screen and (max-width: 768px) {
+    #why-us-section .reason-1, #why-us-section .reason-2, #why-us-section .reason-3  { 
+       margin: 1rem 10rem; 
     } 
 }
 @media only screen and (max-width:576px) {
