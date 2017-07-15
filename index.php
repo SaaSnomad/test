@@ -274,9 +274,10 @@
     <section id="featured-companies"> 
         <div class="text-center title-wrapper">
             <h1 class="display-4">Looking for acquisition targets?</h1>
+            <!--<h2>Featured SaaS companies</h2>-->
         </div> 
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="slider">
                     <?php foreach($cards as $card) : ?>
                     <article>
@@ -294,23 +295,48 @@
                     <?php endforeach; ?>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6" id="buyer-get-notified" style="padding-top:5%;">
-                <!--<h2>Featured SaaS companies</h2>-->
-                <h4>Get notified about</br>new featured companies</h4>
-                <div style="margin-top: 20px;">
-                    <a id="buyer-ajax" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">subscribe for free</a> 
-                    <!--<a id="buyer-find" class="btn btn-primary btn-lg" href="coming-soon-subscribers.php" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a>-->
-                </div>
-            </div>
         </div>
-        
     </section> 
     <!--/Section: Featured companies-->
+
+    <!--Section: Buyers get notified -->        
+    <section id="buyer-get-notified"> 
+        <div class="text-center">
+            <h4>Get notified about new featured companies:</h4>
+            <small>Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
+        </div>
+        <div class="row" style="padding-top:20px;">
+            <div class="col-lg-4 col-md-4 col-sm-3 hidden-xs"></div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center"> 
+                <form id="buyers" action="#" method="post"> 
+                    <div class="md-form input-group">
+                        <input name="buyer_email" id="buyer_email" placeholder="Enter your email..." type="email" class="form-control" maxlength="50" required>
+                        <input name="buyer_country" placeholder="Country" type="text" class="geotext[country]" style="display:none;">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="submit" style="margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Subscribe for free</button>
+                        </span>
+                    </div> 
+                    <div class="text-center" style="width: 100%;">
+                    <small class="checkbox-label">By clicking the button, you agree that you have read and accepted</br>the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
+                </div>
+                </form>
+                
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 hidden-xs"></div>
+            
+
+                        <!--<a id="buyer-ajax" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">subscribe for free</a> 
+                            <a id="buyer-find" class="btn btn-primary btn-lg" href="coming-soon-subscribers.php" onClick="ga('send', 'event', 'find saas', 'click', 'buyers');">Find a target</a>-->
+            
+        </div>
+    </section> 
+    <!--/Section: Buyers get notified-->
 
     <!--section: News-->
     <section id="news-section">
         <div class="text-center">
-            <h2>Latest articles on SaaS M&A</h2> </div>
+            <h2>Latest articles on SaaS M&#38;A</h2> 
+        </div>
         <div class="row" style="padding-top:0;">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">

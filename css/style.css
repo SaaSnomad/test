@@ -338,7 +338,8 @@ footer ul li {
 #why-us-section,
 #about-section,
 #buyers-section,
-#featured-companies, 
+#featured-companies,
+#buyer-get-notified, 
 #news-section {
     height:auto;
     background-color: #f3f3f3
@@ -350,7 +351,7 @@ footer ul li {
     padding-top: 40px;
 }
 #why-us-section .title-wrapper {
-    padding-top: 100px;
+    padding-top: 140px;
 }  
 #why-us-section img {
     width:50%;
@@ -368,10 +369,7 @@ footer ul li {
 #about-section .blockquote {
     /*padding: 1.6rem 3rem; */
     border-right: 1px solid #4285F4;
-}
-#buyer-get-notified {
-    text-align: left;
-}
+} 
 #featured-companies {
     /*background-image: url(../img/map.png);*/
     background-size: auto;
@@ -584,10 +582,7 @@ footer ul li {
     #about-section .bq-primary {
         text-align: center;
         margin-bottom: 0;
-    }
-    #buyer-get-notified {
-        text-align: center;
-    }
+    } 
     .slick-next { 
         right: 5% !important;
     }
