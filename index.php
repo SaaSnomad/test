@@ -178,21 +178,21 @@
             <h2>Three reasons why to use SaaSnomad</h2> 
         </div>
         <div class="row"> 
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-1 text-center">
                     <img src="img/icon-anonymous.png">
                     <h4 class="text-uppercase">Anonymity</h4>
                     <p>We don't disclose any names when approaching potential acquirers. We do it only at your permission and only when we receive preliminary interest from buyers.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-2 text-center">
                     <img src="img/icon-suit.png">
                     <h4 class="text-uppercase">Reach</h4>
                     <p>New M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-3 text-center">
                     <img src="img/icon-pay.png">
                     <h4 class="text-uppercase">Pay per Intro</h4>
@@ -214,8 +214,8 @@
                     <h4>Apply and pass our review</h4> 
                 </blockquote>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
-                <p>Fill in an extremely short form </br>and get reviewed by our M&#38;A professionals</p>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-side">
+                <p>Fill in an extremely short form and get reviewed by our M&#38;A professionals</p>
             </div>
         </div>
         <div class="row" style="padding-top: 0;padding-bottom: 0;align-items: baseline;">
@@ -225,8 +225,8 @@
                     <h4>Buyers get notified</h4> 
                 </blockquote>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
-                <p>Following the review of your application </br>our specialist will send it to the most relevant buyers</p>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-side">
+                <p>Following the review of your application our specialist will send it to the most relevant buyers</p>
             </div> 
         </div>
         <div class="row" style="padding-top: 0;align-items: baseline;">
@@ -236,8 +236,8 @@
                     <h4>Get introduced</h4> 
                 </blockquote>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
-                <p>After potential acquirers expressed their interest,</br>we do introductions to those of your choice</p>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-side">
+                <p>After potential acquirers expressed their interest, we do introductions to those of your choice</p>
             </div>
         </div> 
         </div>
@@ -280,7 +280,7 @@
         <div class="text-center">
             <h4>Get notified about new featured companies:</h4>
         </div>
-        <div class="row" style="padding-top:20px;">
+        <div class="row" style="padding:20px 20px 0;">
             <div class="col-lg-4 col-md-4 col-sm-3 hidden-xs"></div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center"> 
                 <form id="buyers" action="#" method="post"> 
