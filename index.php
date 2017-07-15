@@ -177,10 +177,10 @@
         <div class="text-center title-wrapper">
             <h2>Three reasons why to use SaaSnomad</h2> 
         <div class="row" style="padding-top: 40px;">            
-            <div id="anonymous" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+            <!--<div id="anonymous" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
                 <img src="img/anonymous.png" style="padding-top: 50px;opacity: 0.2;padding-right: 35px;">
             </div>
-            <div id="why-us-reasons" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
+             <div id="why-us-reasons" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
                 <div style="padding: 20px 0;">
                     <h4>Anonymity</h4>
                     <p>We don't disclose any names when approaching potential acquirers. </br>We do it only at your permission and only when we receive<br>preliminary interest from buyers.</p>
@@ -191,35 +191,33 @@
                 </div>             
                 <div style="padding: 20px 0;">
                     <h4>Pay per Intro</h4>
-                    <p>You pay only for the intro to </br>interested acquirers</p>
+                    <p>You pay only for the intro to</br>interested acquirers</p>
                 </div>
-            </div>
+            </div>-->
 
-            <!--
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right" style="">
-                <img src="img/anonymous.png" style="padding-top: 40px;">
-
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="border-right:1px solid #4285F4;">
-                <div class="text-center" style="padding: 20px 0;">
+            
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="text-center" style="margin: 1rem 2rem;">
+                    <img src="img/icon-anonymous.png" style="width:40%;padding-bottom:20px;">
                     <h4 class="text-uppercase">Anonymity</h4>
-                    <p>Buyers apply to you,</br>not the other way around</p>
+                    <p>We don't disclose any names when approaching potential acquirers. We do it only at your permission and only when we receive preliminary interest from buyers.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="border-right:1px solid #4285F4;">
-                <div class="text-center" style="padding: 20px 0;">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="text-center" style="margin: 1rem 2rem;">
+                    <img src="img/icon-suit.png" style="width:40%;padding-bottom:20px;">
                     <h4 class="text-uppercase">Reach</h4>
-                    <p>Get pitched to hundreds</br>of M&#38;A professionals</p>
+                    <p>New M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</p>
                 </div>
             </div>
             
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <div class="text-center" style="padding: 20px 0;">
-                    <h4 class="text-uppercase">Success Fee</h4>
-                    <p>You pay only when there are</br>Buyers interested in your SaaS</p>
+                <div class="text-center" style="margin: 1rem 2rem;">
+                    <img src="img/icon-pay.png" style="width:40%;padding-bottom:20px;">
+                    <h4 class="text-uppercase">Pay per Intro</h4>
+                    <p>You pay only for the intro to interested acquirers</p>
                 </div>
-            </div>-->
-            
+            </div>
         </div>
     </section>
     <!--/Section: Why us--> 

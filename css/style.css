@@ -73,7 +73,7 @@ header .row {
     margin: 0 -15px 0 0;
     box-shadow: none;
     float: right;
-    cursor: default
+    pointer-events: none;
 }
 
 header #apply-navbar {
@@ -81,14 +81,14 @@ header #apply-navbar {
 }
 
 .scrolling-navbar {
-    -webkit-transition: background .9s ease-in-out, padding .9s ease-in-out;
-    -moz-transition: background .9s ease-in-out, padding .9s ease-in-out;
-    transition: background .9s ease-in-out, padding .9s ease-in-out
+    -webkit-transition: background .3s ease-in-out, padding .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out, padding .3s ease-in-out;
+    transition: background .3s ease-in-out, padding .3s ease-in-out
 }
 
 .top-nav-collapse {
     background-color: #f94b71;
-    cursor: pointer!important
+    pointer-events: all !important
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:hover {
