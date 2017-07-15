@@ -345,6 +345,9 @@ footer ul li {
     height:auto;
     background-color: #f3f3f3
 }
+#featured-companies {
+    padding-bottom: 50px;
+}
 .title-wrapper {
     padding-bottom: 50px;
 }
