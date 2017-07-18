@@ -182,7 +182,7 @@
                 <div class="reason-1 text-center">
                     <img src="img/icon-anonymous.png">
                     <h4 class="text-uppercase">Anonymity</h4>
-                    <p>We don't disclose any names when approaching potential acquirers. We do it only at your permission and only when we receive preliminary interest from buyers.</p>
+                    <p>We disclose your contacts only at your permission following the interest from buyers</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -377,6 +377,54 @@
     </section>
     <!--/Section: News--> 
 
+  
+    <!--Section Contact Us--> 
+    <section id="contact-us">
+        <div class="text-center">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-4 col-md-10 col-sm-10 col-xs-12">
+                <form id="" action="" method="POST" role="form" style="padding-top: 14px;">
+                    <!-- Role -->
+                    <div class="md-form form-group">
+                        <label for="radioBtn" style="position: relative;font-size: 0.8rem;top: 0;">Role *</label>
+                        <div id="radioBtn" class="btn-group" style="font-size: 1rem;">
+                            <a class="btn active" data-toggle="fun" data-title="Y">Seller</a>
+                            <a class="btn notActive" data-toggle="fun" data-title="X">Buyer</a>
+                            <a class="btn notActive" data-toggle="fun" data-title="N">Other</a>
+                        </div>
+                        <input type="hidden" name="fun" id="fun">
+                    </div>
+                    <!-- Email-->
+                    <div class="md-form form-group">
+                        <input placeholder="example@myemaildomain.com" type="email" name="_email" id="_email" class="form-control" maxlength="50" required>
+                        <label for="_email">Email *</label>
+                    </div> 
+                    <!-- Message-->
+                    <div class="md-form form-group">
+                        <textarea placeholder="Describe your issues or share your ideas..." type="text" id="" class="md-textarea form-control" rows="10" required></textarea>
+                        <label for="form7" style="">Message *</label>
+                    </div> 
+                    
+                    <!--Country-->
+                    <div class="md-form form-group" style="margin-top: 44px;display:none;">
+                        <input type="text" name="_country" class="geotext[country]" id="_country" class="form-control"> 
+                    </div> 
+                     
+                    <div class="md-form input-group" style="margin:0;width: 100%;">
+                        <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'reques contact', 'submit', 'buyers');">Send Message</button>
+                    </div>  
+                </form>
+            </div>
+            <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
+        </div>
+    </section>
+    <!--/Section: Contact Us--> 
+
+    
+
     </div>
     <!--/ Main container-->
 
@@ -395,10 +443,6 @@
             <div class="modal-body">
                 <h2 class="text-center" id="seller-header">Seller application</h2>
                 <form id="sellers" action="#" method="post">
-                    <div class="md-form form-group">
-                        <input name="seller_name" id="seller_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
-                        <label for="seller_name">Name *</label>
-                    </div>
                     <div class="md-form form-group">
                         <input name="seller_email" id="seller_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
                         <label for="seller_email">Email *</label>
@@ -456,6 +500,10 @@
                         <span class="input-group-addon" style="position: absolute;bottom:0;width:2%;border-bottom: none !important;padding: 0rem; margin-bottom: 7px;">&#36;</span>
                         <input name="seller_mrr" id="seller_mrr" placeholder="Last month's MRR" type="text" class="form-control" maxlength="8" aria-label="Amount (to the nearest dollar)" aria-describedby="basic-addon2" style="padding-left: 3%;padding-right:3%;z-index:1000;width: 94%; margin-top: 2rem;">
                         <label for="seller_mrr">Last month's MRR</label>
+                    </div>
+                    <div class="md-form form-group">
+                        <input name="seller_employees" id="seller_employees" placeholder="Employees" type="text" class="form-control" maxlength="5">
+                        <label for="seller_name">Number of Employees</label>
                     </div>
                     <!--<div class="md-form form-group" style="margin-bottom: 2.5rem;">
                         <div class="rkmd-checkbox checkbox-ripple">
@@ -743,6 +791,8 @@
         new GeoText();  
     });
     </script>  
+    <!-- Radio Btn -->
+    <script type="text/javascript" src="js/radio-btn.js"></script>
 
     <!-- FORMS PROCESSING -->
     <!-- Form Submit: AJAX -->
@@ -757,6 +807,6 @@
     <div style="display:none;" id="oldDate"><?php echo $OldDate->diff($now)->format("%a"); ?></div>
     <div style="display:none;"><?php foreach($sellers as $seller) : ?><span class="rowsCount"><?php echo applicationsCount($seller->id); ?></span><?php endforeach; ?></div>
     <script type="text/javascript" src="js/script.js"></script> 
-     
+    
 </body>
 </html>

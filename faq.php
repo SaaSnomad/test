@@ -52,7 +52,7 @@
 
  
     <!-- Main container-->
-    <div class="container-fluid" id="main">
+    <div class="container-fluid" id="main" style="margin-bottom: 100px;">
         
         <section id="faq"> 
             <div class="row" style="padding-top:100px;">

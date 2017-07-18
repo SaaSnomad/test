@@ -5996,7 +5996,7 @@ textarea {
     /* prevents scroll bar flash */ 
     /* prevents text jump on Enter keypress */
     resize: none;
-    min-height: 3rem; }
+    min-height: 5rem; }
 
 .hiddendiv {
   display: none;

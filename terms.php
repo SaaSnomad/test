@@ -23,7 +23,8 @@
     <link href="css/mdb.css" rel="stylesheet"> 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> 
-
+    <!-- Select Jquery Chosen Plugin-->
+    <link rel="stylesheet" href="css/chosen.css"> 
     <!-- Template styles -->
     <style>
                     h3 {
@@ -46,7 +47,7 @@
 
  
     <!-- Main container-->
-    <div class="container-fluid" id="main">
+    <div class="container-fluid" id="main" style="margin-bottom: 100px;">
         
         <section id="terms"> 
             <div class="row" style="padding-top:100px;">
@@ -102,10 +103,10 @@
                                 If you are selling a business in the capacity of a broker, agent or any other form of intermediary so that you are not selling in your personal capacity you must register as an intermediary on the website. You warrant that you have the full authority and permission to advertise the business on the website FROM THE DIRECT OWNER.
                             </p>
                             <p>
-                                If you are contacted by a third party through your use of this website who appears to be non bona-fide or who acts dishonestly or incorrectly in any way or who contacts you for any other purpose than to negotiate the purchase of the item you have advertised (such as sale of its services), you will email our <a href="mailto:#">Customer Success Manager</a> forthwith setting out full details.
+                                If you are contacted by a third party through your use of this website who appears to be non bona-fide or who acts dishonestly or incorrectly in any way or who contacts you for any other purpose than to negotiate the purchase of the item you have advertised (such as sale of its services), you will email our <a href="index.php#contact-us">Customer Success Manager</a> forthwith setting out full details.
                             </p>  
                             <p>
-                                You are able to end your listing following the cancellation links in your email or contacting our <a href="mailto:#">customer services team</a>. Cancellation requests are reviewed on a case by case basis.
+                                You are able to end your listing following the cancellation links in your email or contacting our <a href="index.php#contact-us">customer services team</a>. Cancellation requests are reviewed on a case by case basis.
                             </p>
                         </section>
                         <section id="buyers">
@@ -213,7 +214,114 @@
             </div> 
         </section>
         <!--/Section: --> 
- 
+        
+        <!-- Seller modal -->
+        <div class="modal fade" id="sellerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    <div class="modal-body">
+                        <h2 class="text-center" id="seller-header">Seller application</h2>
+                        <form id="sellers" action="#" method="post">
+                            <div class="md-form form-group">
+                                <input name="seller_email" id="seller_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
+                                <label for="seller_email">Email *</label>
+                            </div>
+                            <div class="md-form form-group" style="display:none;">
+                                <input name="seller_country" placeholder="Country" type="text" class="geotext[country]"> 
+                            </div> 
+
+                            <div class="md-form form-group" id="multiselect" style="width: 100%;top: -7px;">
+                                <label for "seller_industry" style="font-size: 0.8rem;position: relative;z-index: 1000;top:8px;">Industry</label>
+                                <select name="seller_industry" id="seller_industry" data-placeholder="Industry" class="chosen-select form-control" tabindex="2">
+                                    <option value=""></option>
+                                    <option value="AdTech">AdTEch</option>
+                                    <option value="AI">AI</option>
+                                    <option value="Big Data">Big Data</option>
+                                    <option value="Business Intelligence">Business Intelligence</option>
+                                    <option value="HR Tech">HR Tech</option>
+                                    <option value="Classifieds">Classifieds</option>
+                                    <option value="CleanTech">CleanTech</option>
+                                    <option value="Cloud Computing">Cloud Computing</option>
+                                    <option value="Customer Support">Customer Support</option>
+                                    <option value="Data Science">Data Science</option>
+                                    <option value="Dating">Dating</option>
+                                    <option value="E-Commerce">E-Commerce</option>
+                                    <option value="EdTech">EdTech</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Fashion">Fashion</option>
+                                    <option value="FinTech">FinTech</option>
+                                    <option value="Fitness &#38; Wellness">Fitness &#38; Wellness</option>
+                                    <option value="Food &#38; Beverages">Food &#38; Beverages</option>
+                                    <option value="Funerals">Funerals</option>
+                                    <option value="Gaming">Gaming</option>
+                                    <option value="Government">Government</option>
+                                    <option value="Health Tech">Health Tech</option>
+                                    <option value="Hospitality">Hospitality</option>
+                                    <option value="Human Resources">Human Resources</option>
+                                    <option value="Insurance">Insurance</option>
+                                    <option value="Internet of Things">Internet of Things</option>
+                                    <option value="Legal">Legal</option>
+                                    <option value="Market Research">Market Research</option>
+                                    <option value="Media">Media</option>
+                                    <option value="Music">Music</option>
+                                    <option value="Publishing">Publishing</option>
+                                    <option value="Security">Security</option>
+                                    <option value="Social Networking">Social Networking</option>
+                                    <option value="Storage">Storage</option>
+                                    <option value="Technical Support">Technical Support</option>
+                                    <option value="Telecommunications">Telecommunications</option>
+                                    <option value="Transportation">Transportation</option>
+                                    <option value="Travel">Travel</option>
+                                    <option value="Travel">Other</option>
+                                </select>
+                            </div>
+                            <div class="md-form form-group"> 
+                                <span class="input-group-addon" style="position: absolute;bottom:0;width:2%;border-bottom: none !important;padding: 0rem; margin-bottom: 7px;">&#36;</span>
+                                <input name="seller_mrr" id="seller_mrr" placeholder="Last month's MRR" type="text" class="form-control" maxlength="8" aria-label="Amount (to the nearest dollar)" aria-describedby="basic-addon2" style="padding-left: 3%;padding-right:3%;z-index:1000;width: 94%; margin-top: 2rem;">
+                                <label for="seller_mrr">Last month's MRR</label>
+                            </div>
+                            <div class="md-form form-group">
+                                <input name="seller_employees" id="seller_employees" placeholder="Employees" type="text" class="form-control" maxlength="5">
+                                <label for="seller_name">Number of Employees</label>
+                            </div>
+                            <!--<div class="md-form form-group" style="margin-bottom: 2.5rem;">
+                                <div class="rkmd-checkbox checkbox-ripple">
+                                    <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
+                                        <input type="checkbox" id="checkbox-1" required> 
+                                        <span class="checkbox"></span> 
+                                    </label> 
+                                    <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> </div>
+                            </div>-->
+                            <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
+                                <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'application form', 'submit', 'sellers');">Apply</button>
+                            </div>
+                            <div class="text-center">
+                                <small class="checkbox-label">By clicking "Apply", you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'sellers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'sellers');">Terms of Use</a> </small>
+                            </div>
+                        </form>
+                        <div id="seller-success" style="display:none;">
+                            <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
+                                <p id="seller-success-title" class='bq-title' style='padding-left: 0;'></p>
+                            </blockquote>
+                            <div class='text-center'>
+                                <p id="seller-success-message"></p>
+                            </div>
+                        </div>
+                        <div id="seller-error" style="display:none;">
+                            <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
+                                <p id="seller-error-title" class='bq-title' style='padding-left: 0;'></p>
+                            </blockquote>
+                            <div class='text-center'>
+                                <p id="seller-error-message"></p>
+                            </div>
+                        </div>
+                        <div id="preloader1" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- end of Seller modal -->
     </div>
     <!--/ Main container-->
 
@@ -240,9 +348,13 @@
 
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.js"></script>
-
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script> 
+    <!-- Select Jquery Chosen Plugin-->
+    <script type="text/javascript" src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/chosen/init.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Form Submit: AJAX -->
+    <script type="text/javascript" src="js/ajax/seller-ajax.js"></script>
 
 </body>
 

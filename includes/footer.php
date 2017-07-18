@@ -18,12 +18,7 @@
                           <a href="terms.php" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'terms footer', 'click', 'info');">
                             <b>Terms</b>
                           </a>
-                        </li> 
-                        <li>
-                          <a href="contact.php" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'contact us footer', 'click', 'info');">
-                            <b>Contact us</b>
-                          </a>
-                        </li> 
+                        </li>  
                       </ul>
                       <!--Back to top-->
                       <a id="go-back" class="mdl-typography--font-light btn btn-info btn-rounded" onClick="ga('send', 'event', 'go up', 'click', 'uxui');"><i class="fa fa-arrow-up" aria-hidden="true" style="margin-top: 4px;"></i></a>

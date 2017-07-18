@@ -48,7 +48,10 @@ var {
 }
 
 #sellerModal .close, #buyerModal .close, #requestContactModal .close{
-    position: absolute; right: 10px; top: 10px;
+    position: absolute; 
+    right: 10px; 
+    top: 10px;
+    z-index: 1000;
 }
 #seller_industry_chosen .default {
     color: #636c72 !important;
@@ -340,7 +343,8 @@ footer ul li {
 #buyers-section,
 #featured-companies,
 #buyer-get-notified, 
-#news-section {
+#news-section,
+#contact-us {
     padding-bottom: 120px;
     height:auto;
     background-color: #f3f3f3
@@ -352,10 +356,10 @@ footer ul li {
     padding-bottom: 50px;
 }
 #why-us-section {
-    margin-top: -100px;
+    margin-top: -70px;
 } 
 #why-us-section .title-wrapper {
-    padding-top: 220px;
+    padding-top: 190px;
 }  
 #why-us-section img {
     width:50%;
@@ -492,6 +496,26 @@ footer ul li {
 }
 
 
+#radioBtn {
+    width: 100%;
+}
+#radioBtn a {
+    border: 1px solid #37474f;
+    width: 33.3333333333%;
+    background: #37474f;
+    opacity: 0.8;
+    /*background-color: #9e9e9e;*/
+    box-shadow:none;
+    margin-bottom: 0;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 1rem;
+}
+#radioBtn .notActive{
+    border: 1px solid #9e9e9e;
+    background-color: transparent;
+    color: #636c72 !important;
+}
 
 
 
