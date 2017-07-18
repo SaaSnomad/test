@@ -387,16 +387,7 @@
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-4 col-md-10 col-sm-10 col-xs-12">
                 <form id="" action="" method="POST" role="form" style="padding-top: 14px;">
-                    <!-- Role -->
-                    <div class="md-form form-group">
-                        <label for="radioBtn" style="position: relative;font-size: 0.8rem;top: 0;">Role *</label>
-                        <div id="radioBtn" class="btn-group" style="font-size: 1rem;">
-                            <a class="btn active" data-toggle="fun" data-title="Y">Seller</a>
-                            <a class="btn notActive" data-toggle="fun" data-title="X">Buyer</a>
-                            <a class="btn notActive" data-toggle="fun" data-title="N">Other</a>
-                        </div>
-                        <input type="hidden" name="fun" id="fun">
-                    </div>
+                    
                     <!-- Email-->
                     <div class="md-form form-group">
                         <input placeholder="example@myemaildomain.com" type="email" name="_email" id="_email" class="form-control" maxlength="50" required>
@@ -407,6 +398,16 @@
                         <textarea placeholder="Describe your issues or share your ideas..." type="text" id="" class="md-textarea form-control" rows="10" required></textarea>
                         <label for="form7" style="">Message *</label>
                     </div> 
+                    <!-- Role -->
+                    <div class="md-form form-group">
+                        <label for="radioBtn" style="position: relative;font-size: 0.8rem;top: 0;">Role *</label>
+                        <div id="radioBtn" class="btn-group" style="font-size: 1rem;">
+                            <a class="btn active" data-toggle="fun" data-title="Y">SaaS Owner</a>
+                            <a class="btn notActive" data-toggle="fun" data-title="X">Acquirer</a>
+                            <a class="btn notActive" data-toggle="fun" data-title="N">Other</a>
+                        </div>
+                        <input type="hidden" name="fun" id="fun">
+                    </div>
                     
                     <!--Country-->
                     <div class="md-form form-group" style="margin-top: 44px;display:none;">
