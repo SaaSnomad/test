@@ -232,7 +232,9 @@
     <script type="text/javascript" src="js/chosen/init.js" type="text/javascript" charset="utf-8"></script>
     <!-- Form Submit: AJAX -->
     <script type="text/javascript" src="js/ajax/seller-ajax.js"></script>
-
+    <!-- Number formatting -->
+    <script type="text/javascript" src="js/jquery.number.js"></script>
+    <script type="text/javascript"  src="js/jquery.number-formatting.js"></script>
 </body>
 
 </html>

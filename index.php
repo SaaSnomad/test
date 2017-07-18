@@ -381,7 +381,7 @@
     <!--Section Contact Us--> 
     <section id="contact-us">
         <div class="text-center">
-            <h2>Contact Us</h2>
+            <h2>Have Questions?</h2>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
@@ -779,8 +779,7 @@
     </script>   
     <!-- Number formatting -->
     <script type="text/javascript" src="js/jquery.number.js"></script>
-    <script type="text/javascript"  src="js/jquery.number-formatting.js">
-    </script>
+    <script type="text/javascript"  src="js/jquery.number-formatting.js"></script>
     <!-- Geolocation API (1.0)-->
     <script type="text/javascript" src="//maps.google.com/maps/api/js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQJ71Xgt3HCqIGW7YXoPtt9U-Jp-bXk9M&callback=initMap"
