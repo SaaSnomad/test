@@ -344,6 +344,7 @@ footer ul li {
 #buyers-section,
 #featured-companies,
 #buyer-get-notified, 
+#pricing-section,
 #news-section,
 #faq-section,
 #contact-us {
@@ -490,7 +491,24 @@ footer ul li {
 #about-section .right-side p {
     margin-bottom: 2rem;
 }
-
+#pricing-section .fa {
+    color:#3CD7B2;padding-right:5px;
+}
+#pricing-section li {
+    padding-bottom:15px;
+}
+#pricing-section #price-pro {
+    color: #0275d8;
+    font-weight: 600;
+    font-size: 2.75rem;
+    margin: 2rem 0;
+}
+#pricing-section #free-plan {
+    color: #0275d8;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin: 2rem 0;
+}
 /* Section: For Buyers */
 
 #buyers-section .buyers-section {
@@ -591,6 +609,16 @@ footer ul li {
   border: 1px solid #ccc;
 }
 
+#contact-us #radio1 {
+    display: block;
+    margin-top: 30%;
+    margin-left: -1%;
+}
+#contact-us #radio2 {
+    display: block;
+    margin-top: 30%;
+    margin-left: -98%;
+}
 /* hide input */
 input.radio:empty {
     margin-left: -999px;
@@ -611,7 +639,7 @@ input.radio:empty ~ label {
     user-select: none;
 }
 
-input.radio:empty ~ label:before {
+input.radio:empty ~ label span {
     position: absolute;
     display: block;
     top: 0;
@@ -619,24 +647,23 @@ input.radio:empty ~ label:before {
     left: 0;
     content: '';
     width: 2.5em;
-    background: #ccc;
+    background: #E7E8EA;
     border-radius: 3px 0 0 3px;
 }
 
 /* toggle hover */
-input.radio:hover:not(:checked) ~ label:before {
-    content:'\2714';
+input.radio:hover:not(:checked) ~ label span {
+    /*content:"\f00c";*/
     text-indent: .9em;
     color: #C2C2C2;
-}
-
+} 
 input.radio:hover:not(:checked) ~ label {
     color: #464a4c;
 }
 
 /* toggle on */
-input.radio:checked ~ label:before {
-    content:'\2714';
+input.radio:checked ~ label span {
+    /*content:"\f00c";*/
     text-indent: .9em;
     color: #3CD7B2;
     background-color: #64ffda;
