@@ -85,7 +85,7 @@
                             <h3>How does SaaSNomad preserve the anonymity of my offer?</h3>
                             <p>
                                 SaaSNomad provides the opportunity to sale your SaaS absolutely anonymously. 
-                                That's why SaaSNomad does not allow the display of your contact details within a business card.
+                                That's why SaaSNomad does not allow the display of your contact details within a Company card.
                                 Buyer request will be delivered to you via the website. 
                                 Then you decide to whom to reveal your contact. 
                             </p> 
@@ -104,7 +104,7 @@
                                 Just fill out the request form following the link at the foot of the featured company card, 
                                 and we will get back to you within 24 hours with response from the Seller.
                                 In case of positive response from the Seller you will get his/her contact absolutely for free.
-                                Then to find out more about a SaaS you just contact the seller directly.
+                                Then to find out more about a SaaS you just contact the Seller directly.
                             </p>
                             <p>
                                 Please note: we may request more information from you before disclosing the Seller's contact.

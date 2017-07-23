@@ -345,6 +345,7 @@ footer ul li {
 #featured-companies,
 #buyer-get-notified, 
 #news-section,
+#faq-section,
 #contact-us {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -538,6 +539,16 @@ footer ul li {
 
 #subscribers-for-news input.change:-moz-placeholder {
     color: rgba(255, 255, 255, .8)
+}
+
+#faq-section section{
+    margin-bottom: 2rem;
+}
+#faq-section section:last-child{
+    margin-bottom: 0rem;
+}
+#faq-section section p:last-child{
+    margin-bottom: 0rem;
 }
 
 #contact-us #contact_email{

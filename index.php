@@ -411,11 +411,76 @@
     </section>
     <!--/Section: News--> 
 
+    <!--section FAQ-->
+    <section id="faq-section">
+        <div class="text-center title-wrapper">
+            <h2>FAQ</h2> 
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <section id="faq-1">                            
+                            <h4>What is SaaSNomad?</h4>
+                            <p>
+                                SaaSNomad.com is just a place where you can meet a potential Buyer.
+                            </p> 
+                        </section>
+                        <section id="faq-2">
+                            <h4>Do I have to pay to register as a Seller?</h4>
+                            <p>
+                                It’s free to apply your SaaS for sale via SaaSNomad.com. 
+                                Fees are paid when you decide to answer the Buyer's contact request.
+                            </p> 
+                        </section>
+                        <section id="faq-3">
+                            <h4>How does SaaSNomad preserve the anonymity of my offer?</h4>
+                            <p>
+                                SaaSNomad provides the opportunity to sale your SaaS absolutely anonymously. 
+                                That's why SaaSNomad does not allow the display of your contact details within a Company card.
+                                Buyer request will be delivered to you via the website. 
+                                Then you decide to whom to reveal your contact. 
+                            </p> 
+                        </section>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <section id="faq-4">
+                            <h4>Do I have to pay to apply as a Buyer?</h4>
+                            <p>
+                                SaaSNomad is absolutely free for you as a Buyer as well as all 
+                                benefits which include the ability to get notified about all newly featured companies.
+                            </p> 
+                        </section>
+                        <section id="faq-5">
+                            <h4>How do I find out more about a featured company?</h4>
+                            <p>
+                                You can contact the Seller directly via the SaaSNomad site if you want further information about a featured company. 
+                                Just fill out the request form following the link at the foot of the featured company card, 
+                                and we will get back to you within 24 hours with response from the Seller.
+                                In case of positive response from the Seller you will get his/her contact absolutely for free.
+                                Then to find out more about a SaaS you just contact the Seller directly.
+                            </p>
+                            <p>
+                                Please note: we may request more information from you before disclosing the Seller's contact.
+                                They may also ask you to sign a confidentiality agreement. Also called a non-disclosure agreement, 
+                                this protects the seller against the risk of confidential information, such as financial records, 
+                                falling into the wrong hands – i.e. the press or competitors.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+        </div>
+    </section>
+
+    <!--/Section: FAQ-->
   
     <!--Section Contact Us--> 
     <section id="contact-us">
         <div class="text-center">
-            <h2>Have Questions?</h2>
+            <h2>Have More Questions?</h2>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
