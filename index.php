@@ -96,7 +96,7 @@
         </div>
         <div id="right-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight z-depth-1" data-wow-delay="0.2s">
             <div id="calculator-wrapper" class="white-text">
-                <h3 class="text-uppercase mb-1" style="margin: 2rem 2rem 1rem;"><b>Estimate your company valuation</b></h3>
+                <h3 class="text-uppercase mb-1" style="margin: 2rem 2rem 1rem;line-height: 40px;"><b>Estimate your company valuation</b></h3>
                 <div class="row form-wrapper">
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 
@@ -104,7 +104,7 @@
                         <form id="calculator" action="#" role="form" method="POST" onsubmit="return checkForm(this);">
                             <div class="md-form form-group" style="width: 100%;margin-top: 0.8rem;margin-bottom: -13px;">
                                 <select id="calculator_region" name="calculator_region" data-placeholder="Choose a Region" class="chosen-select" tabindex="2" required>
-                                    <option value=''></option>
+                                    <option value='' style="display:none">Choose a Region</option>
                                     <option value='North America'>North America</option>
                                     <option value='Europe'>Europe</option>
                                     <option value='Asia'>Asia</option>
@@ -146,8 +146,11 @@
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                         <div id="preloader-calculator" style="margin-top:180px;" class="text-center hide"><img src="img/preloader.gif" style="width:20%;"></div>
+                        <div id="unicorn-wrapper" class="text-center hide">
+                            <img id="unicorn" src="img/unicorn.png"><h3><b>Congrats, you got a Unicorn!</b></h3>
+                        </div>
                         <div id="valuation-range">
-                            <h4 style="margin-bottom:0;margin-top:5rem;">From:</h4>
+                            <h4 id="from" style="margin-bottom:0;margin-top:5rem;">From:</h4>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon-from">&#36;</span>
                                 <input type="text" placeholder="0" class="range-from form-control change" disabled maxlength="11" aria-label="Amount (to the nearest dollar)"> </div>
@@ -160,9 +163,7 @@
                             <div>
                                 <small>This valuation is indicative and the results may differ from those obtained using fundamental valuation techniques. Please read this <a href="disclaimer.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'disclaimer', 'click', 'info');">Important Disclaimer</a>. <a href="contact.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'contact us valuation', 'click', 'info');">Contact us</a> directly for a bespoke valuation service.</small>
                             </div>
-                        <div id="unicorn-wrapper" class="text-center hide">
-                            <img id="unicorn" src="img/unicorn.png"><h3><b>Congrats, you got a Unicorn!</b></h3>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -214,7 +215,7 @@
                         <p class="mb-0">
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
                             </br>
-                            My SaaS was making over $60,000 in MRR but further growth became a challenge, so I decided to quit and start new business from scratch. Out of 40 or so contacts I got from SaaSnomad, 7 worked out and in three months the money hit my account.
+                            My SaaS was making over $60,000 in MRR but further growth became a challenge, so I decided to quit and start new business from scratch. Out of 40 or so contacts I got from SaaSNomad, 7 worked out and in three months the money hit my account.
                             <!--<i class="fa fa-quote-right" aria-hidden="true"></i>-->
                         </p>
                         <footer class="blockquote-footer"><span class="gray-box">Xxxx Xxxxxxx</span>, the founder of <span class="gray-box">XXXXXX</span>,  <cite title"Source Title">San Francisco</cite></footer>
@@ -311,8 +312,8 @@
             <h4>Get notified about new featured companies:</h4>
         </div>
         <div class="row" style="padding:20px 20px 0;">
-            <div class="col-lg-4 col-md-4 col-sm-3 hidden-xs"></div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center"> 
+            <div class="col-lg-4 col-md-3 col-sm-3 hidden-xs"></div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-center"> 
                 <form id="buyers" action="#" method="post"> 
                     <div class="md-form input-group">
                         <input name="buyer_email" id="buyer_email" placeholder="Enter your email..." type="email" class="form-control" maxlength="50" required>
@@ -328,7 +329,7 @@
                 </form>
                 
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-3 hidden-xs"></div>
+            <div class="col-lg-4 col-md-3 col-sm-3 hidden-xs"></div>
             
 
                         <!--<a id="buyer-ajax" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#buyerModal" onClick="ga('send', 'event', 'get notified', 'click', 'buyers');">subscribe for free</a> 
@@ -418,7 +419,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-4 col-md-10 col-sm-10 col-xs-12">
-                <form id="contact-form" action="" method="POST" role="form" style="padding-top: 14px;">                    
+                <form id="contact-form" action="" method="POST" role="form" style="padding: 14px;">                    
                     <!-- Message-->
                     <div class="md-form form-group">
                         <textarea placeholder="Describe your issues or share your ideas..." type="text" name="contact_msg" id="contact_msg" class="md-textarea form-control" rows="10" required></textarea>
@@ -433,6 +434,7 @@
                             <input type="radio" name="contact_role" id="contact_acquirer" class="radio"/>
                             <label class="for-radio" for="contact_acquirer">Acquirer</label>
                         </div>
+                    </div>
                     <!-- Email-->
                     <div class="md-form form-group">
                         <input placeholder="Enter your email..." type="email" name="contact_email" id="contact_email" class="form-control" maxlength="50" required>
@@ -500,7 +502,7 @@
                     <div class="md-form form-group" id="multiselect" style="width: 100%;top: -7px;">
                         <label for "seller_industry" style="font-size: 0.8rem;position: relative;z-index: 1000;top:8px;">Industry</label>
                         <select name="seller_industry" id="seller_industry" data-placeholder="Industry" class="chosen-select form-control" tabindex="2">
-                            <option value=""></option>
+                            <option value="" style="display:none;">Choose your industry</option>
                             <option value="AdTech">AdTEch</option>
                             <option value="AI">AI</option>
                             <option value="Big Data">Big Data</option>
@@ -599,8 +601,8 @@
             <div class="modal-body">
                 <h2 class="text-center" id="buyer-header">Request Seller's Contact</h2> 
                 <div class="row" style="padding-top: 20px;padding-bottom: 20px;">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-top:2.3rem;padding-right: 45px;"> 
-                                    <p style="margin-bottom: 1.5rem;">You are going to request seller's contact</br>which SaaS is described on the card below</p>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 request-card-left"> 
+                                    <p>You are going to request seller's contact which SaaS is described on the card below</p>
                                     <!--Card-->
                                     <div class="card"> 
                                         <!--Card content-->
@@ -616,7 +618,7 @@
                                     </div>
                                     <!--/.Card-->
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  request-card-right">
                                     <form id="requests" action="requests.php" method="POST" role="form" style="padding-top: 14px;">
 
                                         <!--Name--> 
@@ -675,36 +677,8 @@
                                     </div>
                                     <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>
-                </div>
-                <!--<small id="buyer-subheader" style="display:block;margin: 1rem 0;" class="text-center">Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
-                    <form id="buyers" action="#" method="post">
-                        <div class="md-form form-group">
-                            <input name="buyer_name" id="buyer_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
-                            <label for="buyer_name">Name *</label>
-                        </div>
-                        <div class="md-form form-group">
-                            <input name="buyer_email" id="buyer_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
-                            <label for="buyer_email">Email *</label>
-                        </div>
-                        <div class="md-form form-group" style="margin-top: 44px;display:none;">
-                            <input name="buyer_country" placeholder="Country" type="text" class="geotext[country]">
-                        </div>
-                        <!--<div class="md-form form-group" style="margin-bottom: 2.5rem;">
-                            <div class="rkmd-checkbox checkbox-ripple">
-                                <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
-                                    <input type="checkbox" id="checkbox-1" required> 
-                                    <span class="checkbox"></span> 
-                                </label> 
-                                <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> 
-                            </div>
-                        </div>-->
-                        <!--<div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
-                            <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Subscribe</button>
-                        </div>
-                        <div class="text-center">
-                            <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
-                        </div>
-                    </form>-->
+                </div> 
+                <!--
                 <div id="buyer-success" style="display:none;">
                     <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
                         <p id="buyer-success-title" class='bq-title' style='padding-left: 0;'></p>
@@ -720,7 +694,7 @@
                     <div class='text-center'>
                         <p id="buyer-error-message"></p>
                     </div>
-                </div>
+                </div>-->
                 <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
             </div>
         </div>

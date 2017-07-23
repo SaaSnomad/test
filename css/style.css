@@ -424,6 +424,13 @@ footer ul li {
 #request-modal-dialog {
     max-width: 1000px;
 } 
+#request-modal-dialog .request-card-left {
+    margin-top:2.3rem;
+    padding-right: 45px;
+}
+#request-modal-dialog .request-card-left p{ 
+    margin-bottom: 1.5rem;padding-right:20px;
+} 
 #request-modal-dialog  .card-block {
     padding: 3rem 1.25rem;
 }
@@ -499,7 +506,7 @@ footer ul li {
     padding:60px;background: #37474f;opacity:0.8;display: flex;align-items: center;border-top-right-radius: 6px;border-bottom-right-radius: 6px;
 }
 #news-section .first-block #wrapper {
-    max-height:1700px;height:auto;overflow-y:scroll;
+    max-height:700px;height:auto;overflow-y:scroll;
 } 
 #news-section .second-block .news-subscription {
     width: 100%;
@@ -529,7 +536,7 @@ footer ul li {
 }
 
 #contact-us #contact_email{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 3rem;
 }
 #contact-us .radio-wrapper{
@@ -617,6 +624,9 @@ input.radio:checked ~ label:before {
     text-indent: .9em;
     color: #3CD7B2;
     background-color: #64ffda;
+    -webkit-transition: background .2s ease-in-out, padding .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, padding .2s ease-in-out;
+    transition: background .2s ease-in-out, padding .2s ease-in-out
 }
 
 input.radio:checked ~ label {
@@ -698,6 +708,13 @@ input.radio:checked ~ label {
     #logo svg {
         display: none;
     } 
+    #calculator_region {
+        height: 33px;
+    }
+
+    #valuation-range #from{
+        margin-top:0rem !important;
+    }
     #why-us-section #why-us-reasons{
         text-align: center!important;
     }
@@ -733,6 +750,12 @@ input.radio:checked ~ label {
     .slick-prev { 
         left: 5% !important;
     }
+    #request-modal-dialog .request-card-left {
+        padding-right: 0px;
+    }
+    #request-modal-dialog .request-card-left p{ 
+        padding-right:0px;
+    } 
     #news-section .first-block{
         padding: 40px 10px;
     }
@@ -745,6 +768,13 @@ input.radio:checked ~ label {
         border-bottom-left-radius: 6px!important;
         border-bottom-right-radius: 6px!important;
         border-top-right-radius: 0!important
+    }
+    #contact-us .radio-wrapper, #contact-us .radio-wrapper:first-child { 
+        display: block;
+        width:100%;
+    } 
+    #contact-form .md-form:nth-child(2) {
+        height: 100px;
     }
     ::-webkit-scrollbar {
         display: none
@@ -761,6 +791,16 @@ input.radio:checked ~ label {
     #calculator_region option{ 
         color:#292b2c;
     }
+    #seller_industry {
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+    #sellers #seller_industry {
+        margin-top: 0rem;
+    }
+    select.form-control:not([size]):not([multiple]) {
+        height: 42px;
+}
 }
 
 }
