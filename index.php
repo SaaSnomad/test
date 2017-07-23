@@ -290,6 +290,7 @@
                             <div class="card" style="background-color:#fff;color:#37474f;opacity:0.8;">
                                 <div class="card-block">
                                     <h4 class="card-title"><?php echo $card->industry; ?></h4>
+                                    <small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</small>
                                     <p class="card-text" style="padding-bottom: 10px;">
                                         <?php echo $card->traction; ?>
                                         <br><?php echo $card->employees; ?> employees

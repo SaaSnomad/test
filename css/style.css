@@ -421,6 +421,11 @@ footer ul li {
     height: auto;
     text-align: center
 }
+/*#featured-companies #seller_description {
+    padding-bottom: 15px;
+    display: inline-block;
+    line-height: 1.2rem;
+}*/
 #request-modal-dialog {
     max-width: 1000px;
 } 
