@@ -339,15 +339,49 @@ footer ul li {
 /* Sections */ 
 
 #why-us-section,
+#testimonial,
 #about-section,
 #buyers-section,
 #featured-companies,
 #buyer-get-notified, 
 #news-section,
 #contact-us {
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     height:auto;
     background-color: #f3f3f3
+} 
+#testimonial .card {
+    background-color: #37474f;
+}
+#testimonial blockquote{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding: 0.5rem 7rem;
+}
+#testimonial blockquote p{
+    font-size: 1rem;
+    padding-left:0;
+    color:#fff;
+}
+#testimonial blockquote .fa{
+    font-size:40px;
+    color:rgba(255,255,255,.2);
+    padding-bottom: 2rem;
+}
+#testimonial .blockquote-footer {
+    color:rgba(255,255,255,.5);
+}
+#testimonial .gray-box {
+    color: #c8c8c8;
+    color: transparent;
+    background-color: #c8c8c8;
+    background-color: rgba(55,71,79,0.05);
+    text-shadow: 0 0 7px #eee;
+    cursor: default;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 #featured-companies {
     padding-bottom: 50px;
@@ -359,7 +393,7 @@ footer ul li {
     margin-top: -70px;
 } 
 #why-us-section .title-wrapper {
-    padding-top: 190px;
+    padding-top: 70px;
 }  
 #why-us-section img {
     width:50%;
@@ -396,11 +430,10 @@ footer ul li {
 #featured-companies #buyer-ajax {
     /*background-color:#64ffda; color: #37474f !important;*/
     margin: 0px;
-}
-#buyers-section  {
-    /* background-color:#37474f; */
-    height:auto;
 } 
+#buyer-get-notified {
+    padding-top: 0px;
+}
 
 /* Section: Landing */
 #landing {
@@ -495,6 +528,17 @@ footer ul li {
     color: rgba(255, 255, 255, .8)
 }
 
+#contact-us #contact_email{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+#contact-us .radio-wrapper{
+    display: inline-block;
+    width:49%;
+}
+#contact-us .radio-wrapper:first-child{
+    width:50%;
+}
 
 #radioBtn {
     width: 100%;
@@ -516,10 +560,68 @@ footer ul li {
     background-color: transparent;
     color: #636c72 !important;
 }
+   
 
+.for-radio {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
 
+/* hide input */
+input.radio:empty {
+    margin-left: -999px;
+}
 
+/* style label */
+input.radio:empty ~ label {
+    color: rgba(99,108,114,.8); 
+    position: relative;
+    float: left;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    /*margin-top: 2em;*/
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 
+input.radio:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #ccc;
+    border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+    color: #464a4c;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #3CD7B2;
+    background-color: #64ffda;
+}
+
+input.radio:checked ~ label {
+    color: #464a4c;
+} 
  
 
 
@@ -605,6 +707,9 @@ footer ul li {
     #why-us-section img  { 
        width:50%; 
     } 
+    #testimonial blockquote{ 
+        padding: 0.5rem 1rem;
+    }
     #about-section h3 {
         display: block!important;
     }

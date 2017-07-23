@@ -203,6 +203,33 @@
     </section>
     <!--/Section: Why us--> 
 
+    <!--Section Testimonials -->
+    <section id="testimonial">  
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 text-center">
+            <!--Card-->
+                <div class="card">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            </br>
+                            My SaaS was making over $60,000 in MRR but further growth became a challenge, so I decided to quit and start new business from scratch. Out of 40 or so contacts I got from SaaSnomad, 7 worked out and in three months the money hit my account.
+                            <!--<i class="fa fa-quote-right" aria-hidden="true"></i>-->
+                        </p>
+                        <footer class="blockquote-footer"><span class="gray-box">Xxxx Xxxxxxx</span>, the founder of <span class="gray-box">XXXXXX</span>,  <cite title"Source Title">San Francisco</cite></footer>
+                    </blockquote>
+                </div>
+                <!--/.Card-->
+                
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"></div>
+        </div>
+    </section>
+    <!--/Section: Testimonials -->
+
+ 
+
     <!--Section: About-->
     <section id="about-section">
         <div class="text-center title-wrapper">
@@ -243,7 +270,10 @@
         </div>
     </section>
     <!--/Section: About--> 
- 
+
+
+
+
     <!--Section: Featured companies -->        
     <section id="featured-companies"> 
         <div class="text-center title-wrapper">
@@ -308,7 +338,9 @@
     </section> 
     <!--/Section: Buyers get notified-->
 
-    <!--section: News-->
+
+
+    <!--section News-->
     <section id="news-section">
         <div class="text-center title-wrapper">
             <h2>Latest articles on SaaS M&#38;A</h2> 
@@ -386,19 +418,31 @@
         <div class="row">
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-4 col-md-10 col-sm-10 col-xs-12">
-                <form id="" action="" method="POST" role="form" style="padding-top: 14px;">
-                    
-                    <!-- Email-->
-                    <div class="md-form form-group">
-                        <input placeholder="example@myemaildomain.com" type="email" name="_email" id="_email" class="form-control" maxlength="50" required>
-                        <label for="_email">Email *</label>
-                    </div> 
+                <form id="contact-form" action="" method="POST" role="form" style="padding-top: 14px;">                    
                     <!-- Message-->
                     <div class="md-form form-group">
-                        <textarea placeholder="Describe your issues or share your ideas..." type="text" id="" class="md-textarea form-control" rows="10" required></textarea>
-                        <label for="form7" style="">Message *</label>
+                        <textarea placeholder="Describe your issues or share your ideas..." type="text" name="contact_msg" id="contact_msg" class="md-textarea form-control" rows="10" required></textarea>
                     </div> 
                     <!-- Role -->
+                    <div class="md-form form-group">
+                        <div class="radio-wrapper"> 
+                            <input type="radio" name="contact_role" id="contact_saas_owner" class="radio" checked/>
+                            <label class="for-radio" for="contact_saas_owner">SaaS Owner</label>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" name="contact_role" id="contact_acquirer" class="radio"/>
+                            <label class="for-radio" for="contact_acquirer">Acquirer</label>
+                        </div>
+                    <!-- Email-->
+                    <div class="md-form form-group">
+                        <input placeholder="Enter your email..." type="email" name="contact_email" id="contact_email" class="form-control" maxlength="50" required>
+                         
+                    </div> 
+                    <!--<div>    
+                        <input type="radio" name="radio" id="radio3" class="radio"/>
+                        <label class="for-radio" for="radio3">Third Option</label>
+                    </div>--> 
+                    <!-- Role
                     <div class="md-form form-group">
                         <label for="radioBtn" style="position: relative;font-size: 0.8rem;top: 0;">Role *</label>
                         <div id="radioBtn" class="btn-group" style="font-size: 1rem;">
@@ -407,7 +451,8 @@
                             <a class="btn notActive" data-toggle="fun" data-title="N">Other</a>
                         </div>
                         <input type="hidden" name="fun" id="fun">
-                    </div>
+                    </div> -->
+                    
                     
                     <!--Country-->
                     <div class="md-form form-group" style="margin-top: 44px;display:none;">
