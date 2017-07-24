@@ -621,6 +621,14 @@ footer ul li {
     margin-bottom: 3rem;
 } 
 
+#contact-us .radio-wrapper{
+    display: inline-block;
+    width:49%;
+}
+#contact-us .radio-wrapper:first-child{
+    width:50%;
+}
+
 /* Radio btn*/
 
 .for-radio {
