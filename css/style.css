@@ -388,6 +388,47 @@ footer ul li {
 #featured-companies {
     padding-bottom: 50px;
 }
+#featured-companies .card .premium-banner {
+    position: absolute;
+    opacity: .8;
+    height: 0;
+    width: 60px;
+    box-sizing: content-box;
+    color: #FFF;
+    top: 18px;
+    right: -22px;
+    border-bottom: 20px solid #3CD7B2;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    opacity: 1;
+    z-index: 2;
+}
+#featured-companies  .card .premium-banner::before {
+    font-size: 12px;
+    content: attr(data-plan);
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 60px;
+    text-align: center;
+    line-height: 20px;
+    border-bottom: 1px solid transparent;
+}
+#featured-companies .card .premium-banner::after {
+    content: "";
+    position: absolute;
+    top: -21px;
+    width: 100px;
+    border-top: 1px solid transparent;
+    height: 0;
+    left: -20px;
+    top: 20px;
+}      
 .title-wrapper {
     padding-bottom: 50px;
 }
@@ -494,6 +535,12 @@ footer ul li {
 #pricing-section .fa {
     color:#3CD7B2;padding-right:5px;
 }
+#pricing-section #ninja {
+    background:#E7E8EA;margin-right: -50px; margin-left:50px;margin-top:20px
+}
+#pricing-section .free-plan {
+    padding: 3rem 4rem;
+}
 #pricing-section li {
     padding-bottom:15px;
 }
@@ -506,7 +553,7 @@ footer ul li {
 #pricing-section #free-plan {
     color: #0275d8;
     font-weight: 600;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     margin: 2rem 0;
 }
 /* Section: For Buyers */
@@ -572,36 +619,9 @@ footer ul li {
 #contact-us #contact_email{
     margin-top: 1.5rem;
     margin-bottom: 3rem;
-}
-#contact-us .radio-wrapper{
-    display: inline-block;
-    width:49%;
-}
-#contact-us .radio-wrapper:first-child{
-    width:50%;
-}
+} 
 
-#radioBtn {
-    width: 100%;
-}
-#radioBtn a {
-    border: 1px solid #37474f;
-    width: 33.3333333333%;
-    background: #37474f;
-    opacity: 0.8;
-    /*background-color: #9e9e9e;*/
-    box-shadow:none;
-    margin-bottom: 0;
-    text-transform: none;
-    font-weight: 400;
-    font-size: 1rem;
-}
-#radioBtn .notActive{
-    border: 1px solid #9e9e9e;
-    background-color: transparent;
-    color: #636c72 !important;
-}
-   
+/* Radio btn*/
 
 .for-radio {
   width: 100%;
@@ -784,6 +804,25 @@ input.radio:checked ~ label {
     } 
     #about-section .blockquote {
         border-right: none;
+    }
+    #pricing-section #ninja {
+        margin-right: 0px; 
+        margin-left: 0px;
+        margin-top:20px;
+        margin-bottom:20px
+    }
+    #pricing-section #ninja {
+        margin-right: 0px; 
+        margin-left: 0px;
+        margin-top:20px;
+        margin-bottom:20px
+    }
+    #pricing-section #ninja .card-block {
+        padding: 4rem 3rem !important;
+    }
+    #pricing-section .free-plan {
+        text-align: center;
+        padding-bottom: 0rem;
     }
     .slick-next { 
         right: 5% !important;
