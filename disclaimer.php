@@ -46,7 +46,7 @@
             <div class="row" style="padding-top:100px;">
                 <div class="col-lg-3 col-md-3 col-sm-1 hidden-xs"> </div>
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">  
-                            <a href="https://saasnomad.com/" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
+                            <a href="<?php echo BASE_URL; ?>" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
                             <h1 style="margin:30px 0;">Disclaimer</h1>
                             <section id="disclaimer">
                             <p>Please note that this calculator is intended primarily for educational and entertainment purposes. Our goal is to highlight the key factors that investors tend to consider when evaluating the value of a potential investment, and to provide some directionally correct guidance. The actual results may make sense in some situations, but it will not in many others. There is no way that a 5-field calculator can capture the many unique attributes of your business, so please do not rely on this model to make any financial decisions.</p>

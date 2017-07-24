@@ -605,7 +605,6 @@ footer ul li {
 
 .for-radio {
   width: 100%;
-  border-radius: 3px;
   border: 1px solid #ccc;
 }
 
@@ -621,7 +620,7 @@ footer ul li {
 }
 /* hide input */
 input.radio:empty {
-    margin-left: -999px;
+    margin-left: -2999px;
 }
 
 /* style label */
@@ -648,7 +647,6 @@ input.radio:empty ~ label span {
     content: '';
     width: 2.5em;
     background: #E7E8EA;
-    border-radius: 3px 0 0 3px;
 }
 
 /* toggle hover */

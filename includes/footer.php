@@ -5,17 +5,17 @@
                     <!--<a href="https://saasnomad.com/" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>-->
                     <ul style="display:inline-block;">
                         <li>
-                          <a href="faq.php" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'faq footer', 'click', 'info');">
+                          <a href="<?php echo BASE_URL; ?>faq" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'faq footer', 'click', 'info');">
                             <b>FAQ</b>
                           </a>
                         </li>
                         <li>
-                          <a href="privacy.php" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'privacy footer', 'click', 'info');">
+                          <a href="<?php echo BASE_URL; ?>privacy" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'privacy footer', 'click', 'info');">
                             <b>Privacy</b>
                           </a>
                         </li>
                         <li>
-                          <a href="terms.php" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'terms footer', 'click', 'info');">
+                          <a href="<?php echo BASE_URL; ?>terms" target="_blank" class="text-uppercase" onClick="ga('send', 'event', 'terms footer', 'click', 'info');">
                             <b>Terms</b>
                           </a>
                         </li>  

@@ -14,5 +14,8 @@
    // HTTP_SERVER is your Main webserver: eg, http://www.yourdomain.com
    // HTTPS_SERVER is your Secure webserver: eg, https://www.yourdomain.com
    define('HTTP_SERVER', 'http://test.saasnomad.com');
-   define('HTTPS_SERVER', 'https://test.saasnomad.com');
+   define('HTTPS_SERVER', 'https://test.saasnomad.com'); 
+
+   define("BASE_URL", "/test/");
+   define("ROOT_PATH", $_SERVER["DOCUMENT_ROOT"] . "/test/");
 ?>

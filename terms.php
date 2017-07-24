@@ -55,7 +55,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12">  
                     <div id="content">
                         <section id="home">
-                        <a href="https://saasnomad.com/" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
+                        <a href="<?php echo BASE_URL; ?>" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 2px;"></i> Go back to website</a>
                         <h1 style="margin: 30px 0;">Terms of Use</h1>
                             <p>
                                 <b>These Terms of Use govern your use of this website which has been designed so that businesses with SaaS business model can be advertised for sale via this website. By using this website, you accept these Terms of Use in full. If you disagree with these Terms of Use or any part of these Terms of Use, you must not use this website. By using this website, and by agreeing to these Terms of Use, you warrant and represent that you are at least 18 years of age. Furthermore, if you wish to buy or sell businesses via this website, you will have to agree to be bound by the additional Seller's Terms and/or Buyer's Terms (set out below).</b>
@@ -97,7 +97,7 @@
                                 When you advertise your Business for sale you must specify all details requested by SaaSNomad.com. You warrant that the content of the advertisement you place on the website will be true and accurate and hereby agree to indemnify SaaSNomad against all claims as a result of your use of this website, including, but not limited to, arising out of your obligations under any regulation or legislation relevant to the country in which your listing is added. SaaSNomad does not carry out any investigations or due diligence into your offer. It is your responsibility to present clean and accurate information. We advise that you keep application appropriate. 
                             </p>
                             <p>
-                                SaaSNomad reserves the right to refuse to upload any business listing if we, in our reasonable opinion, consider such listing to be improper, fraudulent or otherwise not bona fide. SaaSNomad reserves the right to edit any business listing if we, in our reasonable opinion, believe such editing will improve the quality of the website. The decision where to place a listing within the index of business categories shall be at the sole discretion of SaaSNomad. SaaSNomad also retains the right to use data collected from sellers in order to provide its advertising service to buyers. All processing of personal information is done in accordance with our <a href="privacy.php">Privacy Policy</a>.
+                                SaaSNomad reserves the right to refuse to upload any business listing if we, in our reasonable opinion, consider such listing to be improper, fraudulent or otherwise not bona fide. SaaSNomad reserves the right to edit any business listing if we, in our reasonable opinion, believe such editing will improve the quality of the website. The decision where to place a listing within the index of business categories shall be at the sole discretion of SaaSNomad. SaaSNomad also retains the right to use data collected from sellers in order to provide its advertising service to buyers. All processing of personal information is done in accordance with our <a href="<?php echo BASE_URL; ?>privacy.php">Privacy Policy</a>.
                             </p> 
                             <p>
                                 If you are selling a business in the capacity of a broker, agent or any other form of intermediary so that you are not selling in your personal capacity you must register as an intermediary on the website. You warrant that you have the full authority and permission to advertise the business on the website FROM THE DIRECT OWNER.
@@ -106,7 +106,7 @@
                                 If you are contacted by a third party through your use of this website who appears to be non bona-fide or who acts dishonestly or incorrectly in any way or who contacts you for any other purpose than to negotiate the purchase of the item you have advertised (such as sale of its services), you will email our <a href="index.php#contact-us">Customer Success Manager</a> forthwith setting out full details.
                             </p>  
                             <p>
-                                You are able to end your listing following the cancellation links in your email or contacting our <a href="index.php#contact-us">customer services team</a>. Cancellation requests are reviewed on a case by case basis.
+                                You are able to end your listing following the cancellation links in your email or contacting our <a href="<?php echo BASE_URL; ?>#contact-us">customer services team</a>. Cancellation requests are reviewed on a case by case basis.
                             </p>
                         </section>
                         <section id="buyers">
@@ -199,7 +199,7 @@
                         <section id="agreement">
                             <h3>Entire Agreement</h3>
                             <p>
-                                These Terms of Use, together with the <a href="privacy.php">Privacy Policy</a> set forth within the website, constitute the entire agreement between you and SaaSNomad.com in relation to your use of this website, and supersede all previous agreements in respect of your use of this website.
+                                These Terms of Use, together with the <a href="<?php echo BASE_URL; ?>privacy.php">Privacy Policy</a> set forth within the website, constitute the entire agreement between you and SaaSNomad.com in relation to your use of this website, and supersede all previous agreements in respect of your use of this website.
                             </p>
                             <p>
                                 You agree that you do not have the power to bind SaaSNomad in relation to any obligation owing to a third party. You agree that by using the Services (either as Seller or Buyer) that SaaSNomad, in providing the Services and your access to SaaSNomad.com, is providing a platform for you to be introduced to other Sellers or Buyers (as the case may be). SaaSNomad is not a party to any transaction or agreement between any Seller or Buyer and is not responsible for any act or omission of any Seller or Buyer.
@@ -297,7 +297,7 @@
                                 <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'application form', 'submit', 'sellers');">Apply</button>
                             </div>
                             <div class="text-center">
-                                <small class="checkbox-label">By clicking "Apply", you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'sellers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'sellers');">Terms of Use</a> </small>
+                                <small class="checkbox-label">By clicking "Apply", you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'sellers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'sellers');">Terms of Use</a> </small>
                             </div>
                         </form>
                         <div id="seller-success" style="display:none;">

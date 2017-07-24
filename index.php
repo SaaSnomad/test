@@ -9,7 +9,7 @@
     <meta name="description" content="SaaS for sale">
     <meta name="keywords" content="Small Businesses For Sale, ">    
 
-    <title>SaaSnomad | Proactive M&A for SaaS businesses</title>
+    <title>SaaSnomad | Proactive M&#38;A for SaaS businesses</title>
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
      <!-- Google Font: Roboto-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,mediuM&#38;Amp;lang=en">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -49,10 +49,8 @@
 </head>
 
 <body>
-<?php include 'includes/header.php'; ?>
-<?php include 'core/init.php'; ?>
-<?php include 'helpers/db_helper.php'; ?>
 
+<?php include 'includes/header.php'; ?>
 <!-- Fetch all cards in Featured Companies Section from DB -->
 <?php  
     // Create  DB Object
@@ -162,7 +160,7 @@
                         </div>
                         </br> 
                             <div>
-                                <small>This valuation is indicative and the results may differ from those obtained using fundamental valuation techniques. Please read this <a href="disclaimer.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'disclaimer', 'click', 'info');">Important Disclaimer</a>. <a href="contact.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'contact us valuation', 'click', 'info');">Contact us</a> directly for a bespoke valuation service.</small>
+                                <small>This valuation is indicative and the results may differ from those obtained using fundamental valuation techniques. Please read this <a href="<?php echo BASE_URL; ?>disclaimer.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'disclaimer', 'click', 'info');">Important Disclaimer</a>. <a href="<?php echo BASE_URL; ?>contact.php" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'contact us valuation', 'click', 'info');">Contact us</a> directly for a bespoke valuation service.</small>
                             </div>
                         
                     </div>
@@ -290,8 +288,8 @@
                                 <p class="card-text" style="padding-bottom: 10px;">
                                     <ul>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>20 weeks featuring in our weekly newsletter for M&A specialists (including the leads) + 3 times special featuring</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>Full access to our database of corporate M&A professionals and advisors</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>20 weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + 3 times special featuring</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Full access to our database of corporate M&#38;A professionals and advisors</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i>90 days featuring on our website’s “Featured Companies” section</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited contact sharings to interested investors</li> 
                                     </ul>
@@ -310,7 +308,7 @@
                                 <p class="card-text" style="padding-bottom: 10px;">
                                     <ul>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>10 weeks featuring in our weekly newsletter for M&A specialists (including the leads) + 3 times special featuring</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>10 weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + 3 times special featuring</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i>30 days featuring on our website’s “Featured Companies” section</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited contact sharings to interested investors</li> 
                                     </ul>
@@ -327,7 +325,7 @@
                                 <p class="card-text">
                                     <ul>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>3 weeks featuring in our weekly newsletter for M&A specialists (including the leads) + 1 time special featuring</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>3 weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + 1 time special featuring</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i>10 days featuring on our website’s “Featured Companies” section</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Up to 5 contact sharings to interested investors</li> 
                                     </ul>
@@ -546,7 +544,7 @@
     <!--Section Contact Us--> 
     <section id="contact-us">
         <div class="text-center">
-            <h2>Have More Questions?</h2>
+            <h2>Have Questions?</h2>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
@@ -697,7 +695,7 @@
                         <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'application form', 'submit', 'sellers');">Apply</button>
                     </div>
                     <div class="text-center">
-                        <small class="checkbox-label">By clicking "Apply", you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'sellers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'sellers');">Terms of Use</a> </small>
+                        <small class="checkbox-label">By clicking "Apply", you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'sellers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'sellers');">Terms of Use</a> </small>
                     </div>
                 </form>
                 <div id="seller-success" style="display:none;">
@@ -787,7 +785,7 @@
                                         <div class="md-form input-group" style="margin:0;width: 100%;">
                                             <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'reques contact', 'submit', 'buyers');">Request Contact</button>
                                         </div>      
-                                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>   
+                                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>   
                                     </form>
                                     <div id="request-success" style="display:none;">
                                         <blockquote class='blockquote bq-primary' style='border-right: none;text-align: left;padding:0;'>
@@ -805,7 +803,7 @@
                                         <div>
                                             <p id="request-error-message"></p>
                                         </div>
-                                        <a href='https://saasnomad.com/' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
+                                        <!--<a href='https://saasnomad.com/' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>-->
                                     </div>
                                     <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>
@@ -869,7 +867,7 @@
                         <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Subscribe</button>
                     </div>
                     <div class="text-center">
-                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
+                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
                     </div>
                 </form>
                 <div id="buyer-success" style="display:none;">

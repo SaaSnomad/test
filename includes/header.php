@@ -1,12 +1,14 @@
 
 <!-- Google Analytics -->
+<?php include 'core/init.php'; ?>
+<?php include 'helpers/db_helper.php'; ?>
 <?php include 'includes/analyticstracking.php'; ?>
 
 <header id="top" class="navbar fixed-top">
         <div class="row">
             <div class="col-6">
                 <h4 class="text-muted" id="logo" >
-                    <a class="text-muted" href="https://saasnomad.com/">
+                    <a class="text-muted" href="<?php echo BASE_URL; ?>">
                         <img src="img/logo.svg" alt="logo" onClick="ga('send', 'event', 'logo', 'click', 'uxui');">
                     <b>SaaS</b>Nomad</a>
                 </h4>
