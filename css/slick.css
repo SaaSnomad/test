@@ -5,7 +5,7 @@ button {
   position: relative;
 }
 .card-block { 
-  padding: 4rem 1.25rem;
+  padding: 4rem 1.25rem 3rem;
 }
 .slick-slide {
   -webkit-transform: scale(1);
@@ -13,22 +13,15 @@ button {
   -webkit-transition: 0.3s ease-in-out all;
   transition: 0.3s ease-in-out all;
   opacity:0;
-  pointer-events: none;
 }
-.slick-slide.slick-active {
-  opacity: 1;
-}
-.slick-slide.slick-active .card-block{
-  opacity: 0.5;
-}
+
 .slick-slide.slick-center {
   opacity: 1;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
-.slick-slide.slick-center .card-block{
-  opacity: 1;
-  pointer-events: all;
+.slick-slide.slick-active{
+  opacity: 1; 
 } 
 .switch {
   background: #000;

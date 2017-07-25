@@ -170,7 +170,7 @@
     </div>
     <!--/Section: Landing--> 
  
-<div id="anchor"></div>
+    <div id="anchor"></div>
 
     <!--Section: Why us-->
     <section id="why-us-section">
@@ -270,7 +270,160 @@
     </section>
     <!--/Section: About--> 
 
-    <!--section Pricing-->
+    <!--Section Pricing -->
+    <section id="pricing-section">
+        <div class="text-center title-wrapper">
+            <h2>Feature Your SaaS for FREE</h2> 
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <table class="table" id="pricing-table">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th><h3 class="plan"><b class="text-muted">Lean</b></h3></th>
+                              <th><h3 class="plan"><b class="text-muted">PRO</b></h3></th>
+                              <th><h3 class="plan"><b class="text-muted">Ninja</b></h3></th>
+                            </tr>
+                          </thead>
+                          <tbody>  
+                            <tr>
+                              <th scope="row">Addition to our database*</th>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                            </tr>  
+                            <tr>
+                              <th scope="row">Featuring in our weekly newsletter for M&#38;A specialists (including the leads) + special featuring</th>
+                              <td><b>3</b> weeks</br>+ <b>1</b> time special featuring</td>
+                              <td><b>10</b> weeks</br>+ <b>3</b> times special featuring</td>
+                              <td><b>20</b> weeks</br>+ <b>3</b> times special featuring</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Email addresses* and Linkedin profiles of corporate M&#38;A professionals and advisors</th>
+                              <td><b>10</b></td>
+                              <td><b>100</b></td>
+                              <td><b>Full access</b></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Featuring on our website’s &#8220;Featured Companies&#8221; section</th>
+                              <td><b>10</b> days</td>
+                              <td><b>30</b> days</td>
+                              <td><b>90</b> days</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Contact sharings to interested investors</th>
+                              <td>Up to <b>5</b></td>
+                              <td><b>Unlimited</b></td>
+                              <td><b>Unlimited</b></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Expanded business profile</th>
+                              <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Teaser document</th>
+                              <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Curated short-listing and ranking</th>
+                              <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Personal account manager</th>
+                              <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Stealth marketing</th>
+                              <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-minus" aria-hidden="true"></i></td>
+                              <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td><button class="btn btn-primary btn-lg" type="submit" type="submit" data-toggle="modal" data-target="">Start for FREE</button></td>
+                              <td><button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" disabled>Coming Soon</button></td>
+                              <td><button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn">Contact sales</button></td> 
+                            </tr>
+                          </tbody>
+                        </table>   
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+        </div>
+    </section>
+    <!--/Section: Pricing -->
+
+    <!--Section Pricing -->
+    <section id="pricing-section-mobile">
+        <div class="text-center title-wrapper">
+            <h2>Feature Your SaaS for FREE</h2> 
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12" id="free">
+                                <h3 class="plan"><b class="text-muted">Lean</b></h3>
+                                    <ul>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>3</b> weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + <b>1</b> time special featuring</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>10</b> email addresses* and Linkedin profiles of corporate M&#38;A professionals and advisors</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>10</b> days featuring on our website’s “Featured Companies” section</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Up to <b>5</b> contact sharings to interested investors</li> 
+                                    </ul>
+                                <button class="btn btn-primary btn-lg" type="submit" type="submit" data-toggle="modal" data-target="">Start for FREE</button>
+                            </div>
+                            <div class="col-sm-12 col-xs-12" id="pro">
+                                <h3 class="plan"><b class="text-muted">PRO</b></h3>
+                                    <ul>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>10</b> weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + <b>3</b> times special featuring</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>100</b> email addresses* and linkedin profiles of corporate M&#38;A professionals and advisors</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>30</b> days featuring on our website’s “Featured Companies” section</li>  
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>Unlimited</b> contact sharings to interested investors</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Expanded business profile</li>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Teaser document</li> 
+                                    </ul>
+                                <button class="btn btn-primary btn-lg" disabled>Coming Soon</button>
+                            </div>
+                            <div class="col-sm-12 col-xs-12" id="ninja">
+                                <h3 class="plan"><b class="text-muted">Ninja</b></h3>
+                                    <ul>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>20</b> weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + <b>3</b> times special featuring</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>Full access</b> to our database of corporate M&#38;A professionals and advisors</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>90</b> days featuring on our website’s “Featured Companies” section</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i><b>Unlimited</b> contact sharings to interested investors</li> 
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Expanded business profile</li>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Teaser document</li>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Curated short-listing and ranking</li>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Personal account manager</li>
+                                        <li><i class="fa fa-check" aria-hidden="true"></i>Stealth marketing</li>
+                                    </ul>
+                                <button class="btn btn-primary btn-lg">Contact sales</button>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+        </div>
+    </section>
+    <!--/Section: Pricing -->
+
+
+    <!--Section Pricing 
     <section id="pricing-section">
         <div class="text-center title-wrapper">
             <h2>Feature Your SaaS for FREE</h2> 
@@ -280,7 +433,6 @@
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <!--Card-->
                         <div id="ninja" class="card text-center" style="">
                             <div class="card-block" style="padding-right: 2.5rem;">
                                 <h4 class="text-muted"><b>Ninja</b></h4>
@@ -297,10 +449,8 @@
                                 <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" type="submit" style="margin:0" data-toggle="modal" data-target="">Contact sales</button>
                             </div>
                         </div>
-                        <!--/.Card-->
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"> 
-                        <!--Card-->
                         <div class="card text-center">
                             <div class="card-block" style="padding: 4rem 3rem;">
                                 <h4><b class="text-muted">PRO</b></h4>
@@ -316,7 +466,6 @@
                                 <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" type="submit" style="margin:0" data-toggle="modal" data-target="">Apply Now</button>
                             </div>
                         </div>
-                        <!--/.Card-->
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 free-plan">  
                         <h4><b class="text-muted">Not convinced yet?</b></br>
@@ -337,7 +486,7 @@
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
     </section>
-    <!--/Section: Pricing-->
+    -->
 
 
     <!--Section: Featured companies -->        
@@ -357,11 +506,11 @@
                                     <div class="premium-banner" data-plan="PREMIUM" data-status="premium"></div>
                                     <h4 class="card-title"><?php echo $card->industry; ?></h4>
                                     <small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</small>
-                                    <p class="card-text" style="padding-bottom: 10px;">
+                                    <p class="card-text" style="padding-bottom: 2rem;">
                                         <?php echo $card->traction; ?>
                                         <br><?php echo $card->employees; ?> employees
                                         <br><?php echo $card->country; ?></p>
-                                    <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" type="submit" style="margin:0" data-toggle="modal" data-target="#requestContactModal" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</button>
+                                    <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" type="submit" data-toggle="modal" data-target="#requestContactModal" onClick="ga('send', 'event', 'request contact', 'click', 'buyers');">Request contact</button>
                                 </div>
                             </div>
                         <!--</div>-->

@@ -345,6 +345,7 @@ footer ul li {
 #featured-companies,
 #buyer-get-notified, 
 #pricing-section,
+#pricing-section-mobile,
 #news-section,
 #faq-section,
 #contact-us {
@@ -458,12 +459,65 @@ footer ul li {
 #about-section .right-side {
         padding-right: 23%;
 }
+
+#pricing-section  #pricing-table {
+    background-color: #f3f3f3;
+    margin-bottom: 0;
+}
+#pricing-section .fa {
+    color:#3CD7B2;padding-right:5px;
+}
+#pricing-section .fa-minus {
+    color: #464a4c;
+} 
+#pricing-section #free, #pricing-section #pro, #pricing-section #ninja {
+    padding: 50px; 
+}
+#pricing-section #pro, #pricing-section #ninja {
+    background:#f3f3f3;
+}
+#pricing-section #free {
+    background:#FFF;
+}  
+#pricing-section tbody {
+    font-size: 80%;
+}
+#pricing-section .table th, .table td, .table thead {
+    vertical-align: middle !important;
+}
+#pricing-section .table thead th {
+    width:21%;
+    border:none;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+#pricing-section .table thead th:first-child {
+    width:37%;
+}
+#pricing-section .table tbody tr th {
+    padding-left:20px;
+    padding-right:20px;
+}
+#pricing-section .table tbody tr td {
+    text-align: center;
+}
+#pricing-section .table tbody tr td:first-of-type, #pricing-section .table thead tr th:nth-child(2){
+    background-color: #fff;
+}
+#pricing-section .plan{
+    color: #0275d8;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
 #featured-companies {
     /*background-image: url(../img/map.png);*/
     background-size: auto;
     height: auto;
     text-align: center
-}
+} 
 /*#featured-companies #seller_description {
     padding-bottom: 15px;
     display: inline-block;
@@ -532,30 +586,10 @@ footer ul li {
 #about-section .right-side p {
     margin-bottom: 2rem;
 }
-#pricing-section .fa {
-    color:#3CD7B2;padding-right:5px;
+#pricing-section-mobile {
+    display: none;
 }
-#pricing-section #ninja {
-    background:#E7E8EA;margin-right: -50px; margin-left:50px;margin-top:20px
-}
-#pricing-section .free-plan {
-    padding: 3rem 4rem;
-}
-#pricing-section li {
-    padding-bottom:15px;
-}
-#pricing-section #price-pro {
-    color: #0275d8;
-    font-weight: 600;
-    font-size: 2.75rem;
-    margin: 2rem 0;
-}
-#pricing-section #free-plan {
-    color: #0275d8;
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin: 2rem 0;
-}
+
 /* Section: For Buyers */
 
 #buyers-section .buyers-section {
@@ -760,11 +794,53 @@ input.radio:checked ~ label {
     #why-us-section .reason-1, #why-us-section .reason-2, #why-us-section .reason-3  { 
        margin: 1rem 2rem; 
     } 
+    #pricing-section .table thead th {
+        width:21%; 
+    }
+    #pricing-section .table thead th:first-child {
+        width:37%;
+}
 }
 @media only screen and (max-width: 768px) {
     #why-us-section .reason-1, #why-us-section .reason-2, #why-us-section .reason-3  { 
        margin: 1rem 10rem; 
     } 
+    #pricing-section {
+        display: none;
+    }
+    #pricing-section-mobile {
+        display: block;
+    }
+
+    #pricing-section-mobile .fa {
+        color:#3CD7B2;padding-right:5px;
+    }
+    #pricing-section-mobile .fa-minus {
+        color: #464a4c;
+    }
+    #pricing-section-mobile .card-block {
+        padding: 0;
+        border: 1px solid #eee;
+    }
+    #pricing-section-mobile #free, #pricing-section-mobile #pro, #pricing-section-mobile #ninja {
+        padding: 50px; 
+    }
+    #pricing-section-mobile #pro, #pricing-section-mobile #ninja {
+        background:#f3f3f3;
+    }
+    #pricing-section-mobile #free {
+        background:#FFF;
+    }  
+    #pricing-section-mobile li {
+        padding-bottom:15px;
+        font-size: 80%;
+    }
+    #pricing-section-mobile .plan{
+        color: #0275d8;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
 }
 @media only screen and (max-width:576px) {
     header .col-6 {
@@ -812,26 +888,7 @@ input.radio:checked ~ label {
     } 
     #about-section .blockquote {
         border-right: none;
-    }
-    #pricing-section #ninja {
-        margin-right: 0px; 
-        margin-left: 0px;
-        margin-top:20px;
-        margin-bottom:20px
-    }
-    #pricing-section #ninja {
-        margin-right: 0px; 
-        margin-left: 0px;
-        margin-top:20px;
-        margin-bottom:20px
-    }
-    #pricing-section #ninja .card-block {
-        padding: 4rem 3rem !important;
-    }
-    #pricing-section .free-plan {
-        text-align: center;
-        padding-bottom: 0rem;
-    }
+    } 
     .slick-next { 
         right: 5% !important;
     }
