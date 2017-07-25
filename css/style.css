@@ -29,6 +29,10 @@ html {
     margin-right: 0!important; 
 }
 
+h2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 small {
     font-size: 70%
 }
@@ -496,7 +500,7 @@ footer ul li {
 }
 #pricing-section .table tbody tr th {
     padding-left:20px;
-    padding-right:20px;
+    padding-right:40px;
 }
 #pricing-section .table tbody tr td {
     text-align: center;
@@ -549,6 +553,7 @@ footer ul li {
     padding-top: 85px;
 }
 #landing #left-side .main-text {
+    width: 100%;
     height: 100%;padding: 70px 0;
     align-items: center;
 }
@@ -820,11 +825,20 @@ input.radio:checked ~ label {
     }
     #pricing-section-mobile .card-block {
         padding: 0;
-        border: 1px solid #eee;
     }
     #pricing-section-mobile #free, #pricing-section-mobile #pro, #pricing-section-mobile #ninja {
         padding: 50px; 
     }
+    #pricing-section-mobile #free {
+        border-top-left-radius:6px;
+        border-top-right-radius:6px;
+    } 
+    #pricing-section-mobile #ninja {
+        border-bottom-left-radius:6px;
+        border-bottom-right-radius:6px;
+        border-top: 1px solid rgba(204, 204, 204, 0.25);
+    }
+
     #pricing-section-mobile #pro, #pricing-section-mobile #ninja {
         background:#f3f3f3;
     }
@@ -839,6 +853,9 @@ input.radio:checked ~ label {
         color: #0275d8;
         font-weight: 600;
         margin-bottom: 2rem;
+    }
+    #faq-section .buyer-faq {
+        margin-top: 2rem;
     }
 
 }
@@ -856,7 +873,12 @@ input.radio:checked ~ label {
     #calculator_region {
         height: 33px;
     }
-
+    #landing .display-4 {
+        font-size: 3rem;
+    }
+    #landing #left-side #apply-main { 
+        width: 100%;
+    }
     #valuation-range #from{
         margin-top:0rem !important;
     }

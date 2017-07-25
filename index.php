@@ -95,7 +95,7 @@
         </div>
         <div id="right-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight z-depth-1" data-wow-delay="0.2s">
             <div id="calculator-wrapper" class="white-text">
-                <h3 class="text-uppercase mb-1" style="margin: 2rem 2rem 1rem;line-height: 40px;"><b>Estimate your company valuation</b></h3>
+                <h3 class="text-uppercase mb-1" style="margin: 2rem 1rem 1rem;line-height: 40px;"><b>Estimate your company valuation</b></h3>
                 <div class="row form-wrapper">
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 
@@ -395,7 +395,7 @@
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Expanded business profile</li>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Teaser document</li> 
                                     </ul>
-                                <button class="btn btn-primary btn-lg" disabled>Coming Soon</button>
+                                <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" disabled>Coming Soon</button>
                             </div>
                             <div class="col-sm-12 col-xs-12" id="ninja">
                                 <h3 class="plan"><b class="text-muted">Ninja</b></h3>
@@ -411,7 +411,7 @@
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Personal account manager</li>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Stealth marketing</li>
                                     </ul>
-                                <button class="btn btn-primary btn-lg">Contact sales</button>
+                                <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn">Contact sales</button>
                             </div>
                         </div>   
                     </div>
@@ -635,7 +635,7 @@
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 seller-faq">
                         <section id="faq-1">                            
                             <h4>What is SaaSNomad?</h4>
                             <p>
@@ -659,7 +659,7 @@
                             </p> 
                         </section>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 buyer-faq">
                         <section id="faq-4">
                             <h4>Do I have to pay to apply as a Buyer?</h4>
                             <p>
