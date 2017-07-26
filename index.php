@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">-->
      <!-- Google Font: Roboto-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,mediuM&#38;Amp;lang=en">
     <!-- Bootstrap core CSS -->
@@ -708,7 +708,7 @@
                     <div class="md-form form-group">
                         <div class="radio-wrapper"> 
                             <input type="radio" name="contact_role" id="contact_saas_owner" class="radio" checked/>
-                            <label class="for-radio" for="contact_saas_owner"><span><i id="radio1" class="fa fa-check" aria-hidden="true"></i></span>SaaS Owner</label>
+                            <label class="for-radio" for="contact_saas_owner"><span></span>SaaS Owner</label>
                         </div>
                         <div class="radio-wrapper">
                             <input type="radio" name="contact_role" id="contact_acquirer" class="radio"/>
