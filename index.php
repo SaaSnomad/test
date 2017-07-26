@@ -422,73 +422,6 @@
     </section>
     <!--/Section: Pricing -->
 
-
-    <!--Section Pricing 
-    <section id="pricing-section">
-        <div class="text-center title-wrapper">
-            <h2>Feature Your SaaS for FREE</h2> 
-        </div>
-        <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                        <div id="ninja" class="card text-center" style="">
-                            <div class="card-block" style="padding-right: 2.5rem;">
-                                <h4 class="text-muted"><b>Ninja</b></h4>
-                                <h2 id="price-ninja"></h2>
-                                <p class="card-text" style="padding-bottom: 10px;">
-                                    <ul>
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>20 weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + 3 times special featuring</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>Full access to our database of corporate M&#38;A professionals and advisors</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>90 days featuring on our website’s “Featured Companies” section</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited contact sharings to interested investors</li> 
-                                    </ul>
-                                </p>
-                                <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" type="submit" style="margin:0" data-toggle="modal" data-target="">Contact sales</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"> 
-                        <div class="card text-center">
-                            <div class="card-block" style="padding: 4rem 3rem;">
-                                <h4><b class="text-muted">PRO</b></h4>
-                                <h2 id="price-pro">$120</h2>
-                                <p class="card-text" style="padding-bottom: 10px;">
-                                    <ul>
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>10 weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + 3 times special featuring</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>30 days featuring on our website’s “Featured Companies” section</li> 
-                                        <li><i class="fa fa-check" aria-hidden="true"></i>Unlimited contact sharings to interested investors</li> 
-                                    </ul>
-                                </p>
-                                <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" type="submit" style="margin:0" data-toggle="modal" data-target="">Apply Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 free-plan">  
-                        <h4><b class="text-muted">Not convinced yet?</b></br>
-                            Why don't you try our</h4>
-                        <h2 id="free-plan">FREE PLAN</h2>
-                        <p class="card-text">
-                            <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
-                                <li><i class="fa fa-check" aria-hidden="true"></i>3 weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + 1 time special featuring</li> 
-                                <li><i class="fa fa-check" aria-hidden="true"></i>10 days featuring on our website’s “Featured Companies” section</li> 
-                                <li><i class="fa fa-check" aria-hidden="true"></i>Up to 5 contact sharings to interested investors</li> 
-                            </ul>
-                        </p>
-                        <button style="margin:0;padding:0;background-color: transparent;color: #0275d8 !important; box-shadow: none; font-size:1rem; font-weight: 400;" id="request-btn" class="btn" type="submit" style="margin:0" data-toggle="modal" data-target="">Apply Now</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-        </div>
-    </section>
-    -->
-
-
     <!--Section: Featured companies -->        
     <section id="featured-companies"> 
         <div class="text-center title-wrapper">
@@ -505,7 +438,7 @@
                                 <div class="card-block">
                                     <div class="premium-banner" data-plan="PREMIUM" data-status="premium"></div>
                                     <h4 class="card-title"><?php echo $card->industry; ?></h4>
-                                    <small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</small>
+                                    <small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem"><?php echo $card->description; ?></small>
                                     <p class="card-text" style="padding-bottom: 2rem;">
                                         <?php echo $card->traction; ?>
                                         <br><?php echo $card->employees; ?> employees
@@ -718,23 +651,7 @@
                     <!-- Email-->
                     <div class="md-form form-group">
                         <input placeholder="Enter your email..." type="email" name="contact_email" id="contact_email" class="form-control" maxlength="50" required>
-                         
-                    </div> 
-                    <!--<div>    
-                        <input type="radio" name="radio" id="radio3" class="radio"/>
-                        <label class="for-radio" for="radio3">Third Option</label>
-                    </div>--> 
-                    <!-- Role
-                    <div class="md-form form-group">
-                        <label for="radioBtn" style="position: relative;font-size: 0.8rem;top: 0;">Role *</label>
-                        <div id="radioBtn" class="btn-group" style="font-size: 1rem;">
-                            <a class="btn active" data-toggle="fun" data-title="Y">SaaS Owner</a>
-                            <a class="btn notActive" data-toggle="fun" data-title="X">Acquirer</a>
-                            <a class="btn notActive" data-toggle="fun" data-title="N">Other</a>
-                        </div>
-                        <input type="hidden" name="fun" id="fun">
-                    </div> -->
-                    
+                    </div>  
                     
                     <!--Country-->
                     <div class="md-form form-group" style="margin-top: 44px;display:none;">
