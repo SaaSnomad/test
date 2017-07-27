@@ -1,3 +1,29 @@
-RewriteEngine On
+RewriteEngine on
+AuthName "admin"
+AuthUserFile "/home/saasnomad/.htpasswds/test/passwd"
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://saasnomad.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://saasnomad.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://test.saasnomad.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://test.saasnomad.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.saasnomad.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.saasnomad.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.test.saasnomad.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.test.saasnomad.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://saasnomad.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://saasnomad.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://test.saasnomad.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://test.saasnomad.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.saasnomad.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.saasnomad.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.test.saasnomad.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.test.saasnomad.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+RewriteCond %{HTTP_HOST} ^test.saasnomad\.com [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://test.saasnomad.com/$1 [R,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
