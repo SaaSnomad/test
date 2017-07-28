@@ -9,7 +9,6 @@ $(document).ready(function() {
 		// get the form data
 		// there are many ways to get this data using jQuery (you can use the class or id also)
 		var formData = {
-			'buyer_name' 		: $('input[name=buyer_name]').val(),
 			'buyer_email'	    : $('input[name=buyer_email]').val(),
 			'buyer_country'     : $('input[name=buyer_country]').val() 	
 		};

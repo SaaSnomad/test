@@ -45,13 +45,19 @@ var {
     font-style: normal !important
 }
 
+.not-active-link {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
+
 .card {
     -webkit-flex-direction: initial !important;
     -ms-flex-direction: initial !important;
     flex-direction: initial !important;
 }
 
-#sellerModal .close, #buyerModal .close, #requestContactModal .close{
+.close{
     position: absolute; 
     right: 10px; 
     top: 10px;
@@ -441,20 +447,20 @@ footer ul li {
     margin-top: -70px;
 } 
 #why-us-section .title-wrapper {
-    padding-top: 70px;
+    padding-top: 80px;
 }  
 #why-us-section img {
     width:50%;
     padding-bottom:20px;
 }  
 #why-us-section .reason-1 {
-   margin: 1rem 3rem 1rem 7rem; 
+   margin: 0rem 3rem 0rem 7rem; 
 } 
 #why-us-section .reason-2 {
-   margin: 1rem 5rem; 
+   margin: 0rem 5rem; 
 } 
 #why-us-section .reason-3 {
-   margin: 1rem 7rem 1rem 3rem;
+   margin: 0rem 7rem 0rem 3rem;
 } 
 #about-section .blockquote {
     /*padding: 1.6rem 3rem; */
@@ -468,11 +474,11 @@ footer ul li {
     background-color: #f3f3f3;
     margin-bottom: 0;
 }
-#pricing-section .fa {
+#pricing-section .fa-check {
     color:#3CD7B2;padding-right:5px;
 }
-#pricing-section .fa-minus {
-    color: #464a4c;
+#pricing-section .fa-times {
+    color: rgba(70, 74, 76, 0.82);
 } 
 #pricing-section #free, #pricing-section #pro, #pricing-section #ninja {
     padding: 50px; 
@@ -715,7 +721,7 @@ input.radio:empty ~ label {
     user-select: none;
 }
 
-input.radio:empty ~ label span {
+input.radio:empty ~ label:before {
     position: absolute;
     display: block;
     top: 0;
@@ -727,8 +733,8 @@ input.radio:empty ~ label span {
 }
 
 /* toggle hover */
-input.radio:hover:not(:checked) ~ label span {
-    content:"\f00c";
+input.radio:hover:not(:checked) ~ label:before {
+    content:"\2713";
     text-indent: .9em;
     color: #C2C2C2;
 } 
@@ -737,8 +743,8 @@ input.radio:hover:not(:checked) ~ label {
 }
 
 /* toggle on */
-input.radio:checked ~ label span {
-    /*content:"\f00c";*/
+input.radio:checked ~ label:before {
+    content:"\2713";
     text-indent: .9em;
     color: #3CD7B2;
     background-color: #64ffda;
@@ -830,8 +836,8 @@ input.radio:checked ~ label {
     #pricing-section-mobile .fa {
         color:#3CD7B2;padding-right:5px;
     }
-    #pricing-section-mobile .fa-minus {
-        color: #464a4c;
+    #pricing-section-mobile .fa-times {
+        color: rgba(70, 74, 76, 0.82);
     }
     #pricing-section-mobile .card-block {
         padding: 0;
@@ -896,7 +902,7 @@ input.radio:checked ~ label {
         text-align: center!important;
     }
     #why-us-section .reason-1, #why-us-section .reason-2, #why-us-section .reason-3  { 
-       margin: 1rem 2rem; 
+       margin: 0rem 2rem; 
     }  
     #why-us-section img  { 
        width:50%; 

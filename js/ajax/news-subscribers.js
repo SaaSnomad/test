@@ -20,7 +20,6 @@ $(document).ready(function() {
 			dataType 	: 'json', // what type of data do we expect back from the server
 			encode 		: true,
 			success: function (msg) {  
-	        	$("#subscribe-msg").hide();
 	        	$(form).hide();
 	        	$("#preloader").css('display','block');
 				setTimeout(function () {	        	
@@ -31,7 +30,6 @@ $(document).ready(function() {
                 }, 2000);
 	        }, 
 	        error: function (msg) {	 
-	        	$("#subscribe-msg").hide();
 	        	$(form).hide();
 	        	$("#preloader").css('display','block');
 				setTimeout(function () {	        	

@@ -5381,12 +5381,12 @@ button:focus {
 
 .btn-link {
   background-color: transparent;
-  color: #64ffda !important;
+  color: #0275d8 !important;
+  padding:0px;
 }
   .btn-link:hover, .btn-link:focus {
     background-color: transparent;
-    color:#00bfa5 !important;
-    text-decoration: none;
+    text-decoration: underline !important;
   }
 
 .btn-outline-primary {

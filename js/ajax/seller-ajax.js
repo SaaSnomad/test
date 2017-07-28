@@ -9,11 +9,11 @@ $(document).ready(function() {
 		// get the form data
 		// there are many ways to get this data using jQuery (you can use the class or id also)
 		var formData = {
-			'seller_name' 		: $('input[name=seller_name]').val(),
 			'seller_email'	    : $('input[name=seller_email]').val(),
 			'seller_country'    : $('input[name=seller_country]').val(),
 			'seller_industry' 	: $('select#seller_industry option:selected').text(),
-			'seller_mrr' 	    : $('input[name=seller_mrr]').val() 
+			'seller_mrr' 	    : $('input[name=seller_mrr]').val(),
+			'seller_employees' 	: $('input[name=seller_employees]').val() 
 		};
 		// process the form
 		$.ajax({
