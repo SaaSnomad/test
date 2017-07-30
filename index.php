@@ -94,7 +94,7 @@
         </div>
         <div id="right-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight z-depth-1" data-wow-delay="0.2s">
             <div id="calculator-wrapper" class="white-text">
-                <h3 class="text-uppercase mb-1" style="margin: 2rem 1rem 1rem;line-height: 40px;"><b>Get instant company valuation</b></h3>
+                <h3 class="text-uppercase mb-1" style="margin: 2rem 2rem 1rem;line-height: 40px;"><b>Get instant company valuation</b></h3>
                 <div class="row form-wrapper">
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 
