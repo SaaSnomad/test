@@ -283,7 +283,7 @@
             <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12">
                 <div class="card text-center" style="background-color:#fff;color:#37474f;opacity:0.8;">
                     <div class="card-block" style="padding: 2rem;">
-                        <h4 class="card-title">SaaSNomad can also offer you...</h4>
+                        <h4 class="card-title">The SaaSNomad Platform <span class="coming">Coming Soon</span></h4>
                         <!--<small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem">Koko</small>
                         <p class="card-text" style="padding-bottom: 1rem;">jjj</p>-->
                         <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View Pricing</a></br>

@@ -527,6 +527,18 @@ footer ul li {
     font-weight: 400;
     text-transform: uppercase;
 }
+#pricing-cta .card-title {
+    position: relative;
+}
+#pricing-cta .coming {
+    position:absolute;
+    margin-left: 2px;
+    font-size: 8px;
+    color: #8da2b5;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 500;
+}
 
 
 #featured-companies {
