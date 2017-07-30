@@ -287,7 +287,7 @@
                         <!--<small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem">Koko</small>
                         <p class="card-text" style="padding-bottom: 1rem;">jjj</p>-->
                         <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View Pricing</a></br>
-                        <small>Early stage company but want 100% result?</br><a href="<?php echo BASE_URL; ?>pricing" target="_blank" id="text-link-1">Join our Wait List</a> to get 40% off and be the first to get exclusive offer.</small>
+                        <small>Early stage SaaS but want 100% result?</br><a href="<?php echo BASE_URL; ?>pricing" target="_blank" id="text-link-1">Join our Wait List</a> to get 40% off and be the first to get exclusive offer.</small>
                     </div>
                 </div>
             </div>
