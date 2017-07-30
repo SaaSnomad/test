@@ -9,7 +9,7 @@
     <meta name="description" content="SaaS for sale">
     <meta name="keywords" content="Small Businesses For Sale, ">    
 
-    <title>SaaSnomad | Proactive M&#38;A for SaaS businesses</title>
+    <title>SaaSnomad | Anonymously reach potential buyers of your SaaS startup</title>
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -90,16 +90,15 @@
     <!-- Section: Landing -->
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
-            <div class="main-text">
-                <h1 class="display-4">Anonymously</br>reach out to hundreds</br>of corporate acquirers</h1> 
-                <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply</br>for free </a>                
+            <div class="main-text"> 
+                <h1 class="display-4">Anonymously</br>sell your SaaS</br>startup</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply for free </a>
                 <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
-                <h3 class="text-center text-muted">companies already did</h3> 
+                <h3 class="text-center text-muted">companies already listed</h3> 
             </div>
         </div>
         <div id="right-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight z-depth-1" data-wow-delay="0.2s">
             <div id="calculator-wrapper" class="white-text">
-                <h3 class="text-uppercase mb-1" style="margin: 2rem 1rem 1rem;line-height: 40px;"><b>Estimate your company valuation</b></h3>
+                <h3 class="text-uppercase mb-1" style="margin: 2rem 1rem 1rem;line-height: 40px;"><b>Get instant company valuation</b></h3>
                 <div class="row form-wrapper">
                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
 
@@ -275,7 +274,7 @@
     <!--Section Pricing -->
     <section id="pricing-section">
         <div class="text-center title-wrapper">
-            <h2>Feature Your SaaS for FREE</h2> 
+            <h2>Pricing</h2> 
         </div>
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
@@ -285,7 +284,7 @@
                       <span>ANONYMITY</span>
                       <span>AND REACH.</span>
                     </div>
-                </h3>
+                </h3>  
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
                 <div class="card" style="background-color:#fff;color:#37474f;opacity:0.8;">
@@ -523,7 +522,7 @@
     <!--Section Contact Us--> 
     <section id="contact-us">
         <div class="text-center">
-            <h2>Have Questions?</h2>
+            <h2>Questions?</h2>
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
@@ -535,13 +534,13 @@
                     </div> 
                     <!-- Role -->
                     <div class="md-form form-group">
-                        <div class="radio-wrapper"> 
-                            <input type="radio" name="contact_role" id="contact_saas_owner" class="radio" value="seller" checked/>
-                            <label class="for-radio" for="contact_saas_owner"><span></span>SaaS Owner</label>
+                        <div class="radio-wrapper">  
+                            <input type="radio" name="contact_role" id="contact_saas_owner" class="radio" checked/>
+                            <label class="for-radio" for="contact_saas_owner"><span></span>Seller</label>
                         </div>
                         <div class="radio-wrapper">
-                            <input type="radio" name="contact_role" id="contact_acquirer" class="radio" value="buyer"/>
-                            <label class="for-radio" for="contact_acquirer"><span></span>Acquirer</label>
+                            <input type="radio" name="contact_role" id="contact_acquirer" class="radio"/>
+                            <label class="for-radio" for="contact_acquirer"><span><i id="radio2" class="fa fa-check" aria-hidden="true"></i></span>Buyer</label>
                         </div>
                     </div>
                     <!-- Email-->
@@ -555,7 +554,7 @@
                     </div> 
                      
                     <div class="md-form input-group" style="margin:0;width: 100%;">
-                        <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'reques contact', 'submit', 'buyers');">Send Message</button>
+                        <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'contact form', 'submit', 'info');">Send Message</button>
                     </div>  
                 </form>
 
@@ -584,11 +583,7 @@
     <!--/Section: Contact Us--> 
 
 </div>
-    <!--/ Main container-->
-
-    <!--Footer-->
-    <?php include 'includes/footer.php'; ?>
-    <!--/.Footer-->
+<!--/ Main container-->
 
 <!-- MODALS -->
 
@@ -863,70 +858,6 @@
 </div>
 <!-- end of Buyer modal -->
 
-
-
-    <!-- SCRIPTS -->
-    <!-- jQuery v2.0.3  -->
-    <script type="text/javascript" src="js/jquery.min.js"></script> 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
-    <!-- Carousel -->
-    <script type="text/javascript" src="js/slick.min.js"></script> 
-    <script type="text/javascript" src="js/slick.js"></script> 
-    <!-- Checkbox --> 
-    <script type="text/javascript" src="js/checkbox.js"></script>
-    <!-- Select Jquery Chosen Plugin-->
-    <script type="text/javascript" src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/chosen/init.js" type="text/javascript" charset="utf-8"></script>
-    <!-- Calculator Form -->
-    <script type="text/javascript" src="js/calculator.js"></script>
-    <!-- Load more --> 
-    <script type="text/javascript" src="js/load-more.js"></script>
-    <!-- Counter -->
-    <script type="text/javascript" src="js/waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/counter.js"></script>
-
-    <!-- Go top button animation -->
-    <script type="text/javascript" src="js/go-top.js"></script> 
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" type="text/javascript" src="js/bootstrap.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.js"></script>
-    <!-- Animations init-->
-    <script>
-        new WOW().init();
-    </script>   
-    <!-- Number formatting -->
-    <script type="text/javascript" src="js/jquery.number.js"></script>
-    <script type="text/javascript"  src="js/jquery.number-formatting.js"></script>
-    <!-- Geolocation API (1.0)-->
-    <script type="text/javascript" src="//maps.google.com/maps/api/js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQJ71Xgt3HCqIGW7YXoPtt9U-Jp-bXk9M&callback=initMap"
-  type="text/javascript"></script>
-    <script type="text/javascript" src="js/geotext-1.0.min.js"></script>
-    <script>
-    jQuery(function() { 
-        new GeoText();  
-    });
-    </script>  
-    <!-- Radio Btn -->
-    <script type="text/javascript" src="js/radio-btn.js"></script>
-
-    <!-- FORMS PROCESSING -->
-    <!-- Form Submit: AJAX -->
-    <script type="text/javascript" src="js/ajax/calculator-ajax.js"></script>
-    <script type="text/javascript" src="js/ajax/seller-ajax.js"></script>
-    <script type="text/javascript" src="js/ajax/buyer-ajax.js"></script>
-    <script type="text/javascript" src="js/ajax/news-subscribers.js"></script>
-    <script type="text/javascript" src="js/ajax/contact-us.js"></script>
-    <?php
-        $OldDate = new DateTime('2014-01-29');
-        $now = new DateTime(Date('Y-m-d'));
-    ?>
-    <div style="display:none;" id="oldDate"><?php echo $OldDate->diff($now)->format("%a"); ?></div>
-    <div style="display:none;"><?php foreach($sellers as $seller) : ?><span class="rowsCount"><?php echo applicationsCount($seller->id); ?></span><?php endforeach; ?></div>
-    <script type="text/javascript" src="js/script.js"></script> 
-    <!-- Featured Companies: Premium -->
-    <script type="text/javascript" src="js/premium.js"></script> 
-</body>
-</html>
+<!--Footer-->
+<?php include 'includes/footer.php'; ?>
+<!--/.Footer-->

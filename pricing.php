@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="SaaS for sale">
-    <meta name="keywords" content="Small Businesses For Sale, ">    
-
-    <title>SaaSnomad | Proactive M&#38;A for SaaS businesses</title>
-    <!-- Favicon -->
-    <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">-->
-     <!-- Google Font: Roboto-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,mediuM&#38;Amp;lang=en">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet"> 
-    <!-- Custom Style -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Select Jquery Chosen Plugin-->
-    <link rel="stylesheet" href="css/chosen.css"> 
-    <!-- Checkbox -->
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet" href="css/checkbox.css"> 
-    <!-- Carousel -->
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
-    <link rel="stylesheet" href="css/slick.css">
-    <!-- Load More -->
-    <link rel="stylesheet" href="css/load-more.css"> 
-    <!-- Recaptcha   -->   
-    <script src='https://www.google.com/recaptcha/api.js'></script> 
-    <style>
+<?php include 'includes/header.php'; ?> 
+<!-- Main container-->
+<style>
         .show {
             display:block;
         }
@@ -47,20 +12,14 @@
             padding-top:120px;
             padding-bottom:100px;
         }
-    </style>
-</head>
-
-<body>
-
-<?php include 'includes/header.php'; ?> 
-<!-- Main container-->
+</style>
 <div class="container-fluid" id="main">
  
 
     <!--Section Pricing -->
     <section id="pricing-section">
         <div class="text-center title-wrapper">
-            <h2>Feature Your SaaS for FREE</h2> 
+            <h2>Pricing</h2> 
         </div>
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
@@ -69,8 +28,8 @@
                           <thead>
                             <tr>
                               <th></th>
-                              <th><h3 class="plan"><b class="text-muted">Lean</b></h3></th>
-                              <th><h3 class="plan"><b class="text-muted">PRO</b></h3></th>
+                              <th><h3 class="plan"><b class="text-muted">Free to start</b></h3></th>
+                              <th><h3 class="plan"><b class="text-muted">Pro</b></h3></th>
                               <th><h3 class="plan"><b class="text-muted">Ninja</b></h3></th>
                             </tr>
                           </thead>
@@ -137,7 +96,7 @@
                             </tr>
                             <tr>
                               <th scope="row"></th>
-                              <td><a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sellerModal">Start for FREE</a></td>
+                              <td><a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sellerModal">Start for free</a></td>
                               <td><a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#waitListModal">Join wait list</a></td>
                               <td><a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#waitListModal">Join wait list</a></td> 
                             </tr>
@@ -211,10 +170,6 @@
  
 </div>
 <!--/ Main container-->
-
-    <!--Footer-->
-    <?php include 'includes/footer.php'; ?>
-    <!--/.Footer-->
 
 <!-- MODALS -->
 
@@ -373,70 +328,6 @@
 </div>
 <!-- end of Wait List modal -->
  
-
-
-    <!-- SCRIPTS -->
-    <!-- jQuery v2.0.3  -->
-    <script type="text/javascript" src="js/jquery.min.js"></script> 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
-    <!-- Carousel -->
-    <script type="text/javascript" src="js/slick.min.js"></script> 
-    <script type="text/javascript" src="js/slick.js"></script> 
-    <!-- Checkbox --> 
-    <script type="text/javascript" src="js/checkbox.js"></script>
-    <!-- Select Jquery Chosen Plugin-->
-    <script type="text/javascript" src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/chosen/init.js" type="text/javascript" charset="utf-8"></script>
-    <!-- Calculator Form -->
-    <script type="text/javascript" src="js/calculator.js"></script>
-    <!-- Load more --> 
-    <script type="text/javascript" src="js/load-more.js"></script>
-    <!-- Counter -->
-    <script type="text/javascript" src="js/waypoints.min.js"></script>
-    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
-    <script type="text/javascript" src="js/counter.js"></script>
-
-    <!-- Go top button animation -->
-    <script type="text/javascript" src="js/go-top.js"></script> 
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" type="text/javascript" src="js/bootstrap.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.js"></script>
-    <!-- Animations init-->
-    <script>
-        new WOW().init();
-    </script>   
-    <!-- Number formatting -->
-    <script type="text/javascript" src="js/jquery.number.js"></script>
-    <script type="text/javascript"  src="js/jquery.number-formatting.js"></script>
-    <!-- Geolocation API (1.0)-->
-    <script type="text/javascript" src="//maps.google.com/maps/api/js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQJ71Xgt3HCqIGW7YXoPtt9U-Jp-bXk9M&callback=initMap"
-  type="text/javascript"></script>
-    <script type="text/javascript" src="js/geotext-1.0.min.js"></script>
-    <script>
-    jQuery(function() { 
-        new GeoText();  
-    });
-    </script>  
-    <!-- Radio Btn -->
-    <script type="text/javascript" src="js/radio-btn.js"></script>
-
-    <!-- FORMS PROCESSING -->
-    <!-- Form Submit: AJAX -->
-    <script type="text/javascript" src="js/ajax/calculator-ajax.js"></script>
-    <script type="text/javascript" src="js/ajax/seller-ajax.js"></script>
-    <script type="text/javascript" src="js/ajax/buyer-ajax.js"></script>
-    <script type="text/javascript" src="js/ajax/news-subscribers.js"></script>
-    <script type="text/javascript" src="js/ajax/contact-us.js"></script>
-    <?php
-        $OldDate = new DateTime('2014-01-29');
-        $now = new DateTime(Date('Y-m-d'));
-    ?>
-    <div style="display:none;" id="oldDate"><?php echo $OldDate->diff($now)->format("%a"); ?></div>
-    <div style="display:none;"><?php foreach($sellers as $seller) : ?><span class="rowsCount"><?php echo applicationsCount($seller->id); ?></span><?php endforeach; ?></div>
-    <script type="text/javascript" src="js/script.js"></script> 
-    <!-- Featured Companies: Premium -->
-    <script type="text/javascript" src="js/premium.js"></script> 
-</body>
-</html>
+<!--Footer-->
+<?php include 'includes/footer.php'; ?>
+<!--/.Footer-->

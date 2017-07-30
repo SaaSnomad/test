@@ -1,51 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>SaaSNomad | Terms</title>
-    <!-- Favicon -->
-    <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <!-- Google Font: Roboto-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <!-- Custom Style -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet"> 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> 
-    <!-- Select Jquery Chosen Plugin-->
-    <link rel="stylesheet" href="css/chosen.css"> 
-    <!-- Template styles -->
-    <style>
-                    h3 {
-                        margin: 2rem 0 1rem;
-                    }
-                    ul li {
-                        list-style-type: disc;
-                        margin-bottom: 10px;
-                        margin-left: 20px;
-                    }
-    </style>
-</head>
-
-<body>
-<div id="top" class="content">
 
     <!-- Header -->
     <?php include 'includes/header.php'; ?>
     <!--/.Header-->
 
- 
+ <style>
+    h3 {
+        margin: 2rem 0 1rem;
+   }
+    ul li {
+        list-style-type: disc;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+</style> 
+
     <!-- Main container-->
     <div class="container-fluid" id="main" style="margin-bottom: 100px;">
         
@@ -327,37 +295,4 @@
 
     <!--Footer-->
     <?php include 'includes/footer.php'; ?>
-    <!--/.Footer-->
-
-
-
-    <!-- SCRIPTS -->
-
-    <!-- Load jquery via CDN -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-
-    <!-- Go top button animation -->
-    <script>
-    $('#go-back').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 600);
-        return false;
-    });
-    </script> 
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script> 
-    <!-- Select Jquery Chosen Plugin-->
-    <script type="text/javascript" src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/chosen/init.js" type="text/javascript" charset="utf-8"></script>
-    <!-- Form Submit: AJAX -->
-    <script type="text/javascript" src="js/ajax/seller-ajax.js"></script>
-    <!-- Number formatting -->
-    <script type="text/javascript" src="js/jquery.number.js"></script>
-    <script type="text/javascript"  src="js/jquery.number-formatting.js"></script>
-</body>
-
-</html>
+    <!--/.Footer--> 

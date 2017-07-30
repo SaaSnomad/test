@@ -1,56 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>SaaSNomad | FAQ</title>
-    <!-- Favicon -->
-    <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <!-- Google Font: Roboto-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <!-- Custom Style -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet"> 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"> 
-    <style>
-        h3 {
-            margin: 2rem 0 1rem;
-        }
-        #content ul li {
-            margin-bottom: 10px;
-            margin-left: 0;
-        }
-        #content ul li:before {
-            content: "";
-            line-height: .5em;
-            width: .3em;
-            height: .3em;
-            background-color: #0275d8;
-            float: left;
-            margin: .55em 1.25em .55em 0;
-            border-radius: 50%;
-        } 
-    </style>
-</head>
-
-<body>
-<div id="top" class="content">
     <!-- Header -->
     <?php include 'includes/header.php'; ?>
     <!--/.Header-->
 
  
+<style>
+    h3 {
+        margin: 2rem 0 1rem;
+    }
+    #content ul li {
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    #content ul li:before {
+        content: "";
+        line-height: .5em;
+        width: .3em;
+        height: .3em;
+        background-color: #0275d8;
+        float: left;
+        margin: .55em 1.25em .55em 0;
+        border-radius: 50%;
+    } 
+</style> 
     <!-- Main container-->
     <div class="container-fluid" id="main" style="margin-bottom: 100px;">
         
@@ -126,37 +98,3 @@
     <!--Footer-->
     <?php include 'includes/footer.php'; ?>
     <!--/.Footer-->
-
-
-
-    <!-- SCRIPTS -->
-
-    <!-- Load jquery via CDN -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
-  
-    <!-- Go top button animation -->
-    <script>
-    $('#go-back').click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 600);
-        return false;
-    });
-    $(document).on('click', '.anchor', function(event){
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 600);
-    });
-    </script> 
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script> 
- 
-</body>
-
-</html>
