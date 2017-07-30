@@ -354,6 +354,7 @@ footer ul li {
 #buyers-section,
 #featured-companies,
 #buyer-get-notified, 
+#pricing-cta,
 #pricing-section,
 #pricing-section-mobile,
 #news-section,
@@ -519,6 +520,12 @@ footer ul li {
     font-weight: 600;
     margin-bottom: 0;
     text-align: center;
+}
+#pricing-cta #rotate {
+    padding-top: 10px;
+    color: #4285F4;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 
@@ -983,7 +990,11 @@ input.radio:checked ~ label {
     }
     select.form-control:not([size]):not([multiple]) {
         height: 42px;
-}
+    }
+    footer .col-sm-10 {
+        display: block !important;
+        text-align: center !important;
+    }
 }
 
 }

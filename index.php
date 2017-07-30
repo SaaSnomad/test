@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="SaaS for sale">
     <meta name="keywords" content="Small Businesses For Sale, ">    
 
-    <title>SaaSnomad | Anonymously reach potential buyers of your SaaS startup</title>
+    <title>SaaSNomad | Anonymously reach potential buyers of your SaaS startup</title>
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -34,11 +33,13 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
     <link rel="stylesheet" href="css/slick.css">
     <!-- Load More -->
-    <link rel="stylesheet" href="css/load-more.css"> 
-    <!-- Rotating words-->
-    <link rel="stylesheet" href="css/rotation.css">
+    <link rel="stylesheet" href="css/load-more.css">  
     <!-- Recaptcha   -->   
     <script src='https://www.google.com/recaptcha/api.js'></script> 
+               
+</head>
+
+<body>
     <style>
         .show {
             display:block;
@@ -46,13 +47,8 @@
         .hide {
             display:none;
         } 
-        
+
     </style>
-               
-</head>
-
-<body>
-
 <?php include 'includes/header.php'; ?>
 <!-- Fetch all cards in Featured Companies Section from DB -->
 <?php  
@@ -178,7 +174,7 @@
     <!--Section: Why us-->
     <section id="why-us-section">
         <div class="text-center title-wrapper">
-            <h2>Three reasons why to use SaaSnomad</h2> 
+            <h2>Three reasons why to use SaaSNomad</h2> 
         </div>
         <div class="row"> 
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -269,39 +265,36 @@
         </div> 
         </div>
     </section>
-    <!--/Section: About--> 
+    <!--/Section: About-->  
 
     <!--Section Pricing -->
-    <section id="pricing-section">
-        <div class="text-center title-wrapper">
-            <h2>Pricing</h2> 
+    <section id="pricing-cta">
+        <div class="title-wrapper text-center">
+            <h2> Absolutely for free you get 
+                <div id="rotate"> 
+                    <div>ANONYMITY</div> 
+                    <div>REACH</div> 
+                    <div>DIRECT CONTACT</div> 
+                </div>
+            </h2> 
         </div>
         <div class="row">
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                <h3 class="sentence" style="margin-top: 12%;">Absolutely for free you get</br>
-                    <div class="fadeIn">
-                      <span>ANONYMITY</span>
-                      <span>AND REACH.</span>
-                    </div>
-                </h3>  
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                <div class="card" style="background-color:#fff;color:#37474f;opacity:0.8;">
+            <div class="col-lg-4 col-md-4 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12">
+                <div class="card text-center" style="background-color:#fff;color:#37474f;opacity:0.8;">
                     <div class="card-block" style="padding: 2rem;">
                         <h4 class="card-title">SaaSNomad can also offer you...</h4>
                         <!--<small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem">Koko</small>
                         <p class="card-text" style="padding-bottom: 1rem;">jjj</p>-->
-                        <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View Opportunities</a></br>
+                        <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View Pricing</a></br>
                         <small>Early stage company but want 100% result?</br><a href="<?php echo BASE_URL; ?>pricing" target="_blank" id="text-link-1">Join our Wait List</a> to get 40% off and be the first to get exclusive offer.</small>
                     </div>
                 </div>
-                
             </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-4 col-md-4 col-sm-1 hidden-xs"> 
         </div>
     </section>
-    <!--/Section: Pricing --> 
+    <!--/Section: Pricing -->
 
     <!--Section: Featured companies -->        
     <section id="featured-companies"> 
@@ -540,7 +533,7 @@
                         </div>
                         <div class="radio-wrapper">
                             <input type="radio" name="contact_role" id="contact_acquirer" class="radio"/>
-                            <label class="for-radio" for="contact_acquirer"><span><i id="radio2" class="fa fa-check" aria-hidden="true"></i></span>Buyer</label>
+                            <label class="for-radio" for="contact_acquirer"><span></span>Buyer</label>
                         </div>
                     </div>
                     <!-- Email-->

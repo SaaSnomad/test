@@ -1,7 +1,7 @@
 <footer style="background-color:#37474f;">
             <div class="row" style="padding:0">
                 <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
+                <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12" style="display: flex;align-items: center;color: rgba(255,255,255,0.5);">
                     <!--<a href="https://saasnomad.com/" class="mb-1 logo" style="font-size:25px; margin: 0 !important;"><b>SaaSNomad</b></a>-->
                     <ul style="display:inline-block;">
                         <li>
@@ -24,7 +24,7 @@
                       <a id="go-back" class="mdl-typography--font-light btn btn-info btn-rounded" onClick="ga('send', 'event', 'go up', 'click', 'uxui');"><i class="fa fa-arrow-up" aria-hidden="true" style="margin-top: 4px;"></i></a>
                       -->
                 </div> 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="text-align:right;color: rgba(255,255,255,0.5);">
+                <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12" style="text-align:right;color: rgba(255,255,255,0.5);">
                    <p style="margin: 1.5rem 0 1rem;font-size: .8rem;"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 SaaSNomad, All rights reserved.</p>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
@@ -93,7 +93,9 @@
     <div style="display:none;" id="oldDate"><?php echo $OldDate->diff($now)->format("%a"); ?></div>
     <div style="display:none;"><?php foreach($sellers as $seller) : ?><span class="rowsCount"><?php echo applicationsCount($seller->id); ?></span><?php endforeach; ?></div>
     <script type="text/javascript" src="js/script.js"></script> 
-    <!-- Featured Companies: Premium -->
+    <!-- Featured Companies: Badge -->
     <script type="text/javascript" src="js/premium.js"></script> 
+    <!-- Rotating words-->
+    <script type="text/javascript" src="js/rotation.js"></script> 
 </body>
 </html>

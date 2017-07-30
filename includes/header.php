@@ -8,7 +8,7 @@
     <meta name="description" content="SaaS for sale">
     <meta name="keywords" content="Small Businesses For Sale, ">    
 
-    <title>SaaSnomad | Anonymously reach potential buyers of your SaaS startup</title>
+    <title>SaaSNomad | Anonymously reach potential buyers of your SaaS startup</title>
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
