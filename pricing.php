@@ -19,7 +19,7 @@
     <!--Section Pricing -->
     <section id="pricing-section">
         <div class="text-center title-wrapper">
-            <h2>Pricing</h2> 
+            <h1>Pricing</h1> 
         </div>
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
@@ -45,13 +45,7 @@
                               <td><b>3</b> weeks</br>+ <b>1</b> time special featuring</td>
                               <td><b>10</b> weeks</br>+ <b>3</b> times special featuring</td>
                               <td><b>20</b> weeks</br>+ <b>3</b> times special featuring</td>
-                            </tr>
-                            <!--<tr>
-                              <th scope="row">Email addresses* and Linkedin profiles of corporate M&#38;A professionals and advisors</th>
-                              <td><b>10</b></td>
-                              <td><b>100</b></td>
-                              <td><b>Full access</b></td>
-                            </tr>-->
+                            </tr> 
                             <tr>
                               <th scope="row">Featuring on our website’s &#8220;Featured Companies&#8221; section</th>
                               <td><b>10</b> days</td>
@@ -97,11 +91,12 @@
                             <tr>
                               <th scope="row"></th>
                               <td><a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sellerModal">Start for free</a></td>
-                              <td><a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#waitListModal">Join wait list</a></td>
-                              <td><a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#waitListModal">Join wait list</a></td> 
+                              <td><a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#proPlanModal">Join wait list</br><small>to get 40% off</small></a></td>
+                              <td><a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#ninjaPlanModal">Join wait list</br><small>to get 50% off</small></a></td> 
                             </tr>
                           </tbody>
                         </table>  
+              <a href="<?php echo BASE_URL; ?>" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 50px;"></i> Go back to website</a>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
@@ -111,7 +106,7 @@
     <!--Section Pricing for Mobile -->
     <section id="pricing-section-mobile">
         <div class="text-center title-wrapper">
-            <h2>Feature Your SaaS for FREE</h2> 
+            <h1>Pricing</h1> 
         </div>
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
@@ -141,7 +136,7 @@
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Expanded business profile</li>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Teaser document</li> 
                                     </ul>
-                                <a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#waitListModal">Join wait list</a>
+                                <a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#proPlanModal">Join wait list</br><small>to get 40% off</small></a>
                             </div>
                             <div class="col-sm-12 col-xs-12" id="ninja">
                                 <h3 class="plan"><b class="text-muted">Ninja</b></h3>
@@ -157,17 +152,18 @@
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Personal account manager</li>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Stealth marketing</li>
                                     </ul>
-                                <a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#waitListModal">Join wait list</a>
+                                <a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#ninjaPlanModal">Join wait list</br><small>to get 50% off</small></a>
                             </div>
                         </div>   
                     </div>
                 </div>
+                <a href="<?php echo BASE_URL; ?>" class="custom-link"><i class="fa fa-arrow-left" aria-hidden="true" style="margin-top: 50px;"></i> Go back to website</a>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
     </section>
     <!--/Section: Pricing for Mobile -->
- 
+    
 </div>
 <!--/ Main container-->
 
@@ -273,28 +269,30 @@
 </div>  
 <!-- end of Seller modal -->
 
-<!-- Wait List modal -->
-<div class="modal fade" id="waitListModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
-    <div class="modal-dialog" id="-modal-dialog" role="document">
+<!-- Wait List Pro modal -->
+<div class="modal fade" id="proPlanModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
             <div class="modal-body text-center">
-                <h2 class="text-center" id="buyer-header">Join Wait List</h2>
+                <div id="pro-plan-header">
+                  <h2 class="text-center">Join Wait List</h2>
+                  <h3 style="font-weight: 600;"><b class="text-muted">to get 40% off</b></h3>
+                  <h5>Be the first to get exclusive offer</h5>
+                </div>
                 <div class="row" style="padding-top: 20px;padding-bottom: 20px;">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                        <h3 style="font-weight: 600;"><b class="text-muted">to get 40% off</b></h3>
-                        <h5 style="margin-bottom: 3rem;">Be the first to get exclusive offer</h5>
-                        <form id="buyers" action="#" method="post">
+                        <form id="pro-plan-waitlist" action="#" method="post">
                             <div class="md-form form-group">
-                                <input name="buyer_name" id="buyer_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
-                                <label for="buyer_name">Name *</label>
+                                <input name="pro_plan_name" id="pro_plan_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
+                                <label for="pro_plan_name">Name *</label>
                             </div>
                             <div class="md-form form-group">
-                                <input name="buyer_email" id="buyer_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
-                                <label for="buyer_email">Email *</label>
+                                <input name="pro_plan_email" id="pro_plan_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
+                                <label for="pro_plan_email">Email *</label>
                             </div>
                             <div class="md-form form-group" style="margin-top: 44px;display:none;">
-                                <input name="buyer_country" placeholder="Country" type="text" class="geotext[country]">
+                                <input name="pro_plan_country" placeholder="Country" type="text" class="geotext[country]">
                             </div> 
                             <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
                                 <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Get my 40% off</button>
@@ -303,30 +301,88 @@
                                 <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
                             </div>
                         </form>
-                        <div id="buyer-success" style="display:none;">
+                        <div id="pro-plan-success" style="display:none;">
                             <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
-                                <p id="buyer-success-title" class='bq-title' style='padding-left: 0;'></p>
+                                <p id="pro-plan-success-title" class='bq-title' style='padding-left: 0;'></p>
                             </blockquote>
                             <div class='text-center'>
-                                <p id="buyer-success-message"></p>
+                                <p id="pro-plan-success-message"></p>
                             </div>
                         </div>
-                        <div id="buyer-error" style="display:none;">
+                        <div id="pro-plan-error" style="display:none;">
                             <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
-                                <p id="buyer-error-title" class='bq-title' style='padding-left: 0;'></p>
+                                <p id="pro-plan-error-title" class='bq-title' style='padding-left: 0;'></p>
                             </blockquote>
                             <div class='text-center'>
-                                <p id="buyer-error-message"></p>
+                                <p id="pro-plan-error-message"></p>
                             </div>
                         </div>
-                        <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div> 
+                        <div id="preloader5" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div> 
                     </div>  
                 </div>  
             </div>
         </div>
     </div>
 </div>
-<!-- end of Wait List modal -->
+<!-- end of Wait List Pro modal -->
+
+<!-- Wait List Ninja modal -->
+<div class="modal fade" id="ninjaPlanModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            <div class="modal-body text-center">
+                <div id="ninja-plan-header">
+                  <h2 class="text-center">Join Wait List</h2>
+                  <h3 style="font-weight: 600;"><b class="text-muted">to get 50% off</b></h3>
+                  <h5>Be the first to get exclusive offer</h5>
+                </div>
+                <div class="row" style="padding-top: 20px;padding-bottom: 20px;">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                        
+                        <form id="ninja-plan-waitlist" action="#" method="post">
+                            <div class="md-form form-group">
+                                <input name="ninja_plan_name" id="ninja_plan_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
+                                <label for="ninja_plan_name">Name *</label>
+                            </div>
+                            <div class="md-form form-group">
+                                <input name="ninja_plan_email" id="ninja_plan_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
+                                <label for="ninja_plan_email">Email *</label>
+                            </div>
+                            <div class="md-form form-group" style="margin-top: 44px;display:none;">
+                                <input name="ninja_plan_country" placeholder="Country" type="text" class="geotext[country]">
+                            </div> 
+                            <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
+                                <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Get my 50% off</button>
+                            </div>
+                            <div class="text-center">
+                                <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
+                            </div>
+                        </form>
+                        <div id="ninja-plan-success" style="display:none;">
+                            <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
+                                <p id="ninja-plan-success-title" class='bq-title' style='padding-left: 0;'></p>
+                            </blockquote>
+                            <div class='text-center'>
+                                <p id="ninja-plan-success-message"></p>
+                            </div>
+                        </div>
+                        <div id="ninja-plan-error" style="display:none;">
+                            <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
+                                <p id="ninja-plan-error-title" class='bq-title' style='padding-left: 0;'></p>
+                            </blockquote>
+                            <div class='text-center'>
+                                <p id="ninja-plan-error-message"></p>
+                            </div>
+                        </div>
+                        <div id="preloader6" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div> 
+                    </div>  
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of Wait List Ninja modal -->
  
 <!--Footer-->
 <?php include 'includes/footer.php'; ?>

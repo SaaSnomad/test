@@ -527,9 +527,19 @@ footer ul li {
     font-weight: 400;
     text-transform: uppercase;
 }
+#pricing-cta .card {
+    background-color:#fff;
+    color:#37474f;
+    opacity:0.8;
+}
+#pricing-cta .card-block {
+    padding: 2rem;
+}
+
 #pricing-cta .card-title {
     position: relative;
 }
+
 #pricing-cta .coming {
     position:absolute;
     margin-left: 2px;
@@ -584,7 +594,7 @@ footer ul li {
 }
 #landing #left-side #apply-main{
     margin: 1.5rem 0;font-size: 22px;
-    width:50%;
+    width:40%;
 }
 #landing #right-side {
     height:100%;padding:0;border-top-left-radius:6px;border-bottom-left-radius:6px;
@@ -852,7 +862,7 @@ input.radio:checked ~ label {
         display: block;
     }
 
-    #pricing-section-mobile .fa {
+    #pricing-section-mobile .fa-check {
         color:#3CD7B2;padding-right:5px;
     }
     #pricing-section-mobile .fa-times {

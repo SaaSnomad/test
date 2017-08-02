@@ -33,10 +33,10 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
     <link rel="stylesheet" href="css/slick.css">
     <!-- Load More -->
-    <link rel="stylesheet" href="css/load-more.css"> 
+    <link rel="stylesheet" href="css/load-more.css">  
     <!-- Recaptcha   -->   
     <script src='https://www.google.com/recaptcha/api.js'></script> 
-    
+               
 </head>
 
 <body>

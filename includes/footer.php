@@ -25,7 +25,7 @@
                       -->
                 </div> 
                 <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12" style="text-align:right;color: rgba(255,255,255,0.5);">
-                   <p style="margin: 1.5rem 0 1rem;font-size: .8rem;"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 SaaSNomad, All rights reserved.</p>
+                   <p style="margin: 1.5rem 0 1rem;font-size: .8rem;"><i class="fa fa-copyright" aria-hidden="true"></i> 2017. This site is hand-crafted by SaaSNomad. All rights reserved.</p>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             </div>   
@@ -86,6 +86,9 @@
     <script type="text/javascript" src="js/ajax/buyer-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/news-subscribers.js"></script>
     <script type="text/javascript" src="js/ajax/contact-us.js"></script>
+    <script type="text/javascript" src="js/ajax/pro-waitlist.js"></script>
+    <script type="text/javascript" src="js/ajax/ninja-waitlist.js"></script>
+
     <?php
         $OldDate = new DateTime('2014-01-29');
         $now = new DateTime(Date('Y-m-d'));

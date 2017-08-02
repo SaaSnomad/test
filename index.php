@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="SaaS for sale">
-    <meta name="keywords" content="Small Businesses For Sale, ">    
-
-    <title>SaaSNomad | Anonymously reach potential buyers of your SaaS startup</title>
-    <!-- Favicon -->
-    <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">-->
-     <!-- Google Font: Roboto-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,mediuM&#38;Amp;lang=en">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet"> 
-    <!-- Custom Style -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Select Jquery Chosen Plugin-->
-    <link rel="stylesheet" href="css/chosen.css"> 
-    <!-- Checkbox -->
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet" href="css/checkbox.css"> 
-    <!-- Carousel -->
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
-    <link rel="stylesheet" href="css/slick.css">
-    <!-- Load More -->
-    <link rel="stylesheet" href="css/load-more.css">  
-    <!-- Recaptcha   -->   
-    <script src='https://www.google.com/recaptcha/api.js'></script> 
-               
-</head>
-
-<body>
-    <style>
-        .show {
-            display:block;
-        }
-        .hide {
-            display:none;
-        } 
-
-    </style>
+    
 <?php include 'includes/header.php'; ?>
 <!-- Fetch all cards in Featured Companies Section from DB -->
 <?php  
@@ -79,7 +29,14 @@
     // Assign Result Set
     $sellers = $db->resultset();
 ?>
-
+<style>
+    .show {
+        display:block;
+    }
+    .hide {
+        display:none;
+    } 
+</style>
 <!-- Main container-->
 <div class="container-fluid" id="main">
 
@@ -136,7 +93,7 @@
                             <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
                             <small>* All fields are required</small> 
                             <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
-                                <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: #0275d8;padding: 0.85rem 1rem;margin:0;" onClick="ga('send', 'event', 'valuation', 'submit', 'sellers');">Calculate</button>
+                                <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: rgba(55,71,79,0.3);padding: 0.85rem 1rem;margin:0;" onClick="ga('send', 'event', 'valuation', 'submit', 'sellers');">Calculate</button>
                             </div>                             
                         </form>
                         <!-- end of Calculator form -->
@@ -281,13 +238,13 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-1 hidden-xs"></div>
             <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12">
-                <div class="card text-center" style="background-color:#fff;color:#37474f;opacity:0.8;">
-                    <div class="card-block" style="padding: 2rem;">
+                <div class="card text-center">
+                    <div class="card-block">
                         <h4 class="card-title">The SaaSNomad Platform <span class="coming">Coming Soon</span></h4>
                         <!--<small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem">Koko</small>
                         <p class="card-text" style="padding-bottom: 1rem;">jjj</p>-->
                         <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View Pricing</a></br>
-                        <small>Early stage company but want 100% result?</br><a href="<?php echo BASE_URL; ?>pricing" target="_blank" id="text-link-1">Join our Wait List</a> to get 40% off and be the first to get exclusive offer.</small>
+                        <small>Early stage SaaS but want 100% result?</br><a href="<?php echo BASE_URL; ?>pricing" target="_blank" id="text-link-1">Join our Wait List</a> to get 40% off and be the first to get exclusive offer.</small>
                     </div>
                 </div>
             </div>
@@ -528,11 +485,11 @@
                     <!-- Role -->
                     <div class="md-form form-group">
                         <div class="radio-wrapper">  
-                            <input type="radio" name="contact_role" id="contact_saas_owner" class="radio" checked/>
+                            <input type="radio" name="contact_role" id="contact_saas_owner" class="radio" value="seller" checked/>
                             <label class="for-radio" for="contact_saas_owner"><span></span>Seller</label>
                         </div>
                         <div class="radio-wrapper">
-                            <input type="radio" name="contact_role" id="contact_acquirer" class="radio"/>
+                            <input type="radio" name="contact_role" id="contact_acquirer" class="radio" value="buyer"/>
                             <label class="for-radio" for="contact_acquirer"><span></span>Buyer</label>
                         </div>
                     </div>
@@ -790,66 +747,6 @@
 </div>
 <?php endforeach; ?>
 <!-- end of Request contact -->
-
-
-<!-- Buyer modal -->
-<div class="modal fade" id="buyerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            <div class="modal-body">
-                <h2 class="text-center" id="buyer-header">Get notified about new Featured Companies</h2> 
-                <small id="buyer-subheader" style="display:block;margin: 1rem 0;" class="text-center">Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
-                <form id="buyers" action="#" method="post">
-                    <div class="md-form form-group">
-                        <input name="buyer_name" id="buyer_name" placeholder="John Doe" type="text" class="form-control" maxlength="50" required>
-                        <label for="buyer_name">Name *</label>
-                    </div>
-                    <div class="md-form form-group">
-                        <input name="buyer_email" id="buyer_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
-                        <label for="buyer_email">Email *</label>
-                    </div>
-                    <div class="md-form form-group" style="margin-top: 44px;display:none;">
-                        <input name="buyer_country" placeholder="Country" type="text" class="geotext[country]">
-                    </div>
-                    <!--<div class="md-form form-group" style="margin-bottom: 2.5rem;">
-                        <div class="rkmd-checkbox checkbox-ripple">
-                            <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
-                                <input type="checkbox" id="checkbox-1" required> 
-                                <span class="checkbox"></span> 
-                            </label> 
-                            <small for="checkbox-1" class="checkbox-label">I agree to the <a href="privacy.php" target="_blank">Privacy Policy</a> and <a href="terms.php" target="_blank">Terms of Use</a> </small> 
-                        </div>
-                    </div>-->
-                    <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
-                        <button class="btn btn-primary" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Subscribe</button>
-                    </div>
-                    <div class="text-center">
-                        <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>
-                    </div>
-                </form>
-                <div id="buyer-success" style="display:none;">
-                    <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
-                        <p id="buyer-success-title" class='bq-title' style='padding-left: 0;'></p>
-                    </blockquote>
-                    <div class='text-center'>
-                        <p id="buyer-success-message"></p>
-                    </div>
-                </div>
-                <div id="buyer-error" style="display:none;">
-                    <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
-                        <p id="buyer-error-title" class='bq-title' style='padding-left: 0;'></p>
-                    </blockquote>
-                    <div class='text-center'>
-                        <p id="buyer-error-message"></p>
-                    </div>
-                </div>
-                <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end of Buyer modal -->
 
 <!--Footer-->
 <?php include 'includes/footer.php'; ?>
