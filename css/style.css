@@ -515,7 +515,7 @@ footer ul li {
 #pricing-section .table tbody tr td:first-of-type, #pricing-section .table thead tr th:nth-child(2){
     background-color: #fff;
 }
-#pricing-section .plan{
+#pricing-section .plan, #pricing-cta .plan{
     color: #0275d8;
     font-weight: 600;
     margin-bottom: 0;
@@ -533,7 +533,7 @@ footer ul li {
     opacity:0.8;
 }
 #pricing-cta .card-block {
-    padding: 2rem;
+    padding: 0rem;
 }
 
 #pricing-cta .card-title {

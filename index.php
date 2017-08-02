@@ -93,7 +93,7 @@
                             <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
                             <small>* All fields are required</small> 
                             <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
-                                <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: rgba(55,71,79,0.3);padding: 0.85rem 1rem;margin:0;" onClick="ga('send', 'event', 'valuation', 'submit', 'sellers');">Calculate</button>
+                                <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: transparent;border: 1px solid #ccc; padding: 0.85rem 1rem;margin:0;" onClick="ga('send', 'event', 'valuation', 'submit', 'sellers');">Calculate</button>
                             </div>                             
                         </form>
                         <!-- end of Calculator form -->
@@ -227,33 +227,69 @@
     <!--Section Pricing -->
     <section id="pricing-cta">
         <div class="title-wrapper text-center">
-            <h2> Absolutely for free you get 
+            <!--<h2> Absolutely for free you get 
                 <div id="rotate"> 
                     <div>ANONYMITY</div> 
                     <div>REACH</div> 
                     <div>DIRECT CONTACT</div> 
                 </div>
-            </h2> 
+            </h2> -->
+            <h2>Pricing Plans</h2>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-1 hidden-xs"></div>
-            <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12">
-                <div class="card text-center">
+            <div class="col-lg-2 col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-lg-8 col-md-10 col-sm-10 col-xs-12 text-center">
+                <div class="card text-center" style="padding:0">
                     <div class="card-block">
-                        <h4 class="card-title">The SaaSNomad Platform <span class="coming">Coming Soon</span></h4>
-                        <!--<small style="padding-bottom: 15px;display: inline-block;line-height: 1.2rem">Koko</small>
-                        <p class="card-text" style="padding-bottom: 1rem;">jjj</p>-->
-                        <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View Pricing</a></br>
-                        <small>Early stage SaaS but want 100% result?</br><a href="<?php echo BASE_URL; ?>pricing" target="_blank" id="text-link-1">Join our Wait List</a> to get 40% off and be the first to get exclusive offer.</small>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0">
+                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Free to start</b></h3>
+                                        <p class="card-text" style="font-size: 18px;">Great to start for free</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0"> 
+                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Pro</b></h3>
+                                        <p class="card-text" style="font-size: 18px;">If you are not in a hurry</p> 
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0">
+                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Ninja</b></h3>
+                                        <p class="card-text" style="font-size: 18px;">Full M&#38;A assistant</p>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding:3rem 0;background-color: #eee;">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <h4 style="padding-bottom:1rem;">Features included in every plan:</h4>
+                                        <ul>
+                                            <li style="padding-bottom: 15px;"><i class="fa fa-check" aria-hidden="true" style="color:#3CD7B2;"></i> Featuring in our weekly newsletter for M&A specialists</li>
+                                            <li style="padding-bottom: 15px;"><i class="fa fa-check" aria-hidden="true" style="color:#3CD7B2;"></i> Featuring on our website’s “Featured Companies” section</li>
+                                            <li style="padding-bottom: 15px;"><i class="fa fa-check" aria-hidden="true" style="color:#3CD7B2;"></i> Contact sharings to interested investors</li>
+                                        </ul>
+                                        <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View All Features &#38; Pricing</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 align-middle" style="padding:0;background-color: #37474f;color:#fff;">
+                                <blockquote class="blockquote" style="padding:3rem;margin-bottom: 0rem;margin-top:15%;height: 100%;">
+                                    <p class="mb-0" style="padding:0 0 1rem 0;font-size:1rem">
+                                        <i class="fa fa-quote-left" aria-hidden="true" style="font-size: 1.75rem;padding-bottom:2rem;"></i>
+                                        </br>
+                                        My SaaS was making over $60,000 in MRR but further growth became a challenge, so I decided to quit and start new business from scratch. Out of 40 or so contacts I got from SaaSNomad, 7 worked out and in three months the money hit my account.
+                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+                                    </p>
+                                    <footer class="blockquote-footer" style="color:#999;font-size:0.9rem"><span class="gray-box">Xxxx Xxxxxxx</span>, the founder of <span class="gray-box">XXXXXX</span>,  <cite title"Source Title">San Francisco</cite></footer>
+                                </blockquote>
+                            </div> -->
+                        </div> 
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-1 hidden-xs"> 
+            <div class="col-lg-2 col-md-1 col-sm-1 hidden-xs"> 
         </div>
     </section>
     <!--/Section: Pricing -->
 
-    <!--Section: Featured companies -->        
+    <!--Section: Featured companies -->
     <section id="featured-companies"> 
         <div class="text-center title-wrapper">
             <h1 class="display-4">Looking for acquisition targets?</h1>
