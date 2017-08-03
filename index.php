@@ -40,6 +40,8 @@
 <!-- Main container-->
 <div class="container-fluid" id="main">
 
+    <a class="anchor" href="#calculator"></a>
+
     <!-- Section: Landing -->
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
@@ -124,9 +126,8 @@
             </div>
         </div>
     </div>
-    <!--/Section: Landing--> 
  
-    <div id="anchor"></div>
+    <a class="anchor" href="#why-us"></a>
 
     <!--Section: Why us-->
     <section id="why-us-section">
@@ -157,7 +158,8 @@
             </div>
         </div>
     </section>
-    <!--/Section: Why us--> 
+
+    <a class="anchor" href="#testimonial"></a>
 
     <!--Section Testimonials -->
     <section id="testimonial">  
@@ -181,7 +183,8 @@
             <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"></div>
         </div>
     </section>
-    <!--/Section: Testimonials -->
+
+    <a class="anchor" href="#about-us"></a>
 
     <!--Section: About-->
     <section id="about-section">
@@ -222,7 +225,8 @@
         </div> 
         </div>
     </section>
-    <!--/Section: About-->  
+
+    <a class="anchor" href="#pricing-plans"></a>
 
     <!--Section Pricing -->
     <section id="pricing-cta">
@@ -244,16 +248,16 @@
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0">
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Free to start</b></h3>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0; border-right: 1px solid #eee;">
+                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Starter</b></h3>
                                         <p class="card-text" style="font-size: 18px;">Great to start for free</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0"> 
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Pro</b></h3>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0;border-right: 1px solid #eee;"> 
+                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Standard</b></h3>
                                         <p class="card-text" style="font-size: 18px;">If you are not in a hurry</p> 
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0">
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Ninja</b></h3>
+                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Power</b></h3>
                                         <p class="card-text" style="font-size: 18px;">Full M&#38;A assistant</p>
                                     </div>
                                 </div>
@@ -268,18 +272,7 @@
                                         <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View All Features &#38; Pricing</a>
                                     </div>
                                 </div>
-                            </div>
-                            <!--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 align-middle" style="padding:0;background-color: #37474f;color:#fff;">
-                                <blockquote class="blockquote" style="padding:3rem;margin-bottom: 0rem;margin-top:15%;height: 100%;">
-                                    <p class="mb-0" style="padding:0 0 1rem 0;font-size:1rem">
-                                        <i class="fa fa-quote-left" aria-hidden="true" style="font-size: 1.75rem;padding-bottom:2rem;"></i>
-                                        </br>
-                                        My SaaS was making over $60,000 in MRR but further growth became a challenge, so I decided to quit and start new business from scratch. Out of 40 or so contacts I got from SaaSNomad, 7 worked out and in three months the money hit my account.
-                                        <i class="fa fa-quote-right" aria-hidden="true"></i>
-                                    </p>
-                                    <footer class="blockquote-footer" style="color:#999;font-size:0.9rem"><span class="gray-box">Xxxx Xxxxxxx</span>, the founder of <span class="gray-box">XXXXXX</span>,  <cite title"Source Title">San Francisco</cite></footer>
-                                </blockquote>
-                            </div> -->
+                            </div> 
                         </div> 
                     </div>
                 </div>
@@ -287,7 +280,8 @@
             <div class="col-lg-2 col-md-1 col-sm-1 hidden-xs"> 
         </div>
     </section>
-    <!--/Section: Pricing -->
+
+    <a class="anchor" href="#featured-companies"></a>
 
     <!--Section: Featured companies -->
     <section id="featured-companies"> 
@@ -320,7 +314,8 @@
             </div>
         </div>
     </section> 
-    <!--/Section: Featured companies-->
+
+    <a class="anchor" href="#get-notified"></a>
 
     <!--Section: Buyers get notified -->        
     <section id="buyer-get-notified"> 
@@ -369,7 +364,8 @@
             
         </div>
     </section> 
-    <!--/Section: Buyers get notified-->
+
+    <a class="anchor" href="#news"></a>
 
     <!--section News-->
     <section id="news-section">
@@ -438,7 +434,8 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
                 </div>
     </section>
-    <!--/Section: News--> 
+
+    <a class="anchor" href="#faq"></a>
 
     <!--section FAQ-->
     <section id="faq-section">
@@ -493,7 +490,7 @@
                             <p>
                                 Please note: we may request more information from you before disclosing the Seller's contact.
                                 They may also ask you to sign a confidentiality agreement. Also called a non-disclosure agreement, 
-                                this protects the seller against the risk of confidential information, such as financial records, 
+                                this protects the Seller against the risk of confidential information, such as financial records, 
                                 falling into the wrong hands – i.e. the press or competitors.
                             </p>
                         </section>
@@ -503,8 +500,9 @@
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
     </section>
-    <!--/Section: FAQ-->
   
+    <a class="anchor" href="#contact-us"></a>
+
     <!--Section Contact Us--> 
     <section id="contact-us">
         <div class="text-center">
@@ -566,11 +564,9 @@
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
     </section>
-    <!--/Section: Contact Us--> 
 
 </div>
-<!--/ Main container-->
-
+<!--/ Main container--> 
 <!-- MODALS -->
 
 

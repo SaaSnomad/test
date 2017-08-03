@@ -100,5 +100,8 @@
     <script type="text/javascript" src="js/premium.js"></script> 
     <!-- Rotating words-->
     <script type="text/javascript" src="js/rotation.js"></script> 
+    <!-- Url Changes on Scoll Event -->
+    <script type="text/javascript" src="js/anchors.js"></script> 
+
 </body>
 </html>
