@@ -40,7 +40,7 @@
 <!-- Main container-->
 <div class="container-fluid" id="main">
 
-    <a class="anchor" href="#calculator"></a>
+    
 
     <!-- Section: Landing -->
     <div class="row" id="landing">
@@ -126,8 +126,7 @@
             </div>
         </div>
     </div>
- 
-    <a class="anchor" href="#why-us"></a>
+    <a class="anchor" href="#calculator"></a>
 
     <!--Section: Why us-->
     <section id="why-us-section">
@@ -158,8 +157,7 @@
             </div>
         </div>
     </section>
-
-    <a class="anchor" href="#testimonial"></a>
+    <a class="anchor" href="#why-us"></a>
 
     <!--Section Testimonials -->
     <section id="testimonial">  
@@ -183,8 +181,7 @@
             <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"></div>
         </div>
     </section>
-
-    <a class="anchor" href="#about-us"></a>
+    <a class="anchor" href="#testimonial"></a>
 
     <!--Section: About-->
     <section id="about-section">
@@ -225,8 +222,7 @@
         </div> 
         </div>
     </section>
-
-    <a class="anchor" href="#pricing-plans"></a>
+    <a class="anchor" href="#about-us"></a>
 
     <!--Section Pricing -->
     <section id="pricing-cta">
@@ -280,8 +276,7 @@
             <div class="col-lg-2 col-md-1 col-sm-1 hidden-xs"> 
         </div>
     </section>
-
-    <a class="anchor" href="#featured-companies"></a>
+    <a class="anchor" href="#pricing-plans"></a>
 
     <!--Section: Featured companies -->
     <section id="featured-companies"> 
@@ -314,8 +309,7 @@
             </div>
         </div>
     </section> 
-
-    <a class="anchor" href="#get-notified"></a>
+    <a class="anchor" href="#featured-companies"></a>
 
     <!--Section: Buyers get notified -->        
     <section id="buyer-get-notified"> 
@@ -364,8 +358,7 @@
             
         </div>
     </section> 
-
-    <a class="anchor" href="#news"></a>
+    <a class="anchor" href="#get-notified"></a>
 
     <!--section News-->
     <section id="news-section">
@@ -434,8 +427,7 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
                 </div>
     </section>
-
-    <a class="anchor" href="#faq"></a>
+    <a class="anchor" href="#news"></a>
 
     <!--section FAQ-->
     <section id="faq-section">
@@ -500,9 +492,8 @@
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
     </section>
+    <a class="anchor" href="#faq"></a>
   
-    <a class="anchor" href="#contact-us"></a>
-
     <!--Section Contact Us--> 
     <section id="contact-us">
         <div class="text-center">
@@ -564,6 +555,7 @@
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
     </section>
+    <a class="anchor" href="#contact-us"></a>
 
 </div>
 <!--/ Main container--> 
