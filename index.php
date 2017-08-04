@@ -457,9 +457,13 @@
                             <p>
                                 SaaSNomad provides the opportunity to sale your SaaS absolutely anonymously. 
                                 That's why SaaSNomad does not allow the display of your contact details within a Company card.
-                                Buyer request will be delivered to you via the website. 
-                                Then you decide to whom to reveal your contact. 
-                            </p> 
+                                Buyer request will be delivered to you via the website. Then you decide to whom to reveal your contact. 
+                            </p>
+                            <p>
+                                Please note: we may request more information from you before featuring your SaaS. 
+                                This is our way of vetting applicants that the Buyers will come in contact with. 
+                                This protects the Buyers against the unreliable Sellers.
+                            </p>                             
                         </section>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 buyer-faq">
@@ -493,12 +497,13 @@
         </div>
     </section>
     <a class="anchor" href="#faq"></a>
-  
+
     <!--Section Contact Us--> 
     <section id="contact-us">
         <div class="text-center">
             <h2>Questions?</h2>
         </div>
+
         <div class="row">
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-4 col-md-10 col-sm-10 col-xs-12">
@@ -556,6 +561,7 @@
         </div>
     </section>
     <a class="anchor" href="#contact-us"></a>
+    
 
 </div>
 <!--/ Main container--> 
