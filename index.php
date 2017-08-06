@@ -159,7 +159,7 @@
     </section>
     
 
-    <!--Section Testimonials -->
+    <!--Section Testimonial -->
     <section id="testimonial">  
         <div class="row">
             <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"></div>
@@ -174,7 +174,7 @@
                             My SaaS was making over $60,000 in MRR but further growth became a challenge, so I decided to quit and start new business from scratch. Out of 40 or so contacts I got from SaaSNomad, 7 worked out and in three months the money hit my account.
                             <!--<i class="fa fa-quote-right" aria-hidden="true"></i>-->
                         </p>
-                        <footer class="blockquote-footer"><span class="gray-box">Xxxx Xxxxxxx</span>, the founder of <span class="gray-box">XXXXXX</span>,  <cite title"Source Title">San Francisco</cite></footer>
+                        <footer class="blockquote-footer"><span class="gray-box">Saasy Nomadman</span>, the founder of <span class="gray-box">CoolCo Inc.</span>,  <cite title"Source Title">San Francisco</cite></footer>
                     </blockquote>
                 </div>
                 <!--/.Card-->

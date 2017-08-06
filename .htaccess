@@ -19,6 +19,7 @@ RewriteCond %{HTTP_REFERER} !^https://www.saasnomad.com/.*$      [NC]
 RewriteCond %{HTTP_REFERER} !^https://www.saasnomad.com$      [NC]
 RewriteCond %{HTTP_REFERER} !^https://www.test.saasnomad.com/.*$      [NC]
 RewriteCond %{HTTP_REFERER} !^https://www.test.saasnomad.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
 
 RewriteCond %{HTTP_HOST} ^test.saasnomad\.com [NC]
 RewriteCond %{SERVER_PORT} 80 
