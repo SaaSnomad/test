@@ -249,15 +249,15 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0; border-right: 1px solid #eee;">
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Starter</b></h3>
+                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Starter</h3>
                                         <p class="card-text" style="font-size: 18px;">Great to start for free</p>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0;border-right: 1px solid #eee;"> 
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Standard</b></h3>
+                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Standard</h3>
                                         <p class="card-text" style="font-size: 18px;">If you are not in a hurry</p> 
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0">
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Power</b></h3>
+                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Power</h3>
                                         <p class="card-text" style="font-size: 18px;">Full M&#38;A assistant</p>
                                     </div>
                                 </div>
