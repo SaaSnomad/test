@@ -336,7 +336,10 @@ footer ul li {
     height: 100%;
     display: inline-flex
 }
-
+#logo img {
+    width: 25px;
+    margin-top: -5px;
+}
 #main,
 .main-text {
     padding: 0

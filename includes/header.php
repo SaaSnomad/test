@@ -50,7 +50,7 @@
             <div class="col-6">
                 <h4 class="text-muted" id="logo" >
                     <a class="text-muted" href="<?php echo BASE_URL; ?>">
-                        <img src="img/logo.svg" alt="logo" onClick="ga('send', 'event', 'logo', 'click', 'uxui');">
+                        <img src="img/saasnomad-logo.svg" alt="SaaSNomad logo" onClick="ga('send', 'event', 'logo', 'click', 'uxui');">
                     <b>SaaS</b>Nomad</a>
                 </h4>
             </div>
