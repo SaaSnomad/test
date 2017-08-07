@@ -40,8 +40,6 @@
 <!-- Main container-->
 <div class="container-fluid" id="main">
 
-    
-
     <!-- Section: Landing -->
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
@@ -49,6 +47,7 @@
                 <h1 class="display-4">Anonymously</br>sell your SaaS</br>startup</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply for free </a>
                 <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
                 <h3 class="text-center text-muted">companies already listed</h3> 
+                <a class="anchor" href="#calculator"></a>
             </div>
         </div>
         <div id="right-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight z-depth-1" data-wow-delay="0.2s">
@@ -126,13 +125,14 @@
             </div>
         </div>
     </div>
-    <a class="anchor" href="#calculator"></a>
+    
 
     <!--Section: Why us-->
     <section id="why-us-section">
         <div class="text-center title-wrapper">
             <h2>Three reasons why to use SaaSNomad</h2> 
         </div>
+        <a class="anchor" href="#why-us"></a>
         <div class="row"> 
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-1 text-center">
@@ -157,7 +157,7 @@
             </div>
         </div>
     </section>
-    <a class="anchor" href="#why-us"></a>
+    
 
     <!--Section Testimonial -->
     <section id="testimonial">  
@@ -170,6 +170,7 @@
                         <p class="mb-0">
                             <i class="fa fa-quote-left" aria-hidden="true"></i>
                             </br>
+                            <a class="anchor" href="#testimonial"></a>
                             My SaaS was making over $60,000 in MRR but further growth became a challenge, so I decided to quit and start new business from scratch. Out of 40 or so contacts I got from SaaSNomad, 7 worked out and in three months the money hit my account.
                             <!--<i class="fa fa-quote-right" aria-hidden="true"></i>-->
                         </p>
@@ -181,12 +182,14 @@
             <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs"></div>
         </div>
     </section>
-    <a class="anchor" href="#testimonial"></a>
+   
 
     <!--Section: About-->
     <section id="about-section">
         <div class="text-center title-wrapper">
-            <h2>How it works</h2></div>
+            <h2>How it works</h2>
+        </div>
+        <a class="anchor" href="#about-us"></a>
         <div class="row" style="padding-bottom: 0;align-items: baseline;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
@@ -222,7 +225,7 @@
         </div> 
         </div>
     </section>
-    <a class="anchor" href="#about-us"></a>
+    
 
     <!--Section Pricing -->
     <section id="pricing-cta">
@@ -236,6 +239,7 @@
             </h2> -->
             <h2>Pricing Plans</h2>
         </div>
+        <a class="anchor" href="#pricing-plans"></a>
         <div class="row">
             <div class="col-lg-2 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-8 col-md-10 col-sm-10 col-xs-12 text-center">
@@ -245,15 +249,15 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0; border-right: 1px solid #eee;">
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Starter</b></h3>
+                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Starter</h3>
                                         <p class="card-text" style="font-size: 18px;">Great to start for free</p>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0;border-right: 1px solid #eee;"> 
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Standard</b></h3>
+                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Standard</h3>
                                         <p class="card-text" style="font-size: 18px;">If you are not in a hurry</p> 
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0">
-                                        <h3 class="plan" style="padding-bottom:1rem;"><b class="text-muted">Power</b></h3>
+                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Power</h3>
                                         <p class="card-text" style="font-size: 18px;">Full M&#38;A assistant</p>
                                     </div>
                                 </div>
@@ -276,7 +280,7 @@
             <div class="col-lg-2 col-md-1 col-sm-1 hidden-xs"> 
         </div>
     </section>
-    <a class="anchor" href="#pricing-plans"></a>
+    
 
     <!--Section: Featured companies -->
     <section id="featured-companies"> 
@@ -284,6 +288,7 @@
             <h1 class="display-4">Looking for acquisition targets?</h1>
             <!--<h2>Featured SaaS companies</h2>-->
         </div> 
+        <a class="anchor" href="#featured-companies"></a>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                 <div class="slider">
@@ -309,13 +314,14 @@
             </div>
         </div>
     </section> 
-    <a class="anchor" href="#featured-companies"></a>
+    
 
     <!--Section: Buyers get notified -->        
     <section id="buyer-get-notified"> 
         <div class="text-center">
             <h4>Get notified about new featured companies:</h4>
         </div>
+        <a class="anchor" href="#get-notified"></a>
         <div class="row">
             <div class="col-lg-4 col-md-3 col-sm-3 hidden-xs"></div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-center"> 
@@ -358,13 +364,14 @@
             
         </div>
     </section> 
-    <a class="anchor" href="#get-notified"></a>
+    
 
     <!--section News-->
     <section id="news-section">
         <div class="text-center title-wrapper">
             <h2>Latest articles on SaaS M&#38;A</h2> 
         </div>
+        <a class="anchor" href="#news"></a>
         <div class="row" style="padding-top:0;">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -427,13 +434,14 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
                 </div>
     </section>
-    <a class="anchor" href="#news"></a>
+    
 
     <!--section FAQ-->
     <section id="faq-section">
         <div class="text-center title-wrapper">
             <h2>FAQ</h2> 
         </div>
+        <a class="anchor" href="#faq"></a>
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -485,8 +493,7 @@
                             </p>
                             <p>
                                 Please note: we may request more information from you before disclosing the Seller's contact.
-                                They may also ask you to sign a confidentiality agreement. Also called a non-disclosure agreement, 
-                                this protects the Seller against the risk of confidential information, such as financial records, 
+                                This protects the Seller against the risk of confidential information, such as financial records, 
                                 falling into the wrong hands – i.e. the press or competitors.
                             </p>
                         </section>
@@ -496,14 +503,14 @@
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
     </section>
-    <a class="anchor" href="#faq"></a>
+    
 
     <!--Section Contact Us--> 
     <section id="contact-us">
         <div class="text-center">
             <h2>Questions?</h2>
         </div>
-
+        <a class="anchor" href="#contact-us"></a>
         <div class="row">
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-4 col-md-10 col-sm-10 col-xs-12">
@@ -560,7 +567,6 @@
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
     </section>
-    <a class="anchor" href="#contact-us"></a>
     
 
 </div>

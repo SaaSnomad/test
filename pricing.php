@@ -28,9 +28,9 @@
                           <thead>
                             <tr>
                               <th></th>
-                              <th><h3 class="plan"><b class="text-muted">Starter</b></h3></th>
-                              <th><h3 class="plan"><b class="text-muted">Standard</b></h3></th>
-                              <th><h3 class="plan"><b class="text-muted">Power</b></h3></th>
+                              <th><h3 class="plan text-muted">Starter</h3></th>
+                              <th><h3 class="plan text-muted">Standard</h3></th>
+                              <th><h3 class="plan text-muted">Power</h3></th>
                             </tr>
                           </thead>
                           <tbody>  
@@ -115,7 +115,7 @@
                     <div class="card-block">
                         <div class="row">
                             <div class="col-sm-12 col-xs-12" id="free">
-                                <h3 class="plan"><b class="text-muted">Starter</b></h3>
+                                <h3 class="plan text-muted">Starter</b></h3>
                                     <ul>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i><b>3</b> weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + <b>1</b> time special featuring</li> 
@@ -126,7 +126,7 @@
                                 <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sellerModal">Start for FREE</a>
                             </div>
                             <div class="col-sm-12 col-xs-12" id="pro">
-                                <h3 class="plan"><b class="text-muted">Standard</b></h3>
+                                <h3 class="plan text-muted">Standard</b></h3>
                                     <ul>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i><b>10</b> weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + <b>3</b> times special featuring</li> 
@@ -139,7 +139,7 @@
                                 <a id="request-btn" class="btn btn-primary-default btn-link" style="font-size:0.9rem;" data-toggle="modal" data-target="#proPlanModal">Join wait list</br><small>to get 40% off</small></a>
                             </div>
                             <div class="col-sm-12 col-xs-12" id="ninja">
-                                <h3 class="plan"><b class="text-muted">Power</b></h3>
+                                <h3 class="plan text-muted">Power</b></h3>
                                     <ul>
                                         <li><i class="fa fa-check" aria-hidden="true"></i>Addition to our database*</li> 
                                         <li><i class="fa fa-check" aria-hidden="true"></i><b>20</b> weeks featuring in our weekly newsletter for M&#38;A specialists (including the leads) + <b>3</b> times special featuring</li> 
