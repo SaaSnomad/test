@@ -25,7 +25,7 @@
                       -->
                 </div> 
                 <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12" style="text-align:right;color: rgba(255,255,255,0.5);">
-                   <p style="margin: 1.5rem 0 1rem;font-size: .8rem;"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 SaaSNomad. All rights reserved.</p>
+                   <p style="margin: 1.5rem 0 1rem;font-size: .8rem;"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 SaaSNomad</p>
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             </div>   

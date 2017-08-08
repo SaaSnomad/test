@@ -339,6 +339,7 @@ footer ul li {
 #logo img {
     width: 25px;
     margin-top: -5px;
+    border-radius: 0px;
 }
 #main,
 .main-text {

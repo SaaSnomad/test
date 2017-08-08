@@ -193,7 +193,7 @@
         <div class="row" style="padding-bottom: 0;align-items: baseline;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
-                    <p class="bq-title" style="padding:0">Step 1</p>
+                    <h3 class="bq-title text-muted" style="padding:0;padding-bottom: 1rem;">Step 1</h3>
                     <h4>Apply and pass our review</h4> 
                 </blockquote>
             </div>
@@ -204,7 +204,7 @@
         <div class="row" style="padding-top: 0;padding-bottom: 0;align-items: baseline;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
-                    <p class="bq-title" style="padding:0">Step 2</p>
+                    <h3 class="bq-title text-muted" style="padding:0;padding-bottom: 1rem;">Step 2</h3>
                     <h4>Buyers get notified</h4> 
                 </blockquote>
             </div>
@@ -215,7 +215,7 @@
         <div class="row" style="padding-top: 0;align-items: baseline;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
-                    <p class="bq-title" style="padding:0">Step 3</p>
+                    <h3 class="bq-title text-muted" style="padding:0;padding-bottom: 1rem;">Step 3</h3>
                     <h4>Get introduced</h4> 
                 </blockquote>
             </div>
@@ -250,15 +250,15 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0; border-right: 1px solid #eee;">
                                         <h3 class="plan text-muted" style="padding-bottom:1rem;">Starter</h3>
-                                        <p class="card-text" style="font-size: 18px;">Great to start for free</p>
+                                        <h4 class="card-text">Great to start for free</h4>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0;border-right: 1px solid #eee;"> 
                                         <h3 class="plan text-muted" style="padding-bottom:1rem;">Standard</h3>
-                                        <p class="card-text" style="font-size: 18px;">If you are not in a hurry</p> 
+                                        <h4 class="card-text">If you are not in a hurry</h4> 
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0">
                                         <h3 class="plan text-muted" style="padding-bottom:1rem;">Power</h3>
-                                        <p class="card-text" style="font-size: 18px;">Full M&#38;A assistant</p>
+                                        <h4 class="card-text">Full M&#38;A assistant</h4>
                                     </div>
                                 </div>
                                 <div class="row" style="padding:3rem 0;background-color: #eee;">
@@ -334,7 +334,7 @@
                         </span>
                     </div> 
                     <div class="text-center" style="width: 100%;">
-                    <small>Your information is confidential and will not be sent to</br>the sellers or shown on the website</small>
+                    <small>Your information is confidential and will not be sent to</br>the Sellers or shown on the website</small>
                     <!--<small class="checkbox-label">By clicking the button, you agree that you have read and accepted</br>the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>-->
                 </div>
                 </form>
