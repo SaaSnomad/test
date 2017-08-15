@@ -86,8 +86,8 @@
     <script type="text/javascript" src="js/ajax/buyer-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/news-subscribers.js"></script>
     <script type="text/javascript" src="js/ajax/contact-us.js"></script>
-    <script type="text/javascript" src="js/ajax/pro-waitlist.js"></script>
-    <script type="text/javascript" src="js/ajax/ninja-waitlist.js"></script>
+    <script type="text/javascript" src="js/ajax/standard-waitlist.js"></script>
+    <script type="text/javascript" src="js/ajax/power-waitlist.js"></script>
 
     <?php
         $OldDate = new DateTime('2014-01-29');

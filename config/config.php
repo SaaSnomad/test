@@ -1,15 +1,10 @@
 <?php
 // Database
    define('DB_HOST','localhost');
-<<<<<<< HEAD
-   //define('DB_USER','sndb28');
-   //define('DB_PASS','Saasnomad28');
-   define('DB_USER','root');
-   define('DB_PASS','');
-=======
    define('DB_USER','sndb28');
    define('DB_PASS','Saasnomad28');
->>>>>>> 4e669c58e1e6331b62f8bb562c900b00d7aa7c4b
+   //define('DB_USER','root');
+   //define('DB_PASS','');
    define('DB_NAME','saasnomad');
    define('SITE_TITLE', 'SaaSnomad');
    

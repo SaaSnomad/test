@@ -1,0 +1,56 @@
+<style>
+    
+    label{
+            width: 175px;
+            display: inline-block;
+    }
+</style>
+<form id="calculator" onsubmit="return checkForm(this);"> 
+                                <!-- Calculator Region-->
+                                <div class="md-form form-group"> 
+                                    <label>Choose a Region</label>
+                                    <select id="calculator_region" name="calculator_region" placeholder="Choose a Region *" sclass="chosen-select" tabindex="2" required>
+                                        <option value=''></option>
+                                        <option value='North America'>North America</option>
+                                        <option value='Europe'>Europe</option>
+                                        <option value='Asia'>Asia</option>
+                                        <option value='Other'>Other</option>
+                                    </select> 
+                                </div> 
+                                <!-- Calculator MRR $ -->
+                                <div class="md-form form-group"> 
+                                    <label>Last Month MRR, $</label>
+                                    <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last Month MRR" class="form-control change" maxlength="7" aria-label="Amount (to the nearest dollar)" required> 
+                                </div>
+                                <!-- Calculator MRR Growth % -->
+                                <div class="md-form form-group">
+                                    <label>MRR Growth, %</label> 
+                                    <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR Monthly Growth" class="form-control change" maxlength="5" aria-label="Amount (to the nearest dollar)" required> 
+                                </div>
+                                <!-- Calculator Gross Margin % -->
+                                <div class="md-form form-group"> 
+                                    <label>Gross Margin, %</label>
+                                    <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross Margin *" class="form-control change" maxlength="5" aria-label="Amount (to the nearest dollar)" required> 
+                                </div> 
+                                <!-- Calculator Monthly cash burn $ -->
+                                <div class="md-form form-group"> 
+                                    <label>Monthly Cash Burn, $</label>
+                                    <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly cash burn *" class="form-control change" maxlength="7" aria-label="Amount (to the nearest dollar)" required> 
+                                </div>   
+                                
+                                <div class="md-form form-group">
+                                    <button type="submit" class="btn" name="myButton" id="myButton">Calculate</button> 
+                                </div>
+                                <!-- Calculator Range From -->
+                                <input class="range-from" type="text" name="rangeFrom"/>
+                                <!-- Calculator Range To -->
+                                <input class="range-to" type="text" name="rangeTo"/> 
+                            </form>
+
+<!-- Load jquery via CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    
+var _0xa1a6=["\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x76\x61\x6C","\x2E\x72\x61\x6E\x67\x65\x2D\x66\x72\x6F\x6D","\x2E\x72\x61\x6E\x67\x65\x2D\x74\x6F","\x76\x61\x6C\x75\x65","\x61\x74\x74\x72","\x6F\x70\x74\x69\x6F\x6E\x3A\x73\x65\x6C\x65\x63\x74\x65\x64","\x66\x69\x6E\x64","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x72\x65\x67\x69\x6F\x6E","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x6D\x72\x72","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x6D\x72\x72\x5F\x67\x72\x6F\x77\x74\x68","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x6D\x61\x72\x67\x69\x6E","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x62\x75\x72\x6E","\x4E\x6F\x72\x74\x68\x20\x41\x6D\x65\x72\x69\x63\x61","\x45\x75\x72\x6F\x70\x65","\x41\x73\x69\x61","\x70\x6F\x77","\x72\x6F\x75\x6E\x64"];function checkForm(_0x70a7x2){event[_0xa1a6[0]]();var _0x70a7x3=$(_0xa1a6[2])[_0xa1a6[1]]();var _0x70a7x4=$(_0xa1a6[3])[_0xa1a6[1]]();var _0x70a7x5;var _0x70a7x6;var _0x70a7x7;var _0x70a7x8;var _0x70a7x9;var _0x70a7xa=6.4;var _0x70a7xb=0.22;var _0x70a7xc=0.69;var _0x70a7xd=0.1;var _0x70a7xe;var _0x70a7xf;var _0x70a7x10;var _0x70a7x11;var _0x70a7x12;var _0x70a7x13;var _0x70a7x14;var _0x70a7x15;var _0x70a7x16;var _0x70a7x17;var _0x70a7x18;var _0x70a7x19;var _0x70a7x1a;var _0x70a7x1b;var _0x70a7x1c;var _0x70a7x1d;var _0x70a7x1e;var _0x70a7x1f;_0x70a7x5= $(_0xa1a6[8])[_0xa1a6[7]](_0xa1a6[6])[_0xa1a6[5]](_0xa1a6[4]);_0x70a7x6= parseInt($(_0xa1a6[9])[_0xa1a6[1]]());_0x70a7x7= (parseInt($(_0xa1a6[10])[_0xa1a6[1]]()))* 0.01;_0x70a7x8= (parseInt($(_0xa1a6[11])[_0xa1a6[1]]()))* 0.01;_0x70a7x9= parseInt($(_0xa1a6[12])[_0xa1a6[1]]());switch(_0x70a7x5){case _0xa1a6[13]:_0x70a7xe= 1;break;case _0xa1a6[14]:_0x70a7xe= 0.9;break;case _0xa1a6[15]:_0x70a7xe= 0.85;break;default:_0x70a7xe= 0.8};if(_0x70a7x9= 0){_0x70a7x17= 1}else {_0x70a7x17= 0.8};_0x70a7xf= (Math[_0xa1a6[16]]((1+ _0x70a7xb),1/ 12))- 1;_0x70a7x10= _0x70a7x6* 12;_0x70a7x11= Math[_0xa1a6[16]](_0x70a7x6,1/ 12)* 12;_0x70a7x12= _0x70a7x10/ _0x70a7x11- 1;_0x70a7x13= _0x70a7x7/ _0x70a7xf;_0x70a7x14= _0x70a7x10* _0x70a7x8;_0x70a7x15= _0x70a7x8/ _0x70a7xc;_0x70a7x16= _0x70a7xa/ _0x70a7xc;_0x70a7x18= _0x70a7x10* _0x70a7xa;_0x70a7x19= _0x70a7xe* _0x70a7x13* _0x70a7x15* _0x70a7x17;_0x70a7x1a= _0x70a7x18* _0x70a7x19;_0x70a7x1b= _0x70a7x1a/ _0x70a7x10;_0x70a7x1c= _0x70a7x1a* (1- _0x70a7xd);_0x70a7x1d= _0x70a7x1a* (1+ _0x70a7xd);_0x70a7x1e= _0x70a7x1c/ _0x70a7x10;_0x70a7x1f= _0x70a7x1d/ _0x70a7x10;$(_0xa1a6[2])[_0xa1a6[1]](Math[_0xa1a6[17]](_0x70a7x1c));$(_0xa1a6[3])[_0xa1a6[1]](Math[_0xa1a6[17]](_0x70a7x1d));return}
+
+</script>

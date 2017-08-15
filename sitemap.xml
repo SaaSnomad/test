@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url> 
+    <loc>https://saasnomad.com/</loc> 
+    <image:image>
+       <image:loc>https://saasnomad.com/img/saasnomad-logo.svg</image:loc>
+       <image:caption>We disclose your contacts only at your permission following the interest from buyers</image:caption>
+    </image:image> 
+    <image:image>
+       <image:loc>https://saasnomad.com/img/unicorn.png</image:loc>
+       <image:caption>If the valuation of your SaaS is +&#36;1B, you got a Unicorn!</image:caption>
+    </image:image> 
+    <image:image>
+       <image:loc>https://saasnomad.com/img/why-saasnomad-reason-1.png</image:loc>
+       <image:caption>Anonymously sell your SaaS startup</image:caption>
+    </image:image> 
+    <image:image>
+       <image:loc>https://saasnomad.com/img/why-saasnomad-reason-2.png</image:loc>
+       <image:caption>ew M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</image:caption>
+    </image:image> 
+    <image:image>
+       <image:loc>https://saasnomad.com/img/why-saasnomad-reason-3.png</image:loc>
+       <image:caption>You pay only for the intro to interested acquirers</image:caption>
+    </image:image> 
+  </url>
+  <url> 
+    <loc>https://saasnomad.com/disclaimer</loc>  
+  </url>
+  <url> 
+    <loc>https://saasnomad.com/faq</loc>  
+  </url>
+  <url> 
+    <loc>https://saasnomad.com/privacy</loc>  
+  </url>
+  <url> 
+    <loc>https://saasnomad.com/terms</loc>  
+  </url>
+</urlset>

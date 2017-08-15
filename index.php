@@ -67,7 +67,6 @@
                                     <option value='Other'>Other</option>
                                 </select>
                             </div>
-
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
                                 <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last month's MRR" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
@@ -136,21 +135,21 @@
         <div class="row"> 
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-1 text-center">
-                    <img src="img/icon-anonymous.png">
+                    <img src="img/why-saasnomad-reason-1.png" alt="">
                     <h4 class="text-uppercase">Anonymity</h4>
                     <p>We disclose your contacts only at your permission following the interest from buyers</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-2 text-center">
-                    <img src="img/icon-suit.png">
+                    <img src="img/why-saasnomad-reason-2.png" alt="">
                     <h4 class="text-uppercase">Reach</h4>
                     <p>New M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-3 text-center">
-                    <img src="img/icon-pay.png">
+                    <img src="img/why-saasnomad-reason-3.png" alt="">
                     <h4 class="text-uppercase">Pay per Intro</h4>
                     <p>You pay only for the intro to interested acquirers</p>
                 </div>
