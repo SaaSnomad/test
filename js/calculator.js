@@ -121,11 +121,8 @@ function checkForm(form) { // Submit button clicked
         $("#unicorn-wrapper").addClass('hide');
         $(".range-from").val(Math.round(res_eq_val_low));
         $(".range-to").val(Math.round(res_eq_val_high));
-    }
-    
-
+    } 
     return
-    
 }  
 
 

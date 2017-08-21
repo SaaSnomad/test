@@ -47,7 +47,7 @@
                 <h1 class="display-4">Anonymously</br>sell your SaaS</br>startup</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply for free </a>
                 <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
                 <h3 class="text-center text-muted">companies already listed</h3> 
-                <a class="anchor" href="#calculator"></a>
+                <a class="anchor" href="#saas-valuation-calculator"></a>
             </div>
         </div>
         <div id="right-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 wow fadeInRight z-depth-1" data-wow-delay="0.2s">
@@ -131,25 +131,25 @@
         <div class="text-center title-wrapper">
             <h2>Three reasons why to use SaaSNomad</h2> 
         </div>
-        <a class="anchor" href="#why-us"></a>
+        <a class="anchor" href="#why-saasnomad"></a>
         <div class="row"> 
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-1 text-center">
-                    <img src="img/why-saasnomad-reason-1.png" alt="">
+                    <img src="img/why-saasnomad-reason-1.png" alt="Anonymity">
                     <h4 class="text-uppercase">Anonymity</h4>
                     <p>We disclose your contacts only at your permission following the interest from buyers</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-2 text-center">
-                    <img src="img/why-saasnomad-reason-2.png" alt="">
+                    <img src="img/why-saasnomad-reason-2.png" alt="Reach">
                     <h4 class="text-uppercase">Reach</h4>
                     <p>New M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-3 text-center">
-                    <img src="img/why-saasnomad-reason-3.png" alt="">
+                    <img src="img/why-saasnomad-reason-3.png" alt="Pay per Intro">
                     <h4 class="text-uppercase">Pay per Intro</h4>
                     <p>You pay only for the intro to interested acquirers</p>
                 </div>
@@ -188,7 +188,7 @@
         <div class="text-center title-wrapper">
             <h2>How it works</h2>
         </div>
-        <a class="anchor" href="#about-us"></a>
+        <a class="anchor" href="#how-saasnomad-works"></a>
         <div class="row" style="padding-bottom: 0;align-items: baseline;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
                 <blockquote class="blockquote bq-primary">
@@ -287,7 +287,7 @@
             <h1 class="display-4">Looking for acquisition targets?</h1>
             <!--<h2>Featured SaaS companies</h2>-->
         </div> 
-        <a class="anchor" href="#featured-companies"></a>
+        <a class="anchor" href="#featured-saas-companies"></a>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                 <div class="slider">
@@ -320,7 +320,7 @@
         <div class="text-center">
             <h4>Get notified about new featured companies:</h4>
         </div>
-        <a class="anchor" href="#get-notified"></a>
+        <a class="anchor" href="#get-notified-about-new-featured-saas"></a>
         <div class="row">
             <div class="col-lg-4 col-md-3 col-sm-3 hidden-xs"></div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-center"> 
@@ -370,7 +370,7 @@
         <div class="text-center title-wrapper">
             <h2>Latest articles on SaaS M&#38;A</h2> 
         </div>
-        <a class="anchor" href="#news"></a>
+        <a class="anchor" href="#latest-articles-on-saas-m&#38;a"></a>
         <div class="row" style="padding-top:0;">
             <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
@@ -699,7 +699,7 @@
                                     <!--/.Card-->
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12  request-card-right">
-                                    <form id="requests" action="requests.php" method="POST" role="form" style="padding-top: 14px;">
+                                    <form id="requests" action="#" method="POST" role="form" style="padding-top: 14px;">
 
                                         <!--Name--> 
                                         <div class="md-form form-group">
@@ -744,7 +744,6 @@
                                         <div>
                                             <p id="request-success-message" style='margin-bottom:2.5rem;'></p>
                                         </div>
-                                        <a href='https://saasnomad.com/' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>
                                     </div>
                                     <div id="request-error" style="display:none;">
                                         <blockquote class='blockquote bq-warning' style='border-left: none;padding:0;'>
@@ -753,7 +752,6 @@
                                         <div>
                                             <p id="request-error-message"></p>
                                         </div>
-                                        <!--<a href='https://saasnomad.com/' class='custom-link'><i class='fa fa-arrow-left' aria-hidden='true' style='margin-top: 2px;'></i> Go back to website</a>-->
                                     </div>
                                     <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
                                 </div>
@@ -785,4 +783,4 @@
 
 <!--Footer-->
 <?php include 'includes/footer.php'; ?>
-<!--/.Footer-->
+<!--/.Footer--> 

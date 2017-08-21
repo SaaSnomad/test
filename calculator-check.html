@@ -36,8 +36,7 @@
                                 <div class="md-form form-group"> 
                                     <label>Monthly Cash Burn, $</label>
                                     <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly cash burn *" class="form-control change" maxlength="7" aria-label="Amount (to the nearest dollar)" required> 
-                                </div>   
-                                
+                                </div>    
                                 <div class="md-form form-group">
                                     <button type="submit" class="btn" name="myButton" id="myButton">Calculate</button> 
                                 </div>
@@ -48,9 +47,117 @@
                             </form>
 
 <!-- Load jquery via CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
 <script>
+function checkForm(form) { // Submit button clicked
+    // Prevent Form Submitting
+    // Output 
+    var range_from = $('.range-from').val();
+    var range_to = $('.range-to').val();
+
+    // User Inputs 
+    var user_region;          // User Region, Target market
+    var user_mrr;             // User MRR, $
+    var user_mrr_growth;      // User MRR Growth, %
+    var user_margin;          // User Gross margin, %
+    var user_burn;            // User Monthly cash burn, $
+
+
+
+    // Internal assumptions - static
+    var int_ass_arr_mult = 6.4;         // ARR market multiple. For cash positive companies only (±20% higher than average, see the source) (to be updated manually from https://www.bvp.com/strategy/cloud-computing/index)
+    var int_ass_arr_growth = 0.22;      // 22% - Baseline ARR growth (to be updated manually from https://www.bvp.com/strategy/cloud-computing/index)
+    var int_ass_margin = 0.69;          // 69% - Baseline gross margin (to be updated manually from https://www.bvp.com/strategy/cloud-computing/index)
+    var int_ass_error = 0.1;            // 10% - Error size (our own assumption)
+
+
+    // Internal variables 
+    var int_var_region_coef;                // Region coefficient
+    var int_var_arr_running;                // Baseline MRR growth
+    var int_var_arr_back;                   // ARR 12m back
+    var int_var_arr_growth;                 // ARR growth
+    var int_var_growth_coef;                // Growth coefficient
+    var int_var_profit;                     // Gross profit
+    var int_var_margin_coef;                // Margin coefficient
+    var int_var_profit_mult;                // Implied gross profit multiple
+    var int_var_burn_coef;                  // Burn coefficient
+
+
+    // Results 
+    var res_eq_val_base;             // Baseline equity value
+    var res_eq_val_adj_coef;         // Valuation adjustment coeficient
+    var res_eq_val;                  // Adjusted equity value
+    var res_eq_val_mult;             // Implied ARR multiple
+    var res_eq_val_low;              // Valuation range - low
+    var res_eq_val_high;             // Valuation range - high
+    var res_eq_val_mult_low;         // Implied ARR multiple - low
+    var res_eq_val_mult_high;        // Implied ARR multiple - high
+
+    // User Inputs 
+    user_region = $('#calculator_region').find('option:selected').attr('value');
+    user_mrr = parseInt($('#calculator_mrr').val());
+    user_mrr_growth = (parseInt($('#calculator_mrr_growth').val()))*0.01;
+    user_margin = (parseInt($('#calculator_margin').val()))*0.01;
+    user_burn = parseInt($('#calculator_burn').val());
+
+
+    // Region coef
+    switch(user_region) {
+        case 'North America':
+            int_var_region_coef = 1;
+            break;
+        case 'Europe':
+            int_var_region_coef = 0.9;
+            break;
+        case 'Asia':
+            int_var_region_coef = 0.85;
+            break;
+        default:
+            int_var_region_coef = 0.8 
+    }
+
+    // Burn coef
+    if (user_burn = 0) {
+        int_var_burn_coef = 1;
+    }
+    else {
+        int_var_burn_coef = 0.8;
+    } 
+
+    // Internal variables 
+    int_var_arr_running = user_mrr * 12;
+    int_var_arr_back = user_mrr / Math.pow((1 + user_mrr_growth), 12) *12;
+    int_var_arr_growth = int_var_arr_running / int_var_arr_back - 1;
+    int_var_growth_coef = (1 + int_var_arr_growth) / (1 + int_ass_arr_growth); 
+    int_var_profit = int_var_arr_running * user_margin;
+    int_var_margin_coef = user_margin / int_ass_margin;
+    int_var_profit_mult = int_ass_arr_mult / int_ass_margin;
+
+    // Results 
+    res_eq_val_base = int_var_arr_running * int_ass_arr_mult;                     //Baseline equity value
+    // var valuation_base_check = profit * profit_mult / margin_coef;             //Baseline equity value (check)
+    res_eq_val_adj_coef = int_var_region_coef * int_var_growth_coef * int_var_margin_coef * int_var_burn_coef;     //Valuation adjustment coeficient
+    // RESULT (END FORMULA)
+    res_eq_val = res_eq_val_base * res_eq_val_adj_coef;                           //Adjusted equity value
+    res_eq_val_mult = res_eq_val / int_var_arr_running;                           //Implied ARR multiple
     
-var _0xa1a6=["\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x76\x61\x6C","\x2E\x72\x61\x6E\x67\x65\x2D\x66\x72\x6F\x6D","\x2E\x72\x61\x6E\x67\x65\x2D\x74\x6F","\x76\x61\x6C\x75\x65","\x61\x74\x74\x72","\x6F\x70\x74\x69\x6F\x6E\x3A\x73\x65\x6C\x65\x63\x74\x65\x64","\x66\x69\x6E\x64","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x72\x65\x67\x69\x6F\x6E","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x6D\x72\x72","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x6D\x72\x72\x5F\x67\x72\x6F\x77\x74\x68","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x6D\x61\x72\x67\x69\x6E","\x23\x63\x61\x6C\x63\x75\x6C\x61\x74\x6F\x72\x5F\x62\x75\x72\x6E","\x4E\x6F\x72\x74\x68\x20\x41\x6D\x65\x72\x69\x63\x61","\x45\x75\x72\x6F\x70\x65","\x41\x73\x69\x61","\x70\x6F\x77","\x72\x6F\x75\x6E\x64"];function checkForm(_0x70a7x2){event[_0xa1a6[0]]();var _0x70a7x3=$(_0xa1a6[2])[_0xa1a6[1]]();var _0x70a7x4=$(_0xa1a6[3])[_0xa1a6[1]]();var _0x70a7x5;var _0x70a7x6;var _0x70a7x7;var _0x70a7x8;var _0x70a7x9;var _0x70a7xa=6.4;var _0x70a7xb=0.22;var _0x70a7xc=0.69;var _0x70a7xd=0.1;var _0x70a7xe;var _0x70a7xf;var _0x70a7x10;var _0x70a7x11;var _0x70a7x12;var _0x70a7x13;var _0x70a7x14;var _0x70a7x15;var _0x70a7x16;var _0x70a7x17;var _0x70a7x18;var _0x70a7x19;var _0x70a7x1a;var _0x70a7x1b;var _0x70a7x1c;var _0x70a7x1d;var _0x70a7x1e;var _0x70a7x1f;_0x70a7x5= $(_0xa1a6[8])[_0xa1a6[7]](_0xa1a6[6])[_0xa1a6[5]](_0xa1a6[4]);_0x70a7x6= parseInt($(_0xa1a6[9])[_0xa1a6[1]]());_0x70a7x7= (parseInt($(_0xa1a6[10])[_0xa1a6[1]]()))* 0.01;_0x70a7x8= (parseInt($(_0xa1a6[11])[_0xa1a6[1]]()))* 0.01;_0x70a7x9= parseInt($(_0xa1a6[12])[_0xa1a6[1]]());switch(_0x70a7x5){case _0xa1a6[13]:_0x70a7xe= 1;break;case _0xa1a6[14]:_0x70a7xe= 0.9;break;case _0xa1a6[15]:_0x70a7xe= 0.85;break;default:_0x70a7xe= 0.8};if(_0x70a7x9= 0){_0x70a7x17= 1}else {_0x70a7x17= 0.8};_0x70a7xf= (Math[_0xa1a6[16]]((1+ _0x70a7xb),1/ 12))- 1;_0x70a7x10= _0x70a7x6* 12;_0x70a7x11= Math[_0xa1a6[16]](_0x70a7x6,1/ 12)* 12;_0x70a7x12= _0x70a7x10/ _0x70a7x11- 1;_0x70a7x13= _0x70a7x7/ _0x70a7xf;_0x70a7x14= _0x70a7x10* _0x70a7x8;_0x70a7x15= _0x70a7x8/ _0x70a7xc;_0x70a7x16= _0x70a7xa/ _0x70a7xc;_0x70a7x18= _0x70a7x10* _0x70a7xa;_0x70a7x19= _0x70a7xe* _0x70a7x13* _0x70a7x15* _0x70a7x17;_0x70a7x1a= _0x70a7x18* _0x70a7x19;_0x70a7x1b= _0x70a7x1a/ _0x70a7x10;_0x70a7x1c= _0x70a7x1a* (1- _0x70a7xd);_0x70a7x1d= _0x70a7x1a* (1+ _0x70a7xd);_0x70a7x1e= _0x70a7x1c/ _0x70a7x10;_0x70a7x1f= _0x70a7x1d/ _0x70a7x10;$(_0xa1a6[2])[_0xa1a6[1]](Math[_0xa1a6[17]](_0x70a7x1c));$(_0xa1a6[3])[_0xa1a6[1]](Math[_0xa1a6[17]](_0x70a7x1d));return}
+    // Valuation Range 
+    res_eq_val_low = res_eq_val * (1 - int_ass_error);                            //Valuation range - low
+    res_eq_val_high = res_eq_val * (1 + int_ass_error);                           //Valuation range - high
+
+    res_eq_val_mult_low = res_eq_val_low / int_var_arr_running;                   //Implied ARR multiple - low
+    res_eq_val_mult_high = res_eq_val_high / int_var_arr_running;                 //Implied ARR multiple - high
+    
+    
+        $(".range-from").val(Math.round(res_eq_val_low));
+        $(".range-to").val(Math.round(res_eq_val_high));
+        return
+}  
+
+
+
+
+
+
 
 </script>

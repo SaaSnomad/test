@@ -44,6 +44,10 @@
     <!-- Select Jquery Chosen Plugin-->
     <script type="text/javascript" src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/chosen/init.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+        document.getElementById('calculator_region').setAttribute('style','display:visible; position:absolute; clip:rect(0,0,0,0)');
+    </script>
     <!-- Calculator Form -->
     <script type="text/javascript" src="js/calculator.js"></script>
     <!-- Load more --> 
@@ -84,6 +88,7 @@
     <script type="text/javascript" src="js/ajax/calculator-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/seller-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/buyer-ajax.js"></script>
+    <script type="text/javascript" src="js/ajax/requests-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/news-subscribers.js"></script>
     <script type="text/javascript" src="js/ajax/contact-us.js"></script>
     <script type="text/javascript" src="js/ajax/standard-waitlist.js"></script>

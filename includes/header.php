@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="SaaS for sale">
-    <meta name="keywords" content="Small Businesses For Sale, ">    
+    <meta name="keywords" content="Small Businesses For Sale, ">
 
     <title>SaaSNomad | Anonymously reach potential buyers of your SaaS startup</title>
     <!-- Favicon -->
@@ -36,7 +36,16 @@
     <link rel="stylesheet" href="css/load-more.css">  
     <!-- Recaptcha   -->   
     <script src='https://www.google.com/recaptcha/api.js'></script> 
-               
+    <script type="application/ld+json">
+        {   
+            "@context" : "http://schema.org",
+            "@type" : "Organization",
+            "name" : "SaaSNomad",
+            "alternateName" : "saasnomad", 
+            "logo" : "https://saasnomad.com/img/logo.png",
+            "url" :  "https://saasnomad.com/"
+        }
+    </script> 
 </head>
 
 <body>
