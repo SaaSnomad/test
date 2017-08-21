@@ -590,7 +590,7 @@
                     </div> 
                     <div class="md-form form-group" id="multiselect" style="width: 100%;top: -7px;">
                         <label for "seller_industry" style="font-size: 0.8rem;position: relative;z-index: 1000;top:8px;">Industry</label>
-                        <select name="seller_industry" id="seller_industry" data-placeholder="Industry" class="chosen-select form-control" tabindex="2">
+                        <select name="seller_industry" id="seller_industry" data-placeholder="Choose your industry" class="chosen-select form-control" tabindex="2">
                             <option value="" style="display:none;">Choose your industry</option>
                             <option value="AdTech">AdTEch</option>
                             <option value="AI">AI</option>
@@ -783,4 +783,4 @@
 
 <!--Footer-->
 <?php include 'includes/footer.php'; ?>
-<!--/.Footer--> 
+<!--/.Footer-->  

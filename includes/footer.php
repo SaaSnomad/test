@@ -44,7 +44,7 @@
     <!-- Select Jquery Chosen Plugin-->
     <script type="text/javascript" src="js/chosen/chosen.jquery.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/chosen/init.js" type="text/javascript" charset="utf-8"></script>
-    
+
     <script type="text/javascript">
         document.getElementById('calculator_region').setAttribute('style','display:visible; position:absolute; clip:rect(0,0,0,0)');
     </script>
@@ -56,7 +56,6 @@
     <script type="text/javascript" src="js/waypoints.min.js"></script>
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
     <script type="text/javascript" src="js/counter.js"></script>
-
     <!-- Go top button animation -->
     <script type="text/javascript" src="js/go-top.js"></script> 
     <!-- Bootstrap core JavaScript -->
@@ -69,7 +68,7 @@
     </script>   
     <!-- Number formatting -->
     <script type="text/javascript" src="js/jquery.number.js"></script>
-    <script type="text/javascript"  src="js/jquery.number-formatting.js"></script>
+    <script type="text/javascript"  src="js/jquery.number-formatting.js"></script> 
     <!-- Geolocation API (1.0)-->
     <script type="text/javascript" src="//maps.google.com/maps/api/js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQJ71Xgt3HCqIGW7YXoPtt9U-Jp-bXk9M&callback=initMap"

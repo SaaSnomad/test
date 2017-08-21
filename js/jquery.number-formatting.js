@@ -9,4 +9,9 @@ $(function(){
                 $('#seller_mrr').number( true );  
                 $('#seller_employees').number( true );                 
             });
-
+document.onkeydown = function (e) {
+            if (e.keyCode === 109 || e.keyCode === 189) {
+                var target = e.target || e.srcElement;
+                e.target.value = " ";
+            }
+        }; 
