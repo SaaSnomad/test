@@ -36,6 +36,9 @@
     <!-- jQuery v2.0.3  -->
     <script type="text/javascript" src="js/jquery.min.js"></script> 
     <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script> 
+    <script type="text/javascript">
+        
+    </script>
     <!-- Carousel -->
     <script type="text/javascript" src="js/slick.min.js"></script> 
     <script type="text/javascript" src="js/slick.js"></script> 
@@ -86,12 +89,13 @@
     <!-- Form Submit: AJAX -->
     <script type="text/javascript" src="js/ajax/calculator-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/seller-ajax.js"></script>
+    <script type="text/javascript" src="js/ajax/seller-waitlist-1.js"></script>
+    <script type="text/javascript" src="js/ajax/seller-waitlist-2.js"></script>
     <script type="text/javascript" src="js/ajax/buyer-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/requests-ajax.js"></script>
     <script type="text/javascript" src="js/ajax/news-subscribers.js"></script>
     <script type="text/javascript" src="js/ajax/contact-us.js"></script>
-    <script type="text/javascript" src="js/ajax/standard-waitlist.js"></script>
-    <script type="text/javascript" src="js/ajax/power-waitlist.js"></script>
+    
 
     <?php
         $OldDate = new DateTime('2014-01-29');
@@ -106,6 +110,6 @@
     <script type="text/javascript" src="js/rotation.js"></script> 
     <!-- Url Changes on Scoll Event -->
     <script type="text/javascript" src="js/anchors.js"></script> 
-
+    
 </body>
 </html>

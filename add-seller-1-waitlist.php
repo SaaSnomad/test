@@ -5,13 +5,12 @@
 $db = new Database;
 
 // Run Query
-$db->query("INSERT INTO pro_plan_waitlist (pro_plan_name, pro_plan_email, pro_plan_country) VALUES (:pro_plan_name, :pro_plan_email, :pro_plan_country)");
+$db->query("INSERT INTO sellers_1_waitlist (waitlist1_email, waitlist1_country) VALUES (:waitlist1_email, :waitlist1_country)");
 
 // Bind Values
 
-$db->bind(':pro_plan_name', $_POST['pro_plan_name']); 
-$db->bind(':pro_plan_email', $_POST['pro_plan_email']);
-$db->bind(':pro_plan_country', $_POST['pro_plan_country']);
+$db->bind(':waitlist1_email', $_POST['waitlist1_email']);
+$db->bind(':waitlist1_country', $_POST['waitlist1_country']);
 
 if($db->execute()){
     echo json_encode(['title'=>'Congrats!', 'message'=>'You are successfully added to Wait List.']);

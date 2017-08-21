@@ -1,6 +1,7 @@
 function checkForm(form) { // Submit button clicked
     // Prevent Form Submitting
     // Output 
+
     var range_from = $('.range-from').val();
     var range_to = $('.range-to').val();
 
@@ -122,6 +123,12 @@ function checkForm(form) { // Submit button clicked
         $(".range-from").val(Math.round(res_eq_val_low));
         $(".range-to").val(Math.round(res_eq_val_high));
     } 
+
+    // Scroll to the result 
+    $('html, body').animate({
+        scrollTop: $("#from").offset().top-100
+    }, 1000);
+
     return
 }  
 

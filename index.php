@@ -100,7 +100,7 @@
 
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                        <div id="preloader-calculator" style="margin-top:180px;" class="text-center hide"><img src="img/preloader.gif" style="width:20%;"></div>
+                        <div id="preloader-calculator" style="margin-top:180px;" class="text-center hide"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
                         <div id="unicorn-wrapper" class="text-center hide">
                             <img id="unicorn" src="img/unicorn.png"><h3><b>Congrats, you got a Unicorn!</b></h3>
                         </div>
@@ -135,21 +135,21 @@
         <div class="row"> 
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-1 text-center">
-                    <img src="img/why-saasnomad-reason-1.png" alt="Anonymity">
+                    <img src="<?php echo BASE_URL; ?>img/why-saasnomad-reason-1.png" alt="Anonymity">
                     <h4 class="text-uppercase">Anonymity</h4>
                     <p>We disclose your contacts only at your permission following the interest from buyers</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-2 text-center">
-                    <img src="img/why-saasnomad-reason-2.png" alt="Reach">
+                    <img src="<?php echo BASE_URL; ?>img/why-saasnomad-reason-2.png" alt="Reach">
                     <h4 class="text-uppercase">Reach</h4>
                     <p>New M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="reason-3 text-center">
-                    <img src="img/why-saasnomad-reason-3.png" alt="Pay per Intro">
+                    <img src="<?php echo BASE_URL; ?>img/why-saasnomad-reason-3.png" alt="Pay per Intro">
                     <h4 class="text-uppercase">Pay per Intro</h4>
                     <p>You pay only for the intro to interested acquirers</p>
                 </div>
@@ -189,38 +189,35 @@
             <h2>How it works</h2>
         </div>
         <a class="anchor" href="#how-saasnomad-works"></a>
-        <div class="row" style="padding-bottom: 0;align-items: baseline;">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
-                <blockquote class="blockquote bq-primary">
-                    <h3 class="bq-title text-muted" style="padding:0;padding-bottom: 1rem;">Step 1</h3>
-                    <h4>Apply and pass our review</h4> 
-                </blockquote>
+        <div class="row" style="padding-bottom: 2rem;align-items: center;">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 left-side" style="border-right: 1px solid #4285F4;text-align:right;">
+                <h4 style="padding:1.5rem 0.5rem;margin-bottom:0;text-transform:uppercase;">Step 1</h4>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-side">
-                <p>Fill in an extremely short form and get reviewed by our M&#38;A professionals</p>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 right-side" style="padding-left: 1.5rem;">
+                <h4>Apply and pass our review</h4> 
+                <p style="margin-bottom:0;">Fill in an extremely short form and get reviewed by our M&#38;A professionals</p>
             </div>
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-2"></div>
         </div>
-        <div class="row" style="padding-top: 0;padding-bottom: 0;align-items: baseline;">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
-                <blockquote class="blockquote bq-primary">
-                    <h3 class="bq-title text-muted" style="padding:0;padding-bottom: 1rem;">Step 2</h3>
-                    <h4>Buyers get notified</h4> 
-                </blockquote>
+        <div class="row" style="padding-top: 0;padding-bottom:  2rem;align-items: center;">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 left-side" style="border-right: 1px solid #4285F4;text-align:right;">
+                <h4 style="padding:1.5rem 0.5rem;margin-bottom:0;text-transform:uppercase;">Step 2</h4>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-side">
-                <p>Following the review of your application our specialist will send it to the most relevant buyers</p>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 right-side" style="padding-left: 1.5rem;">
+                <h4>Buyers get notified</h4> 
+                <p style="margin-bottom:0;">Following the review of your application our specialist will send it to the most relevant buyers</p>
             </div> 
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-2"></div>
         </div>
-        <div class="row" style="padding-top: 0;align-items: baseline;">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 left-side" style="padding-right: 0;">
-                <blockquote class="blockquote bq-primary">
-                    <h3 class="bq-title text-muted" style="padding:0;padding-bottom: 1rem;">Step 3</h3>
-                    <h4>Get introduced</h4> 
-                </blockquote>
+        <div class="row" style="padding-top: 0;align-items: center;">
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 left-side" style="border-right: 1px solid #4285F4;text-align:right;">
+                <h4 style="padding:1.5rem 0.5rem;margin-bottom:0;text-transform:uppercase;">Step 3</h4>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 right-side">
-                <p>After potential acquirers expressed their interest, we do introductions to those of your choice</p>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 right-side" style="padding-left: 1.5rem;">
+                <h4>Get introduced</h4> 
+                <p style="margin-bottom:0;">After potential acquirers expressed their interest, we do introductions to those of your choice</p>
             </div>
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-2"></div>
         </div> 
         </div>
     </section>
@@ -247,17 +244,17 @@
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding:0">
                                 <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0; border-right: 1px solid #eee;">
-                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Starter</h3>
-                                        <h4 class="card-text">Great to start for free</h4>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 plan-card" style="padding: 3rem 0; border-right: 1px solid #eee;">
+                                        <h4 class="plan" style="padding-bottom:1rem;text-transform:uppercase;">Starter</h4>
+                                        <p class="card-text">Great to start for free</p>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0;border-right: 1px solid #eee;"> 
-                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Standard</h3>
-                                        <h4 class="card-text">If you are not in a hurry</h4> 
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 plan-card" style="padding: 3rem 0;border-right: 1px solid #eee;"> 
+                                        <h4 class="plan" style="padding-bottom:1rem;text-transform:uppercase;">Standard</h4>
+                                        <p class="card-text">If you are not in a hurry</p> 
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding: 3rem 0">
-                                        <h3 class="plan text-muted" style="padding-bottom:1rem;">Power</h3>
-                                        <h4 class="card-text">Full M&#38;A assistant</h4>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 plan-card" style="padding: 3rem 0">
+                                        <h4 class="plan" style="padding-bottom:1rem;text-transform:uppercase;">Power</h4>
+                                        <p class="card-text">Full M&#38;A assistant</p>
                                     </div>
                                 </div>
                                 <div class="row" style="padding:3rem 0;background-color: #eee;">
@@ -294,7 +291,7 @@
                     <?php foreach($cards as $card) : ?>
                     <article>
                         <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
-                            <div class="card" style="background-color:#fff;color:#37474f;opacity:0.8;">
+                            <div class="card" style="background-color:#fff;color:#37474f;">
                                 <div class="card-block">
                                     <div class="premium-banner" data-plan="FEATURED" data-status="premium"></div>
                                     <h4 class="card-title"><?php echo $card->industry; ?></h4>
@@ -353,7 +350,7 @@
                         <p id="buyer-error-message"></p>
                     </div>
                 </div>
-                <div id="preloader2" style="display:none;margin:20px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                <div id="preloader2" style="display:none;margin:20px 0;" class="text-center"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
             </div>
             <div class="col-lg-4 col-md-3 col-sm-3 hidden-xs"></div>
             
@@ -424,7 +421,7 @@
                                                 <p id="news-error-message"></p>
                                             </div>
                                         </div>
-                                        <div id="preloader" style="display:none;margin-top:50px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                                        <div id="preloader" style="display:none;margin-top:50px;" class="text-center"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -561,7 +558,7 @@
                         <p id="msg-error-message"></p>
                     </div>
                 </div>
-                <div id="preloader3" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                <div id="preloader3" style="display:none;margin:50px 0;" class="text-center"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
             </div>
             <div class="col-lg-4 col-md-1 col-sm-1 hidden-xs"></div>
         </div>
@@ -665,7 +662,7 @@
                         <p id="seller-error-message"></p>
                     </div>
                 </div>
-                <div id="preloader1" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                <div id="preloader1" style="display:none;margin:50px 0;" class="text-center"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
             </div>
         </div>
     </div>
@@ -753,27 +750,10 @@
                                             <p id="request-error-message"></p>
                                         </div>
                                     </div>
-                                    <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                                    <div id="preloader" style="display:none;margin-top:150px;" class="text-center"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
                                 </div>
-                </div> 
-                <!--
-                <div id="buyer-success" style="display:none;">
-                    <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
-                        <p id="buyer-success-title" class='bq-title' style='padding-left: 0;'></p>
-                    </blockquote>
-                    <div class='text-center'>
-                        <p id="buyer-success-message"></p>
-                    </div>
-                </div>
-                <div id="buyer-error" style="display:none;">
-                    <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
-                        <p id="buyer-error-title" class='bq-title' style='padding-left: 0;'></p>
-                    </blockquote>
-                    <div class='text-center'>
-                        <p id="buyer-error-message"></p>
-                    </div>
-                </div>-->
-                <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                </div>  
+                <div id="preloader2" style="display:none;margin:50px 0;" class="text-center"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
             </div>
         </div>
     </div>

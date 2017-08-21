@@ -1,13 +1,12 @@
 //Playing with Ken Wheeler Slick carousel
 $('.slider').slick({
-	//dots: true,
+	dots: true, 
 	infinite: true,
 	centerMode: true,
 	centerPadding: '12%',
 	slidesToShow: 3,
 	speed: 300,
 	responsive: [{
-
 	    breakpoint: 992,
 	    settings: {
 	      slidesToShow: 1

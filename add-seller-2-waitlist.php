@@ -5,13 +5,12 @@
 $db = new Database;
 
 // Run Query
-$db->query("INSERT INTO ninja_plan_waitlist (ninja_plan_name, ninja_plan_email, ninja_plan_country) VALUES (:ninja_plan_name, :ninja_plan_email, :ninja_plan_country)");
+$db->query("INSERT INTO sellers_2_waitlist (waitlist2_email, waitlist2_country) VALUES (:waitlist2_email, :waitlist2_country)");
 
 // Bind Values
 
-$db->bind(':ninja_plan_name', $_POST['ninja_plan_name']); 
-$db->bind(':ninja_plan_email', $_POST['ninja_plan_email']);
-$db->bind(':ninja_plan_country', $_POST['ninja_plan_country']);
+$db->bind(':waitlist2_email', $_POST['waitlist2_email']);
+$db->bind(':waitlist2_country', $_POST['waitlist2_country']);
 
 if($db->execute()){
     echo json_encode(['title'=>'Congrats!', 'message'=>'You are successfully added to Wait List.']);

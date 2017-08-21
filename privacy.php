@@ -75,7 +75,7 @@
 
                             <div class="md-form form-group" id="multiselect" style="width: 100%;top: -7px;">
                                 <label for "seller_industry" style="font-size: 0.8rem;position: relative;z-index: 1000;top:8px;">Industry</label>
-                                <select name="seller_industry" id="seller_industry" data-placeholder="Industry" class="chosen-select form-control" tabindex="2">
+                                <select name="seller_industry" id="seller_industry" data-placeholder="Choose your industry" class="chosen-select form-control" tabindex="2">
                                     <option value=""></option>
                                     <option value="AdTech">AdTEch</option>
                                     <option value="AI">AI</option>
@@ -158,7 +158,7 @@
                                 <p id="seller-error-message"></p>
                             </div>
                         </div>
-                        <div id="preloader1" style="display:none;margin:50px 0;" class="text-center"><img src="img/preloader.gif" style="width:20%;"></div>
+                        <div id="preloader1" style="display:none;margin:50px 0;" class="text-center"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
                     </div>
                 </div>
             </div>

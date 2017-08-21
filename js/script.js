@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+        $("#right-side").delay(1000).fadeIn(500); 
+});  
+
 
 // Counter
 var oldDate = $('#oldDate').html();
@@ -43,3 +47,13 @@ $("#ninjaPlanModal .close").click(function () {
     $("#ninja-plan-header").fadeIn();
     }, 1000);
 });   
+ 
+
+
+
+
+
+
+
+
+
