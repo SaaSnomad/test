@@ -104,15 +104,12 @@ function checkForm(form) { // Submit button clicked
         $("#preloader-calculator").addClass('show');
 
         $(".range-from").val(Math.round(res_eq_val_low));
-        $(".range-to").val(Math.round(res_eq_val_high));
+        $(".range-to").val(Math.round(res_eq_val_high)); 
         setTimeout(function () {
             $("#preloader-calculator").removeClass('show');
             $("#preloader-calculator").addClass('hide');
             $("#unicorn-wrapper").addClass('show');
-            $("#unicorn-wrapper").removeClass('hide');
-
-            //$("#refresh-block").css('display','block');
-            //$("#calculate-block").css('display','none');
+            $("#unicorn-wrapper").removeClass('hide'); 
         }, 2000); 
 
     }else {
@@ -122,12 +119,12 @@ function checkForm(form) { // Submit button clicked
         $("#unicorn-wrapper").addClass('hide');
         $(".range-from").val(Math.round(res_eq_val_low));
         $(".range-to").val(Math.round(res_eq_val_high));
-    } 
-
+    }  
     // Scroll to the result 
+        
     $('html, body').animate({
-        scrollTop: $("#from").offset().top-100
-    }, 1000);
+            scrollTop: $("#to-result").offset().top-100
+        }, 1000); 
 
     return
 }  

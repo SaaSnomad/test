@@ -69,20 +69,19 @@
                             </div>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
-                                <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last month's MRR" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last month's MRR" class="form-control to-number change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
                             </div>
-                            
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR monthly growth" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required> 
+                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR monthly growth" class="form-control to-number change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required> 
                             </div>
-                            
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross margin" class="form-control change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required></div>
+                                <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross margin" class="form-control to-number change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required>
+                            </div>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
-                                <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly burn" class="form-control change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly burn" class="form-control to-number change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
                             </div>
                             <!-- Calculator Number of Employees <div class="md-form form-group"> <input type="text" name="calculatorEmployees" id="calculatorEmployees" placeholder="Number of Employees *" class="form-control change" maxlength="4" aria-label="Amount (to the nearest dollar)" required> </div>-->
                             <div class="md-form form-group">
@@ -100,6 +99,7 @@
 
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                        <div id="to-result"></div>
                         <div id="preloader-calculator" style="margin-top:180px;" class="text-center hide"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
                         <div id="unicorn-wrapper" class="text-center hide">
                             <img id="unicorn" src="img/unicorn.png"><h3><b>Congrats, you got a Unicorn!</b></h3>

@@ -12,6 +12,6 @@ $(function(){
 document.onkeydown = function (e) {
             if (e.keyCode === 109 || e.keyCode === 189) {
                 var target = e.target || e.srcElement;
-                e.target.value = " ";
+                e.target.value = "";
             }
         }; 

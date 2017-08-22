@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url> 
-    <loc>https://_nomad.com/</loc> 
+    <loc>https://saasnomadnomad.com/</loc> 
     <image:image>
-       <image:loc>https://_nomad.com/img/_nomad-logo.svg</image:loc>
+       <image:loc>https://saasnomadnomad.com/img/saasnomadnomad-logo.svg</image:loc>
        <image:caption>We disclose your contacts only at your permission following the interest from buyers</image:caption>
     </image:image> 
     <image:image>
-       <image:loc>https://_nomad.com/img/unicorn.png</image:loc>
-       <image:caption>If the valuation of your _ is +&#36;1B, you got a Unicorn!</image:caption>
+       <image:loc>https://saasnomadnomad.com/img/unicorn.png</image:loc>
+       <image:caption>If the valuation of your SaaS is +&#36;1B, you got a Unicorn!</image:caption>
     </image:image> 
     <image:image>
-       <image:loc>https://_nomad.com/img/why-_nomad-reason-1.png</image:loc>
-       <image:caption>Anonymously sell your _ startup</image:caption>
+       <image:loc>https://saasnomadnomad.com/img/why-saasnomadnomad-reason-1.png</image:loc>
+       <image:caption>Anonymously sell your SaaS startup</image:caption>
     </image:image> 
     <image:image>
-       <image:loc>https://_nomad.com/img/why-_nomad-reason-2.png</image:loc>
-       <image:caption>ew M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</image:caption>
+       <image:loc>https://saasnomadnomad.com/img/why-saasnomadnomad-reason-2.png</image:loc>
+       <image:caption>New M&#38;A opportunities are sent to hundreds of corporate M&#38;A people</image:caption>
     </image:image> 
     <image:image>
-       <image:loc>https://_nomad.com/img/why-_nomad-reason-3.png</image:loc>
+       <image:loc>https://saasnomadnomad.com/img/why-saasnomadnomad-reason-3.png</image:loc>
        <image:caption>You pay only for the intro to interested acquirers</image:caption>
     </image:image> 
   </url>
   <url> 
-    <loc>https://_nomad.com/disclaimer</loc>  
+    <loc>https://saasnomadnomad.com/disclaimer</loc>  
   </url>
   <url> 
-    <loc>https://_nomad.com/faq</loc>  
+    <loc>https://saasnomadnomad.com/faq</loc>  
   </url>
   <url> 
-    <loc>https://_nomad.com/privacy</loc>  
+    <loc>https://saasnomadnomad.com/privacy</loc>  
   </url>
   <url> 
-    <loc>https://_nomad.com/terms</loc>  
+    <loc>https://saasnomadnomad.com/terms</loc>  
   </url>
 </urlset>

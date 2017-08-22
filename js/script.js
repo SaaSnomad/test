@@ -2,6 +2,12 @@ $( document ).ready(function() {
         $("#right-side").delay(1000).fadeIn(500); 
 });  
 
+if($(window).width() < 767)
+{
+    $("#calculator .to-number").attr('type', 'number');
+    $("#calculator .to-number").attr('max', '9999999');
+    $("#calculator .to-number").attr('min', '0');
+}  
 
 // Counter
 var oldDate = $('#oldDate').html();

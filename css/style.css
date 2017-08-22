@@ -915,6 +915,13 @@ input.radio:checked ~ label {
     #calculator_region {
         height: 33px;
     }
+    #unicorn { 
+        margin-top: 0;
+    }
+    #preloader-calculator {
+        margin-top: 50px !important;
+        margin-bottom: 100px !important;
+    }
     #landing .display-4 {
         font-size: 3rem;
     }

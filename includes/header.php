@@ -56,7 +56,7 @@
 
 <header id="top" class="navbar fixed-top">
         <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+            <div class="col-6">
                 <h4 class="text-muted" id="logo" onClick="ga('send', 'event', 'logo', 'click', 'uxui');">
                     <a class="text-muted" href="<?php echo BASE_URL; ?>">
                         <img src="img/saasnomad-logo.svg" alt="SaaSNomad logo"/>
@@ -64,7 +64,7 @@
                 </h4>
                 <small class="text-muted motto" style="padding-left: .7rem;font-size: .8rem;">The Smart Way to Sell SaaS Startup</small>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+            <div class="col-6">
                 <a class="btn scrolling-navbar text-center flex-center" data-toggle="modal" data-target="#sellerModal"  id="apply-navbar" onClick="ga('send', 'event', 'apply header', 'click', 'sellers');">Apply for free</a> 
             </div>
         </div>        
