@@ -118,7 +118,6 @@
                             <div>
                                 <small>This valuation is indicative and the results may differ from those obtained using fundamental valuation techniques. Please read this <a href="<?php echo BASE_URL; ?>disclaimer" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'disclaimer', 'click', 'info');">Important Disclaimer</a>. <a href="#contact-us" id="text-link-1" onClick="ga('send', 'event', 'contact us valuation', 'click', 'info');">Contact us</a> directly for a bespoke valuation service.</small>
                             </div>
-                        
                     </div>
                 </div>
             </div>

@@ -33,24 +33,24 @@ $("#sellerModal .close").click(function () {
     $("#seller-header").fadeIn();
 	}, 1000);
 });    
-$("#proPlanModal .close").click(function () {
+$("#waitlist1Modal .close").click(function () {
     setTimeout(function () {
-    $("#pro-plan-success").fadeOut();
-    $("#pro-plan-error").fadeOut();
-    $("#pro-plan-waitlist").fadeIn();
-    $('#pro-plan-waitlist input[name=pro_plan_name]').val('');
-    $('#pro-plan-waitlist input[name=pro_plan_email]').val(''); 
-    $("#pro-plan-header").fadeIn();
+    $("#waitlist1-success").fadeOut();
+    $("#waitlist1-error").fadeOut();
+    $("#waitlist1-waitlist").fadeIn();
+    $('#waitlist1-waitlist input[name=pro_plan_name]').val('');
+    $('#waitlist1-waitlist input[name=pro_plan_email]').val(''); 
+    $("#waitlist1-header").fadeIn();
     }, 1000);
 });  
-$("#ninjaPlanModal .close").click(function () {
+$("#waitlist2Modal .close").click(function () {
     setTimeout(function () {
-    $("#ninja-plan-success").fadeOut();
-    $("#ninja-plan-error").fadeOut();
-    $("#ninja-plan-waitlist").fadeIn();
-    $('#ninja-plan-waitlist input[name=ninja_plan_name]').val('');
-    $('#ninja-plan-waitlist input[name=ninja_plan_email]').val('');  
-    $("#ninja-plan-header").fadeIn();
+    $("#waitlist2-success").fadeOut();
+    $("#waitlist2-error").fadeOut();
+    $("#waitlist2-waitlist").fadeIn();
+    $('#waitlist2-waitlist input[name=ninja_plan_name]').val('');
+    $('#waitlist2-waitlist input[name=ninja_plan_email]').val('');  
+    $("#waitlist2-header").fadeIn();
     }, 1000);
 });   
  
