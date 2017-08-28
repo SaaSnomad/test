@@ -34,8 +34,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- Load More -->
     <link rel="stylesheet" href="css/load-more.css">  
-    <!-- Recaptcha   -->   
-    <script src='https://www.google.com/recaptcha/api.js'></script> 
+    <!-- Micrometa --> 
     <script type="application/ld+json">
         {   
             "@context" : "http://schema.org",
@@ -57,15 +56,15 @@
 <header id="top" class="navbar fixed-top">
         <div class="row">
             <div class="col-6">
-                <h4 class="text-muted" id="logo" onClick="ga('send', 'event', 'logo', 'click', 'uxui');">
-                    <a class="text-muted" href="<?php echo BASE_URL; ?>">
+                <h4 class="text-muted" id="logo">
+                    <a class="text-muted" href="<?php echo BASE_URL; ?>" onClick="ga('send', 'event', 'logo', 'click', 'uxui');">
                         <img src="img/saasnomad-logo.svg" alt="SaaSNomad logo"/>
                     <b>SaaS</b>Nomad</a>
                 </h4>
                 <small class="text-muted motto" style="padding-left: .7rem;font-size: .8rem;">The Smart Way to Sell SaaS Startup</small>
             </div>
             <div class="col-6">
-                <a class="btn scrolling-navbar text-center flex-center" data-toggle="modal" data-target="#sellerModal"  id="apply-navbar" onClick="ga('send', 'event', 'apply header', 'click', 'sellers');">Apply for free</a> 
+                <a class="btn scrolling-navbar text-center flex-center" data-toggle="modal" data-target="#sellerModal" id="apply-navbar" onClick="ga('send', 'event', 'apply header', 'click', 'sellers');">Apply for free</a> 
             </div>
         </div>        
 </header> 

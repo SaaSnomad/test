@@ -1,10 +1,10 @@
 <?php
 // Database
    define('DB_HOST','localhost');
-   define('DB_USER','sndb28');
-   define('DB_PASS','Saasnomad28');
-   //define('DB_USER','root');
-   //define('DB_PASS','');
+   //define('DB_USER','sndb28');
+   //define('DB_PASS','Saasnomad28');
+   define('DB_USER','root');
+   define('DB_PASS','');
    define('DB_NAME','saasnomad');
    define('SITE_TITLE', 'SaaSnomad');
    
@@ -18,6 +18,6 @@
    define('HTTPS_SERVER', 'https://test.saasnomad.com');
 
 // Paths
-   define('BASE_URL', '');
+   define('BASE_URL', '/test/');
    define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . '');
 ?>

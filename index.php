@@ -44,7 +44,8 @@
     <div class="row" id="landing">
         <div id="left-side" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
             <div class="main-text"> 
-                <h1 class="display-4">Anonymously</br>sell your SaaS</br>startup</h1> <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply for free </a>
+                <h1 class="display-4">Anonymously</br>sell your SaaS</br>startup</h1> 
+                <a id="apply-main" class="btn btn-secondary" data-toggle="modal" data-target="#sellerModal" onClick="ga('send', 'event', 'apply main', 'click', 'sellers');"> apply for free </a>
                 <h3 class="text-center text-muted display-4" style="margin-top: 0.5rem;"><span class="counter" id="getTotalApplications"></span></h3>
                 <h3 class="text-center text-muted">companies already listed</h3> 
                 <a class="anchor" href="#saas-valuation-calculator"></a>
@@ -69,19 +70,19 @@
                             </div>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
-                                <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last month's MRR" class="form-control to-number change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_mrr" id="calculator_mrr" placeholder="Last month's MRR" class="form-control to-number change" maxlength="8" style="padding-left: 6%;width: 94%;" required> 
                             </div>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR monthly growth" class="form-control to-number change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required> 
+                                <input type="text" name="calculator_mrr_growth" id="calculator_mrr_growth" placeholder="MRR monthly growth" class="form-control to-number change" maxlength="3" style="padding-left: 7%;width: 93%;" required> 
                             </div>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">%</span>
-                                <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross margin" class="form-control to-number change" maxlength="3" aria-label="Amount (to the nearest dollar)" style="padding-left: 7%;width: 93%;" required>
+                                <input type="text" name="calculator_margin" id="calculator_margin" placeholder="Gross margin" class="form-control to-number change" maxlength="3" style="padding-left: 7%;width: 93%;" required>
                             </div>
                             <div class="md-form form-group"> 
                                 <span class="input-group-addon" style="position: absolute;top: 6px;width:2%;border-bottom: none !important;padding-left: 0;padding-right: 0;">&#36;</span>
-                                <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly burn" class="form-control to-number change" maxlength="8" aria-label="Amount (to the nearest dollar)" style="padding-left: 6%;width: 94%;" required> 
+                                <input type="text" name="calculator_burn" id="calculator_burn" placeholder="Monthly burn" class="form-control to-number change" maxlength="8" style="padding-left: 6%;width: 94%;" required> 
                             </div>
                             <!-- Calculator Number of Employees <div class="md-form form-group"> <input type="text" name="calculatorEmployees" id="calculatorEmployees" placeholder="Number of Employees *" class="form-control change" maxlength="4" aria-label="Amount (to the nearest dollar)" required> </div>-->
                             <div class="md-form form-group">
@@ -92,7 +93,7 @@
                             <input class="geotext[country]" type="text" name="calculator_location" style="display:none;" />
                             <small>* All fields are required</small> 
                             <div class="md-form form-group" id="calculate-block" style="margin:2rem 0 0;">
-                                <button type="submit" class="btn" name="calculate-btn" id="calculate-btn" style="width:100%;background-color: transparent;border: 1px solid #ccc; padding: 0.85rem 1rem;margin:0;" onClick="ga('send', 'event', 'valuation', 'submit', 'sellers');">Calculate</button>
+                                <button type="submit" class="btn g-recaptcha invisible-recaptcha" name="calculate-btn" id="calculate-btn" data-sitekey="6LezoyoUAAAAAFIwSsAQTtbrNVx3rV6hLa1ojYqs" data-callback='verifyCaptcha' style="width:100%;background-color: transparent;border: 1px solid #ccc; padding: 0.85rem 1rem;margin:0;" onClick="ga('send', 'event', 'valuation', 'submit', 'sellers');">Calculate</button>
                             </div>                             
                         </form>
                         <!-- end of Calculator form -->
@@ -116,7 +117,7 @@
                         </div>
                         </br> 
                             <div>
-                                <small>This valuation is indicative and the results may differ from those obtained using fundamental valuation techniques. Please read this <a href="<?php echo BASE_URL; ?>disclaimer" target="_blank" id="text-link-1" onClick="ga('send', 'event', 'disclaimer', 'click', 'info');">Important Disclaimer</a>. <a href="#contact-us" id="text-link-1" onClick="ga('send', 'event', 'contact us valuation', 'click', 'info');">Contact us</a> directly for a bespoke valuation service.</small>
+                                <small>This valuation is indicative and the results may differ from those obtained using fundamental valuation techniques. Please read this <a href="<?php echo BASE_URL; ?>disclaimer" id="text-link-1" onClick="ga('send', 'event', 'disclaimer', 'click', 'info');">Important Disclaimer</a>. <a href="#contact-us" id="text-link-1" onClick="ga('send', 'event', 'contact us valuation', 'click', 'info');">Contact us</a> directly for a bespoke valuation service.</small>
                             </div>
                     </div>
                 </div>
@@ -224,14 +225,7 @@
 
     <!--Section Pricing -->
     <section id="pricing-cta">
-        <div class="title-wrapper text-center">
-            <!--<h2> Absolutely for free you get 
-                <div id="rotate"> 
-                    <div>ANONYMITY</div> 
-                    <div>REACH</div> 
-                    <div>DIRECT CONTACT</div> 
-                </div>
-            </h2> -->
+        <div class="title-wrapper text-center"> 
             <h2>Pricing Plans</h2>
         </div>
         <a class="anchor" href="#pricing-plans"></a>
@@ -264,7 +258,7 @@
                                             <li style="padding-bottom: 15px;"><i class="fa fa-check" aria-hidden="true" style="color:#3CD7B2;"></i> Featuring on our website’s “Featured Companies” section</li>
                                             <li style="padding-bottom: 15px;"><i class="fa fa-check" aria-hidden="true" style="color:#3CD7B2;"></i> Contact sharings to interested investors</li>
                                         </ul>
-                                        <a class="btn btn-primary" target="_blank" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;">View All Features &#38; Pricing</a>
+                                        <a class="btn btn-primary" href="<?php echo BASE_URL; ?>pricing" style="margin: 10px 0;" onClick="ga('send', 'event', 'view pricing', 'click', 'pricing');">View All Features &#38; Pricing</a>
                                     </div>
                                 </div>
                             </div> 
@@ -325,13 +319,12 @@
                         <input name="buyer_email" id="buyer_email" placeholder="Enter your email..." type="email" class="form-control" maxlength="50" required>
                         <input name="buyer_country" placeholder="Country" type="text" class="geotext[country]" style="display:none;">
                         <span class="input-group-btn">
-                            <button class="btn btn-primary" type="submit" style="margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Subscribe for free</button>
+                            <button id="captcha5" class="btn btn-primary g-recaptcha invisible-recaptcha" data-sitekey="6LezoyoUAAAAAFIwSsAQTtbrNVx3rV6hLa1ojYqs" data-callback='verifyCaptcha' type="submit" style="margin:0" onClick="ga('send', 'event', 'get notified', 'submit', 'buyers');">Subscribe for free</button>
                         </span>
                     </div> 
                     <div class="text-center" style="width: 100%;">
-                    <small>Your information is confidential and will not be sent to</br>the Sellers or shown on the website</small>
-                    <!--<small class="checkbox-label">By clicking the button, you agree that you have read and accepted</br>the <a href="privacy.php" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="terms.php" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>-->
-                </div>
+                        <small>Your information is confidential and will not be sent to</br>the Sellers or shown on the website</small>
+                    </div>
                 </form>
                 <div id="buyer-success" style="display:none;">
                     <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;margin-bottom: 0;'>
@@ -401,7 +394,7 @@
                                             <div class="md-form form-group" style="margin-top: 44px;display:none;">
                                                 <input type="text" name="news_country" class="geotext[country]" id="news_country"> </div>
                                             <div class="md-form input-group" style="margin: 20px 0;width: 100%;">
-                                                <button class="btn btn-primary btn-lg" type="submit" onClick="ga('send', 'event', 'subscribe news', 'submit', 'news');">Subscribe</button>
+                                                <button id="captcha4" class="btn btn-primary btn-lg g-recaptcha invisible-recaptcha" data-sitekey="6LezoyoUAAAAAFIwSsAQTtbrNVx3rV6hLa1ojYqs" data-callback='verifyCaptcha' type="submit" onClick="ga('send', 'event', 'subscribe news', 'submit', 'news');">Subscribe</button>
                                             </div>
                                         </form>
                                         <div id="news-success" style="display:none;">
@@ -536,7 +529,7 @@
                     </div> 
                      
                     <div class="md-form input-group" style="margin:0;width: 100%;">
-                        <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'contact form', 'submit', 'info');">Send Message</button>
+                        <button id="captcha2" class="btn btn-primary btn-lg g-recaptcha invisible-recaptcha" data-sitekey="6LezoyoUAAAAAFIwSsAQTtbrNVx3rV6hLa1ojYqs" data-callback='verifyCaptcha' type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'contact form', 'submit', 'info');">Send Message</button>
                     </div>  
                 </form>
 
@@ -566,107 +559,9 @@
 
 </div>
 <!--/ Main container--> 
+
+
 <!-- MODALS -->
-
-
-<!-- Seller modal -->
-<div class="modal fade" id="sellerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-keyboard="false" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            <div class="modal-body">
-                <h2 class="text-center" id="seller-header">Seller application</h2>
-                <form id="sellers" action="#" method="post">
-                    <div class="md-form form-group">
-                        <input name="seller_email" id="seller_email" placeholder="example@myemaildomain.com" type="email" class="form-control" maxlength="50" required>
-                        <label for="seller_email">Email *</label>
-                    </div>
-                    <div class="md-form form-group" style="display:none;">
-                        <input name="seller_country" placeholder="Country" type="text" class="geotext[country]"> 
-                    </div> 
-                    <div class="md-form form-group" id="multiselect" style="width: 100%;top: -7px;">
-                        <label for "seller_industry" style="font-size: 0.8rem;position: relative;z-index: 1000;top:8px;">Industry</label>
-                        <select name="seller_industry" id="seller_industry" data-placeholder="Choose your industry" class="chosen-select form-control" tabindex="2">
-                            <option value="" style="display:none;">Choose your industry</option>
-                            <option value="AdTech">AdTEch</option>
-                            <option value="AI">AI</option>
-                            <option value="Big Data">Big Data</option>
-                            <option value="Business Intelligence">Business Intelligence</option>
-                            <option value="HR Tech">HR Tech</option>
-                            <option value="Classifieds">Classifieds</option>
-                            <option value="CleanTech">CleanTech</option>
-                            <option value="Cloud Computing">Cloud Computing</option>
-                            <option value="Customer Support">Customer Support</option>
-                            <option value="Data Science">Data Science</option>
-                            <option value="Dating">Dating</option>
-                            <option value="E-Commerce">E-Commerce</option>
-                            <option value="EdTech">EdTech</option>
-                            <option value="Digital Marketing">Digital Marketing</option>
-                            <option value="Fashion">Fashion</option>
-                            <option value="FinTech">FinTech</option>
-                            <option value="Fitness &#38; Wellness">Fitness &#38; Wellness</option>
-                            <option value="Food &#38; Beverages">Food &#38; Beverages</option>
-                            <option value="Funerals">Funerals</option>
-                            <option value="Gaming">Gaming</option>
-                            <option value="Government">Government</option>
-                            <option value="Health Tech">Health Tech</option>
-                            <option value="Hospitality">Hospitality</option>
-                            <option value="Human Resources">Human Resources</option>
-                            <option value="Insurance">Insurance</option>
-                            <option value="Internet of Things">Internet of Things</option>
-                            <option value="Legal">Legal</option>
-                            <option value="Market Research">Market Research</option>
-                            <option value="Media">Media</option>
-                            <option value="Music">Music</option>
-                            <option value="Publishing">Publishing</option>
-                            <option value="Security">Security</option>
-                            <option value="Social Networking">Social Networking</option>
-                            <option value="Storage">Storage</option>
-                            <option value="Technical Support">Technical Support</option>
-                            <option value="Telecommunications">Telecommunications</option>
-                            <option value="Transportation">Transportation</option>
-                            <option value="Travel">Travel</option>
-                            <option value="Travel">Other</option>
-                        </select>
-                    </div>
-                    <div class="md-form form-group"> 
-                        <span class="input-group-addon" style="position: absolute;bottom:0;width:2%;border-bottom: none !important;padding: 0rem; margin-bottom: 7px;">&#36;</span>
-                        <input name="seller_mrr" id="seller_mrr" placeholder="Last month's MRR" type="text" class="form-control" maxlength="8" aria-label="Amount (to the nearest dollar)" aria-describedby="basic-addon2" style="padding-left: 3%;padding-right:3%;z-index:1000;width: 94%; margin-top: 2rem;">
-                        <label for="seller_mrr">Last month's MRR</label>
-                    </div>
-                    <div class="md-form form-group">
-                        <input name="seller_employees" id="seller_employees" placeholder="Employees" type="text" class="form-control" maxlength="5">
-                        <label for="seller_name">Number of Employees</label>
-                    </div>  
-                    <div class="md-form input-group" style="margin: 2rem 0 1.5rem;width: 100%;">
-                        <button class="btn btn-primary" class="g-recaptcha" data-sitekey="6LezoyoUAAAAAFIwSsAQTtbrNVx3rV6hLa1ojYqs" data-callback="YourOnSubmitFn" type="submit" style="width: 100%;margin:0" onClick="ga('send', 'event', 'application form', 'submit', 'sellers');">Apply</button>
-                    </div>
-                    <div class="text-center">
-                        <small class="checkbox-label">By clicking "Apply", you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'sellers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'sellers');">Terms of Use</a> </small>
-                    </div>
-                </form>
-                <div id="seller-success" style="display:none;">
-                    <blockquote class='blockquote bq-primary text-center' style='border-right: none;text-align: left;padding-top:0;'>
-                        <p id="seller-success-title" class='bq-title' style='padding-left: 0;'></p>
-                    </blockquote>
-                    <div class='text-center'>
-                        <p id="seller-success-message"></p>
-                    </div>
-                </div>
-                <div id="seller-error" style="display:none;">
-                    <blockquote class='blockquote bq-warning text-center' style='border-left: none;padding-top:0;'>
-                        <p id="seller-error-title" class='bq-title' style='padding-left: 0;'></p>
-                    </blockquote>
-                    <div class='text-center'>
-                        <p id="seller-error-message"></p>
-                    </div>
-                </div>
-                <div id="preloader1" style="display:none;margin:50px 0;" class="text-center"><img src="<?php echo BASE_URL; ?>img/preloader.gif" style="width:20%;"></div>
-            </div>
-        </div>
-    </div>
-</div>  
-<!-- end of Seller modal --> 
 
 <!-- Request Contact -->
 <?php foreach($cards as $card) : ?>
@@ -714,22 +609,9 @@
                                         <!--Request ID-->
                                         <div class="md-form form-group" style="margin-top: 44px;display:none;">
                                             <input value="29" type="text" name="request_id" id="request_id" class="form-control"> 
-                                        </div>  
-                                        <!-- Checkbox
-                                                    <div class="md-form form-group">
-                                                        <div class="rkmd-checkbox checkbox-ripple">
-                                                            <label class="input-checkbox checkbox-indigo" style="margin-bottom:0;">
-                                                              <input type="checkbox" id="checkbox-1" required>
-                                                              <span class="checkbox"></span>
-                                                            </label>
-                                                            <small for="checkbox-1" class="checkbox-label">I agree to the 
-                                                            <a href="privacy.php" target="_blank">Privacy Policy</a> and 
-                                                            <a href="terms.php" target="_blank">Terms of Use</a>
-                                                            </small>
-                                                        </div>
-                                                    </div>  -->
+                                        </div>   
                                         <div class="md-form input-group" style="margin:0;width: 100%;">
-                                            <button class="btn btn-primary btn-lg" type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'reques contact', 'submit', 'buyers');">Request Contact</button>
+                                            <button id="captcha3" class="btn btn-primary btn-lg g-recaptcha invisible-recaptcha" data-sitekey="6LezoyoUAAAAAFIwSsAQTtbrNVx3rV6hLa1ojYqs" data-callback='verifyCaptcha' type="submit" style="width: 100%;margin-left:0;margin-right:0" onClick="ga('send', 'event', 'reques contact', 'submit', 'buyers');">Request Contact</button>
                                         </div>      
                                         <small class="checkbox-label">By clicking the button, you agree that you have read and accepted the <a href="<?php echo BASE_URL; ?>privacy" target="_blank" onClick="ga('send', 'event', 'privacy forms', 'click', 'buyers');">Privacy Policy</a> and <a href="<?php echo BASE_URL; ?>terms" target="_blank" onClick="ga('send', 'event', 'terms forms', 'click', 'buyers');">Terms of Use</a> </small>   
                                     </form>
